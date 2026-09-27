@@ -1,0 +1,1378 @@
+{
+  "case_id": "attention-L00",
+  "module": "attention",
+  "l_init": 0,
+  "l_max": 14,
+  "method": "teacher_fixed_baseline",
+  "status": "passed",
+  "nodes": [
+    [
+      "X_in_attn",
+      "Identity",
+      0,
+      "X (in, L=9)"
+    ],
+    [
+      "Boot1_X_attn",
+      "Bootstrap1",
+      0,
+      "Boot1(X)"
+    ],
+    [
+      "ModSwitch_down8_attn",
+      "Modswitch",
+      8,
+      "Level down 8"
+    ],
+    [
+      "V_Wv_attn",
+      "PCMM1",
+      2,
+      "V = X · Wv"
+    ],
+    [
+      "Q_Wq_attn",
+      "PCMM1",
+      2,
+      "Q = X · Wq"
+    ],
+    [
+      "K_Wk_attn",
+      "PCMM1",
+      2,
+      "K = X · Wk"
+    ],
+    [
+      "Conj_back_X_attn",
+      "Conjugate back",
+      0,
+      "Conjugate back X"
+    ],
+    [
+      "X_div2_attn",
+      "Mul",
+      1,
+      "X = X / 2"
+    ],
+    [
+      "Conj_V_attn",
+      "Conjugate",
+      0,
+      "Conjugate V"
+    ],
+    [
+      "QK_mul_attn",
+      "CCMM1",
+      4,
+      "QK = Q · Kᵀ / √d"
+    ],
+    [
+      "Boot2_QK_attn",
+      "Bootstrap2",
+      0,
+      "Boot2(QK)"
+    ],
+    [
+      "qk_div2_attn",
+      "Mul",
+      1,
+      "qk = QK / 2"
+    ],
+    [
+      "qk_affine_attn",
+      "Mul",
+      1,
+      "y = qk/2ᵏ & affine y"
+    ],
+    [
+      "exp_y_attn",
+      "PolyEval1",
+      5,
+      "y = Exp(y), deg=15"
+    ],
+    [
+      "mask_y_attn",
+      "Mul",
+      1,
+      "y = mask · y"
+    ],
+    [
+      "iter1_y_sq_attn",
+      "Mul",
+      1,
+      "Iter1: y²"
+    ],
+    [
+      "iter1_sum_s_attn",
+      "Sum",
+      0,
+      "Iter1: s = Σ(y²)"
+    ],
+    [
+      "iter1_affine_s_attn",
+      "Mul",
+      1,
+      "Iter1: affine s"
+    ],
+    [
+      "Boot1_s_iter1_attn",
+      "Bootstrap1",
+      0,
+      "Boot1(s)"
+    ],
+    [
+      "iter1_invsqrt_attn",
+      "PolyEval3",
+      8,
+      "λ = Invsqrt(s), deg=127"
+    ],
+    [
+      "iter1_ylam_attn",
+      "Mul",
+      1,
+      "Iter1: y · λ"
+    ],
+    [
+      "iter1_y_sq2_attn",
+      "Mul",
+      1,
+      "Iter1: y = (yλ)²"
+    ],
+    [
+      "iter2_y_sq_attn",
+      "Mul",
+      1,
+      "Iter2: y²"
+    ],
+    [
+      "iter2_sum_s_attn",
+      "Sum",
+      0,
+      "Iter2: s = Σ(y²)"
+    ],
+    [
+      "iter2_affine_s_attn",
+      "Mul",
+      1,
+      "Iter2: affine s"
+    ],
+    [
+      "Boot1_s_iter2_attn",
+      "Bootstrap1",
+      0,
+      "Boot1(s)"
+    ],
+    [
+      "iter2_invsqrt_attn",
+      "PolyEval2",
+      5,
+      "λ = Invsqrt(s), deg=15"
+    ],
+    [
+      "iter2_ylam_attn",
+      "Mul",
+      1,
+      "Iter2: y · λ"
+    ],
+    [
+      "iter2_y_sq2_attn",
+      "Mul",
+      1,
+      "Iter2: y = (yλ)²"
+    ],
+    [
+      "Boot2_y_attn",
+      "Bootstrap2",
+      0,
+      "Boot2(y)"
+    ],
+    [
+      "iter3_y_sq_attn",
+      "Mul",
+      1,
+      "Iter3: y²"
+    ],
+    [
+      "iter3_sum_s_attn",
+      "Sum",
+      0,
+      "Iter3: s = Σ(y²)"
+    ],
+    [
+      "iter3_affine_s_attn",
+      "Mul",
+      1,
+      "Iter3: affine s"
+    ],
+    [
+      "iter3_invsqrt_attn",
+      "PolyEval2",
+      5,
+      "λ = Invsqrt(s), deg=15"
+    ],
+    [
+      "iter3_ylam_attn",
+      "Mul",
+      1,
+      "Iter3: y · λ"
+    ],
+    [
+      "iter3_S_attn",
+      "Mul",
+      1,
+      "Iter3: S = (yλ)²"
+    ],
+    [
+      "conj_S_attn",
+      "Conjugate",
+      0,
+      "Conjugate S"
+    ],
+    [
+      "S_mask_attn",
+      "Mul",
+      1,
+      "S = mask · S"
+    ],
+    [
+      "conj_back_S_attn",
+      "Conjugate back",
+      0,
+      "Conjugate back S"
+    ],
+    [
+      "SV_mul_attn",
+      "CCMM2",
+      2,
+      "SV = S · V"
+    ],
+    [
+      "Boot1_SV_attn",
+      "Bootstrap1",
+      0,
+      "Boot1(SV)"
+    ],
+    [
+      "rotate_SV_attn",
+      "Rotate",
+      0,
+      "Rotate SV"
+    ],
+    [
+      "x_SV_Wo_attn",
+      "PCMM2",
+      2,
+      "x = SV · Wo"
+    ],
+    [
+      "x_mask_attn",
+      "Mul",
+      1,
+      "x = mask · x"
+    ],
+    [
+      "add_out_attn",
+      "Add",
+      0,
+      "x = x + X"
+    ],
+    [
+      "x_mask2_attn",
+      "Mul",
+      1,
+      "x = mask · x"
+    ],
+    [
+      "sum_mu_attn",
+      "Sum",
+      0,
+      "μ = Σ(x)"
+    ],
+    [
+      "mask_mu_attn",
+      "Mul",
+      1,
+      "μ = mask · μ"
+    ],
+    [
+      "div_768_attn",
+      "Mul",
+      1,
+      "μ = μ / 768"
+    ],
+    [
+      "add_z_attn",
+      "Add",
+      0,
+      "z = x − μ"
+    ],
+    [
+      "mul_z_sq_attn",
+      "Mul",
+      1,
+      "y = z²"
+    ],
+    [
+      "sum_y_attn",
+      "Sum",
+      0,
+      "s_y = Σ(y)"
+    ],
+    [
+      "mul_var_attn",
+      "Mul",
+      1,
+      "var = mask·s_y & affine var"
+    ],
+    [
+      "Boot1_var_attn",
+      "Bootstrap1",
+      0,
+      "Boot1(var)"
+    ],
+    [
+      "invsqrt_var_attn",
+      "PolyEval2",
+      5,
+      "λ = Invsqrt(var), deg=15"
+    ],
+    [
+      "mask_lam_attn",
+      "Mul",
+      1,
+      "λ = Mask(λ)"
+    ],
+    [
+      "mul_z_gamma_attn",
+      "Mul",
+      1,
+      "z = z · γ"
+    ],
+    [
+      "mul_X_out_attn",
+      "Mul",
+      1,
+      "X = z · λ"
+    ],
+    [
+      "X_out_attn",
+      "Identity",
+      0,
+      "X (attn out)"
+    ]
+  ],
+  "edges": [
+    [
+      "X_in_attn",
+      "Boot1_X_attn",
+      4
+    ],
+    [
+      "Boot1_X_attn",
+      "ModSwitch_down8_attn",
+      4
+    ],
+    [
+      "Boot1_X_attn",
+      "Conj_back_X_attn",
+      4
+    ],
+    [
+      "ModSwitch_down8_attn",
+      "V_Wv_attn",
+      4
+    ],
+    [
+      "ModSwitch_down8_attn",
+      "Q_Wq_attn",
+      4
+    ],
+    [
+      "ModSwitch_down8_attn",
+      "K_Wk_attn",
+      4
+    ],
+    [
+      "Conj_back_X_attn",
+      "X_div2_attn",
+      8
+    ],
+    [
+      "V_Wv_attn",
+      "Conj_V_attn",
+      4
+    ],
+    [
+      "Q_Wq_attn",
+      "QK_mul_attn",
+      4
+    ],
+    [
+      "K_Wk_attn",
+      "QK_mul_attn",
+      4
+    ],
+    [
+      "QK_mul_attn",
+      "Boot2_QK_attn",
+      8
+    ],
+    [
+      "Boot2_QK_attn",
+      "qk_div2_attn",
+      8
+    ],
+    [
+      "qk_div2_attn",
+      "qk_affine_attn",
+      8
+    ],
+    [
+      "qk_affine_attn",
+      "exp_y_attn",
+      8
+    ],
+    [
+      "exp_y_attn",
+      "mask_y_attn",
+      8
+    ],
+    [
+      "mask_y_attn",
+      "iter1_y_sq_attn",
+      8
+    ],
+    [
+      "mask_y_attn",
+      "iter1_ylam_attn",
+      8
+    ],
+    [
+      "iter1_y_sq_attn",
+      "iter1_sum_s_attn",
+      8
+    ],
+    [
+      "iter1_sum_s_attn",
+      "iter1_affine_s_attn",
+      1
+    ],
+    [
+      "iter1_affine_s_attn",
+      "Boot1_s_iter1_attn",
+      1
+    ],
+    [
+      "Boot1_s_iter1_attn",
+      "iter1_invsqrt_attn",
+      1
+    ],
+    [
+      "iter1_invsqrt_attn",
+      "iter1_ylam_attn",
+      1
+    ],
+    [
+      "iter1_ylam_attn",
+      "iter1_y_sq2_attn",
+      8
+    ],
+    [
+      "iter1_y_sq2_attn",
+      "iter2_y_sq_attn",
+      8
+    ],
+    [
+      "iter1_y_sq2_attn",
+      "iter2_ylam_attn",
+      8
+    ],
+    [
+      "iter2_y_sq_attn",
+      "iter2_sum_s_attn",
+      8
+    ],
+    [
+      "iter2_sum_s_attn",
+      "iter2_affine_s_attn",
+      1
+    ],
+    [
+      "iter2_affine_s_attn",
+      "Boot1_s_iter2_attn",
+      1
+    ],
+    [
+      "Boot1_s_iter2_attn",
+      "iter2_invsqrt_attn",
+      1
+    ],
+    [
+      "iter2_invsqrt_attn",
+      "iter2_ylam_attn",
+      1
+    ],
+    [
+      "iter2_ylam_attn",
+      "iter2_y_sq2_attn",
+      8
+    ],
+    [
+      "iter2_y_sq2_attn",
+      "Boot2_y_attn",
+      8
+    ],
+    [
+      "Boot2_y_attn",
+      "iter3_y_sq_attn",
+      8
+    ],
+    [
+      "Boot2_y_attn",
+      "iter3_ylam_attn",
+      8
+    ],
+    [
+      "iter3_y_sq_attn",
+      "iter3_sum_s_attn",
+      8
+    ],
+    [
+      "iter3_sum_s_attn",
+      "iter3_affine_s_attn",
+      1
+    ],
+    [
+      "iter3_affine_s_attn",
+      "iter3_invsqrt_attn",
+      1
+    ],
+    [
+      "iter3_invsqrt_attn",
+      "iter3_ylam_attn",
+      1
+    ],
+    [
+      "iter3_ylam_attn",
+      "iter3_S_attn",
+      8
+    ],
+    [
+      "iter3_S_attn",
+      "conj_S_attn",
+      8
+    ],
+    [
+      "conj_S_attn",
+      "S_mask_attn",
+      4
+    ],
+    [
+      "S_mask_attn",
+      "conj_back_S_attn",
+      64
+    ],
+    [
+      "conj_back_S_attn",
+      "SV_mul_attn",
+      128
+    ],
+    [
+      "Conj_V_attn",
+      "SV_mul_attn",
+      2
+    ],
+    [
+      "SV_mul_attn",
+      "Boot1_SV_attn",
+      2
+    ],
+    [
+      "Boot1_SV_attn",
+      "rotate_SV_attn",
+      2
+    ],
+    [
+      "rotate_SV_attn",
+      "x_SV_Wo_attn",
+      32
+    ],
+    [
+      "x_SV_Wo_attn",
+      "x_mask_attn",
+      8
+    ],
+    [
+      "x_mask_attn",
+      "add_out_attn",
+      8
+    ],
+    [
+      "X_div2_attn",
+      "add_out_attn",
+      8
+    ],
+    [
+      "add_out_attn",
+      "x_mask2_attn",
+      8
+    ],
+    [
+      "x_mask2_attn",
+      "sum_mu_attn",
+      8
+    ],
+    [
+      "x_mask2_attn",
+      "add_z_attn",
+      8
+    ],
+    [
+      "sum_mu_attn",
+      "mask_mu_attn",
+      1
+    ],
+    [
+      "mask_mu_attn",
+      "div_768_attn",
+      1
+    ],
+    [
+      "div_768_attn",
+      "add_z_attn",
+      1
+    ],
+    [
+      "add_z_attn",
+      "mul_z_sq_attn",
+      8
+    ],
+    [
+      "add_z_attn",
+      "mul_z_gamma_attn",
+      8
+    ],
+    [
+      "mul_z_sq_attn",
+      "sum_y_attn",
+      8
+    ],
+    [
+      "sum_y_attn",
+      "mul_var_attn",
+      1
+    ],
+    [
+      "mul_var_attn",
+      "Boot1_var_attn",
+      1
+    ],
+    [
+      "Boot1_var_attn",
+      "invsqrt_var_attn",
+      1
+    ],
+    [
+      "invsqrt_var_attn",
+      "mask_lam_attn",
+      1
+    ],
+    [
+      "mask_lam_attn",
+      "mul_X_out_attn",
+      1
+    ],
+    [
+      "mul_z_gamma_attn",
+      "mul_X_out_attn",
+      8
+    ],
+    [
+      "mul_X_out_attn",
+      "X_out_attn",
+      8
+    ]
+  ],
+  "reference_latency_ms": 53558.1718,
+  "reference_evaluation_wall_seconds": 0.00020240002777427435,
+  "independent_audit": {
+    "latency_decimal_ms": "53558.1718",
+    "n_b1": 9,
+    "n_b2": 8,
+    "n_bootstrap": 17,
+    "depth": 62,
+    "budget": 230,
+    "utilisation": 0.26956521739130435,
+    "l_in": {
+      "X_in_attn": 0,
+      "Boot1_X_attn": 0,
+      "ModSwitch_down8_attn": 14,
+      "Conj_back_X_attn": 14,
+      "V_Wv_attn": 6,
+      "Q_Wq_attn": 6,
+      "K_Wk_attn": 6,
+      "X_div2_attn": 14,
+      "Conj_V_attn": 4,
+      "QK_mul_attn": 4,
+      "Boot2_QK_attn": 0,
+      "qk_div2_attn": 13,
+      "qk_affine_attn": 12,
+      "exp_y_attn": 11,
+      "mask_y_attn": 6,
+      "iter1_y_sq_attn": 5,
+      "iter1_sum_s_attn": 4,
+      "iter1_affine_s_attn": 4,
+      "Boot1_s_iter1_attn": 3,
+      "iter1_invsqrt_attn": 14,
+      "iter1_ylam_attn": 5,
+      "iter1_y_sq2_attn": 4,
+      "iter2_y_sq_attn": 3,
+      "iter2_sum_s_attn": 2,
+      "iter2_affine_s_attn": 2,
+      "Boot1_s_iter2_attn": 1,
+      "iter2_invsqrt_attn": 14,
+      "iter2_ylam_attn": 3,
+      "iter2_y_sq2_attn": 2,
+      "Boot2_y_attn": 1,
+      "iter3_y_sq_attn": 13,
+      "iter3_sum_s_attn": 12,
+      "iter3_affine_s_attn": 12,
+      "iter3_invsqrt_attn": 11,
+      "iter3_ylam_attn": 6,
+      "iter3_S_attn": 5,
+      "conj_S_attn": 4,
+      "S_mask_attn": 4,
+      "conj_back_S_attn": 3,
+      "SV_mul_attn": 3,
+      "Boot1_SV_attn": 1,
+      "rotate_SV_attn": 14,
+      "x_SV_Wo_attn": 14,
+      "x_mask_attn": 12,
+      "add_out_attn": 11,
+      "x_mask2_attn": 11,
+      "sum_mu_attn": 10,
+      "mask_mu_attn": 10,
+      "div_768_attn": 9,
+      "add_z_attn": 8,
+      "mul_z_sq_attn": 8,
+      "mul_z_gamma_attn": 8,
+      "sum_y_attn": 7,
+      "mul_var_attn": 7,
+      "Boot1_var_attn": 6,
+      "invsqrt_var_attn": 14,
+      "mask_lam_attn": 9,
+      "mul_X_out_attn": 7,
+      "X_out_attn": 6
+    },
+    "l_out": {
+      "X_in_attn": 0,
+      "Boot1_X_attn": 14,
+      "ModSwitch_down8_attn": 6,
+      "Conj_back_X_attn": 14,
+      "V_Wv_attn": 4,
+      "Q_Wq_attn": 4,
+      "K_Wk_attn": 4,
+      "X_div2_attn": 13,
+      "Conj_V_attn": 4,
+      "QK_mul_attn": 0,
+      "Boot2_QK_attn": 13,
+      "qk_div2_attn": 12,
+      "qk_affine_attn": 11,
+      "exp_y_attn": 6,
+      "mask_y_attn": 5,
+      "iter1_y_sq_attn": 4,
+      "iter1_sum_s_attn": 4,
+      "iter1_affine_s_attn": 3,
+      "Boot1_s_iter1_attn": 14,
+      "iter1_invsqrt_attn": 6,
+      "iter1_ylam_attn": 4,
+      "iter1_y_sq2_attn": 3,
+      "iter2_y_sq_attn": 2,
+      "iter2_sum_s_attn": 2,
+      "iter2_affine_s_attn": 1,
+      "Boot1_s_iter2_attn": 14,
+      "iter2_invsqrt_attn": 9,
+      "iter2_ylam_attn": 2,
+      "iter2_y_sq2_attn": 1,
+      "Boot2_y_attn": 13,
+      "iter3_y_sq_attn": 12,
+      "iter3_sum_s_attn": 12,
+      "iter3_affine_s_attn": 11,
+      "iter3_invsqrt_attn": 6,
+      "iter3_ylam_attn": 5,
+      "iter3_S_attn": 4,
+      "conj_S_attn": 4,
+      "S_mask_attn": 3,
+      "conj_back_S_attn": 3,
+      "SV_mul_attn": 1,
+      "Boot1_SV_attn": 14,
+      "rotate_SV_attn": 14,
+      "x_SV_Wo_attn": 12,
+      "x_mask_attn": 11,
+      "add_out_attn": 11,
+      "x_mask2_attn": 10,
+      "sum_mu_attn": 10,
+      "mask_mu_attn": 9,
+      "div_768_attn": 8,
+      "add_z_attn": 8,
+      "mul_z_sq_attn": 7,
+      "mul_z_gamma_attn": 7,
+      "sum_y_attn": 7,
+      "mul_var_attn": 6,
+      "Boot1_var_attn": 14,
+      "invsqrt_var_attn": 9,
+      "mask_lam_attn": 8,
+      "mul_X_out_attn": 6,
+      "X_out_attn": 6
+    },
+    "edge_levels": [
+      {
+        "from": "X_in_attn",
+        "to": "Boot1_X_attn",
+        "ciphertexts": 4,
+        "level": 0
+      },
+      {
+        "from": "Boot1_X_attn",
+        "to": "ModSwitch_down8_attn",
+        "ciphertexts": 4,
+        "level": 14
+      },
+      {
+        "from": "Boot1_X_attn",
+        "to": "Conj_back_X_attn",
+        "ciphertexts": 4,
+        "level": 14
+      },
+      {
+        "from": "ModSwitch_down8_attn",
+        "to": "V_Wv_attn",
+        "ciphertexts": 4,
+        "level": 6
+      },
+      {
+        "from": "ModSwitch_down8_attn",
+        "to": "Q_Wq_attn",
+        "ciphertexts": 4,
+        "level": 6
+      },
+      {
+        "from": "ModSwitch_down8_attn",
+        "to": "K_Wk_attn",
+        "ciphertexts": 4,
+        "level": 6
+      },
+      {
+        "from": "Conj_back_X_attn",
+        "to": "X_div2_attn",
+        "ciphertexts": 8,
+        "level": 14
+      },
+      {
+        "from": "V_Wv_attn",
+        "to": "Conj_V_attn",
+        "ciphertexts": 4,
+        "level": 4
+      },
+      {
+        "from": "Q_Wq_attn",
+        "to": "QK_mul_attn",
+        "ciphertexts": 4,
+        "level": 4
+      },
+      {
+        "from": "K_Wk_attn",
+        "to": "QK_mul_attn",
+        "ciphertexts": 4,
+        "level": 4
+      },
+      {
+        "from": "QK_mul_attn",
+        "to": "Boot2_QK_attn",
+        "ciphertexts": 8,
+        "level": 0
+      },
+      {
+        "from": "Boot2_QK_attn",
+        "to": "qk_div2_attn",
+        "ciphertexts": 8,
+        "level": 13
+      },
+      {
+        "from": "qk_div2_attn",
+        "to": "qk_affine_attn",
+        "ciphertexts": 8,
+        "level": 12
+      },
+      {
+        "from": "qk_affine_attn",
+        "to": "exp_y_attn",
+        "ciphertexts": 8,
+        "level": 11
+      },
+      {
+        "from": "exp_y_attn",
+        "to": "mask_y_attn",
+        "ciphertexts": 8,
+        "level": 6
+      },
+      {
+        "from": "mask_y_attn",
+        "to": "iter1_y_sq_attn",
+        "ciphertexts": 8,
+        "level": 5
+      },
+      {
+        "from": "mask_y_attn",
+        "to": "iter1_ylam_attn",
+        "ciphertexts": 8,
+        "level": 5
+      },
+      {
+        "from": "iter1_y_sq_attn",
+        "to": "iter1_sum_s_attn",
+        "ciphertexts": 8,
+        "level": 4
+      },
+      {
+        "from": "iter1_sum_s_attn",
+        "to": "iter1_affine_s_attn",
+        "ciphertexts": 1,
+        "level": 4
+      },
+      {
+        "from": "iter1_affine_s_attn",
+        "to": "Boot1_s_iter1_attn",
+        "ciphertexts": 1,
+        "level": 3
+      },
+      {
+        "from": "Boot1_s_iter1_attn",
+        "to": "iter1_invsqrt_attn",
+        "ciphertexts": 1,
+        "level": 14
+      },
+      {
+        "from": "iter1_invsqrt_attn",
+        "to": "iter1_ylam_attn",
+        "ciphertexts": 1,
+        "level": 6
+      },
+      {
+        "from": "iter1_ylam_attn",
+        "to": "iter1_y_sq2_attn",
+        "ciphertexts": 8,
+        "level": 4
+      },
+      {
+        "from": "iter1_y_sq2_attn",
+        "to": "iter2_y_sq_attn",
+        "ciphertexts": 8,
+        "level": 3
+      },
+      {
+        "from": "iter1_y_sq2_attn",
+        "to": "iter2_ylam_attn",
+        "ciphertexts": 8,
+        "level": 3
+      },
+      {
+        "from": "iter2_y_sq_attn",
+        "to": "iter2_sum_s_attn",
+        "ciphertexts": 8,
+        "level": 2
+      },
+      {
+        "from": "iter2_sum_s_attn",
+        "to": "iter2_affine_s_attn",
+        "ciphertexts": 1,
+        "level": 2
+      },
+      {
+        "from": "iter2_affine_s_attn",
+        "to": "Boot1_s_iter2_attn",
+        "ciphertexts": 1,
+        "level": 1
+      },
+      {
+        "from": "Boot1_s_iter2_attn",
+        "to": "iter2_invsqrt_attn",
+        "ciphertexts": 1,
+        "level": 14
+      },
+      {
+        "from": "iter2_invsqrt_attn",
+        "to": "iter2_ylam_attn",
+        "ciphertexts": 1,
+        "level": 9
+      },
+      {
+        "from": "iter2_ylam_attn",
+        "to": "iter2_y_sq2_attn",
+        "ciphertexts": 8,
+        "level": 2
+      },
+      {
+        "from": "iter2_y_sq2_attn",
+        "to": "Boot2_y_attn",
+        "ciphertexts": 8,
+        "level": 1
+      },
+      {
+        "from": "Boot2_y_attn",
+        "to": "iter3_y_sq_attn",
+        "ciphertexts": 8,
+        "level": 13
+      },
+      {
+        "from": "Boot2_y_attn",
+        "to": "iter3_ylam_attn",
+        "ciphertexts": 8,
+        "level": 13
+      },
+      {
+        "from": "iter3_y_sq_attn",
+        "to": "iter3_sum_s_attn",
+        "ciphertexts": 8,
+        "level": 12
+      },
+      {
+        "from": "iter3_sum_s_attn",
+        "to": "iter3_affine_s_attn",
+        "ciphertexts": 1,
+        "level": 12
+      },
+      {
+        "from": "iter3_affine_s_attn",
+        "to": "iter3_invsqrt_attn",
+        "ciphertexts": 1,
+        "level": 11
+      },
+      {
+        "from": "iter3_invsqrt_attn",
+        "to": "iter3_ylam_attn",
+        "ciphertexts": 1,
+        "level": 6
+      },
+      {
+        "from": "iter3_ylam_attn",
+        "to": "iter3_S_attn",
+        "ciphertexts": 8,
+        "level": 5
+      },
+      {
+        "from": "iter3_S_attn",
+        "to": "conj_S_attn",
+        "ciphertexts": 8,
+        "level": 4
+      },
+      {
+        "from": "conj_S_attn",
+        "to": "S_mask_attn",
+        "ciphertexts": 4,
+        "level": 4
+      },
+      {
+        "from": "S_mask_attn",
+        "to": "conj_back_S_attn",
+        "ciphertexts": 64,
+        "level": 3
+      },
+      {
+        "from": "conj_back_S_attn",
+        "to": "SV_mul_attn",
+        "ciphertexts": 128,
+        "level": 3
+      },
+      {
+        "from": "Conj_V_attn",
+        "to": "SV_mul_attn",
+        "ciphertexts": 2,
+        "level": 4
+      },
+      {
+        "from": "SV_mul_attn",
+        "to": "Boot1_SV_attn",
+        "ciphertexts": 2,
+        "level": 1
+      },
+      {
+        "from": "Boot1_SV_attn",
+        "to": "rotate_SV_attn",
+        "ciphertexts": 2,
+        "level": 14
+      },
+      {
+        "from": "rotate_SV_attn",
+        "to": "x_SV_Wo_attn",
+        "ciphertexts": 32,
+        "level": 14
+      },
+      {
+        "from": "x_SV_Wo_attn",
+        "to": "x_mask_attn",
+        "ciphertexts": 8,
+        "level": 12
+      },
+      {
+        "from": "x_mask_attn",
+        "to": "add_out_attn",
+        "ciphertexts": 8,
+        "level": 11
+      },
+      {
+        "from": "X_div2_attn",
+        "to": "add_out_attn",
+        "ciphertexts": 8,
+        "level": 13
+      },
+      {
+        "from": "add_out_attn",
+        "to": "x_mask2_attn",
+        "ciphertexts": 8,
+        "level": 11
+      },
+      {
+        "from": "x_mask2_attn",
+        "to": "sum_mu_attn",
+        "ciphertexts": 8,
+        "level": 10
+      },
+      {
+        "from": "x_mask2_attn",
+        "to": "add_z_attn",
+        "ciphertexts": 8,
+        "level": 10
+      },
+      {
+        "from": "sum_mu_attn",
+        "to": "mask_mu_attn",
+        "ciphertexts": 1,
+        "level": 10
+      },
+      {
+        "from": "mask_mu_attn",
+        "to": "div_768_attn",
+        "ciphertexts": 1,
+        "level": 9
+      },
+      {
+        "from": "div_768_attn",
+        "to": "add_z_attn",
+        "ciphertexts": 1,
+        "level": 8
+      },
+      {
+        "from": "add_z_attn",
+        "to": "mul_z_sq_attn",
+        "ciphertexts": 8,
+        "level": 8
+      },
+      {
+        "from": "add_z_attn",
+        "to": "mul_z_gamma_attn",
+        "ciphertexts": 8,
+        "level": 8
+      },
+      {
+        "from": "mul_z_sq_attn",
+        "to": "sum_y_attn",
+        "ciphertexts": 8,
+        "level": 7
+      },
+      {
+        "from": "sum_y_attn",
+        "to": "mul_var_attn",
+        "ciphertexts": 1,
+        "level": 7
+      },
+      {
+        "from": "mul_var_attn",
+        "to": "Boot1_var_attn",
+        "ciphertexts": 1,
+        "level": 6
+      },
+      {
+        "from": "Boot1_var_attn",
+        "to": "invsqrt_var_attn",
+        "ciphertexts": 1,
+        "level": 14
+      },
+      {
+        "from": "invsqrt_var_attn",
+        "to": "mask_lam_attn",
+        "ciphertexts": 1,
+        "level": 9
+      },
+      {
+        "from": "mask_lam_attn",
+        "to": "mul_X_out_attn",
+        "ciphertexts": 1,
+        "level": 8
+      },
+      {
+        "from": "mul_z_gamma_attn",
+        "to": "mul_X_out_attn",
+        "ciphertexts": 8,
+        "level": 7
+      },
+      {
+        "from": "mul_X_out_attn",
+        "to": "X_out_attn",
+        "ciphertexts": 8,
+        "level": 6
+      }
+    ],
+    "node_latency_decimal_ms": {
+      "X_in_attn": "0",
+      "Boot1_X_attn": "4160.60",
+      "ModSwitch_down8_attn": "0",
+      "Conj_back_X_attn": "10.42",
+      "V_Wv_attn": "3994.91",
+      "Q_Wq_attn": "3994.91",
+      "K_Wk_attn": "3994.91",
+      "X_div2_attn": "1.3474",
+      "Conj_V_attn": "2.31",
+      "QK_mul_attn": "1958.82",
+      "Boot2_QK_attn": "5172.52",
+      "qk_div2_attn": "1.2811",
+      "qk_affine_attn": "1.2148",
+      "exp_y_attn": "1113.32",
+      "mask_y_attn": "0.8170",
+      "iter1_y_sq_attn": "0.7507",
+      "iter1_sum_s_attn": "4.06",
+      "iter1_affine_s_attn": "0.6844",
+      "Boot1_s_iter1_attn": "1040.15",
+      "iter1_invsqrt_attn": "8691.15",
+      "iter1_ylam_attn": "0.7507",
+      "iter1_y_sq2_attn": "0.6844",
+      "iter2_y_sq_attn": "0.6181",
+      "iter2_sum_s_attn": "4.06",
+      "iter2_affine_s_attn": "0.5518",
+      "Boot1_s_iter2_attn": "1040.15",
+      "iter2_invsqrt_attn": "1629.18",
+      "iter2_ylam_attn": "0.6181",
+      "iter2_y_sq2_attn": "0.5518",
+      "Boot2_y_attn": "5172.52",
+      "iter3_y_sq_attn": "1.2811",
+      "iter3_sum_s_attn": "4.06",
+      "iter3_affine_s_attn": "1.2148",
+      "iter3_invsqrt_attn": "1192.41",
+      "iter3_ylam_attn": "0.8170",
+      "iter3_S_attn": "0.7507",
+      "conj_S_attn": "2.31",
+      "S_mask_attn": "0.6844",
+      "conj_back_S_attn": "3.82",
+      "SV_mul_attn": "1862.85",
+      "Boot1_SV_attn": "2080.30",
+      "rotate_SV_attn": "0",
+      "x_SV_Wo_attn": "3727.08",
+      "x_mask_attn": "1.2148",
+      "add_out_attn": "0.0753",
+      "x_mask2_attn": "1.1485",
+      "sum_mu_attn": "4.06",
+      "mask_mu_attn": "1.0822",
+      "div_768_attn": "1.0159",
+      "add_z_attn": "0.0651",
+      "mul_z_sq_attn": "0.9496",
+      "mul_z_gamma_attn": "0.9496",
+      "sum_y_attn": "4.06",
+      "mul_var_attn": "0.8833",
+      "Boot1_var_attn": "1040.15",
+      "invsqrt_var_attn": "1629.18",
+      "mask_lam_attn": "1.0159",
+      "mul_X_out_attn": "0.8833",
+      "X_out_attn": "0"
+    },
+    "placement_chains": [
+      {
+        "from": "X_in_attn",
+        "to": "Conj_back_X_attn",
+        "inserted_nodes": [
+          "Boot1_X_attn"
+        ]
+      },
+      {
+        "from": "X_in_attn",
+        "to": "V_Wv_attn",
+        "inserted_nodes": [
+          "Boot1_X_attn",
+          "ModSwitch_down8_attn"
+        ]
+      },
+      {
+        "from": "X_in_attn",
+        "to": "Q_Wq_attn",
+        "inserted_nodes": [
+          "Boot1_X_attn",
+          "ModSwitch_down8_attn"
+        ]
+      },
+      {
+        "from": "X_in_attn",
+        "to": "K_Wk_attn",
+        "inserted_nodes": [
+          "Boot1_X_attn",
+          "ModSwitch_down8_attn"
+        ]
+      },
+      {
+        "from": "QK_mul_attn",
+        "to": "qk_div2_attn",
+        "inserted_nodes": [
+          "Boot2_QK_attn"
+        ]
+      },
+      {
+        "from": "iter1_affine_s_attn",
+        "to": "iter1_invsqrt_attn",
+        "inserted_nodes": [
+          "Boot1_s_iter1_attn"
+        ]
+      },
+      {
+        "from": "iter2_affine_s_attn",
+        "to": "iter2_invsqrt_attn",
+        "inserted_nodes": [
+          "Boot1_s_iter2_attn"
+        ]
+      },
+      {
+        "from": "iter2_y_sq2_attn",
+        "to": "iter3_y_sq_attn",
+        "inserted_nodes": [
+          "Boot2_y_attn"
+        ]
+      },
+      {
+        "from": "iter2_y_sq2_attn",
+        "to": "iter3_ylam_attn",
+        "inserted_nodes": [
+          "Boot2_y_attn"
+        ]
+      },
+      {
+        "from": "SV_mul_attn",
+        "to": "rotate_SV_attn",
+        "inserted_nodes": [
+          "Boot1_SV_attn"
+        ]
+      },
+      {
+        "from": "mul_var_attn",
+        "to": "invsqrt_var_attn",
+        "inserted_nodes": [
+          "Boot1_var_attn"
+        ]
+      }
+    ],
+    "structural_and_level_checks_passed": true
+  },
+  "calibration": {
+    "reference_decimal_absolute_error_ms": 0.0,
+    "pdf_latency_anchor_ms": "53558.17",
+    "pdf_latency_check": "matched",
+    "reference_agrees_with_independent_check": true,
+    "pdf_counts_depth_budget_match": true
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "run_id": "S1-BL-001",
+  "created_at_utc": "2026-09-27T04:47:35.321104+00:00",
+  "status": "passed",
+  "config": {
+    "schema_version": 1,
+    "experiment_id": "S1-BL-001",
+    "modules": [
+      "mlp",
+      "attention"
+    ],
+    "l_init": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14
+    ],
+    "l_max": 14,
+    "reference_absolute_tolerance_ms": 1e-07,
+    "pdf_display_decimal_places": 2,
+    "method": "teacher_fixed_baseline",
+    "placement_search_performed": false
+  },
+  "source_version": {
+    "package_version": "0.1.0",
+    "sha256": "928e03216e89e54ef03d6e8d34b4f4f89244b0c4169a1fb2492f97175b3c14f8",
+    "files": {
+      "run_baselines.py": "16b37cb1cd0faea12a983383e3c93babe65cbd15901e1bbee42f8366be246c96",
+      "requirements.txt": "64aa2abc895e69ac2643b249bda742c9a2641e0985efd5721840def9b5c954d4",
+      "configs/s1-baselines.json": "7f86e827a451fe3afa1ce24c6d8d6fb4f9e77322f6b48152fc6ee2df2b7d2425",
+      "vendor/dag_builder.py": "47a63fd1698da64731f8b9e77067f3ef7e0889534c4e7659bb7fc113ce97acee",
+      "src/bootplacement/__init__.py": "bc807cf71718f34c5b4b5d2e2891e27a39348612db3244439a71885401991c6e",
+      "src/bootplacement/audit.py": "982ed6bcfebd8ff09c0622a55afde000cfe1bc791db8930e7099e546aaf9a166",
+      "src/bootplacement/cli.py": "0088f4ed041d2b1960427a48462a2ce7f09888bc5492a1a4e59294c92fbc0428",
+      "src/bootplacement/reference.py": "df3dd35331216e2ef1f884d4a26ff76f92f36ebdaca6f52da98bd10e389d557b",
+      "tests/test_baseline_audit.py": "aecfdd5eef52056334b88b80ba994682904600ba72d8886e7bd41124aa7d6aec"
+    }
+  },
+  "git_head_at_run": null,
+  "reference_sha256": "47a63fd1698da64731f8b9e77067f3ef7e0889534c4e7659bb7fc113ce97acee",
+  "python": "3.13.9",
+  "platform": {
+    "system": "Windows",
+    "machine": "AMD64"
+  },
+  "dependencies": {
+    "contourpy": "1.4.0",
+    "cycler": "0.12.1",
+    "fonttools": "4.66.0",
+    "kiwisolver": "1.5.1",
+    "matplotlib": "3.11.2",
+    "numpy": "2.5.3",
+    "packaging": "26.3",
+    "pillow": "12.3.0",
+    "pip": "25.2",
+    "psutil": "7.2.2",
+    "pyparsing": "3.3.3",
+    "python-dateutil": "2.9.0.post0",
+    "six": "1.17.0"
+  },
+  "resources": {
+    "reference_import_wall_seconds": 2.6442953999503516,
+    "import_and_30_case_pipeline_wall_seconds": 2.8012144999811426,
+    "process_cpu_seconds": 0.703125,
+    "reference_evaluation_wall_seconds_sum": 0.004710600071121007,
+    "sampled_max_rss_bytes": 69115904,
+    "windows_peak_working_set_bytes": 70893568,
+    "measurement_scope": "Current process only; pipeline includes reference import, audits, scoring and case/summary writes; excludes interpreter startup and final report/manifest writes. RSS sampled after import and each case; Windows peak is process-lifetime high water mark when available.",
+    "gpu_used": false,
+    "optimisation_search_performed": false,
+    "actual_encrypted_inference_performed": false
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "experiment_id": "S1-BL-001",
+  "modules": ["mlp", "attention"],
+  "l_init": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14],
+  "l_max": 14,
+  "reference_absolute_tolerance_ms": 0.0000001,
+  "pdf_display_decimal_places": 2,
+  "method": "teacher_fixed_baseline",
+  "placement_search_performed": false
+}

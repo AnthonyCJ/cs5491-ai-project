@@ -1,0 +1,248 @@
+{
+  "status": "passed",
+  "cases_passed": 30,
+  "cases": [
+    {
+      "case_id": "mlp-L00",
+      "reference_decimal_absolute_error_ms": 0.0,
+      "pdf_latency_anchor_ms": "28129.69",
+      "pdf_latency_check": "matched",
+      "reference_agrees_with_independent_check": true,
+      "pdf_counts_depth_budget_match": true
+    },
+    {
+      "case_id": "mlp-L01",
+      "reference_decimal_absolute_error_ms": 0.0,
+      "pdf_latency_anchor_ms": null,
+      "pdf_latency_check": "within published range; no individual PDF row",
+      "reference_agrees_with_independent_check": true,
+      "pdf_counts_depth_budget_match": true
+    },
+    {
+      "case_id": "mlp-L02",
+      "reference_decimal_absolute_error_ms": 0.0,
+      "pdf_latency_anchor_ms": null,
+      "pdf_latency_check": "within published range; no individual PDF row",
+      "reference_agrees_with_independent_check": true,
+      "pdf_counts_depth_budget_match": true
+    },
+    {
+      "case_id": "mlp-L03",
+      "reference_decimal_absolute_error_ms": 0.0,
+      "pdf_latency_anchor_ms": null,
+      "pdf_latency_check": "within published range; no individual PDF row",
+      "reference_agrees_with_independent_check": true,
+      "pdf_counts_depth_budget_match": true
+    },
+    {
+      "case_id": "mlp-L04",
+      "reference_decimal_absolute_error_ms": 2e-12,
+      "pdf_latency_anchor_ms": null,
+      "pdf_latency_check": "within published range; no individual PDF row",
+      "reference_agrees_with_independent_check": true,
+      "pdf_counts_depth_budget_match": true
+    },
+    {
+      "case_id": "mlp-L05",
+      "reference_decimal_absolute_error_ms": 2e-12,
+      "pdf_latency_anchor_ms": null,
+      "pdf_latency_check": "within published range; no individual PDF row",
+      "reference_agrees_with_independent_check": true,
+      "pdf_counts_depth_budget_match": true
+    },
+    {
+      "case_id": "mlp-L06",
+      "reference_decimal_absolute_error_ms": 0.0,
+      "pdf_latency_anchor_ms": "28130.65",
+      "pdf_latency_check": "matched",
+      "reference_agrees_with_independent_check": true,
+      "pdf_counts_depth_budget_match": true
+    },
+    {
+      "case_id": "mlp-L07",
+      "reference_decimal_absolute_error_ms": 0.0,
+      "pdf_latency_anchor_ms": null,
+      "pdf_latency_check": "within published range; no individual PDF row",
+      "reference_agrees_with_independent_check": true,
+      "pdf_counts_depth_budget_match": true
+    },
+    {
+      "case_id": "mlp-L08",
+      "reference_decimal_absolute_error_ms": 0.0,
+      "pdf_latency_anchor_ms": null,
+      "pdf_latency_check": "within published range; no individual PDF row",
+      "reference_agrees_with_independent_check": true,
+      "pdf_counts_depth_budget_match": true
+    },
+    {
+      "case_id": "mlp-L09",
+      "reference_decimal_absolute_error_ms": 0.0,
+      "pdf_latency_anchor_ms": null,
+      "pdf_latency_check": "within published range; no individual PDF row",
+      "reference_agrees_with_independent_check": true,
+      "pdf_counts_depth_budget_match": true
+    },
+    {
+      "case_id": "mlp-L10",
+      "reference_decimal_absolute_error_ms": 0.0,
+      "pdf_latency_anchor_ms": null,
+      "pdf_latency_check": "within published range; no individual PDF row",
+      "reference_agrees_with_independent_check": true,
+      "pdf_counts_depth_budget_match": true
+    },
+    {
+      "case_id": "mlp-L11",
+      "reference_decimal_absolute_error_ms": 0.0,
+      "pdf_latency_anchor_ms": null,
+      "pdf_latency_check": "within published range; no individual PDF row",
+      "reference_agrees_with_independent_check": true,
+      "pdf_counts_depth_budget_match": true
+    },
+    {
+      "case_id": "mlp-L12",
+      "reference_decimal_absolute_error_ms": 0.0,
+      "pdf_latency_anchor_ms": null,
+      "pdf_latency_check": "within published range; no individual PDF row",
+      "reference_agrees_with_independent_check": true,
+      "pdf_counts_depth_budget_match": true
+    },
+    {
+      "case_id": "mlp-L13",
+      "reference_decimal_absolute_error_ms": 0.0,
+      "pdf_latency_anchor_ms": null,
+      "pdf_latency_check": "within published range; no individual PDF row",
+      "reference_agrees_with_independent_check": true,
+      "pdf_counts_depth_budget_match": true
+    },
+    {
+      "case_id": "mlp-L14",
+      "reference_decimal_absolute_error_ms": 0.0,
+      "pdf_latency_anchor_ms": "28131.93",
+      "pdf_latency_check": "matched",
+      "reference_agrees_with_independent_check": true,
+      "pdf_counts_depth_budget_match": true
+    },
+    {
+      "case_id": "attention-L00",
+      "reference_decimal_absolute_error_ms": 0.0,
+      "pdf_latency_anchor_ms": "53558.17",
+      "pdf_latency_check": "matched",
+      "reference_agrees_with_independent_check": true,
+      "pdf_counts_depth_budget_match": true
+    },
+    {
+      "case_id": "attention-L01",
+      "reference_decimal_absolute_error_ms": 0.0,
+      "pdf_latency_anchor_ms": "53558.17",
+      "pdf_latency_check": "matched",
+      "reference_agrees_with_independent_check": true,
+      "pdf_counts_depth_budget_match": true
+    },
+    {
+      "case_id": "attention-L02",
+      "reference_decimal_absolute_error_ms": 0.0,
+      "pdf_latency_anchor_ms": "53558.17",
+      "pdf_latency_check": "matched",
+      "reference_agrees_with_independent_check": true,
+      "pdf_counts_depth_budget_match": true
+    },
+    {
+      "case_id": "attention-L03",
+      "reference_decimal_absolute_error_ms": 0.0,
+      "pdf_latency_anchor_ms": "53558.17",
+      "pdf_latency_check": "matched",
+      "reference_agrees_with_independent_check": true,
+      "pdf_counts_depth_budget_match": true
+    },
+    {
+      "case_id": "attention-L04",
+      "reference_decimal_absolute_error_ms": 0.0,
+      "pdf_latency_anchor_ms": "53558.17",
+      "pdf_latency_check": "matched",
+      "reference_agrees_with_independent_check": true,
+      "pdf_counts_depth_budget_match": true
+    },
+    {
+      "case_id": "attention-L05",
+      "reference_decimal_absolute_error_ms": 0.0,
+      "pdf_latency_anchor_ms": "53558.17",
+      "pdf_latency_check": "matched",
+      "reference_agrees_with_independent_check": true,
+      "pdf_counts_depth_budget_match": true
+    },
+    {
+      "case_id": "attention-L06",
+      "reference_decimal_absolute_error_ms": 0.0,
+      "pdf_latency_anchor_ms": "53558.17",
+      "pdf_latency_check": "matched",
+      "reference_agrees_with_independent_check": true,
+      "pdf_counts_depth_budget_match": true
+    },
+    {
+      "case_id": "attention-L07",
+      "reference_decimal_absolute_error_ms": 0.0,
+      "pdf_latency_anchor_ms": "53558.17",
+      "pdf_latency_check": "matched",
+      "reference_agrees_with_independent_check": true,
+      "pdf_counts_depth_budget_match": true
+    },
+    {
+      "case_id": "attention-L08",
+      "reference_decimal_absolute_error_ms": 0.0,
+      "pdf_latency_anchor_ms": "53558.17",
+      "pdf_latency_check": "matched",
+      "reference_agrees_with_independent_check": true,
+      "pdf_counts_depth_budget_match": true
+    },
+    {
+      "case_id": "attention-L09",
+      "reference_decimal_absolute_error_ms": 0.0,
+      "pdf_latency_anchor_ms": "53558.17",
+      "pdf_latency_check": "matched",
+      "reference_agrees_with_independent_check": true,
+      "pdf_counts_depth_budget_match": true
+    },
+    {
+      "case_id": "attention-L10",
+      "reference_decimal_absolute_error_ms": 0.0,
+      "pdf_latency_anchor_ms": "53558.17",
+      "pdf_latency_check": "matched",
+      "reference_agrees_with_independent_check": true,
+      "pdf_counts_depth_budget_match": true
+    },
+    {
+      "case_id": "attention-L11",
+      "reference_decimal_absolute_error_ms": 0.0,
+      "pdf_latency_anchor_ms": "53558.17",
+      "pdf_latency_check": "matched",
+      "reference_agrees_with_independent_check": true,
+      "pdf_counts_depth_budget_match": true
+    },
+    {
+      "case_id": "attention-L12",
+      "reference_decimal_absolute_error_ms": 0.0,
+      "pdf_latency_anchor_ms": "53558.17",
+      "pdf_latency_check": "matched",
+      "reference_agrees_with_independent_check": true,
+      "pdf_counts_depth_budget_match": true
+    },
+    {
+      "case_id": "attention-L13",
+      "reference_decimal_absolute_error_ms": 0.0,
+      "pdf_latency_anchor_ms": "53558.17",
+      "pdf_latency_check": "matched",
+      "reference_agrees_with_independent_check": true,
+      "pdf_counts_depth_budget_match": true
+    },
+    {
+      "case_id": "attention-L14",
+      "reference_decimal_absolute_error_ms": 0.0,
+      "pdf_latency_anchor_ms": "53558.17",
+      "pdf_latency_check": "matched",
+      "reference_agrees_with_independent_check": true,
+      "pdf_counts_depth_budget_match": true
+    }
+  ],
+  "mlp_increment_ms": "0.16",
+  "attention_constant_over_input_levels": true
+}
