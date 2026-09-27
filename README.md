@@ -4,6 +4,14 @@ CS5491 Artificial Intelligence course project: minimise the estimated latency of
 an encrypted MLP block and an attention block by choosing legal bootstrapping
 placements. Each block has 15 input levels (`0..14`) with `L_max = 14`.
 
+The target is a complete course-project delivery: an original optimisation
+method, reproduced instructor baselines, real experiments across all 30 cases,
+reproducible code, and the required Proposal, Milestone and Final reports.
+Final acceptance requires correct placements and scoring, complete evidence,
+independent reproduction, and consistent results and documentation. Staged
+prototypes support that target; they do not reduce the final requirements.
+Production deployment and publication-level research are outside this scope.
+
 **Current implementation: S1, teacher-baseline calibration.** All 30 fixed
 teacher baselines have been executed and checked. An original optimisation
 method and claims of improvement are not part of this version.
@@ -81,4 +89,4 @@ is asserted for third-party material. Public release and course submission have
 not occurred. This repository contains no personal workspace or identity files.
 
 Later work will build and evaluate an original optimiser, starting with MLP.
-The optional connected Attention + MLP problem is outside the initial scope.
+The optional connected Attention + MLP problem is outside the agreed course-project scope.
