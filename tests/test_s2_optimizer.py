@@ -101,6 +101,24 @@ class S2OptimizerTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "Bound exceeds"):
             self.validate(bad)
 
+    def test_unknown_status_cannot_be_presented_as_a_solution(self):
+        bad = copy.deepcopy(self.solution)
+        bad["status"] = "UNKNOWN"
+        with self.assertRaisesRegex(ValueError, "non-feasible status"):
+            self.validate(bad)
+
+    def test_feasible_status_cannot_be_labelled_optimal(self):
+        bad = copy.deepcopy(self.solution)
+        bad["status"] = "FEASIBLE"
+        with self.assertRaisesRegex(ValueError, "Optimality flag"):
+            self.validate(bad)
+
+    def test_reported_gap_is_checked(self):
+        bad = copy.deepcopy(self.solution)
+        bad["relative_gap"] = 0.5
+        with self.assertRaisesRegex(ValueError, "gap disagrees"):
+            self.validate(bad)
+
     def test_shared_activation_tampering_is_rejected(self):
         bad = copy.deepcopy(self.solution)
         bad["shared_refreshes"] = []

@@ -10,6 +10,9 @@ from .s2_placement import reconstruct
 def validate_solution(original_nodes, original_edges, solution, reference):
     """Cross-check a feasible assignment without trusting its reported objective."""
     require(solution["has_solution"], "No solution to validate")
+    require(solution["status"] in ("FEASIBLE", "OPTIMAL"), "Solution has a non-feasible status")
+    require(solution["optimality_proven_for_formulation"] == (solution["status"] == "OPTIMAL"),
+            "Optimality flag disagrees with solver status")
     level = solution["l_init"]
     require(solution["l_max"] == 14, "Wrong maximum level")
     nodes, edges = reconstruct(original_nodes, original_edges, solution["edge_decisions"],
@@ -37,6 +40,9 @@ def validate_solution(original_nodes, original_edges, solution, reference):
     claimed_shared = {(d["after"], d["type"]) for d in solution["shared_refreshes"]}
     require(actual_shared == claimed_shared, "Shared activation disagrees")
     require(solution["best_bound_scaled"] <= solution["objective_scaled"] + 1e-5, "Bound exceeds objective")
+    gap = max(0.0, (solution["objective_scaled"] - solution["best_bound_scaled"]) /
+              max(1, abs(solution["objective_scaled"])))
+    require(abs(gap - solution["relative_gap"]) < 1e-12, "Reported gap disagrees with bound")
     if solution["optimality_proven_for_formulation"]:
         require(solution["status"] == "OPTIMAL", "Optimality claim has wrong status")
         require(abs(solution["best_bound_scaled"] - solution["objective_scaled"]) < 1e-5,

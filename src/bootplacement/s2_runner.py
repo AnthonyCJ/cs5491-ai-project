@@ -32,7 +32,7 @@ def read_json(path):
 
 def write_json(path, value):
     """Write a stable, readable JSON record with explicit Unicode handling."""
-    Path(path).write_text(json.dumps(value, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    Path(path).write_text(json.dumps(value, indent=2, ensure_ascii=False) + "\n", encoding="utf-8", newline="\n")
 
 
 def digest(path):
@@ -53,7 +53,8 @@ def verify_baseline_files():
 def source_version(config_path):
     """Record exact executable, test and configuration bytes for this S2 run."""
     names = set(read_json(BASELINES / "run.json")["source_version"]["files"])
-    names.update(p.relative_to(ROOT).as_posix() for p in (ROOT / "src/bootplacement").glob("s2_*.py"))
+    names.update(p.relative_to(ROOT).as_posix() for p in (ROOT / "src/bootplacement").glob("s2_*.py")
+                 if p.name != "s2_figures.py")
     names.update(p.relative_to(ROOT).as_posix() for p in (ROOT / "tests").glob("test_*.py"))
     names.update({"run_optimizer.py", "requirements-s2.txt", config_path.relative_to(ROOT).as_posix()})
     hashes = {name: digest(ROOT / name) for name in sorted(names)}
@@ -169,12 +170,16 @@ def run(config_path, output):
         require(module in ("mlp", "attention") and type(level) is int and 0 <= level <= 14, "Invalid instance")
     baseline_source = verify_baseline_files()
     reference = load_reference()
+    locked = {line.split("==")[0]: line.split("==")[1] for line in
+              (ROOT / "requirements-s2.txt").read_text(encoding="utf-8").splitlines() if "==" in line}
+    installed = {name: importlib.metadata.version(name) for name in locked}
+    require(installed == locked, "Installed dependencies differ from requirements-s2.txt")
     metadata = {"schema_version": 1, "run_id": output.name, "method": METHOD, "status": "running",
                 "created_at_utc": datetime.now(timezone.utc).isoformat(), "config": config,
                 "config_path": config_path.relative_to(ROOT).as_posix(), "source_version": source_version(config_path),
                 "git": git_state(), "baseline_run_id": "S1-BL-001", "baseline_source_sha256": baseline_source,
                 "python": platform.python_version(), "platform": {"system": platform.system(), "machine": platform.machine()},
-                "dependencies": {line.split("==")[0]: line.split("==")[1] for line in (ROOT / "requirements-s2.txt").read_text(encoding="utf-8").splitlines() if "==" in line},
+                "dependencies": installed,
                 "actual_ortools_version": importlib.metadata.version("ortools"),
                 "gpu_used": False, "actual_encrypted_inference_performed": False,
                 "cases_completed": 0, "cases_expected": len(instances)}
@@ -225,7 +230,7 @@ def run(config_path, output):
             writer = csv.DictWriter(stream, fieldnames=list(rows[0]))
             writer.writeheader()
             writer.writerows(rows)
-        (output / "README.md").write_text(report(metadata, rows), encoding="utf-8")
+        (output / "README.md").write_text(report(metadata, rows), encoding="utf-8", newline="\n")
         write_json(output / "artifacts.sha256.json", {p.relative_to(output).as_posix(): digest(p) for p in sorted(output.rglob("*")) if p.is_file()})
     except Exception as exc:
         metadata.update({"status": "failed", "error": str(exc), "cases_completed": len(rows)})
@@ -243,6 +248,8 @@ def verify(output, check_source=True):
     for name, expected in manifest.items():
         require(digest(output / name) == expected, f"Result hash mismatch: {name}")
     record = read_json(output / "run.json")
+    require(hashlib.sha256(json.dumps(record["source_version"]["files"], sort_keys=True).encode()).hexdigest()
+            == record["source_version"]["sha256"], "Source manifest fingerprint mismatch")
     if check_source:
         for name, expected in record["source_version"]["files"].items():
             require(digest(ROOT / name) == expected, f"Run source version differs: {name}")
@@ -252,19 +259,52 @@ def verify(output, check_source=True):
     expected = {f"{m}-L{l:02}" for m, levels in record["config"]["instances"].items() for l in levels}
     files = list((output / "cases").glob("*.json"))
     require({p.stem for p in files} == expected, "Instance coverage mismatch")
-    validated_count = 0
+    with (output / "summary.csv").open(encoding="utf-8", newline="") as stream:
+        summary = list(csv.DictReader(stream))
+    require(len(summary) == len(expected) and {r["case_id"] for r in summary} == expected, "Summary coverage mismatch")
+    summary_by_id = {r["case_id"]: r for r in summary}
+    validated_count, improved_count, optimal_count = 0, 0, 0
     for path in files:
         case = read_json(path)
         require(case["case_id"] == path.stem, "Case ID mismatch")
+        require(case["case_id"] == f"{case['module']}-L{case['l_init']:02}", "Case parameters mismatch")
+        require(case["solution"]["l_init"] == case["l_init"] and case["l_max"] == 14, "Solution input mismatch")
         nodes, edges = original_graph(reference, case["module"])
+        row = summary_by_id[case["case_id"]]
+        require(row["solver_status"] == case["solution"]["status"], "Summary status mismatch")
         if case["solution"]["has_solution"]:
             checked = validate_solution(nodes, edges, case["solution"], reference)
             require(read_json_value(checked) == case["validated"], "Stored validation differs from reconstruction")
             base = baseline_for(nodes, edges, case["module"], case["l_init"])
             require(Decimal(base["latency_decimal_ms"]) == Decimal(case["baseline_decimal_ms"]), "Baseline comparison mismatch")
             require((Decimal(checked["audit"]["latency_decimal_ms"]) < Decimal(case["baseline_decimal_ms"])) == case["comparison"]["improved"], "Improvement flag mismatch")
+            for key in ("latency_decimal_ms", "n_b1", "n_b2", "depth", "budget", "utilisation"):
+                require(Decimal(row[key]) == Decimal(str(checked["audit"][key])), f"Summary metric mismatch: {key}")
+            require(Decimal(row["baseline_decimal_ms"]) == Decimal(case["baseline_decimal_ms"]), "Summary baseline mismatch")
+            reduction = Decimal(case["baseline_decimal_ms"]) - Decimal(checked["audit"]["latency_decimal_ms"])
+            percent = 100 * reduction / Decimal(case["baseline_decimal_ms"])
+            require(Decimal(case["comparison"]["reduction_decimal_ms"]) == reduction and
+                    Decimal(case["comparison"]["reduction_percent"]) == percent, "Stored reduction mismatch")
+            require(abs(Decimal(row["reduction_percent"]) - percent) < Decimal("1e-10"), "Summary percentage mismatch")
+            require(row["improved"] == str(case["comparison"]["improved"]), "Summary improvement mismatch")
+            require(float(row["solve_wall_seconds"]) == case["solution"]["solve_wall_seconds"], "Summary timing mismatch")
             validated_count += 1
+            improved_count += case["comparison"]["improved"]
+            optimal_count += case["solution"]["status"] == "OPTIMAL"
+        else:
+            require(case["validated"] is None and row["latency_decimal_ms"] == "", "Unsolved case has a reported score")
     require(validated_count == record["cases_with_valid_solutions"], "Validation count mismatch")
+    require(improved_count == record["cases_improved"] and optimal_count == record["cases_optimal_for_formulation"],
+            "Run success counters mismatch")
+    require(record["cases_completed"] == record["cases_expected"] == len(expected), "Run coverage counters mismatch")
+    require((record["status"] == "passed") == (improved_count == len(expected)), "Run success status mismatch")
+    if record["config"]["tiny_examples"]:
+        examples = read_json(output / "tiny-examples.json")
+        require({e["id"] for e in examples["examples"]} == {e["id"] for e in tiny_examples()}, "Tiny example coverage mismatch")
+        for example in examples["examples"]:
+            checked = validate_solution(example["nodes"], example["edges"], example["solution"], reference)
+            require(Decimal(checked["audit"]["latency_decimal_ms"]) == Decimal(example["oracle"]["minimum_decimal_ms"])
+                    == Decimal(example["hand_cost_ms"]), "Stored tiny example disagreement")
     print(f"PASS: {validated_count}/{len(files)} saved placements verified; no optimisation search performed.")
     return record
 
