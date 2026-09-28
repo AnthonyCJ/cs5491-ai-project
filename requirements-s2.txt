@@ -1,4 +1,4 @@
-# S2 isolated CPython 3.13.9 environment; S1 requirements remain unchanged.
+# Fixed S2 dependency set for CPython 3.13.9; S1 requirements remain unchanged.
 absl-py==2.5.0
 contourpy==1.4.0
 cycler==0.12.1
