@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "stage": "S2",
+  "run_class": "MLP coverage and representative Attention feasibility",
+  "instances": {"mlp": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14], "attention": [0, 9, 14]},
+  "l_max": 14,
+  "solver": {"time_limit_seconds": 60.0, "workers": 1, "seed": 5491},
+  "tiny_examples": true
+}
