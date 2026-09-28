@@ -1,0 +1,56 @@
+{
+  "artifact_version": "P-S2-v1",
+  "checked_at_utc": "2026-09-28T01:59:04.252596+00:00",
+  "source_sha256": "bffdd87fd723faf9f14011cad3e6922040dda9ed7e8f8eab3482c0972f18b5f1",
+  "generator_sha256": "2e8af08a058eb3813eb8a5d03b8b11e9d83207565c8dc72c3f1f2c05544232c1",
+  "pdf_sha256": "84f63c42199036cd6e803836d1a9a29b354a9c271c86643c534c0ba6a7e7b2cc",
+  "page_count": 1,
+  "page_size_points": [
+    595.2756,
+    841.8898
+  ],
+  "page_size": "A4",
+  "font_sizes_points": [
+    12.0
+  ],
+  "used_fonts_embedded": {
+    "AAAAAA+TimesNewRomanPS-BoldMT": true,
+    "AAAAAA+TimesNewRomanPSMT": true
+  },
+  "configured_margins_cm": [
+    2.5,
+    2.5,
+    2.5,
+    2.5
+  ],
+  "all_text_inside_configured_margins": true,
+  "text_bbox_points_from_top_left": [
+    70.86614,
+    73.45604360000004,
+    524.4094567999999,
+    601.4560436
+  ],
+  "configured_body_leading_points": 12,
+  "all_extracted_text_matches_markdown": true,
+  "abstract_present": false,
+  "reference_list_present": false,
+  "visual_review": {
+    "renderer": "Poppler pdftoppm",
+    "dpi": 150,
+    "pages_reviewed": 1,
+    "passed": true,
+    "observations": "All text is legible, with no clipping, missing glyphs or overlap."
+  },
+  "technical_content_and_format": "ready",
+  "formal_identity_complete": false,
+  "formal_submission_ready": false,
+  "submitted": false,
+  "pending_before_submission": [
+    "Three confirmed English name spellings",
+    "Three student IDs",
+    "One contact email",
+    "Regenerate and recheck the restricted identity copy",
+    "Separate submission authorization"
+  ],
+  "limits": "Verification covers this public placeholder version only; it is not a course submission."
+}

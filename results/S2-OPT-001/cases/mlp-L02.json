@@ -1,0 +1,905 @@
+{
+  "case_id": "mlp-L02",
+  "module": "mlp",
+  "l_init": 2,
+  "l_max": 14,
+  "baseline_decimal_ms": "28130.0097",
+  "solution": {
+    "method": "shared-refresh-cp-sat-v1",
+    "status": "OPTIMAL",
+    "l_init": 2,
+    "l_max": 14,
+    "cost_scale_per_ms": 10000,
+    "model_build_wall_seconds": 0.0030125000048428774,
+    "solve_wall_seconds": 0.007533599971793592,
+    "solver_reported_wall_seconds": 0.007469900000000001,
+    "solver_reported_user_seconds": 0.00747,
+    "best_bound_scaled": 260699524.0,
+    "branches": 501,
+    "conflicts": 56,
+    "model_variables": 165,
+    "model_constraints": 152,
+    "objective_safe_absolute_bound": 2923210950,
+    "settings": {
+      "time_limit_seconds": 60.0,
+      "workers": 1,
+      "seed": 5491,
+      "relative_gap_limit": 0,
+      "absolute_gap_limit": 0,
+      "validated_baseline_hint_and_upper_bound": true
+    },
+    "response_stats": "CpSolverResponse summary:\nstatus: OPTIMAL\nobjective: 260699524\nbest_bound: 260699524\nintegers: 59\nbooleans: 105\nconflicts: 56\nbranches: 501\npropagations: 2301\ninteger_propagations: 3456\nrestarts: 1\nlp_iterations: 0\nwalltime: 0.0074699\nusertime: 0.00747\ndeterministic_time: 0.000756873\ngap_integral: 0\nsolution_fingerprint: 0x2e69475ea9ac9280\n",
+    "has_solution": true,
+    "objective_scaled": 260699524,
+    "objective_decimal_ms": "26069.9524",
+    "relative_gap": 0.0,
+    "optimality_proven_for_formulation": true,
+    "original_input_levels": {
+      "X_in_mlp": 2,
+      "Conj_X_mlp": 0,
+      "Mul_mask_mlp": 14,
+      "PCMM3_mlp": 13,
+      "Mul_affine_mlp": 11,
+      "GELU_mlp": 10,
+      "PCMM4_mlp": 2,
+      "Add_res_mlp": 0,
+      "x_mask2_mlp": 12,
+      "sum_mu_mlp": 11,
+      "mask_mu_mlp": 11,
+      "div_768_mlp": 10,
+      "add_z_mlp": 9,
+      "mul_z_sq_mlp": 9,
+      "sum_y_mlp": 8,
+      "mul_var_mlp": 8,
+      "invsqrt_var_mlp": 7,
+      "mask_lam_mlp": 2,
+      "mul_z_gamma_mlp": 2,
+      "mul_X_out_mlp": 1,
+      "X_out_mlp": 0
+    },
+    "original_output_levels": {
+      "X_in_mlp": 2,
+      "Conj_X_mlp": 0,
+      "Mul_mask_mlp": 13,
+      "PCMM3_mlp": 11,
+      "Mul_affine_mlp": 10,
+      "GELU_mlp": 2,
+      "PCMM4_mlp": 0,
+      "Add_res_mlp": 0,
+      "x_mask2_mlp": 11,
+      "sum_mu_mlp": 11,
+      "mask_mu_mlp": 10,
+      "div_768_mlp": 9,
+      "add_z_mlp": 9,
+      "mul_z_sq_mlp": 8,
+      "sum_y_mlp": 8,
+      "mul_var_mlp": 7,
+      "invsqrt_var_mlp": 2,
+      "mask_lam_mlp": 1,
+      "mul_z_gamma_mlp": 1,
+      "mul_X_out_mlp": 0,
+      "X_out_mlp": 0
+    },
+    "edge_decisions": [
+      {
+        "from": "X_in_mlp",
+        "to": "Conj_X_mlp",
+        "ciphertexts": 8,
+        "refresh": 0,
+        "delivered_level": 0
+      },
+      {
+        "from": "Conj_X_mlp",
+        "to": "Mul_mask_mlp",
+        "ciphertexts": 4,
+        "refresh": 1,
+        "delivered_level": 14
+      },
+      {
+        "from": "Mul_mask_mlp",
+        "to": "PCMM3_mlp",
+        "ciphertexts": 64,
+        "refresh": 0,
+        "delivered_level": 13
+      },
+      {
+        "from": "PCMM3_mlp",
+        "to": "Mul_affine_mlp",
+        "ciphertexts": 16,
+        "refresh": 0,
+        "delivered_level": 11
+      },
+      {
+        "from": "Mul_affine_mlp",
+        "to": "GELU_mlp",
+        "ciphertexts": 16,
+        "refresh": 0,
+        "delivered_level": 10
+      },
+      {
+        "from": "GELU_mlp",
+        "to": "PCMM4_mlp",
+        "ciphertexts": 16,
+        "refresh": 0,
+        "delivered_level": 2
+      },
+      {
+        "from": "PCMM4_mlp",
+        "to": "Add_res_mlp",
+        "ciphertexts": 8,
+        "refresh": 0,
+        "delivered_level": 0
+      },
+      {
+        "from": "X_in_mlp",
+        "to": "Add_res_mlp",
+        "ciphertexts": 8,
+        "refresh": 0,
+        "delivered_level": 2
+      },
+      {
+        "from": "Add_res_mlp",
+        "to": "x_mask2_mlp",
+        "ciphertexts": 8,
+        "refresh": 2,
+        "delivered_level": 12
+      },
+      {
+        "from": "x_mask2_mlp",
+        "to": "sum_mu_mlp",
+        "ciphertexts": 8,
+        "refresh": 0,
+        "delivered_level": 11
+      },
+      {
+        "from": "x_mask2_mlp",
+        "to": "add_z_mlp",
+        "ciphertexts": 8,
+        "refresh": 0,
+        "delivered_level": 9
+      },
+      {
+        "from": "sum_mu_mlp",
+        "to": "mask_mu_mlp",
+        "ciphertexts": 1,
+        "refresh": 0,
+        "delivered_level": 11
+      },
+      {
+        "from": "mask_mu_mlp",
+        "to": "div_768_mlp",
+        "ciphertexts": 1,
+        "refresh": 0,
+        "delivered_level": 10
+      },
+      {
+        "from": "div_768_mlp",
+        "to": "add_z_mlp",
+        "ciphertexts": 1,
+        "refresh": 0,
+        "delivered_level": 9
+      },
+      {
+        "from": "add_z_mlp",
+        "to": "mul_z_sq_mlp",
+        "ciphertexts": 8,
+        "refresh": 0,
+        "delivered_level": 9
+      },
+      {
+        "from": "add_z_mlp",
+        "to": "mul_z_gamma_mlp",
+        "ciphertexts": 8,
+        "refresh": 0,
+        "delivered_level": 2
+      },
+      {
+        "from": "mul_z_sq_mlp",
+        "to": "sum_y_mlp",
+        "ciphertexts": 8,
+        "refresh": 0,
+        "delivered_level": 8
+      },
+      {
+        "from": "sum_y_mlp",
+        "to": "mul_var_mlp",
+        "ciphertexts": 1,
+        "refresh": 0,
+        "delivered_level": 8
+      },
+      {
+        "from": "mul_var_mlp",
+        "to": "invsqrt_var_mlp",
+        "ciphertexts": 1,
+        "refresh": 0,
+        "delivered_level": 7
+      },
+      {
+        "from": "invsqrt_var_mlp",
+        "to": "mask_lam_mlp",
+        "ciphertexts": 1,
+        "refresh": 0,
+        "delivered_level": 2
+      },
+      {
+        "from": "mask_lam_mlp",
+        "to": "mul_X_out_mlp",
+        "ciphertexts": 1,
+        "refresh": 0,
+        "delivered_level": 1
+      },
+      {
+        "from": "mul_z_gamma_mlp",
+        "to": "mul_X_out_mlp",
+        "ciphertexts": 8,
+        "refresh": 0,
+        "delivered_level": 1
+      },
+      {
+        "from": "mul_X_out_mlp",
+        "to": "X_out_mlp",
+        "ciphertexts": 8,
+        "refresh": 0,
+        "delivered_level": 0
+      }
+    ],
+    "shared_refreshes": [
+      {
+        "after": "Conj_X_mlp",
+        "type": 1
+      },
+      {
+        "after": "Add_res_mlp",
+        "type": 2
+      }
+    ]
+  },
+  "validated": {
+    "nodes": [
+      [
+        "X_in_mlp",
+        "Identity",
+        0,
+        "X"
+      ],
+      [
+        "Conj_X_mlp",
+        "Conjugate",
+        0,
+        "Conjugate X"
+      ],
+      [
+        "Mul_mask_mlp",
+        "Mul",
+        1,
+        "X = mask · X"
+      ],
+      [
+        "PCMM3_mlp",
+        "PCMM3",
+        2,
+        "X = X · Wup"
+      ],
+      [
+        "Mul_affine_mlp",
+        "Mul",
+        1,
+        "X = X·64 & affine X"
+      ],
+      [
+        "GELU_mlp",
+        "PolyEval4",
+        8,
+        "X = GELU(X), deg=127"
+      ],
+      [
+        "PCMM4_mlp",
+        "PCMM4",
+        2,
+        "x = X · Wdo"
+      ],
+      [
+        "Add_res_mlp",
+        "Add",
+        0,
+        "x = x + X"
+      ],
+      [
+        "x_mask2_mlp",
+        "Mul",
+        1,
+        "x = mask · x"
+      ],
+      [
+        "sum_mu_mlp",
+        "Sum",
+        0,
+        "μ = Σ(x)"
+      ],
+      [
+        "mask_mu_mlp",
+        "Mul",
+        1,
+        "μ = mask · μ"
+      ],
+      [
+        "div_768_mlp",
+        "Mul",
+        1,
+        "μ = μ / 768"
+      ],
+      [
+        "add_z_mlp",
+        "Add",
+        0,
+        "z = x − μ"
+      ],
+      [
+        "mul_z_sq_mlp",
+        "Mul",
+        1,
+        "y = z²"
+      ],
+      [
+        "sum_y_mlp",
+        "Sum",
+        0,
+        "s_y = Σ(y)"
+      ],
+      [
+        "mul_var_mlp",
+        "Mul",
+        1,
+        "var = mask·s_y & affine var"
+      ],
+      [
+        "invsqrt_var_mlp",
+        "PolyEval2",
+        5,
+        "λ = Invsqrt(var), deg=15"
+      ],
+      [
+        "mask_lam_mlp",
+        "Mul",
+        1,
+        "λ = mask · λ"
+      ],
+      [
+        "mul_z_gamma_mlp",
+        "Mul",
+        1,
+        "z = z · γ"
+      ],
+      [
+        "mul_X_out_mlp",
+        "Mul",
+        1,
+        "X = z · λ"
+      ],
+      [
+        "X_out_mlp",
+        "Identity",
+        0,
+        "X"
+      ],
+      [
+        "s2_M0_0_X_in_mlp",
+        "Modswitch",
+        2,
+        "Level 2 to 0"
+      ],
+      [
+        "s2_B1_Conj_X_mlp",
+        "Bootstrap1",
+        0,
+        "Shared B1 after Conj_X_mlp"
+      ],
+      [
+        "s2_B2_Add_res_mlp",
+        "Bootstrap2",
+        0,
+        "Shared B2 after Add_res_mlp"
+      ],
+      [
+        "s2_M2_12_Add_res_mlp",
+        "Modswitch",
+        1,
+        "Level 13 to 12"
+      ],
+      [
+        "s2_M0_9_x_mask2_mlp",
+        "Modswitch",
+        2,
+        "Level 11 to 9"
+      ],
+      [
+        "s2_M0_2_add_z_mlp",
+        "Modswitch",
+        7,
+        "Level 9 to 2"
+      ]
+    ],
+    "edges": [
+      [
+        "X_in_mlp",
+        "s2_M0_0_X_in_mlp",
+        8
+      ],
+      [
+        "s2_M0_0_X_in_mlp",
+        "Conj_X_mlp",
+        8
+      ],
+      [
+        "Conj_X_mlp",
+        "s2_B1_Conj_X_mlp",
+        4
+      ],
+      [
+        "s2_B1_Conj_X_mlp",
+        "Mul_mask_mlp",
+        4
+      ],
+      [
+        "Mul_mask_mlp",
+        "PCMM3_mlp",
+        64
+      ],
+      [
+        "PCMM3_mlp",
+        "Mul_affine_mlp",
+        16
+      ],
+      [
+        "Mul_affine_mlp",
+        "GELU_mlp",
+        16
+      ],
+      [
+        "GELU_mlp",
+        "PCMM4_mlp",
+        16
+      ],
+      [
+        "PCMM4_mlp",
+        "Add_res_mlp",
+        8
+      ],
+      [
+        "X_in_mlp",
+        "Add_res_mlp",
+        8
+      ],
+      [
+        "Add_res_mlp",
+        "s2_B2_Add_res_mlp",
+        8
+      ],
+      [
+        "s2_B2_Add_res_mlp",
+        "s2_M2_12_Add_res_mlp",
+        8
+      ],
+      [
+        "s2_M2_12_Add_res_mlp",
+        "x_mask2_mlp",
+        8
+      ],
+      [
+        "x_mask2_mlp",
+        "sum_mu_mlp",
+        8
+      ],
+      [
+        "x_mask2_mlp",
+        "s2_M0_9_x_mask2_mlp",
+        8
+      ],
+      [
+        "s2_M0_9_x_mask2_mlp",
+        "add_z_mlp",
+        8
+      ],
+      [
+        "sum_mu_mlp",
+        "mask_mu_mlp",
+        1
+      ],
+      [
+        "mask_mu_mlp",
+        "div_768_mlp",
+        1
+      ],
+      [
+        "div_768_mlp",
+        "add_z_mlp",
+        1
+      ],
+      [
+        "add_z_mlp",
+        "mul_z_sq_mlp",
+        8
+      ],
+      [
+        "add_z_mlp",
+        "s2_M0_2_add_z_mlp",
+        8
+      ],
+      [
+        "s2_M0_2_add_z_mlp",
+        "mul_z_gamma_mlp",
+        8
+      ],
+      [
+        "mul_z_sq_mlp",
+        "sum_y_mlp",
+        8
+      ],
+      [
+        "sum_y_mlp",
+        "mul_var_mlp",
+        1
+      ],
+      [
+        "mul_var_mlp",
+        "invsqrt_var_mlp",
+        1
+      ],
+      [
+        "invsqrt_var_mlp",
+        "mask_lam_mlp",
+        1
+      ],
+      [
+        "mask_lam_mlp",
+        "mul_X_out_mlp",
+        1
+      ],
+      [
+        "mul_z_gamma_mlp",
+        "mul_X_out_mlp",
+        8
+      ],
+      [
+        "mul_X_out_mlp",
+        "X_out_mlp",
+        8
+      ]
+    ],
+    "audit": {
+      "latency_decimal_ms": "26069.9524",
+      "n_b1": 4,
+      "n_b2": 4,
+      "n_bootstrap": 8,
+      "depth": 26,
+      "budget": 110,
+      "utilisation": 0.23636363636363636,
+      "l_in": {
+        "X_in_mlp": 2,
+        "s2_M0_0_X_in_mlp": 2,
+        "Conj_X_mlp": 0,
+        "s2_B1_Conj_X_mlp": 0,
+        "Mul_mask_mlp": 14,
+        "PCMM3_mlp": 13,
+        "Mul_affine_mlp": 11,
+        "GELU_mlp": 10,
+        "PCMM4_mlp": 2,
+        "Add_res_mlp": 0,
+        "s2_B2_Add_res_mlp": 0,
+        "s2_M2_12_Add_res_mlp": 13,
+        "x_mask2_mlp": 12,
+        "sum_mu_mlp": 11,
+        "s2_M0_9_x_mask2_mlp": 11,
+        "mask_mu_mlp": 11,
+        "div_768_mlp": 10,
+        "add_z_mlp": 9,
+        "mul_z_sq_mlp": 9,
+        "s2_M0_2_add_z_mlp": 9,
+        "sum_y_mlp": 8,
+        "mul_z_gamma_mlp": 2,
+        "mul_var_mlp": 8,
+        "invsqrt_var_mlp": 7,
+        "mask_lam_mlp": 2,
+        "mul_X_out_mlp": 1,
+        "X_out_mlp": 0
+      },
+      "l_out": {
+        "X_in_mlp": 2,
+        "s2_M0_0_X_in_mlp": 0,
+        "Conj_X_mlp": 0,
+        "s2_B1_Conj_X_mlp": 14,
+        "Mul_mask_mlp": 13,
+        "PCMM3_mlp": 11,
+        "Mul_affine_mlp": 10,
+        "GELU_mlp": 2,
+        "PCMM4_mlp": 0,
+        "Add_res_mlp": 0,
+        "s2_B2_Add_res_mlp": 13,
+        "s2_M2_12_Add_res_mlp": 12,
+        "x_mask2_mlp": 11,
+        "sum_mu_mlp": 11,
+        "s2_M0_9_x_mask2_mlp": 9,
+        "mask_mu_mlp": 10,
+        "div_768_mlp": 9,
+        "add_z_mlp": 9,
+        "mul_z_sq_mlp": 8,
+        "s2_M0_2_add_z_mlp": 2,
+        "sum_y_mlp": 8,
+        "mul_z_gamma_mlp": 1,
+        "mul_var_mlp": 7,
+        "invsqrt_var_mlp": 2,
+        "mask_lam_mlp": 1,
+        "mul_X_out_mlp": 0,
+        "X_out_mlp": 0
+      },
+      "edge_levels": [
+        {
+          "from": "X_in_mlp",
+          "to": "s2_M0_0_X_in_mlp",
+          "ciphertexts": 8,
+          "level": 2
+        },
+        {
+          "from": "s2_M0_0_X_in_mlp",
+          "to": "Conj_X_mlp",
+          "ciphertexts": 8,
+          "level": 0
+        },
+        {
+          "from": "Conj_X_mlp",
+          "to": "s2_B1_Conj_X_mlp",
+          "ciphertexts": 4,
+          "level": 0
+        },
+        {
+          "from": "s2_B1_Conj_X_mlp",
+          "to": "Mul_mask_mlp",
+          "ciphertexts": 4,
+          "level": 14
+        },
+        {
+          "from": "Mul_mask_mlp",
+          "to": "PCMM3_mlp",
+          "ciphertexts": 64,
+          "level": 13
+        },
+        {
+          "from": "PCMM3_mlp",
+          "to": "Mul_affine_mlp",
+          "ciphertexts": 16,
+          "level": 11
+        },
+        {
+          "from": "Mul_affine_mlp",
+          "to": "GELU_mlp",
+          "ciphertexts": 16,
+          "level": 10
+        },
+        {
+          "from": "GELU_mlp",
+          "to": "PCMM4_mlp",
+          "ciphertexts": 16,
+          "level": 2
+        },
+        {
+          "from": "PCMM4_mlp",
+          "to": "Add_res_mlp",
+          "ciphertexts": 8,
+          "level": 0
+        },
+        {
+          "from": "X_in_mlp",
+          "to": "Add_res_mlp",
+          "ciphertexts": 8,
+          "level": 2
+        },
+        {
+          "from": "Add_res_mlp",
+          "to": "s2_B2_Add_res_mlp",
+          "ciphertexts": 8,
+          "level": 0
+        },
+        {
+          "from": "s2_B2_Add_res_mlp",
+          "to": "s2_M2_12_Add_res_mlp",
+          "ciphertexts": 8,
+          "level": 13
+        },
+        {
+          "from": "s2_M2_12_Add_res_mlp",
+          "to": "x_mask2_mlp",
+          "ciphertexts": 8,
+          "level": 12
+        },
+        {
+          "from": "x_mask2_mlp",
+          "to": "sum_mu_mlp",
+          "ciphertexts": 8,
+          "level": 11
+        },
+        {
+          "from": "x_mask2_mlp",
+          "to": "s2_M0_9_x_mask2_mlp",
+          "ciphertexts": 8,
+          "level": 11
+        },
+        {
+          "from": "s2_M0_9_x_mask2_mlp",
+          "to": "add_z_mlp",
+          "ciphertexts": 8,
+          "level": 9
+        },
+        {
+          "from": "sum_mu_mlp",
+          "to": "mask_mu_mlp",
+          "ciphertexts": 1,
+          "level": 11
+        },
+        {
+          "from": "mask_mu_mlp",
+          "to": "div_768_mlp",
+          "ciphertexts": 1,
+          "level": 10
+        },
+        {
+          "from": "div_768_mlp",
+          "to": "add_z_mlp",
+          "ciphertexts": 1,
+          "level": 9
+        },
+        {
+          "from": "add_z_mlp",
+          "to": "mul_z_sq_mlp",
+          "ciphertexts": 8,
+          "level": 9
+        },
+        {
+          "from": "add_z_mlp",
+          "to": "s2_M0_2_add_z_mlp",
+          "ciphertexts": 8,
+          "level": 9
+        },
+        {
+          "from": "s2_M0_2_add_z_mlp",
+          "to": "mul_z_gamma_mlp",
+          "ciphertexts": 8,
+          "level": 2
+        },
+        {
+          "from": "mul_z_sq_mlp",
+          "to": "sum_y_mlp",
+          "ciphertexts": 8,
+          "level": 8
+        },
+        {
+          "from": "sum_y_mlp",
+          "to": "mul_var_mlp",
+          "ciphertexts": 1,
+          "level": 8
+        },
+        {
+          "from": "mul_var_mlp",
+          "to": "invsqrt_var_mlp",
+          "ciphertexts": 1,
+          "level": 7
+        },
+        {
+          "from": "invsqrt_var_mlp",
+          "to": "mask_lam_mlp",
+          "ciphertexts": 1,
+          "level": 2
+        },
+        {
+          "from": "mask_lam_mlp",
+          "to": "mul_X_out_mlp",
+          "ciphertexts": 1,
+          "level": 1
+        },
+        {
+          "from": "mul_z_gamma_mlp",
+          "to": "mul_X_out_mlp",
+          "ciphertexts": 8,
+          "level": 1
+        },
+        {
+          "from": "mul_X_out_mlp",
+          "to": "X_out_mlp",
+          "ciphertexts": 8,
+          "level": 0
+        }
+      ],
+      "node_latency_decimal_ms": {
+        "X_in_mlp": "0",
+        "s2_M0_0_X_in_mlp": "0",
+        "Conj_X_mlp": "1.67",
+        "s2_B1_Conj_X_mlp": "4160.60",
+        "Mul_mask_mlp": "1.3474",
+        "PCMM3_mlp": "7342.04",
+        "Mul_affine_mlp": "1.1485",
+        "GELU_mlp": "5914.76",
+        "PCMM4_mlp": "2850.59",
+        "Add_res_mlp": "0.0379",
+        "s2_B2_Add_res_mlp": "5172.52",
+        "s2_M2_12_Add_res_mlp": "0",
+        "x_mask2_mlp": "1.2148",
+        "sum_mu_mlp": "4.06",
+        "s2_M0_9_x_mask2_mlp": "0",
+        "mask_mu_mlp": "1.1485",
+        "div_768_mlp": "1.0822",
+        "add_z_mlp": "0.0685",
+        "mul_z_sq_mlp": "1.0159",
+        "s2_M0_2_add_z_mlp": "0",
+        "sum_y_mlp": "4.06",
+        "mul_z_gamma_mlp": "0.5518",
+        "mul_var_mlp": "0.9496",
+        "invsqrt_var_mlp": "610.05",
+        "mask_lam_mlp": "0.5518",
+        "mul_X_out_mlp": "0.4855",
+        "X_out_mlp": "0"
+      },
+      "placement_chains": [
+        {
+          "from": "X_in_mlp",
+          "to": "Conj_X_mlp",
+          "inserted_nodes": [
+            "s2_M0_0_X_in_mlp"
+          ]
+        },
+        {
+          "from": "Conj_X_mlp",
+          "to": "Mul_mask_mlp",
+          "inserted_nodes": [
+            "s2_B1_Conj_X_mlp"
+          ]
+        },
+        {
+          "from": "Add_res_mlp",
+          "to": "x_mask2_mlp",
+          "inserted_nodes": [
+            "s2_B2_Add_res_mlp",
+            "s2_M2_12_Add_res_mlp"
+          ]
+        },
+        {
+          "from": "x_mask2_mlp",
+          "to": "add_z_mlp",
+          "inserted_nodes": [
+            "s2_M0_9_x_mask2_mlp"
+          ]
+        },
+        {
+          "from": "add_z_mlp",
+          "to": "mul_z_gamma_mlp",
+          "inserted_nodes": [
+            "s2_M0_2_add_z_mlp"
+          ]
+        }
+      ],
+      "structural_and_level_checks_passed": true
+    },
+    "reference_latency_ms": 26069.952400000002,
+    "reference_decimal_absolute_error_ms": "2E-12",
+    "checks": {
+      "original_graph_and_ciphertexts": true,
+      "canonical_chains_and_sharing": true,
+      "level_domains_and_merges": true,
+      "bootstrap_eligibility_and_counts": true,
+      "model_reconstruction_audit_agreement": true,
+      "reference_score_and_metrics_agreement": true
+    }
+  },
+  "resources": {
+    "pipeline_wall_seconds": 0.011897999967914075,
+    "process_cpu_seconds": 0.015625,
+    "sampled_peak_rss_bytes": 118009856,
+    "windows_process_lifetime_peak_working_set_bytes": 118034432,
+    "rss_sampling_interval_seconds": 0.02,
+    "scope": "Current process; model construction, solve, reconstruction and validation. Excludes reference import, baseline preparation and result writing. RSS includes resident imported packages. Windows peak, if available, covers process lifetime."
+  },
+  "comparison": {
+    "improved": true,
+    "reduction_decimal_ms": "2060.0573",
+    "reduction_percent": "7.323343724264695152238074059",
+    "same_module_and_input": true
+  }
+}

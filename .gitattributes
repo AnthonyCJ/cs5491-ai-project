@@ -6,3 +6,4 @@
 *.txt text eol=lf
 vendor/dag_builder.py -text
 results/** -text
+figures/** -text

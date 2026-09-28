@@ -1,0 +1,11 @@
+{
+  "source_run": "S2-OPT-001",
+  "source_run_sha256": "e842edc35ef05338af3159b8234d7c25c6bb92349b9cf7f27874cce31c049aaf",
+  "source_manifest_sha256": "815d475fb9ba2e91f6f17edfef72fcb2a08c8a5620b4b84f92cd50d12db6ee12",
+  "generator_sha256": "1d98fcb3a297518fc5df3244f53c85e7aace306587bae058f935c297841b055a",
+  "source_case_hashes": {
+    "mlp-L00": "f68c26fb1e0ff74e55021a89309986463b0d428fd825cceecbc447e3c6266f1d",
+    "mlp-L14": "92f5c179cb2931c88444ff89a1e75eeb050a918832f50b07858d5b1fa3dde002"
+  },
+  "purpose": "S2 preliminary visual evidence; does not replace the S4 figure requirements"
+}

@@ -1,0 +1,24 @@
+{
+  "evidence_version": "S2-OPT-001",
+  "source_commit": "19b72147c5a8474e1df52f26a09a62ef20256160",
+  "source_fingerprint": "44f430c354686ba5fdd48d40ec350ac1d1ef6f5cbf4e27d465162421511bbcc3",
+  "unit_tests": {
+    "checked_at_utc": "2026-09-28T01:43:25.525488+00:00",
+    "tests": 28,
+    "passed": true,
+    "failures": 0,
+    "errors": 0,
+    "wall_seconds": 0.8058989000273868,
+    "output": "test_bootstrap2_rejects_four_ciphertexts (test_baseline_audit.BaselineAuditTests.test_bootstrap2_rejects_four_ciphertexts) ... ok\ntest_cycle_is_invalid (test_baseline_audit.BaselineAuditTests.test_cycle_is_invalid) ... ok\ntest_identical_refreshes_must_be_shared (test_baseline_audit.BaselineAuditTests.test_identical_refreshes_must_be_shared) ... ok\ntest_level_underflow_is_invalid (test_baseline_audit.BaselineAuditTests.test_level_underflow_is_invalid) ... ok\ntest_merge_takes_minimum_without_paid_modswitch (test_baseline_audit.BaselineAuditTests.test_merge_takes_minimum_without_paid_modswitch) ... ok\ntest_modswitch_is_a_level_drop_but_not_depth (test_baseline_audit.BaselineAuditTests.test_modswitch_is_a_level_drop_but_not_depth) ... ok\ntest_noninteger_level_is_invalid (test_baseline_audit.BaselineAuditTests.test_noninteger_level_is_invalid) ... ok\ntest_out_of_range_level_is_invalid (test_baseline_audit.BaselineAuditTests.test_out_of_range_level_is_invalid) ... ok\ntest_reference_tampering_fails_before_execution (test_baseline_audit.BaselineAuditTests.test_reference_tampering_fails_before_execution) ... ok\ntest_removing_original_branch_is_invalid (test_baseline_audit.BaselineAuditTests.test_removing_original_branch_is_invalid) ... ok\ntest_shared_bootstrap2_charges_four_pairs_once (test_baseline_audit.BaselineAuditTests.test_shared_bootstrap2_charges_four_pairs_once) ... ok\ntest_zero_drop_modswitch_is_invalid (test_baseline_audit.BaselineAuditTests.test_zero_drop_modswitch_is_invalid) ... ok\ntest_all_tiny_optima_match_exhaustive_search_and_hand_calculation (test_s2_optimizer.S2OptimizerTests.test_all_tiny_optima_match_exhaustive_search_and_hand_calculation) ... ok\ntest_b2_cannot_deliver_level_fourteen (test_s2_optimizer.S2OptimizerTests.test_b2_cannot_deliver_level_fourteen) ... ok\ntest_both_refresh_types_can_exist_after_same_producer (test_s2_optimizer.S2OptimizerTests.test_both_refresh_types_can_exist_after_same_producer) ... ok\ntest_bound_cannot_exceed_objective (test_s2_optimizer.S2OptimizerTests.test_bound_cannot_exceed_objective) ... ok\ntest_claimed_levels_cannot_override_computed_levels (test_s2_optimizer.S2OptimizerTests.test_claimed_levels_cannot_override_computed_levels) ... ok\ntest_cost_tampering_is_rejected (test_s2_optimizer.S2OptimizerTests.test_cost_tampering_is_rejected) ... ok\ntest_exhaustive_search_cannot_accidentally_run_on_course_blocks (test_s2_optimizer.S2OptimizerTests.test_exhaustive_search_cannot_accidentally_run_on_course_blocks) ... ok\ntest_feasible_status_cannot_be_labelled_optimal (test_s2_optimizer.S2OptimizerTests.test_feasible_status_cannot_be_labelled_optimal) ... ok\ntest_illegal_b2_is_rejected_before_scoring (test_s2_optimizer.S2OptimizerTests.test_illegal_b2_is_rejected_before_scoring) ... ok\ntest_missing_edge_decision_is_rejected (test_s2_optimizer.S2OptimizerTests.test_missing_edge_decision_is_rejected) ... ok\ntest_modswitch_cannot_raise_a_level (test_s2_optimizer.S2OptimizerTests.test_modswitch_cannot_raise_a_level) ... ok\ntest_precision_loss_and_invalid_input_are_rejected (test_s2_optimizer.S2OptimizerTests.test_precision_loss_and_invalid_input_are_rejected) ... ok\ntest_reported_gap_is_checked (test_s2_optimizer.S2OptimizerTests.test_reported_gap_is_checked) ... ok\ntest_shared_activation_tampering_is_rejected (test_s2_optimizer.S2OptimizerTests.test_shared_activation_tampering_is_rejected) ... ok\ntest_shared_refresh_and_identical_drop_are_single_nodes (test_s2_optimizer.S2OptimizerTests.test_shared_refresh_and_identical_drop_are_single_nodes) ... ok\ntest_unknown_status_cannot_be_presented_as_a_solution (test_s2_optimizer.S2OptimizerTests.test_unknown_status_cannot_be_presented_as_a_solution) ... ok\n\n----------------------------------------------------------------------\nRan 28 tests in 0.382s\n\nOK\n",
+    "test_file_sha256": {
+      "tests/test_baseline_audit.py": "aecfdd5eef52056334b88b80ba994682904600ba72d8886e7bd41124aa7d6aec",
+      "tests/test_s2_optimizer.py": "1f8538744326b466fc63949d49bd1c9d26a13d3f256b7ee7d50ab68e44073ae8"
+    }
+  },
+  "observation_note": "The recorded S2 test run is preserved here; creating this record did not rerun the tests.",
+  "experiment": "../results/S2-OPT-001/run.json",
+  "exhaustive_examples": "../results/S2-OPT-001/tiny-examples.json",
+  "proposal_format": "../reports/proposal/format-check.json",
+  "figures": "../figures/S2-OPT-001/provenance.json",
+  "limits": "Local S2 evidence. Not a formal 30-instance experiment or a separate-machine reproduction."
+}
