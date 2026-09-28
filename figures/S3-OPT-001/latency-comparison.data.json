@@ -1,0 +1,215 @@
+{
+  "source_run": "S3-OPT-001",
+  "points": [
+    {
+      "case_id": "mlp-L00",
+      "l_init": 0,
+      "module": "mlp",
+      "baseline_decimal_ms": "28129.6897",
+      "latency_decimal_ms": "26069.9524"
+    },
+    {
+      "case_id": "mlp-L01",
+      "l_init": 1,
+      "module": "mlp",
+      "baseline_decimal_ms": "28129.8497",
+      "latency_decimal_ms": "26069.9524"
+    },
+    {
+      "case_id": "mlp-L02",
+      "l_init": 2,
+      "module": "mlp",
+      "baseline_decimal_ms": "28130.0097",
+      "latency_decimal_ms": "26069.9524"
+    },
+    {
+      "case_id": "mlp-L03",
+      "l_init": 3,
+      "module": "mlp",
+      "baseline_decimal_ms": "28130.1697",
+      "latency_decimal_ms": "26069.9524"
+    },
+    {
+      "case_id": "mlp-L04",
+      "l_init": 4,
+      "module": "mlp",
+      "baseline_decimal_ms": "28130.3297",
+      "latency_decimal_ms": "26069.9524"
+    },
+    {
+      "case_id": "mlp-L05",
+      "l_init": 5,
+      "module": "mlp",
+      "baseline_decimal_ms": "28130.4897",
+      "latency_decimal_ms": "26069.9524"
+    },
+    {
+      "case_id": "mlp-L06",
+      "l_init": 6,
+      "module": "mlp",
+      "baseline_decimal_ms": "28130.6497",
+      "latency_decimal_ms": "26069.9524"
+    },
+    {
+      "case_id": "mlp-L07",
+      "l_init": 7,
+      "module": "mlp",
+      "baseline_decimal_ms": "28130.8097",
+      "latency_decimal_ms": "26069.9524"
+    },
+    {
+      "case_id": "mlp-L08",
+      "l_init": 8,
+      "module": "mlp",
+      "baseline_decimal_ms": "28130.9697",
+      "latency_decimal_ms": "26069.9524"
+    },
+    {
+      "case_id": "mlp-L09",
+      "l_init": 9,
+      "module": "mlp",
+      "baseline_decimal_ms": "28131.1297",
+      "latency_decimal_ms": "26069.9524"
+    },
+    {
+      "case_id": "mlp-L10",
+      "l_init": 10,
+      "module": "mlp",
+      "baseline_decimal_ms": "28131.2897",
+      "latency_decimal_ms": "26069.9524"
+    },
+    {
+      "case_id": "mlp-L11",
+      "l_init": 11,
+      "module": "mlp",
+      "baseline_decimal_ms": "28131.4497",
+      "latency_decimal_ms": "26069.9524"
+    },
+    {
+      "case_id": "mlp-L12",
+      "l_init": 12,
+      "module": "mlp",
+      "baseline_decimal_ms": "28131.6097",
+      "latency_decimal_ms": "26069.9524"
+    },
+    {
+      "case_id": "mlp-L13",
+      "l_init": 13,
+      "module": "mlp",
+      "baseline_decimal_ms": "28131.7697",
+      "latency_decimal_ms": "26069.9524"
+    },
+    {
+      "case_id": "mlp-L14",
+      "l_init": 14,
+      "module": "mlp",
+      "baseline_decimal_ms": "28131.9297",
+      "latency_decimal_ms": "21911.5924"
+    },
+    {
+      "case_id": "attention-L00",
+      "l_init": 0,
+      "module": "attention",
+      "baseline_decimal_ms": "53558.1718",
+      "latency_decimal_ms": "45698.2664"
+    },
+    {
+      "case_id": "attention-L01",
+      "l_init": 1,
+      "module": "attention",
+      "baseline_decimal_ms": "53558.1718",
+      "latency_decimal_ms": "45698.2664"
+    },
+    {
+      "case_id": "attention-L02",
+      "l_init": 2,
+      "module": "attention",
+      "baseline_decimal_ms": "53558.1718",
+      "latency_decimal_ms": "45698.2664"
+    },
+    {
+      "case_id": "attention-L03",
+      "l_init": 3,
+      "module": "attention",
+      "baseline_decimal_ms": "53558.1718",
+      "latency_decimal_ms": "45698.2664"
+    },
+    {
+      "case_id": "attention-L04",
+      "l_init": 4,
+      "module": "attention",
+      "baseline_decimal_ms": "53558.1718",
+      "latency_decimal_ms": "45698.2664"
+    },
+    {
+      "case_id": "attention-L05",
+      "l_init": 5,
+      "module": "attention",
+      "baseline_decimal_ms": "53558.1718",
+      "latency_decimal_ms": "45698.2664"
+    },
+    {
+      "case_id": "attention-L06",
+      "l_init": 6,
+      "module": "attention",
+      "baseline_decimal_ms": "53558.1718",
+      "latency_decimal_ms": "41537.6664"
+    },
+    {
+      "case_id": "attention-L07",
+      "l_init": 7,
+      "module": "attention",
+      "baseline_decimal_ms": "53558.1718",
+      "latency_decimal_ms": "41537.6664"
+    },
+    {
+      "case_id": "attention-L08",
+      "l_init": 8,
+      "module": "attention",
+      "baseline_decimal_ms": "53558.1718",
+      "latency_decimal_ms": "41537.6664"
+    },
+    {
+      "case_id": "attention-L09",
+      "l_init": 9,
+      "module": "attention",
+      "baseline_decimal_ms": "53558.1718",
+      "latency_decimal_ms": "41537.6664"
+    },
+    {
+      "case_id": "attention-L10",
+      "l_init": 10,
+      "module": "attention",
+      "baseline_decimal_ms": "53558.1718",
+      "latency_decimal_ms": "41537.6664"
+    },
+    {
+      "case_id": "attention-L11",
+      "l_init": 11,
+      "module": "attention",
+      "baseline_decimal_ms": "53558.1718",
+      "latency_decimal_ms": "41537.6664"
+    },
+    {
+      "case_id": "attention-L12",
+      "l_init": 12,
+      "module": "attention",
+      "baseline_decimal_ms": "53558.1718",
+      "latency_decimal_ms": "41537.6664"
+    },
+    {
+      "case_id": "attention-L13",
+      "l_init": 13,
+      "module": "attention",
+      "baseline_decimal_ms": "53558.1718",
+      "latency_decimal_ms": "41537.6664"
+    },
+    {
+      "case_id": "attention-L14",
+      "l_init": 14,
+      "module": "attention",
+      "baseline_decimal_ms": "53558.1718",
+      "latency_decimal_ms": "41537.6664"
+    }
+  ]
+}

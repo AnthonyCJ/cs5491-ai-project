@@ -1,0 +1,12 @@
+{
+  "latency-comparison.data.json": "1632766073c3c0b32aa99f1ab12e739710a266bec2c4ad26aec95657cbdd83cb",
+  "latency-comparison.png": "9091d6954e4e632283c15267e11aa928dac468171e2427397f42b8b2909ace93",
+  "latency-comparison.svg": "7b15049657ecc6bc6823399c92f006edcf7bb57bd302080919fbc1042176eda3",
+  "placement-attention-L00.data.json": "dd856753daa52b18cfbb79a69a62d1d738e7eac6f10939ffd5581e966e5d3e4b",
+  "placement-attention-L00.png": "47056b66d8a4b743abb6ba1f11d24913d19dde808c912b0bb804055f2b84cd7a",
+  "placement-attention-L00.svg": "632a622eaed503346744e8279bb51c2e01e16ae00f952608775081f7592a6ab8",
+  "placement-mlp-L14.data.json": "1a9afbe0cf50adfb6e759dbb0ea04d06d3168b690afa2a0d385a7a16c9886cd0",
+  "placement-mlp-L14.png": "23a67695ba5de86d0cbb0ece75d9171fb92065a89bf1b048e601af30509aad8c",
+  "placement-mlp-L14.svg": "bb266ee0ea93824da761a9953a691a336e9849f2f9fcee5c6d660eb0a107fd63",
+  "provenance.json": "f017b413f4491b515d53b2629e562dc8bd2a503a2d650ad22a0a7d09021f8ef6"
+}

@@ -1,0 +1,27 @@
+{
+  "status": "passed",
+  "cases_completed": 30,
+  "cases_expected": 30,
+  "cases_with_valid_solutions": 30,
+  "cases_improved": 30,
+  "cases_optimal_for_formulation": 30,
+  "cases_with_errors": 0,
+  "solve_wall_seconds_sum": 10.64452149963472,
+  "maximum_sampled_rss_bytes": 124104704,
+  "module_summaries": {
+    "mlp": {
+      "cases": 15,
+      "valid": 15,
+      "improved": 15,
+      "minimum_reduction_percent": "7.322289445659971144295985604",
+      "maximum_reduction_percent": "22.11130685428948729386310104"
+    },
+    "attention": {
+      "cases": 15,
+      "valid": 15,
+      "improved": 15,
+      "minimum_reduction_percent": "14.67545499751356337372217772",
+      "maximum_reduction_percent": "22.44383069102444605848177962"
+    }
+  }
+}

@@ -1,0 +1,1426 @@
+{
+  "status": "passed",
+  "examples": [
+    {
+      "id": "one-cipher-refresh",
+      "level": 0,
+      "nodes": [
+        [
+          "s",
+          "Identity",
+          0,
+          "input"
+        ],
+        [
+          "a",
+          "Mul",
+          1,
+          "multiply"
+        ]
+      ],
+      "edges": [
+        [
+          "s",
+          "a",
+          1
+        ]
+      ],
+      "hand_cost_ms": "1040.6355",
+      "oracle": {
+        "minimum_decimal_ms": "1040.6355",
+        "complete_placements": 14,
+        "partial_states": 29,
+        "enumeration_wall_seconds": 9.520002640783787e-05
+      },
+      "solution": {
+        "method": "shared-refresh-cp-sat-v1",
+        "status": "OPTIMAL",
+        "l_init": 0,
+        "l_max": 14,
+        "cost_scale_per_ms": 10000,
+        "model_build_wall_seconds": 0.000632600043900311,
+        "solve_wall_seconds": 0.000695300055667758,
+        "solver_reported_wall_seconds": 0.0006398,
+        "solver_reported_user_seconds": 0.0006398,
+        "best_bound_scaled": 10406355.0,
+        "branches": 0,
+        "conflicts": 0,
+        "model_variables": 9,
+        "model_constraints": 9,
+        "objective_safe_absolute_bound": 10414974,
+        "settings": {
+          "time_limit_seconds": 10,
+          "workers": 1,
+          "seed": 5491,
+          "relative_gap_limit": 0,
+          "absolute_gap_limit": 0,
+          "validated_baseline_hint_and_upper_bound": false
+        },
+        "response_stats": "CpSolverResponse summary:\nstatus: OPTIMAL\nobjective: 10406355\nbest_bound: 10406355\nintegers: 1\nbooleans: 0\nconflicts: 0\nbranches: 0\npropagations: 0\ninteger_propagations: 1\nrestarts: 0\nlp_iterations: 0\nwalltime: 0.0006398\nusertime: 0.0006398\ndeterministic_time: 3e-08\ngap_integral: 0\nsolution_fingerprint: 0x69bf39ada128295f\n",
+        "has_solution": true,
+        "objective_scaled": 10406355,
+        "objective_decimal_ms": "1040.6355",
+        "relative_gap": 0.0,
+        "optimality_proven_for_formulation": true,
+        "original_input_levels": {
+          "s": 0,
+          "a": 1
+        },
+        "original_output_levels": {
+          "s": 0,
+          "a": 0
+        },
+        "edge_decisions": [
+          {
+            "from": "s",
+            "to": "a",
+            "ciphertexts": 1,
+            "refresh": 1,
+            "delivered_level": 1
+          }
+        ],
+        "shared_refreshes": [
+          {
+            "after": "s",
+            "type": 1
+          }
+        ]
+      },
+      "validated": {
+        "nodes": [
+          [
+            "s",
+            "Identity",
+            0,
+            "input"
+          ],
+          [
+            "a",
+            "Mul",
+            1,
+            "multiply"
+          ],
+          [
+            "s2_B1_s",
+            "Bootstrap1",
+            0,
+            "Shared B1 after s"
+          ],
+          [
+            "s2_M1_1_s",
+            "Modswitch",
+            13,
+            "Level 14 to 1"
+          ]
+        ],
+        "edges": [
+          [
+            "s",
+            "s2_B1_s",
+            1
+          ],
+          [
+            "s2_B1_s",
+            "s2_M1_1_s",
+            1
+          ],
+          [
+            "s2_M1_1_s",
+            "a",
+            1
+          ]
+        ],
+        "audit": {
+          "latency_decimal_ms": "1040.6355",
+          "n_b1": 1,
+          "n_b2": 0,
+          "n_bootstrap": 1,
+          "depth": 1,
+          "budget": 14,
+          "utilisation": 0.07142857142857142,
+          "l_in": {
+            "s": 0,
+            "s2_B1_s": 0,
+            "s2_M1_1_s": 14,
+            "a": 1
+          },
+          "l_out": {
+            "s": 0,
+            "s2_B1_s": 14,
+            "s2_M1_1_s": 1,
+            "a": 0
+          },
+          "edge_levels": [
+            {
+              "from": "s",
+              "to": "s2_B1_s",
+              "ciphertexts": 1,
+              "level": 0
+            },
+            {
+              "from": "s2_B1_s",
+              "to": "s2_M1_1_s",
+              "ciphertexts": 1,
+              "level": 14
+            },
+            {
+              "from": "s2_M1_1_s",
+              "to": "a",
+              "ciphertexts": 1,
+              "level": 1
+            }
+          ],
+          "node_latency_decimal_ms": {
+            "s": "0",
+            "s2_B1_s": "1040.15",
+            "s2_M1_1_s": "0",
+            "a": "0.4855"
+          },
+          "placement_chains": [
+            {
+              "from": "s",
+              "to": "a",
+              "inserted_nodes": [
+                "s2_B1_s",
+                "s2_M1_1_s"
+              ]
+            }
+          ],
+          "structural_and_level_checks_passed": true
+        },
+        "reference_latency_ms": 1040.6355,
+        "reference_decimal_absolute_error_ms": "0.0000",
+        "checks": {
+          "original_graph_and_ciphertexts": true,
+          "canonical_chains_and_sharing": true,
+          "level_domains_and_merges": true,
+          "bootstrap_eligibility_and_counts": true,
+          "model_reconstruction_audit_agreement": true,
+          "reference_score_and_metrics_agreement": true
+        }
+      },
+      "passed": true
+    },
+    {
+      "id": "paired-refresh",
+      "level": 0,
+      "nodes": [
+        [
+          "s",
+          "Identity",
+          0,
+          "input"
+        ],
+        [
+          "a",
+          "Mul",
+          1,
+          "multiply"
+        ]
+      ],
+      "edges": [
+        [
+          "s",
+          "a",
+          8
+        ]
+      ],
+      "hand_cost_ms": "5173.0055",
+      "oracle": {
+        "minimum_decimal_ms": "5173.0055",
+        "complete_placements": 27,
+        "partial_states": 55,
+        "enumeration_wall_seconds": 0.0001050001010298729
+      },
+      "solution": {
+        "method": "shared-refresh-cp-sat-v1",
+        "status": "OPTIMAL",
+        "l_init": 0,
+        "l_max": 14,
+        "cost_scale_per_ms": 10000,
+        "model_build_wall_seconds": 0.0003983000060543418,
+        "solve_wall_seconds": 0.0004528999561443925,
+        "solver_reported_wall_seconds": 0.000415,
+        "solver_reported_user_seconds": 0.0004151,
+        "best_bound_scaled": 51730055.0,
+        "branches": 0,
+        "conflicts": 0,
+        "model_variables": 10,
+        "model_constraints": 9,
+        "objective_safe_absolute_bound": 134950674,
+        "settings": {
+          "time_limit_seconds": 10,
+          "workers": 1,
+          "seed": 5491,
+          "relative_gap_limit": 0,
+          "absolute_gap_limit": 0,
+          "validated_baseline_hint_and_upper_bound": false
+        },
+        "response_stats": "CpSolverResponse summary:\nstatus: OPTIMAL\nobjective: 51730055\nbest_bound: 51730055\nintegers: 1\nbooleans: 0\nconflicts: 0\nbranches: 0\npropagations: 0\ninteger_propagations: 1\nrestarts: 0\nlp_iterations: 0\nwalltime: 0.000415\nusertime: 0.0004151\ndeterministic_time: 1.87e-06\ngap_integral: 0\nsolution_fingerprint: 0x83ce8493dba8ef\n",
+        "has_solution": true,
+        "objective_scaled": 51730055,
+        "objective_decimal_ms": "5173.0055",
+        "relative_gap": 0.0,
+        "optimality_proven_for_formulation": true,
+        "original_input_levels": {
+          "s": 0,
+          "a": 1
+        },
+        "original_output_levels": {
+          "s": 0,
+          "a": 0
+        },
+        "edge_decisions": [
+          {
+            "from": "s",
+            "to": "a",
+            "ciphertexts": 8,
+            "refresh": 2,
+            "delivered_level": 1
+          }
+        ],
+        "shared_refreshes": [
+          {
+            "after": "s",
+            "type": 2
+          }
+        ]
+      },
+      "validated": {
+        "nodes": [
+          [
+            "s",
+            "Identity",
+            0,
+            "input"
+          ],
+          [
+            "a",
+            "Mul",
+            1,
+            "multiply"
+          ],
+          [
+            "s2_B2_s",
+            "Bootstrap2",
+            0,
+            "Shared B2 after s"
+          ],
+          [
+            "s2_M2_1_s",
+            "Modswitch",
+            12,
+            "Level 13 to 1"
+          ]
+        ],
+        "edges": [
+          [
+            "s",
+            "s2_B2_s",
+            8
+          ],
+          [
+            "s2_B2_s",
+            "s2_M2_1_s",
+            8
+          ],
+          [
+            "s2_M2_1_s",
+            "a",
+            8
+          ]
+        ],
+        "audit": {
+          "latency_decimal_ms": "5173.0055",
+          "n_b1": 0,
+          "n_b2": 4,
+          "n_bootstrap": 4,
+          "depth": 1,
+          "budget": 52,
+          "utilisation": 0.019230769230769232,
+          "l_in": {
+            "s": 0,
+            "s2_B2_s": 0,
+            "s2_M2_1_s": 13,
+            "a": 1
+          },
+          "l_out": {
+            "s": 0,
+            "s2_B2_s": 13,
+            "s2_M2_1_s": 1,
+            "a": 0
+          },
+          "edge_levels": [
+            {
+              "from": "s",
+              "to": "s2_B2_s",
+              "ciphertexts": 8,
+              "level": 0
+            },
+            {
+              "from": "s2_B2_s",
+              "to": "s2_M2_1_s",
+              "ciphertexts": 8,
+              "level": 13
+            },
+            {
+              "from": "s2_M2_1_s",
+              "to": "a",
+              "ciphertexts": 8,
+              "level": 1
+            }
+          ],
+          "node_latency_decimal_ms": {
+            "s": "0",
+            "s2_B2_s": "5172.52",
+            "s2_M2_1_s": "0",
+            "a": "0.4855"
+          },
+          "placement_chains": [
+            {
+              "from": "s",
+              "to": "a",
+              "inserted_nodes": [
+                "s2_B2_s",
+                "s2_M2_1_s"
+              ]
+            }
+          ],
+          "structural_and_level_checks_passed": true
+        },
+        "reference_latency_ms": 5173.0055,
+        "reference_decimal_absolute_error_ms": "0.0000",
+        "checks": {
+          "original_graph_and_ciphertexts": true,
+          "canonical_chains_and_sharing": true,
+          "level_domains_and_merges": true,
+          "bootstrap_eligibility_and_counts": true,
+          "model_reconstruction_audit_agreement": true,
+          "reference_score_and_metrics_agreement": true
+        }
+      },
+      "passed": true
+    },
+    {
+      "id": "shared-refresh-and-modswitch",
+      "level": 0,
+      "nodes": [
+        [
+          "s",
+          "Identity",
+          0,
+          "input"
+        ],
+        [
+          "a",
+          "Mul",
+          1,
+          "left"
+        ],
+        [
+          "b",
+          "Mul",
+          1,
+          "right"
+        ]
+      ],
+      "edges": [
+        [
+          "s",
+          "a",
+          8
+        ],
+        [
+          "s",
+          "b",
+          8
+        ]
+      ],
+      "hand_cost_ms": "5173.4910",
+      "oracle": {
+        "minimum_decimal_ms": "5173.4910",
+        "complete_placements": 729,
+        "partial_states": 2188,
+        "enumeration_wall_seconds": 0.004020199994556606
+      },
+      "solution": {
+        "method": "shared-refresh-cp-sat-v1",
+        "status": "OPTIMAL",
+        "l_init": 0,
+        "l_max": 14,
+        "cost_scale_per_ms": 10000,
+        "model_build_wall_seconds": 0.00043240003287792206,
+        "solve_wall_seconds": 0.0004550999728962779,
+        "solver_reported_wall_seconds": 0.00042310000000000004,
+        "solver_reported_user_seconds": 0.00042320000000000004,
+        "best_bound_scaled": 51734910.0,
+        "branches": 0,
+        "conflicts": 0,
+        "model_variables": 16,
+        "model_constraints": 14,
+        "objective_safe_absolute_bound": 134964148,
+        "settings": {
+          "time_limit_seconds": 10,
+          "workers": 1,
+          "seed": 5491,
+          "relative_gap_limit": 0,
+          "absolute_gap_limit": 0,
+          "validated_baseline_hint_and_upper_bound": false
+        },
+        "response_stats": "CpSolverResponse summary:\nstatus: OPTIMAL\nobjective: 51734910\nbest_bound: 51734910\nintegers: 1\nbooleans: 0\nconflicts: 0\nbranches: 0\npropagations: 0\ninteger_propagations: 1\nrestarts: 0\nlp_iterations: 0\nwalltime: 0.0004231\nusertime: 0.0004232\ndeterministic_time: 2.57e-06\ngap_integral: 0\nsolution_fingerprint: 0x17574d71f2c97a20\n",
+        "has_solution": true,
+        "objective_scaled": 51734910,
+        "objective_decimal_ms": "5173.491",
+        "relative_gap": 0.0,
+        "optimality_proven_for_formulation": true,
+        "original_input_levels": {
+          "s": 0,
+          "a": 1,
+          "b": 1
+        },
+        "original_output_levels": {
+          "s": 0,
+          "a": 0,
+          "b": 0
+        },
+        "edge_decisions": [
+          {
+            "from": "s",
+            "to": "a",
+            "ciphertexts": 8,
+            "refresh": 2,
+            "delivered_level": 1
+          },
+          {
+            "from": "s",
+            "to": "b",
+            "ciphertexts": 8,
+            "refresh": 2,
+            "delivered_level": 1
+          }
+        ],
+        "shared_refreshes": [
+          {
+            "after": "s",
+            "type": 2
+          }
+        ]
+      },
+      "validated": {
+        "nodes": [
+          [
+            "s",
+            "Identity",
+            0,
+            "input"
+          ],
+          [
+            "a",
+            "Mul",
+            1,
+            "left"
+          ],
+          [
+            "b",
+            "Mul",
+            1,
+            "right"
+          ],
+          [
+            "s2_B2_s",
+            "Bootstrap2",
+            0,
+            "Shared B2 after s"
+          ],
+          [
+            "s2_M2_1_s",
+            "Modswitch",
+            12,
+            "Level 13 to 1"
+          ]
+        ],
+        "edges": [
+          [
+            "s",
+            "s2_B2_s",
+            8
+          ],
+          [
+            "s2_B2_s",
+            "s2_M2_1_s",
+            8
+          ],
+          [
+            "s2_M2_1_s",
+            "a",
+            8
+          ],
+          [
+            "s2_M2_1_s",
+            "b",
+            8
+          ]
+        ],
+        "audit": {
+          "latency_decimal_ms": "5173.4910",
+          "n_b1": 0,
+          "n_b2": 4,
+          "n_bootstrap": 4,
+          "depth": 1,
+          "budget": 52,
+          "utilisation": 0.019230769230769232,
+          "l_in": {
+            "s": 0,
+            "s2_B2_s": 0,
+            "s2_M2_1_s": 13,
+            "a": 1,
+            "b": 1
+          },
+          "l_out": {
+            "s": 0,
+            "s2_B2_s": 13,
+            "s2_M2_1_s": 1,
+            "a": 0,
+            "b": 0
+          },
+          "edge_levels": [
+            {
+              "from": "s",
+              "to": "s2_B2_s",
+              "ciphertexts": 8,
+              "level": 0
+            },
+            {
+              "from": "s2_B2_s",
+              "to": "s2_M2_1_s",
+              "ciphertexts": 8,
+              "level": 13
+            },
+            {
+              "from": "s2_M2_1_s",
+              "to": "a",
+              "ciphertexts": 8,
+              "level": 1
+            },
+            {
+              "from": "s2_M2_1_s",
+              "to": "b",
+              "ciphertexts": 8,
+              "level": 1
+            }
+          ],
+          "node_latency_decimal_ms": {
+            "s": "0",
+            "s2_B2_s": "5172.52",
+            "s2_M2_1_s": "0",
+            "a": "0.4855",
+            "b": "0.4855"
+          },
+          "placement_chains": [
+            {
+              "from": "s",
+              "to": "a",
+              "inserted_nodes": [
+                "s2_B2_s",
+                "s2_M2_1_s"
+              ]
+            },
+            {
+              "from": "s",
+              "to": "b",
+              "inserted_nodes": [
+                "s2_B2_s",
+                "s2_M2_1_s"
+              ]
+            }
+          ],
+          "structural_and_level_checks_passed": true
+        },
+        "reference_latency_ms": 5173.491,
+        "reference_decimal_absolute_error_ms": "0.0000",
+        "checks": {
+          "original_graph_and_ciphertexts": true,
+          "canonical_chains_and_sharing": true,
+          "level_domains_and_merges": true,
+          "bootstrap_eligibility_and_counts": true,
+          "model_reconstruction_audit_agreement": true,
+          "reference_score_and_metrics_agreement": true
+        }
+      },
+      "passed": true
+    },
+    {
+      "id": "minimum-level-merge",
+      "level": 2,
+      "nodes": [
+        [
+          "s",
+          "Identity",
+          0,
+          "input"
+        ],
+        [
+          "a",
+          "Mul",
+          1,
+          "branch"
+        ],
+        [
+          "b",
+          "Add",
+          0,
+          "merge"
+        ]
+      ],
+      "edges": [
+        [
+          "s",
+          "a",
+          8
+        ],
+        [
+          "s",
+          "b",
+          8
+        ],
+        [
+          "a",
+          "b",
+          8
+        ]
+      ],
+      "hand_cost_ms": "0.5234",
+      "oracle": {
+        "minimum_decimal_ms": "0.5234",
+        "complete_placements": 33280,
+        "partial_states": 67489,
+        "enumeration_wall_seconds": 0.10922280000522733
+      },
+      "solution": {
+        "method": "shared-refresh-cp-sat-v1",
+        "status": "OPTIMAL",
+        "l_init": 2,
+        "l_max": 14,
+        "cost_scale_per_ms": 10000,
+        "model_build_wall_seconds": 0.0006517000729218125,
+        "solve_wall_seconds": 0.0024712999584153295,
+        "solver_reported_wall_seconds": 0.0024196,
+        "solver_reported_user_seconds": 0.0024197000000000003,
+        "best_bound_scaled": 5234.0,
+        "branches": 91,
+        "conflicts": 1,
+        "model_variables": 22,
+        "model_constraints": 19,
+        "objective_safe_absolute_bound": 269888729,
+        "settings": {
+          "time_limit_seconds": 10,
+          "workers": 1,
+          "seed": 5491,
+          "relative_gap_limit": 0,
+          "absolute_gap_limit": 0,
+          "validated_baseline_hint_and_upper_bound": false
+        },
+        "response_stats": "CpSolverResponse summary:\nstatus: OPTIMAL\nobjective: 5234\nbest_bound: 5234\nintegers: 10\nbooleans: 18\nconflicts: 1\nbranches: 91\npropagations: 135\ninteger_propagations: 174\nrestarts: 0\nlp_iterations: 0\nwalltime: 0.0024196\nusertime: 0.0024197\ndeterministic_time: 6.31793e-05\ngap_integral: 0\nsolution_fingerprint: 0xc75616e7545b6411\n",
+        "has_solution": true,
+        "objective_scaled": 5234,
+        "objective_decimal_ms": "0.5234",
+        "relative_gap": 0.0,
+        "optimality_proven_for_formulation": true,
+        "original_input_levels": {
+          "s": 2,
+          "a": 1,
+          "b": 0
+        },
+        "original_output_levels": {
+          "s": 2,
+          "a": 0,
+          "b": 0
+        },
+        "edge_decisions": [
+          {
+            "from": "s",
+            "to": "a",
+            "ciphertexts": 8,
+            "refresh": 0,
+            "delivered_level": 1
+          },
+          {
+            "from": "s",
+            "to": "b",
+            "ciphertexts": 8,
+            "refresh": 0,
+            "delivered_level": 0
+          },
+          {
+            "from": "a",
+            "to": "b",
+            "ciphertexts": 8,
+            "refresh": 0,
+            "delivered_level": 0
+          }
+        ],
+        "shared_refreshes": []
+      },
+      "validated": {
+        "nodes": [
+          [
+            "s",
+            "Identity",
+            0,
+            "input"
+          ],
+          [
+            "a",
+            "Mul",
+            1,
+            "branch"
+          ],
+          [
+            "b",
+            "Add",
+            0,
+            "merge"
+          ],
+          [
+            "s2_M0_1_s",
+            "Modswitch",
+            1,
+            "Level 2 to 1"
+          ],
+          [
+            "s2_M0_0_s",
+            "Modswitch",
+            2,
+            "Level 2 to 0"
+          ]
+        ],
+        "edges": [
+          [
+            "s",
+            "s2_M0_1_s",
+            8
+          ],
+          [
+            "s2_M0_1_s",
+            "a",
+            8
+          ],
+          [
+            "s",
+            "s2_M0_0_s",
+            8
+          ],
+          [
+            "s2_M0_0_s",
+            "b",
+            8
+          ],
+          [
+            "a",
+            "b",
+            8
+          ]
+        ],
+        "audit": {
+          "latency_decimal_ms": "0.5234",
+          "n_b1": 0,
+          "n_b2": 0,
+          "n_bootstrap": 0,
+          "depth": 1,
+          "budget": 2,
+          "utilisation": 0.5,
+          "l_in": {
+            "s": 2,
+            "s2_M0_1_s": 2,
+            "s2_M0_0_s": 2,
+            "a": 1,
+            "b": 0
+          },
+          "l_out": {
+            "s": 2,
+            "s2_M0_1_s": 1,
+            "s2_M0_0_s": 0,
+            "a": 0,
+            "b": 0
+          },
+          "edge_levels": [
+            {
+              "from": "s",
+              "to": "s2_M0_1_s",
+              "ciphertexts": 8,
+              "level": 2
+            },
+            {
+              "from": "s2_M0_1_s",
+              "to": "a",
+              "ciphertexts": 8,
+              "level": 1
+            },
+            {
+              "from": "s",
+              "to": "s2_M0_0_s",
+              "ciphertexts": 8,
+              "level": 2
+            },
+            {
+              "from": "s2_M0_0_s",
+              "to": "b",
+              "ciphertexts": 8,
+              "level": 0
+            },
+            {
+              "from": "a",
+              "to": "b",
+              "ciphertexts": 8,
+              "level": 0
+            }
+          ],
+          "node_latency_decimal_ms": {
+            "s": "0",
+            "s2_M0_1_s": "0",
+            "s2_M0_0_s": "0",
+            "a": "0.4855",
+            "b": "0.0379"
+          },
+          "placement_chains": [
+            {
+              "from": "s",
+              "to": "a",
+              "inserted_nodes": [
+                "s2_M0_1_s"
+              ]
+            },
+            {
+              "from": "s",
+              "to": "b",
+              "inserted_nodes": [
+                "s2_M0_0_s"
+              ]
+            }
+          ],
+          "structural_and_level_checks_passed": true
+        },
+        "reference_latency_ms": 0.5234000000000001,
+        "reference_decimal_absolute_error_ms": "1E-16",
+        "checks": {
+          "original_graph_and_ciphertexts": true,
+          "canonical_chains_and_sharing": true,
+          "level_domains_and_merges": true,
+          "bootstrap_eligibility_and_counts": true,
+          "model_reconstruction_audit_agreement": true,
+          "reference_score_and_metrics_agreement": true
+        }
+      },
+      "passed": true
+    },
+    {
+      "id": "shared-refresh-different-drops",
+      "level": 0,
+      "nodes": [
+        [
+          "s",
+          "Identity",
+          0,
+          "input"
+        ],
+        [
+          "a",
+          "Mul",
+          1,
+          "left"
+        ],
+        [
+          "b",
+          "PCMM3",
+          2,
+          "right"
+        ]
+      ],
+      "edges": [
+        [
+          "s",
+          "a",
+          4
+        ],
+        [
+          "s",
+          "b",
+          4
+        ]
+      ],
+      "hand_cost_ms": "6628.8055",
+      "oracle": {
+        "minimum_decimal_ms": "6628.8055",
+        "complete_placements": 182,
+        "partial_states": 547,
+        "enumeration_wall_seconds": 0.0009210000280290842
+      },
+      "solution": {
+        "method": "shared-refresh-cp-sat-v1",
+        "status": "OPTIMAL",
+        "l_init": 0,
+        "l_max": 14,
+        "cost_scale_per_ms": 10000,
+        "model_build_wall_seconds": 0.000811500009149313,
+        "solve_wall_seconds": 0.00038760004099458456,
+        "solver_reported_wall_seconds": 0.0003547,
+        "solver_reported_user_seconds": 0.0003547,
+        "best_bound_scaled": 66288055.0,
+        "branches": 0,
+        "conflicts": 0,
+        "model_variables": 15,
+        "model_constraints": 15,
+        "objective_safe_absolute_bound": 119471074,
+        "settings": {
+          "time_limit_seconds": 10,
+          "workers": 1,
+          "seed": 5491,
+          "relative_gap_limit": 0,
+          "absolute_gap_limit": 0,
+          "validated_baseline_hint_and_upper_bound": false
+        },
+        "response_stats": "CpSolverResponse summary:\nstatus: OPTIMAL\nobjective: 66288055\nbest_bound: 66288055\nintegers: 1\nbooleans: 0\nconflicts: 0\nbranches: 0\npropagations: 0\ninteger_propagations: 1\nrestarts: 0\nlp_iterations: 0\nwalltime: 0.0003547\nusertime: 0.0003547\ndeterministic_time: 5e-08\ngap_integral: 0\nsolution_fingerprint: 0xd831136ca9fe4364\n",
+        "has_solution": true,
+        "objective_scaled": 66288055,
+        "objective_decimal_ms": "6628.8055",
+        "relative_gap": 0.0,
+        "optimality_proven_for_formulation": true,
+        "original_input_levels": {
+          "s": 0,
+          "a": 1,
+          "b": 2
+        },
+        "original_output_levels": {
+          "s": 0,
+          "a": 0,
+          "b": 0
+        },
+        "edge_decisions": [
+          {
+            "from": "s",
+            "to": "a",
+            "ciphertexts": 4,
+            "refresh": 1,
+            "delivered_level": 1
+          },
+          {
+            "from": "s",
+            "to": "b",
+            "ciphertexts": 4,
+            "refresh": 1,
+            "delivered_level": 2
+          }
+        ],
+        "shared_refreshes": [
+          {
+            "after": "s",
+            "type": 1
+          }
+        ]
+      },
+      "validated": {
+        "nodes": [
+          [
+            "s",
+            "Identity",
+            0,
+            "input"
+          ],
+          [
+            "a",
+            "Mul",
+            1,
+            "left"
+          ],
+          [
+            "b",
+            "PCMM3",
+            2,
+            "right"
+          ],
+          [
+            "s2_B1_s",
+            "Bootstrap1",
+            0,
+            "Shared B1 after s"
+          ],
+          [
+            "s2_M1_1_s",
+            "Modswitch",
+            13,
+            "Level 14 to 1"
+          ],
+          [
+            "s2_M1_2_s",
+            "Modswitch",
+            12,
+            "Level 14 to 2"
+          ]
+        ],
+        "edges": [
+          [
+            "s",
+            "s2_B1_s",
+            4
+          ],
+          [
+            "s2_B1_s",
+            "s2_M1_1_s",
+            4
+          ],
+          [
+            "s2_M1_1_s",
+            "a",
+            4
+          ],
+          [
+            "s2_B1_s",
+            "s2_M1_2_s",
+            4
+          ],
+          [
+            "s2_M1_2_s",
+            "b",
+            4
+          ]
+        ],
+        "audit": {
+          "latency_decimal_ms": "6628.8055",
+          "n_b1": 4,
+          "n_b2": 0,
+          "n_bootstrap": 4,
+          "depth": 2,
+          "budget": 56,
+          "utilisation": 0.03571428571428571,
+          "l_in": {
+            "s": 0,
+            "s2_B1_s": 0,
+            "s2_M1_1_s": 14,
+            "s2_M1_2_s": 14,
+            "a": 1,
+            "b": 2
+          },
+          "l_out": {
+            "s": 0,
+            "s2_B1_s": 14,
+            "s2_M1_1_s": 1,
+            "s2_M1_2_s": 2,
+            "a": 0,
+            "b": 0
+          },
+          "edge_levels": [
+            {
+              "from": "s",
+              "to": "s2_B1_s",
+              "ciphertexts": 4,
+              "level": 0
+            },
+            {
+              "from": "s2_B1_s",
+              "to": "s2_M1_1_s",
+              "ciphertexts": 4,
+              "level": 14
+            },
+            {
+              "from": "s2_M1_1_s",
+              "to": "a",
+              "ciphertexts": 4,
+              "level": 1
+            },
+            {
+              "from": "s2_B1_s",
+              "to": "s2_M1_2_s",
+              "ciphertexts": 4,
+              "level": 14
+            },
+            {
+              "from": "s2_M1_2_s",
+              "to": "b",
+              "ciphertexts": 4,
+              "level": 2
+            }
+          ],
+          "node_latency_decimal_ms": {
+            "s": "0",
+            "s2_B1_s": "4160.60",
+            "s2_M1_1_s": "0",
+            "s2_M1_2_s": "0",
+            "a": "0.4855",
+            "b": "2467.72"
+          },
+          "placement_chains": [
+            {
+              "from": "s",
+              "to": "a",
+              "inserted_nodes": [
+                "s2_B1_s",
+                "s2_M1_1_s"
+              ]
+            },
+            {
+              "from": "s",
+              "to": "b",
+              "inserted_nodes": [
+                "s2_B1_s",
+                "s2_M1_2_s"
+              ]
+            }
+          ],
+          "structural_and_level_checks_passed": true
+        },
+        "reference_latency_ms": 6628.8055,
+        "reference_decimal_absolute_error_ms": "0.0000",
+        "checks": {
+          "original_graph_and_ciphertexts": true,
+          "canonical_chains_and_sharing": true,
+          "level_domains_and_merges": true,
+          "bootstrap_eligibility_and_counts": true,
+          "model_reconstruction_audit_agreement": true,
+          "reference_score_and_metrics_agreement": true
+        }
+      },
+      "passed": true
+    },
+    {
+      "id": "refresh-after-ciphertext-change",
+      "level": 0,
+      "nodes": [
+        [
+          "s",
+          "Identity",
+          0,
+          "input"
+        ],
+        [
+          "a",
+          "Conjugate",
+          0,
+          "halve"
+        ],
+        [
+          "b",
+          "Mul",
+          1,
+          "multiply"
+        ]
+      ],
+      "edges": [
+        [
+          "s",
+          "a",
+          8
+        ],
+        [
+          "a",
+          "b",
+          4
+        ]
+      ],
+      "hand_cost_ms": "4162.7555",
+      "oracle": {
+        "minimum_decimal_ms": "4162.7555",
+        "complete_placements": 616,
+        "partial_states": 1263,
+        "enumeration_wall_seconds": 0.001859899959526956
+      },
+      "solution": {
+        "method": "shared-refresh-cp-sat-v1",
+        "status": "OPTIMAL",
+        "l_init": 0,
+        "l_max": 14,
+        "cost_scale_per_ms": 10000,
+        "model_build_wall_seconds": 0.0005578999407589436,
+        "solve_wall_seconds": 0.0005311999702826142,
+        "solver_reported_wall_seconds": 0.0005019,
+        "solver_reported_user_seconds": 0.0005019,
+        "best_bound_scaled": 41627555.0,
+        "branches": 0,
+        "conflicts": 0,
+        "model_variables": 17,
+        "model_constraints": 16,
+        "objective_safe_absolute_bound": 176595774,
+        "settings": {
+          "time_limit_seconds": 10,
+          "workers": 1,
+          "seed": 5491,
+          "relative_gap_limit": 0,
+          "absolute_gap_limit": 0,
+          "validated_baseline_hint_and_upper_bound": false
+        },
+        "response_stats": "CpSolverResponse summary:\nstatus: OPTIMAL\nobjective: 41627555\nbest_bound: 41627555\nintegers: 1\nbooleans: 0\nconflicts: 0\nbranches: 0\npropagations: 0\ninteger_propagations: 1\nrestarts: 0\nlp_iterations: 0\nwalltime: 0.0005019\nusertime: 0.0005019\ndeterministic_time: 3.85e-06\ngap_integral: 0\nsolution_fingerprint: 0x7b355ac5d22f29a3\n",
+        "has_solution": true,
+        "objective_scaled": 41627555,
+        "objective_decimal_ms": "4162.7555",
+        "relative_gap": 0.0,
+        "optimality_proven_for_formulation": true,
+        "original_input_levels": {
+          "s": 0,
+          "a": 0,
+          "b": 1
+        },
+        "original_output_levels": {
+          "s": 0,
+          "a": 0,
+          "b": 0
+        },
+        "edge_decisions": [
+          {
+            "from": "s",
+            "to": "a",
+            "ciphertexts": 8,
+            "refresh": 0,
+            "delivered_level": 0
+          },
+          {
+            "from": "a",
+            "to": "b",
+            "ciphertexts": 4,
+            "refresh": 1,
+            "delivered_level": 1
+          }
+        ],
+        "shared_refreshes": [
+          {
+            "after": "a",
+            "type": 1
+          }
+        ]
+      },
+      "validated": {
+        "nodes": [
+          [
+            "s",
+            "Identity",
+            0,
+            "input"
+          ],
+          [
+            "a",
+            "Conjugate",
+            0,
+            "halve"
+          ],
+          [
+            "b",
+            "Mul",
+            1,
+            "multiply"
+          ],
+          [
+            "s2_B1_a",
+            "Bootstrap1",
+            0,
+            "Shared B1 after a"
+          ],
+          [
+            "s2_M1_1_a",
+            "Modswitch",
+            13,
+            "Level 14 to 1"
+          ]
+        ],
+        "edges": [
+          [
+            "s",
+            "a",
+            8
+          ],
+          [
+            "a",
+            "s2_B1_a",
+            4
+          ],
+          [
+            "s2_B1_a",
+            "s2_M1_1_a",
+            4
+          ],
+          [
+            "s2_M1_1_a",
+            "b",
+            4
+          ]
+        ],
+        "audit": {
+          "latency_decimal_ms": "4162.7555",
+          "n_b1": 4,
+          "n_b2": 0,
+          "n_bootstrap": 4,
+          "depth": 1,
+          "budget": 56,
+          "utilisation": 0.017857142857142856,
+          "l_in": {
+            "s": 0,
+            "a": 0,
+            "s2_B1_a": 0,
+            "s2_M1_1_a": 14,
+            "b": 1
+          },
+          "l_out": {
+            "s": 0,
+            "a": 0,
+            "s2_B1_a": 14,
+            "s2_M1_1_a": 1,
+            "b": 0
+          },
+          "edge_levels": [
+            {
+              "from": "s",
+              "to": "a",
+              "ciphertexts": 8,
+              "level": 0
+            },
+            {
+              "from": "a",
+              "to": "s2_B1_a",
+              "ciphertexts": 4,
+              "level": 0
+            },
+            {
+              "from": "s2_B1_a",
+              "to": "s2_M1_1_a",
+              "ciphertexts": 4,
+              "level": 14
+            },
+            {
+              "from": "s2_M1_1_a",
+              "to": "b",
+              "ciphertexts": 4,
+              "level": 1
+            }
+          ],
+          "node_latency_decimal_ms": {
+            "s": "0",
+            "a": "1.67",
+            "s2_B1_a": "4160.60",
+            "s2_M1_1_a": "0",
+            "b": "0.4855"
+          },
+          "placement_chains": [
+            {
+              "from": "a",
+              "to": "b",
+              "inserted_nodes": [
+                "s2_B1_a",
+                "s2_M1_1_a"
+              ]
+            }
+          ],
+          "structural_and_level_checks_passed": true
+        },
+        "reference_latency_ms": 4162.7555,
+        "reference_decimal_absolute_error_ms": "0.0000",
+        "checks": {
+          "original_graph_and_ciphertexts": true,
+          "canonical_chains_and_sharing": true,
+          "level_domains_and_merges": true,
+          "bootstrap_eligibility_and_counts": true,
+          "model_reconstruction_audit_agreement": true,
+          "reference_score_and_metrics_agreement": true
+        }
+      },
+      "passed": true
+    }
+  ],
+  "scope": "Complete finite search of six tiny examples, not enumeration of the course blocks."
+}

@@ -1,0 +1,115 @@
+{
+  "cases_compared": 18,
+  "matching_exact_scores": 18,
+  "note": "Numerical continuity only; equal-cost graphs may differ. No historical record was changed.",
+  "cases": [
+    {
+      "case_id": "attention-L00",
+      "s2_decimal_ms": "45698.2664",
+      "s3_decimal_ms": "45698.2664",
+      "same_exact_score": true
+    },
+    {
+      "case_id": "attention-L09",
+      "s2_decimal_ms": "41537.6664",
+      "s3_decimal_ms": "41537.6664",
+      "same_exact_score": true
+    },
+    {
+      "case_id": "attention-L14",
+      "s2_decimal_ms": "41537.6664",
+      "s3_decimal_ms": "41537.6664",
+      "same_exact_score": true
+    },
+    {
+      "case_id": "mlp-L00",
+      "s2_decimal_ms": "26069.9524",
+      "s3_decimal_ms": "26069.9524",
+      "same_exact_score": true
+    },
+    {
+      "case_id": "mlp-L01",
+      "s2_decimal_ms": "26069.9524",
+      "s3_decimal_ms": "26069.9524",
+      "same_exact_score": true
+    },
+    {
+      "case_id": "mlp-L02",
+      "s2_decimal_ms": "26069.9524",
+      "s3_decimal_ms": "26069.9524",
+      "same_exact_score": true
+    },
+    {
+      "case_id": "mlp-L03",
+      "s2_decimal_ms": "26069.9524",
+      "s3_decimal_ms": "26069.9524",
+      "same_exact_score": true
+    },
+    {
+      "case_id": "mlp-L04",
+      "s2_decimal_ms": "26069.9524",
+      "s3_decimal_ms": "26069.9524",
+      "same_exact_score": true
+    },
+    {
+      "case_id": "mlp-L05",
+      "s2_decimal_ms": "26069.9524",
+      "s3_decimal_ms": "26069.9524",
+      "same_exact_score": true
+    },
+    {
+      "case_id": "mlp-L06",
+      "s2_decimal_ms": "26069.9524",
+      "s3_decimal_ms": "26069.9524",
+      "same_exact_score": true
+    },
+    {
+      "case_id": "mlp-L07",
+      "s2_decimal_ms": "26069.9524",
+      "s3_decimal_ms": "26069.9524",
+      "same_exact_score": true
+    },
+    {
+      "case_id": "mlp-L08",
+      "s2_decimal_ms": "26069.9524",
+      "s3_decimal_ms": "26069.9524",
+      "same_exact_score": true
+    },
+    {
+      "case_id": "mlp-L09",
+      "s2_decimal_ms": "26069.9524",
+      "s3_decimal_ms": "26069.9524",
+      "same_exact_score": true
+    },
+    {
+      "case_id": "mlp-L10",
+      "s2_decimal_ms": "26069.9524",
+      "s3_decimal_ms": "26069.9524",
+      "same_exact_score": true
+    },
+    {
+      "case_id": "mlp-L11",
+      "s2_decimal_ms": "26069.9524",
+      "s3_decimal_ms": "26069.9524",
+      "same_exact_score": true
+    },
+    {
+      "case_id": "mlp-L12",
+      "s2_decimal_ms": "26069.9524",
+      "s3_decimal_ms": "26069.9524",
+      "same_exact_score": true
+    },
+    {
+      "case_id": "mlp-L13",
+      "s2_decimal_ms": "26069.9524",
+      "s3_decimal_ms": "26069.9524",
+      "same_exact_score": true
+    },
+    {
+      "case_id": "mlp-L14",
+      "s2_decimal_ms": "21911.5924",
+      "s3_decimal_ms": "21911.5924",
+      "same_exact_score": true
+    }
+  ]
+}

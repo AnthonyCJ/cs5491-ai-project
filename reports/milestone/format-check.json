@@ -1,0 +1,85 @@
+{
+  "artifact_version": "M-S3-v1",
+  "checked_at_utc": "2026-09-28T12:42:06.810630+00:00",
+  "source_sha256": "cd0a19813e6687537142da27fdceb07c0b1ebc7b1a2737eab3d2bae3350bb475",
+  "generator_sha256": "b9b1b48602be7bbe5a1d3ab7995792a84e4afdbdffa2b9eb0c16d5ba606cfce4",
+  "pdf_sha256": "01aaaccfc12c77d614ec457e3b0387a9728e8f99dbbe5339056330828b0be8c3",
+  "page_count": 4,
+  "page_size": "A4",
+  "font_sizes_points": [
+    12
+  ],
+  "used_fonts_embedded": {
+    "/AAAAAA+TimesNewRomanPSMT": true,
+    "/AAAAAA+TimesNewRomanPS-BoldMT": true
+  },
+  "configured_margins_cm": [
+    2.5,
+    2.5,
+    2.5,
+    2.5
+  ],
+  "all_text_inside_margins": true,
+  "configured_body_leading_points": 12,
+  "page_checks": [
+    {
+      "page": 1,
+      "text_bbox_points": [
+        70.86614,
+        73.45604360000004,
+        524.4094525999998,
+        770.6135036000001
+      ]
+    },
+    {
+      "page": 2,
+      "text_bbox_points": [
+        70.86614,
+        73.45604360000004,
+        524.4094555999999,
+        770.6135036000001
+      ]
+    },
+    {
+      "page": 3,
+      "text_bbox_points": [
+        70.86614,
+        73.45604360000004,
+        524.4094556,
+        770.6135036000001
+      ]
+    },
+    {
+      "page": 4,
+      "text_bbox_points": [
+        70.86614,
+        73.45604360000004,
+        524.1884131999999,
+        770.6135036000001
+      ]
+    }
+  ],
+  "all_source_prose_found": true,
+  "result_rows_checked_against_cases": 4,
+  "vector_figure_points": 30,
+  "visual_review": {
+    "renderer": "Poppler pdftoppm",
+    "dpi": 130,
+    "pages_reviewed": 4,
+    "passed": true,
+    "observations": "All four pages inspected; text, table and native vector chart are legible, with no clipping, overlap or missing glyphs."
+  },
+  "technical_content_and_format": "ready",
+  "formal_identity_complete": false,
+  "online_repository_available": false,
+  "instructor_redistribution_permission_resolved": false,
+  "formal_submission_ready": false,
+  "submitted": false,
+  "pending_before_submission": [
+    "Formal English names, student IDs and one contact email",
+    "Restricted copy and fresh content/format check",
+    "Instructor-code redistribution permission or approved acquisition method",
+    "Public repository URL and grading revision",
+    "Submission authorisation"
+  ]
+}

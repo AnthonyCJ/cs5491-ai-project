@@ -7,3 +7,4 @@ results/local-*/
 *.egg-info/
 .pytest_cache/
 .DS_Store
+*.baiduyun.uploading.cfg

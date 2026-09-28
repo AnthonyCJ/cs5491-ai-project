@@ -12,15 +12,73 @@ independent reproduction, and consistent results and documentation. Staged
 prototypes support that target; they do not reduce the final requirements.
 Production deployment and publication-level research are outside this scope.
 
-**Current implementation: S2, an original shared-refresh optimisation model.**
-All 15 MLP inputs and Attention inputs 0, 9 and 14 have valid lower-cost
-placements. The remaining 12 Attention inputs, the formal experiment stage
-and independent clean-environment reproduction remain future work.
-The [one-page Proposal and editable source](reports/proposal/README.md) are
-prepared with public identity placeholders; the formal identity requirement
-must be completed in a separate submission copy.
+**Current implementation: S3, full coverage with the original shared-refresh model.**
+All 30 required instances have independently validated lower-cost placements
+and matching optimal bounds for the encoded handout problem. The
+[four-page Milestone draft](reports/milestone/README.md) and the preserved
+[one-page Proposal](reports/proposal/README.md) contain public identity placeholders.
+Formal identities, instructor-code redistribution permission and an online
+public repository remain required before complete course submission readiness.
+S4 frozen experiments and S6 independent reproduction remain future work.
 
-## S2 results
+## S3 full-instance results and reproduction
+
+[S3-OPT-001](results/S3-OPT-001/README.md) actually solved all 30 cases in one
+configuration. No case failed, timed out, fell back to a baseline or failed to
+improve. All 18 overlapping scores match the historical S2 values exactly.
+
+| Cases | Estimated latency (ms) | Reduction against same-input baseline |
+|---|---:|---:|
+| MLP, inputs 0..13 | 26,069.9524 | 7.3223% to 7.3291% |
+| MLP, input 14 | 21,911.5924 | 22.1113% |
+| Attention, inputs 0..5 | 45,698.2664 | 14.6755% |
+| Attention, inputs 6..14 | 41,537.6664 | 22.4438% |
+
+Read the [S3 checks, interpretation and limits](docs/s3-validation.md),
+[all 30 rows](results/S3-OPT-001/summary.csv), [aggregate record](results/S3-OPT-001/summary.json),
+[historical comparison](results/S3-OPT-001/s2-comparison.json) and
+[complete comparison and representative DAGs](figures/S3-OPT-001/README.md).
+The shared mathematical formulation remains in [s2-method.md](docs/s2-method.md).
+Documents and figures explicitly labelled S1 or S2 retain their stage's historical scope.
+
+Use the existing pinned CPU environment, or create it on a new machine:
+
+```powershell
+py -3.13 -m venv .venv-s2
+.\.venv-s2\Scripts\python.exe -m pip install -r requirements-s2.txt
+.\.venv-s2\Scripts\python.exe -m pip check
+$env:MPLCONFIGDIR = Join-Path (Get-Location) '.cache/matplotlib'
+.\.venv-s2\Scripts\python.exe -B -m unittest discover -s tests -v
+.\.venv-s2\Scripts\python.exe -B run_s3.py verify --output results/S3-OPT-001
+.\.venv-s2\Scripts\python.exe -B run_s3.py summary --output results/S3-OPT-001
+.\.venv-s2\Scripts\python.exe -B run_s3.py run --config configs/s3-all-instances.json --output results/local-s3-reproduction
+.\.venv-s2\Scripts\python.exe -B run_s3.py plot --output results/local-s3-reproduction --figures results/local-s3-figures
+```
+
+The expected search message is `PASSED: 30/30 instances improved`; the saved
+verification reports `30/30 valid placements; 30/30 improved`. Verification,
+summary and plotting do not search. Use new output directories for each repeat.
+The test suite passed **44 checks**. Its deliberately failed fixture can print
+`0/30` during a passing fault-injection test; that is not the course experiment.
+Report generation has separate dependencies and commands in the Milestone directory.
+
+The 30 actual solve calls summed to **10.6445 s**, with **118.36 MiB** maximum
+sampled process RSS. MLP calls took 0.0075-0.0132 s; Attention calls took
+0.5166-0.9656 s. One worker, seed 5491 and a 60 s per-case limit were used.
+These are local Windows AMD64 / CPython 3.13.9 observations, not guarantees.
+RSS includes imported packages and is sampled every 20 ms; a separate Windows
+peak field covers the process lifetime. Build/validation and search intervals
+are separately identified in the cases. No real encrypted inference was performed.
+
+The executed numerical source commit is
+`415f2a91462fb361782b84756a552ad85f44a7b5`, clean at run time, with fingerprint
+`7a71e0079618ffd5acc911d5eb1b1629340f76f2494a0e3ffcc94efb3eefe146`.
+Later material commits add reports and plotting code; figure and report
+provenance identify their generators separately. Numeric scores should match;
+timing, memory, timestamps and equally optimal switch arrangements may differ.
+S1/S2 source and saved records are retained unchanged.
+
+## Historical S2 results
 
 [S2-OPT-001](results/S2-OPT-001/README.md) contains 18 actual CPU searches,
 reconstructed DAGs, independent checks and reference scores. Every case has
@@ -131,8 +189,12 @@ Timing excludes interpreter startup and final report/manifest writing.
 - `src/bootplacement/s2_*.py`: original model, reconstruction, validation, experiments and figures.
 - `configs/s1-baselines.json`: fixed 30-case configuration.
 - `configs/s2-mlp-attention.json`: the 18 instances permitted by the S2 scope.
+- `run_s3.py`, `src/bootplacement/s3_runner.py`: complete S3 execution and evidence checks.
+- `configs/s3-all-instances.json`: both blocks and all 15 input levels each.
+- `src/bootplacement/s3_figures.py`: plots from saved S3 results.
+- `reports/milestone/`: editable draft, PDF, builder and format evidence.
 - `vendor/dag_builder.py`: byte-preserved instructor reference implementation.
-- `tests/`: 12 original S1 checks plus 16 S2 checks.
+- `tests/`: 12 original S1 checks, 16 S2 checks and 16 S3 checks.
 - `results/S1-BL-001/`: raw DAGs, all levels, per-node costs, metrics and checksums.
 - [Calibration evidence and limits](docs/s1-calibration.md).
 - [Rules, latency table and terminology](docs/rules-and-metrics.md).
@@ -148,6 +210,6 @@ that point needs resolution before publishing the local repository. No licence
 is asserted for third-party material. Public release and course submission have
 not occurred. This repository contains no personal workspace or identity files.
 
-Later stages will complete Attention coverage, freeze the formal experiment
-configuration, prepare the remaining reports and independently reproduce the project.
+Later stages will freeze the formal experiment configuration, complete the
+required final figures and reports, and independently reproduce the project.
 The optional connected Attention + MLP problem is outside the agreed course-project scope.
