@@ -1,0 +1,388 @@
+{
+  "artifact_version": "M-W01-ID-v1",
+  "packaging_version": "PUBLIC-PACKAGING-v1",
+  "checked_date": "2026-09-30",
+  "scope": "Repository-only dependency relocation and document generation; not independent algorithm reproduction",
+  "public_only_dependencies_verified": true,
+  "private_directory_dependencies": false,
+  "external_requirements": "Existing Python/ReportLab 4.4.9, pdfplumber 0.11.9, pypdf 6.10.0, licensed Times New Roman, Poppler; no installations or environment changes",
+  "imported_pdf_sha256": "659d8ec7227e9847ae3a2e255079780d2764576eb966c73feb255172d854e7ca",
+  "regenerated_pdf_sha256": "ec8faef4886c50171c79513ba25ce6da320c979aba0d01a12bfc4728be7acf20",
+  "public_input_sha256": {
+    "configs/s3-all-instances.json": "0e57c5386bd41b00a6b22347171318acb597b22a66874a4fa997c74a47f190cf",
+    "docs/rules-and-metrics.md": "3d201fc1f84a2f4d9078cf45123925115f30a595de5c7bf4c46e1dd1c3bd7c84",
+    "docs/s2-method.md": "fa63c044bac036757ae1b9ffbc3ad21e972aed398fee6626bf9dba69ddb212bc",
+    "docs/s3-checks.json": "e545802ead78d19eb071e04f3ddc7e49ff7ff7f41c26eb6144ae739f849c54f6",
+    "docs/s3-validation.md": "ba76ee3f62bebebd0791c979f2c9bb1f1e3f318936e9f5b616503c466a40454f",
+    "figures/S3-OPT-001/artifacts.sha256.json": "4cd11535b3d3f12b17a3a68d8d5897ce859b21dab8d99cfbb51f4094c15c974a",
+    "figures/S3-OPT-001/provenance.json": "f017b413f4491b515d53b2629e562dc8bd2a503a2d650ad22a0a7d09021f8ef6",
+    "reports/check_identity_report.py": "3b6d6a69b50e2919a8f9359dc9678de9b012f83d3d2ad9d5f9b4ee29c9245701",
+    "reports/identity_report_support.py": "ca1e7bfd53b7c42870e1ea28e6cdcd52a53dbf40deb42acfdf82d0c0addd0a25",
+    "reports/milestone/build_milestone.py": "b9b1b48602be7bbe5a1d3ab7995792a84e4afdbdffa2b9eb0c16d5ba606cfce4",
+    "reports/milestone/versions/M-W01-ID-v1/build_milestone.py": "5ddac0b517804a66184a173c1ab8ed4797060b0b1f5f781fcd7ab85b26f097c1",
+    "reports/milestone/versions/M-W01-ID-v1/identity.json": "68471010d8a0b95a1ecd9bf9cef2fe8f6e8700c99bd072eebf54cc0a6cc1fc78",
+    "reports/milestone/versions/M-W01-ID-v1/import-info.json": "d5d2d807664c9451d5badc256040e174d01167fc3b339fc021c48859aa81bf15",
+    "reports/milestone/versions/M-W01-ID-v1/milestone.md": "23fef47dad4a6bbba15e512fa5452a3fb3f1fcf6b19be5fa36157e47983922ea",
+    "reports/milestone/versions/M-W01-ID-v1/milestone.pdf": "659d8ec7227e9847ae3a2e255079780d2764576eb966c73feb255172d854e7ca",
+    "reports/milestone/versions/M-W01-ID-v1/resolved-source.md": "03cddbb4151177e49bac44d83f14d0806a0ed7f1b8a1fa5c3cce144692802046",
+    "reports/milestone/versions/M-W01-ID-v1/sources.json": "08166ed2725985ab98b19b315de0bbf8bb2e21d9625e62bda09be9a1ba2b8189",
+    "reports/milestone/versions/M-W01-v1/README.md": "2e5c1a5eea8202501428779b01bc518cf48ed838b7baf7fa7eeeb3bfe03d912e",
+    "reports/milestone/versions/M-W01-v1/build-info.json": "ed483b990707223b5d2920ab635734da841775ee7919cc06738b3e4281ec6fbb",
+    "reports/milestone/versions/M-W01-v1/build_milestone.py": "7859ead45418d0c1b3d623ed6d177fc17a1bfc847e91e4ae0c5eb55d7223cdad",
+    "reports/milestone/versions/M-W01-v1/format-check.json": "ea21639bfc4aa1c4e7e78bac1d422b88f9c3ca9ee43f05551675e16dba452aca",
+    "reports/milestone/versions/M-W01-v1/milestone.md": "535ba3d445bf134a8fdfd37479253cbee3f28bb541ea7b093cbb0ed9f7d974ad",
+    "reports/milestone/versions/M-W01-v1/milestone.pdf": "dde5d5ec12c0e6ad3c16311abbd2d57d2e069bd77beef245e7cea3d6536bdb4c",
+    "reports/milestone/versions/M-W01-v1/resolved-source.md": "350dc0ce520dcbbd561ab8a1efa359480c6f4627a1aa2ff52296bdf69570a15f",
+    "reports/milestone/versions/M-W01-v1/sources.json": "157c4d2511b6d1fb6667e3c32ce58b1350023fca93cf89c0fc60c230c41b401e",
+    "reports/proposal/build_proposal.py": "2e8af08a058eb3813eb8a5d03b8b11e9d83207565c8dc72c3f1f2c05544232c1",
+    "reports/w01_support.py": "a32c439959123f94946fc7ace84906366628919623e2b12f4b34a7fdaa3569f1",
+    "results/S1-BL-001/artifacts.sha256.json": "e747ed2dcf387b84125f2458f33de3e02a057413539a8f862712d78f953bc883",
+    "results/S1-BL-001/cases/attention-L00.json": "25a89fdc5f80f22306cbffd42c2d96e3f4cc81e527b7b98fed2bd2c758cebd61",
+    "results/S1-BL-001/run.json": "eb521585ddc5e33c2b150bb2e4a99ceb594643509da684fc15151d543247d23c",
+    "results/S1-BL-001/summary.csv": "acd34f23fff81a7649257f8767a9d1d4e4d046dc2478ebe21448a41a8d52bbd9",
+    "results/S3-OPT-001/README.md": "e5de80125e78d26f0f902b6260eb1299967dd35774a70b1f004d241e94c4657f",
+    "results/S3-OPT-001/artifacts.sha256.json": "355ea77875754bd75947ccd4cc2f295de8f1544e27071daadd9e1f8aaf2f85a9",
+    "results/S3-OPT-001/cases/attention-L00.json": "19dcc7300aeeb688c6e4282564674d18c3ee62fada707187f478424f988e17b8",
+    "results/S3-OPT-001/cases/attention-L01.json": "2142230631f9238ef8f911d8c3fa864f626f0234cfc41ab70c320f6784dc29ae",
+    "results/S3-OPT-001/cases/attention-L02.json": "2361944e1b54c7fba5a2947f7ec0ed7a699ec1556c93a74fdaee4a9ce205f512",
+    "results/S3-OPT-001/cases/attention-L03.json": "c81d43b923aae2875581423f16733081f126448ee13100205b8b57b4113e3e0f",
+    "results/S3-OPT-001/cases/attention-L04.json": "0996a03eb97b1328d352366c0b40d585c5233b3272ab2da23235eabc318be8fe",
+    "results/S3-OPT-001/cases/attention-L05.json": "ce0ae7fdd2f6f8db800839422ad9bf5d70c097203528d6f15fe6f1312332a1f0",
+    "results/S3-OPT-001/cases/attention-L06.json": "c9418c0e013c1bd0d63620adcfcafe8a435647430e7f38fc844093911e8b3134",
+    "results/S3-OPT-001/cases/attention-L07.json": "6d03082415b1b8b502497e0200483faf2a270fc014a74598acb4a3d06363b3cd",
+    "results/S3-OPT-001/cases/attention-L08.json": "b0b38c5cbd8bf8ddbd2b1256a1942307f24dc419bd5717d8bae1ea550da8e602",
+    "results/S3-OPT-001/cases/attention-L09.json": "2468f21870b2cd877017692837d6dad3106753fb3f43e2f4efb562b9d5faa04d",
+    "results/S3-OPT-001/cases/attention-L10.json": "9ce353845be71345f77381218678955cf70d5c8c572504bd5a20c47ff735772f",
+    "results/S3-OPT-001/cases/attention-L11.json": "992b2833e054464fdb8e371383dcb0b650961b706d95fe471d17bde77b3165de",
+    "results/S3-OPT-001/cases/attention-L12.json": "d6fef3dd29f3847426ed21dad71ec82625abae90862a1f6df9b75807ce831650",
+    "results/S3-OPT-001/cases/attention-L13.json": "dca70f3a19f2e453af2c31f8831db7ef42bd16d421c5c4f4eb0bb0d6e1d4c3fe",
+    "results/S3-OPT-001/cases/attention-L14.json": "531b83813b1173f8834db32da5cd0c4145349befa424b8362d6c2c3ab0dfb909",
+    "results/S3-OPT-001/cases/mlp-L00.json": "9cbfc876e395aecc4ea02fb5d6f4a609ef4eae6ca2e086a3653887226000c3be",
+    "results/S3-OPT-001/cases/mlp-L01.json": "cf5736feb4c6f0a19883e849cc44aa7a3d8aae53a164e09abaf7a2586b711163",
+    "results/S3-OPT-001/cases/mlp-L02.json": "6f44730d8447779dd16db75b345422afea5aaffd0a51c3c0cfa82bac67808d76",
+    "results/S3-OPT-001/cases/mlp-L03.json": "77269921bdfa397b7bea04065e81985a3fe04492b6686815b4e530ab15fe9415",
+    "results/S3-OPT-001/cases/mlp-L04.json": "12d9c765bbd186bf72b52bc63772826348effe74d362acd166f2997a195a49ab",
+    "results/S3-OPT-001/cases/mlp-L05.json": "679187055074ba1ea041931c51ecb761a3a3b7213e15476fa44339558bde0e5d",
+    "results/S3-OPT-001/cases/mlp-L06.json": "b721d8ae7fb9ab396cb6f51c543f115bc23585debefe3f2d7c98894d9c339684",
+    "results/S3-OPT-001/cases/mlp-L07.json": "249fce31046215892571b10e70a604f5105d0f5ab4cb82bfcc7a9f628cbe13e1",
+    "results/S3-OPT-001/cases/mlp-L08.json": "cd3ecc596e4e88edaef2a05d518a4719495ad11346ecab23b115dc7a3ea3b165",
+    "results/S3-OPT-001/cases/mlp-L09.json": "e1c6be2fd2ffa37eb81dd7c18c875d7167faf84123a29aa6e419f72671d8eb3e",
+    "results/S3-OPT-001/cases/mlp-L10.json": "72578051dc01e04e128a2494635d71f8972a453870da2f9f89e5f77409677935",
+    "results/S3-OPT-001/cases/mlp-L11.json": "e1e3b1788722baa7cad90730bc537287c49bedef8ab719d79bca4d438863ae1d",
+    "results/S3-OPT-001/cases/mlp-L12.json": "6cc6c3ce44c23f253473df14a00a14b98ac298880192b0ffe5a41ac5a53be406",
+    "results/S3-OPT-001/cases/mlp-L13.json": "2d765a5bc391dae47dfaeccc634b351164f49ece17c487b40a43694b0834cfac",
+    "results/S3-OPT-001/cases/mlp-L14.json": "9c814b8de3c334c38a907e5f4274f4268cd6f34a7739393af8ce349daf2ca2bf",
+    "results/S3-OPT-001/run.json": "c6098424b565f8d8c6a8dbfd38415024ff929d255bae29d1614c5608db539dfa",
+    "results/S3-OPT-001/s2-comparison.json": "69ec2c194adb38b775da2522e311bbd56855a474fad92ed5b716df23dee47cbb",
+    "results/S3-OPT-001/summary.csv": "f6bea94abbb7fa6910bf95c7eb70e9b082604b6f09380efd5ba75d4dbfd33d83",
+    "results/S3-OPT-001/summary.json": "609017c89f6be533c43a16977e30986df9a2dd9a19e2931706891bbd185a62ad",
+    "results/S3-OPT-001/tiny-examples.json": "88eb0c6215abe0f172d6ae64c964ae1b537ba7379acbe3e156f864c2328d51cf",
+    "src/bootplacement/audit.py": "982ed6bcfebd8ff09c0622a55afde000cfe1bc791db8930e7099e546aaf9a166",
+    "src/bootplacement/s2_model.py": "c377e77096c8b6ad6e8e6651947633fd0aa8c2d176a85b9af1e6d22fb9bb460f",
+    "src/bootplacement/s2_oracle.py": "38fb9eaf92e878883fe36db8303fbf6fdffb7506d5a7281f8407b54ea667251d"
+  },
+  "regenerated_build_info": {
+    "artifact_version": "M-W01-ID-v1",
+    "record_kind": "regenerated verification copy",
+    "packaging_version": "PUBLIC-PACKAGING-v1",
+    "purpose": "Reproduce approved content using repository-local companions",
+    "base_artifact_version": "M-W01-v1",
+    "evidence_cutoff": "2026-09-29; preserved S3 results plus method-choice reasoning; no candidate experiment",
+    "path_root": "repository root",
+    "source_path": "reports/milestone/versions/M-W01-ID-v1/milestone.md",
+    "source_sha256": "23fef47dad4a6bbba15e512fa5452a3fb3f1fcf6b19be5fa36157e47983922ea",
+    "pdf_sha256": "ec8faef4886c50171c79513ba25ce6da320c979aba0d01a12bfc4728be7acf20",
+    "generator_path": "reports/milestone/versions/M-W01-ID-v1/build_milestone.py",
+    "generator_sha256": "5ddac0b517804a66184a173c1ab8ed4797060b0b1f5f781fcd7ab85b26f097c1",
+    "support_sha256": "ca1e7bfd53b7c42870e1ea28e6cdcd52a53dbf40deb42acfdf82d0c0addd0a25",
+    "public_support_sha256": "a32c439959123f94946fc7ace84906366628919623e2b12f4b34a7fdaa3569f1",
+    "source_index_path": "reports/milestone/versions/M-W01-ID-v1/sources.json",
+    "source_index_sha256": "08166ed2725985ab98b19b315de0bbf8bb2e21d9625e62bda09be9a1ba2b8189",
+    "identity_path": "reports/milestone/versions/M-W01-ID-v1/identity.json",
+    "identity_sha256": "68471010d8a0b95a1ecd9bf9cef2fe8f6e8700c99bd072eebf54cc0a6cc1fc78",
+    "legacy_helper_sha256": {
+      "reports/milestone/build_milestone.py": "b9b1b48602be7bbe5a1d3ab7995792a84e4afdbdffa2b9eb0c16d5ba606cfce4",
+      "reports/proposal/build_proposal.py": "2e8af08a058eb3813eb8a5d03b8b11e9d83207565c8dc72c3f1f2c05544232c1"
+    },
+    "source_run": "S3-OPT-001",
+    "source_run_sha256": "c6098424b565f8d8c6a8dbfd38415024ff929d255bae29d1614c5608db539dfa",
+    "source_manifest_sha256": "355ea77875754bd75947ccd4cc2f295de8f1544e27071daadd9e1f8aaf2f85a9",
+    "numeric_source_commit": "415f2a91462fb361782b84756a552ad85f44a7b5",
+    "numeric_source_sha256": "7a71e0079618ffd5acc911d5eb1b1629340f76f2494a0e3ffcc94efb3eefe146",
+    "reportlab_version": "4.4.9",
+    "saved_result_hashes_checked": 36,
+    "saved_case_records_checked": 30,
+    "new_search_or_scoring": false,
+    "historical_tests_rerun": false,
+    "identity_complete": true,
+    "formal_submission_ready": false,
+    "submission_authorized": false,
+    "submitted": false,
+    "human_review": "Approved source content; this verification PDF is not separately human-reviewed",
+    "format": {
+      "paper": "A4",
+      "font": "Times New Roman",
+      "font_pt": 12,
+      "margins_cm": [
+        2.5,
+        2.5,
+        2.5,
+        2.5
+      ],
+      "body_leading_pt": 12
+    },
+    "page_count": 4,
+    "source_file": "milestone.md",
+    "pdf_file": "milestone.pdf",
+    "resolved_source_sha256": "03cddbb4151177e49bac44d83f14d0806a0ed7f1b8a1fa5c3cce144692802046",
+    "result_rows": [
+      [
+        "Block, inputs",
+        "Latency (ms)",
+        "Reduction (%)",
+        "B1 / B2"
+      ],
+      [
+        "MLP, 0-13",
+        "26069.9524",
+        "7.3223-7.3291",
+        "4 / 4"
+      ],
+      [
+        "MLP, 14",
+        "21911.5924",
+        "22.1113",
+        "0 / 4"
+      ],
+      [
+        "Attention, 0-5",
+        "45698.2664",
+        "14.6755",
+        "10 / 8"
+      ],
+      [
+        "Attention, 6-14",
+        "41537.6664",
+        "22.4438",
+        "6 / 8"
+      ]
+    ],
+    "resolved_fields": {
+      "RUN_ID": "S3-OPT-001",
+      "SOURCE_COMMIT": "415f2a91462fb361782b84756a552ad85f44a7b5",
+      "SOLVE_SUM": "10.6445",
+      "RSS_MIB": "118.36",
+      "MLP_MIN": "0.0075",
+      "MLP_MAX": "0.0132",
+      "ATTN_MIN": "0.5166",
+      "ATTN_MAX": "0.9656"
+    },
+    "chart_font_pt": 12,
+    "figure_points": 30,
+    "predecessor": "M-W01-v1",
+    "candidate_status": "direction only; no design, implementation or inclusion decision"
+  },
+  "regenerated_document_check": {
+    "artifact_version": "M-W01-ID-v1",
+    "checked_at_utc": "2026-09-30T03:31:11.721801+00:00",
+    "checker_sha256": "3b6d6a69b50e2919a8f9359dc9678de9b012f83d3d2ad9d5f9b4ee29c9245701",
+    "source_sha256": "23fef47dad4a6bbba15e512fa5452a3fb3f1fcf6b19be5fa36157e47983922ea",
+    "pdf_sha256": "ec8faef4886c50171c79513ba25ce6da320c979aba0d01a12bfc4728be7acf20",
+    "companion_generator_sha256": "5ddac0b517804a66184a173c1ab8ed4797060b0b1f5f781fcd7ab85b26f097c1",
+    "provenance_record_sha256": "c5502fc6c42b4a0050342fd060abbabbc6c5f6e9b8080972ac8d081ec3b50c8d",
+    "record_kind": "regenerated verification copy",
+    "page_count": 4,
+    "page_size": "A4",
+    "font_sizes_points": [
+      12.0
+    ],
+    "used_fonts_embedded": {
+      "AAAAAA+TimesNewRomanPSMT": true,
+      "AAAAAA+TimesNewRomanPS-BoldMT": true
+    },
+    "configured_margins_cm": [
+      2.5,
+      2.5,
+      2.5,
+      2.5
+    ],
+    "all_text_inside_margins": true,
+    "configured_body_leading_points": 12,
+    "observed_line_top_differences_points": {
+      "1.14": 1,
+      "4.54": 1,
+      "7.94": 1,
+      "12.0": 99,
+      "17.0": 1,
+      "18.0": 9,
+      "19.0": 20,
+      "22.0": 4,
+      "24.0": 2,
+      "27.0": 1,
+      "29.0": 1,
+      "30.06": 1,
+      "46.46": 1,
+      "49.86": 1,
+      "105.15": 1,
+      "164.15": 1,
+      "174.15": 1,
+      "218.15": 1
+    },
+    "page_checks": [
+      {
+        "page": 1,
+        "size_points": [
+          595.2756,
+          841.8898
+        ],
+        "text_bbox_points": [
+          70.86614,
+          73.45604360000004,
+          524.409454,
+          770.6135036000001
+        ]
+      },
+      {
+        "page": 2,
+        "size_points": [
+          595.2756,
+          841.8898
+        ],
+        "text_bbox_points": [
+          70.86614,
+          73.45604360000004,
+          522.8993443999998,
+          770.6135036000001
+        ]
+      },
+      {
+        "page": 3,
+        "size_points": [
+          595.2756,
+          841.8898
+        ],
+        "text_bbox_points": [
+          70.86614,
+          73.45604360000004,
+          524.4094567999999,
+          770.6135036000001
+        ]
+      },
+      {
+        "page": 4,
+        "size_points": [
+          595.2756,
+          841.8898
+        ],
+        "text_bbox_points": [
+          70.86614,
+          73.45604360000004,
+          524.4094587999999,
+          770.6135036000001
+        ]
+      }
+    ],
+    "all_source_prose_found": true,
+    "provenance_checks": {
+      "approved:milestone.md": true,
+      "approved:milestone.pdf": true,
+      "approved:resolved-source.md": true,
+      "source": true,
+      "source_index": true,
+      "companion_generator": true,
+      "companion_support": true,
+      "public_support": true,
+      "identity_input": true,
+      "legacy:reports/milestone/build_milestone.py": true,
+      "legacy:reports/proposal/build_proposal.py": true,
+      "base:reports/milestone/versions/M-W01-v1/build-info.json": true,
+      "base:reports/milestone/versions/M-W01-v1/build_milestone.py": true,
+      "base:reports/milestone/versions/M-W01-v1/format-check.json": true,
+      "base:reports/milestone/versions/M-W01-v1/milestone.md": true,
+      "base:reports/milestone/versions/M-W01-v1/milestone.pdf": true,
+      "base:reports/milestone/versions/M-W01-v1/README.md": true,
+      "base:reports/milestone/versions/M-W01-v1/resolved-source.md": true,
+      "base:reports/milestone/versions/M-W01-v1/sources.json": true,
+      "only_declared_identity_version_status_changes": true,
+      "saved_evidence": true,
+      "numeric_commit": true,
+      "regeneration_record_kind": true,
+      "regenerated:source_path": true,
+      "regenerated:source_sha256": true,
+      "regenerated:identity_path": true,
+      "regenerated:identity_sha256": true,
+      "regenerated:source_index_path": true,
+      "regenerated:source_index_sha256": true,
+      "regenerated:artifact_version": true,
+      "regenerated:generator": true,
+      "regenerated:support": true,
+      "regenerated:pdf": true,
+      "regenerated:resolved_source": true
+    },
+    "automated_checks_passed": true,
+    "visual_review": {
+      "passed": true,
+      "reviewer": "assistant visual inspection",
+      "reviewed_date": "2026-09-30",
+      "all_pages_inspected": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "scope": "Rendered full pages at 120 dpi; identity pairings, layout, complete text, tables/chart where present; no clipping, overlap or missing glyphs observed",
+      "regenerated_render_matches_import": true
+    },
+    "formal_identity_complete": true,
+    "all_identity_lines_and_pairings_found": true,
+    "technical_source_unchanged_except_declared_edits": true,
+    "formal_submission_ready": false,
+    "submission_authorized": false,
+    "submitted": false,
+    "human_review": "Approved source content; this verification PDF is not separately human-reviewed",
+    "limits": "Document checks only; saved stage evidence is not a new experiment, S6 reproduction or human acceptance."
+  },
+  "render_comparison_120_dpi": [
+    {
+      "page": 1,
+      "approved_png_sha256": "4f1c756c76bc529d1e739d00efb8d7908806e690daf186fea730a46585b17830",
+      "regenerated_png_sha256": "4f1c756c76bc529d1e739d00efb8d7908806e690daf186fea730a46585b17830",
+      "identical": true
+    },
+    {
+      "page": 2,
+      "approved_png_sha256": "bbced3853ba287eac81c19e8f04e88f15f99827f0085980964303f5ac0428996",
+      "regenerated_png_sha256": "bbced3853ba287eac81c19e8f04e88f15f99827f0085980964303f5ac0428996",
+      "identical": true
+    },
+    {
+      "page": 3,
+      "approved_png_sha256": "763cbbf73c7f05195d5c0b01d7f50b39bcf24d9909aa200f7fb3877b2a88a68d",
+      "regenerated_png_sha256": "763cbbf73c7f05195d5c0b01d7f50b39bcf24d9909aa200f7fb3877b2a88a68d",
+      "identical": true
+    },
+    {
+      "page": 4,
+      "approved_png_sha256": "7cede3510913033d329b9511d7c4adda64a570b94efdc99c49b66b1d8d31b502",
+      "regenerated_png_sha256": "7cede3510913033d329b9511d7c4adda64a570b94efdc99c49b66b1d8d31b502",
+      "identical": true
+    }
+  ],
+  "visual_review": {
+    "passed": true,
+    "reviewer": "assistant visual inspection",
+    "reviewed_date": "2026-09-30",
+    "all_pages_inspected": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "scope": "Rendered full pages at 120 dpi; identity pairings, layout, complete text, tables/chart where present; no clipping, overlap or missing glyphs observed",
+    "regenerated_render_matches_import": true
+  },
+  "source_and_layout_match": true,
+  "original_pdf_preserved": true,
+  "new_optimisation_scoring_or_project_tests": false,
+  "S6_independent_project_reproduction": false
+}

@@ -15,10 +15,20 @@ Production deployment and publication-level research are outside this scope.
 **Current implementation: S3, full coverage with the original shared-refresh model.**
 All 30 required instances have independently validated lower-cost placements
 and matching optimal bounds for the encoded handout problem. The
-[four-page Milestone draft](reports/milestone/README.md) and the preserved
-[one-page Proposal](reports/proposal/README.md) contain public identity placeholders.
-Formal identities, instructor-code redistribution permission and an online
-public repository remain required before complete course submission readiness.
+[four-page Milestone M-W01-ID-v1](reports/milestone/versions/M-W01-ID-v1/README.md) and
+[one-page Proposal P-W01-ID-v1](reports/proposal/versions/P-W01-ID-v1/README.md)
+have passed human review for their current content and evidence scope. They
+include the approved team names, student IDs and contact email for team sharing
+and submission preparation. The approved source and PDF bytes are preserved.
+They describe S3 progress, method-choice rationale, limitations and a planned
+local-search direction; no candidate has been designed, implemented or formally
+included. Milestone acceptance does not freeze its content against later evidence.
+The [report version index](reports/README.md) retains the anonymous W01 versions,
+P-S2-v1 and M-S3-v1 with their original files and checks. See the
+[review and inclusion record](reports/reviews/W01-review-20260930.md).
+Identity fields are complete. Applicable instructor-code redistribution
+permission or acquisition arrangements, the actual online repository and grading
+revision still need verification before complete submission readiness.
 S4 frozen experiments and S6 independent reproduction remain future work.
 
 ## S3 full-instance results and reproduction
@@ -60,7 +70,8 @@ verification reports `30/30 valid placements; 30/30 improved`. Verification,
 summary and plotting do not search. Use new output directories for each repeat.
 The test suite passed **44 checks**. Its deliberately failed fixture can print
 `0/30` during a passing fault-injection test; that is not the course experiment.
-Report generation has separate dependencies and commands in the Milestone directory.
+Report generation has separate dependencies and commands in the current
+[report version index](reports/README.md).
 
 The 30 actual solve calls summed to **10.6445 s**, with **118.36 MiB** maximum
 sampled process RSS. MLP calls took 0.0075-0.0132 s; Attention calls took
@@ -192,7 +203,7 @@ Timing excludes interpreter startup and final report/manifest writing.
 - `run_s3.py`, `src/bootplacement/s3_runner.py`: complete S3 execution and evidence checks.
 - `configs/s3-all-instances.json`: both blocks and all 15 input levels each.
 - `src/bootplacement/s3_figures.py`: plots from saved S3 results.
-- `reports/milestone/`: editable draft, PDF, builder and format evidence.
+- `reports/`: current Proposal/Milestone versions, source, builders and checks; historical report groups remain preserved.
 - `vendor/dag_builder.py`: byte-preserved instructor reference implementation.
 - `tests/`: 12 original S1 checks, 16 S2 checks and 16 S3 checks.
 - `results/S1-BL-001/`: raw DAGs, all levels, per-node costs, metrics and checksums.
@@ -208,7 +219,8 @@ Numeric results are deterministic; execution time, memory and timestamps vary.
 The instructor's file was supplied without an explicit redistribution licence;
 that point needs resolution before publishing the local repository. No licence
 is asserted for third-party material. Public release and course submission have
-not occurred. This repository contains no personal workspace or identity files.
+not occurred. Only the approved report identity fields and their minimal
+generation inputs are included; personal workspace records remain excluded.
 
 Later stages will freeze the formal experiment configuration, complete the
 required final figures and reports, and independently reproduce the project.

@@ -1,0 +1,66 @@
+{
+  "artifact_version": "P-W01-ID-v1",
+  "evidence_cutoff": "2026-09-29; preserved S3 results plus method-choice reasoning; no candidate experiment",
+  "evidence_sha256": {
+    "docs/rules-and-metrics.md": "3d201fc1f84a2f4d9078cf45123925115f30a595de5c7bf4c46e1dd1c3bd7c84",
+    "docs/s2-method.md": "fa63c044bac036757ae1b9ffbc3ad21e972aed398fee6626bf9dba69ddb212bc",
+    "docs/s3-validation.md": "ba76ee3f62bebebd0791c979f2c9bb1f1e3f318936e9f5b616503c466a40454f",
+    "docs/s3-checks.json": "e545802ead78d19eb071e04f3ddc7e49ff7ff7f41c26eb6144ae739f849c54f6",
+    "results/S1-BL-001/run.json": "eb521585ddc5e33c2b150bb2e4a99ceb594643509da684fc15151d543247d23c",
+    "results/S1-BL-001/artifacts.sha256.json": "e747ed2dcf387b84125f2458f33de3e02a057413539a8f862712d78f953bc883",
+    "results/S1-BL-001/summary.csv": "acd34f23fff81a7649257f8767a9d1d4e4d046dc2478ebe21448a41a8d52bbd9",
+    "results/S3-OPT-001/run.json": "c6098424b565f8d8c6a8dbfd38415024ff929d255bae29d1614c5608db539dfa",
+    "results/S3-OPT-001/artifacts.sha256.json": "355ea77875754bd75947ccd4cc2f295de8f1544e27071daadd9e1f8aaf2f85a9",
+    "results/S3-OPT-001/summary.csv": "f6bea94abbb7fa6910bf95c7eb70e9b082604b6f09380efd5ba75d4dbfd33d83",
+    "results/S3-OPT-001/tiny-examples.json": "88eb0c6215abe0f172d6ae64c964ae1b537ba7379acbe3e156f864c2328d51cf",
+    "configs/s3-all-instances.json": "0e57c5386bd41b00a6b22347171318acb597b22a66874a4fa997c74a47f190cf"
+  },
+  "claim_map": {
+    "problem_and_method": [
+      "docs/rules-and-metrics.md",
+      "docs/s2-method.md"
+    ],
+    "current_30_case_progress_and_reduction_ranges": [
+      "results/S3-OPT-001/run.json",
+      "results/S3-OPT-001/summary.csv"
+    ],
+    "validation_and_limits": [
+      "docs/s3-validation.md",
+      "docs/s3-checks.json",
+      "results/S3-OPT-001/tiny-examples.json"
+    ],
+    "baseline": [
+      "results/S1-BL-001/summary.csv"
+    ],
+    "candidate_plan": "Prospective direction only; no candidate design, performance or inclusion claim."
+  },
+  "numeric_precision": "Percentage ranges rounded to two decimal places for the proposal; detailed four-decimal records are preserved.",
+  "base_artifact_version": "P-W01-v1",
+  "base_source_path": "reports/proposal/versions/P-W01-v1/proposal.md",
+  "base_artifact_sha256": {
+    "reports/proposal/versions/P-W01-v1/build-info.json": "f3e28610c8ddc342be1f5cc727a17de162f04f836167db4f1cef03a94b12b42c",
+    "reports/proposal/versions/P-W01-v1/build_proposal.py": "ed57872f26e8b8773b659632d65eab852e6e431ecc0e2260fffc57a1af2ef2d8",
+    "reports/proposal/versions/P-W01-v1/format-check.json": "c1082474b41c7bbc933cf1d234b890b79e1f35e2ca12e8a7cf82d2fe9a3182b1",
+    "reports/proposal/versions/P-W01-v1/proposal.md": "03a8a60ddc0dd56b81ff433b310ddf66a47e18db5a7d2376012dd24f47bc87e1",
+    "reports/proposal/versions/P-W01-v1/proposal.pdf": "f8c0094e1c22951e7e3e96a2dcc02f7f79bad4269e70ff186763a78d8620a1a2",
+    "reports/proposal/versions/P-W01-v1/README.md": "867d46b8d0292884893a03c05b331a244d772fb4f377394b50f59b02bff465b8",
+    "reports/proposal/versions/P-W01-v1/sources.json": "d363a24ae1460e5daad29a2038be2b68bf7dff876c7b6b668feab5c2b13f2249"
+  },
+  "identity_input": "identity.json; only the approved report fields",
+  "technical_content_changed": false,
+  "declared_source_changes": [
+    {
+      "before": "P-W01-v1",
+      "after": "P-W01-ID-v1"
+    },
+    {
+      "before": "Member 1: [Confirmed English name] | Student ID: [ID]\nMember 2: [Confirmed English name] | Student ID: [ID]\nMember 3: [Confirmed English name] | Student ID: [ID]\nContact email: [Email]",
+      "after": "Member 1: Xing Chunjie | Student ID: 72655910\nMember 2: Yang Mianji | Student ID: 72655251\nMember 3: Zhang Qi | Student ID: 72655380\nContact email: 72655910@cityu-dg.edu.cn"
+    },
+    {
+      "before": "This is a content-review draft; formal identities and submission preparation remain pending.",
+      "after": "This is a content-review draft with user-supplied identities; submission preparation remains pending."
+    }
+  ],
+  "packaging_version": "PUBLIC-PACKAGING-v1"
+}

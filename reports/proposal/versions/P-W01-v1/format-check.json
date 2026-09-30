@@ -1,0 +1,85 @@
+{
+  "artifact_version": "P-W01-v1",
+  "checked_at_utc": "2026-09-29T07:56:55.367357+00:00",
+  "checker_sha256": "47ae41e423cae2c386c32705a7b4445f01e82d162f6d8668a3d3b14765bbefd4",
+  "source_sha256": "03a8a60ddc0dd56b81ff433b310ddf66a47e18db5a7d2376012dd24f47bc87e1",
+  "pdf_sha256": "f8c0094e1c22951e7e3e96a2dcc02f7f79bad4269e70ff186763a78d8620a1a2",
+  "generator_sha256": "ed57872f26e8b8773b659632d65eab852e6e431ecc0e2260fffc57a1af2ef2d8",
+  "build_info_sha256": "f3e28610c8ddc342be1f5cc727a17de162f04f836167db4f1cef03a94b12b42c",
+  "page_count": 1,
+  "page_size": "A4",
+  "font_sizes_points": [
+    12.0
+  ],
+  "used_fonts_embedded": {
+    "AAAAAA+TimesNewRomanPS-BoldMT": true,
+    "AAAAAA+TimesNewRomanPSMT": true
+  },
+  "configured_margins_cm": [
+    2.5,
+    2.5,
+    2.5,
+    2.5
+  ],
+  "all_text_inside_margins": true,
+  "configured_body_leading_points": 12,
+  "observed_line_top_differences_points": {
+    "12.0": 32,
+    "17.0": 5,
+    "19.0": 6
+  },
+  "page_checks": [
+    {
+      "page": 1,
+      "size_points": [
+        595.2756,
+        841.8898
+      ],
+      "text_bbox_points": [
+        70.86614,
+        73.45604360000004,
+        524.4094574000001,
+        668.4560436
+      ]
+    }
+  ],
+  "all_source_prose_found": true,
+  "provenance_checks": {
+    "source": true,
+    "pdf": true,
+    "generator": true,
+    "support": true,
+    "source_index": true,
+    "reports/proposal/build_proposal.py": true,
+    "docs/rules-and-metrics.md": true,
+    "docs/s2-method.md": true,
+    "docs/s3-validation.md": true,
+    "docs/s3-checks.json": true,
+    "results/S1-BL-001/run.json": true,
+    "results/S1-BL-001/artifacts.sha256.json": true,
+    "results/S1-BL-001/summary.csv": true,
+    "results/S3-OPT-001/run.json": true,
+    "results/S3-OPT-001/artifacts.sha256.json": true,
+    "results/S3-OPT-001/summary.csv": true,
+    "results/S3-OPT-001/tiny-examples.json": true,
+    "configs/s3-all-instances.json": true
+  },
+  "automated_checks_passed": true,
+  "visual_review": {
+    "renderer": "Poppler pdftoppm",
+    "dpi": 150,
+    "pages_reviewed": 1,
+    "passed": true,
+    "preview_sha256": [
+      "a3dd64eecf1a44ddef4db00900d5cdeeaef472fe9fb5d7e43100312f27b4c655"
+    ],
+    "observations": "Full page inspected: all prose and identity placeholders are legible, with no clipping, overlap or missing glyphs. Re-render after provenance-only change was pixel-identical."
+  },
+  "formal_identity_complete": false,
+  "formal_submission_ready": false,
+  "submission_authorized": false,
+  "submitted": false,
+  "human_review": "pending",
+  "limits": "Document checks only; saved stage evidence is not a new experiment, S6 reproduction or human acceptance.",
+  "content_and_format_ready_for_review": true
+}

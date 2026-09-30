@@ -1,0 +1,148 @@
+{
+  "artifact_version": "M-W01-ID-v1",
+  "checked_at_utc": "2026-09-30T03:31:10.907939+00:00",
+  "checker_sha256": "3b6d6a69b50e2919a8f9359dc9678de9b012f83d3d2ad9d5f9b4ee29c9245701",
+  "source_sha256": "23fef47dad4a6bbba15e512fa5452a3fb3f1fcf6b19be5fa36157e47983922ea",
+  "pdf_sha256": "659d8ec7227e9847ae3a2e255079780d2764576eb966c73feb255172d854e7ca",
+  "companion_generator_sha256": "5ddac0b517804a66184a173c1ab8ed4797060b0b1f5f781fcd7ab85b26f097c1",
+  "provenance_record_sha256": "d5d2d807664c9451d5badc256040e174d01167fc3b339fc021c48859aa81bf15",
+  "record_kind": "byte-preserving import of human-reviewed report",
+  "page_count": 4,
+  "page_size": "A4",
+  "font_sizes_points": [
+    12.0
+  ],
+  "used_fonts_embedded": {
+    "AAAAAA+TimesNewRomanPSMT": true,
+    "AAAAAA+TimesNewRomanPS-BoldMT": true
+  },
+  "configured_margins_cm": [
+    2.5,
+    2.5,
+    2.5,
+    2.5
+  ],
+  "all_text_inside_margins": true,
+  "configured_body_leading_points": 12,
+  "observed_line_top_differences_points": {
+    "1.14": 1,
+    "4.54": 1,
+    "7.94": 1,
+    "12.0": 99,
+    "17.0": 1,
+    "18.0": 9,
+    "19.0": 20,
+    "22.0": 4,
+    "24.0": 2,
+    "27.0": 1,
+    "29.0": 1,
+    "30.06": 1,
+    "46.46": 1,
+    "49.86": 1,
+    "105.15": 1,
+    "164.15": 1,
+    "174.15": 1,
+    "218.15": 1
+  },
+  "page_checks": [
+    {
+      "page": 1,
+      "size_points": [
+        595.2756,
+        841.8898
+      ],
+      "text_bbox_points": [
+        70.86614,
+        73.45604360000004,
+        524.409454,
+        770.6135036000001
+      ]
+    },
+    {
+      "page": 2,
+      "size_points": [
+        595.2756,
+        841.8898
+      ],
+      "text_bbox_points": [
+        70.86614,
+        73.45604360000004,
+        522.8993443999998,
+        770.6135036000001
+      ]
+    },
+    {
+      "page": 3,
+      "size_points": [
+        595.2756,
+        841.8898
+      ],
+      "text_bbox_points": [
+        70.86614,
+        73.45604360000004,
+        524.4094567999999,
+        770.6135036000001
+      ]
+    },
+    {
+      "page": 4,
+      "size_points": [
+        595.2756,
+        841.8898
+      ],
+      "text_bbox_points": [
+        70.86614,
+        73.45604360000004,
+        524.4094587999999,
+        770.6135036000001
+      ]
+    }
+  ],
+  "all_source_prose_found": true,
+  "provenance_checks": {
+    "approved:milestone.md": true,
+    "approved:milestone.pdf": true,
+    "approved:resolved-source.md": true,
+    "source": true,
+    "source_index": true,
+    "companion_generator": true,
+    "companion_support": true,
+    "public_support": true,
+    "identity_input": true,
+    "legacy:reports/milestone/build_milestone.py": true,
+    "legacy:reports/proposal/build_proposal.py": true,
+    "base:reports/milestone/versions/M-W01-v1/build-info.json": true,
+    "base:reports/milestone/versions/M-W01-v1/build_milestone.py": true,
+    "base:reports/milestone/versions/M-W01-v1/format-check.json": true,
+    "base:reports/milestone/versions/M-W01-v1/milestone.md": true,
+    "base:reports/milestone/versions/M-W01-v1/milestone.pdf": true,
+    "base:reports/milestone/versions/M-W01-v1/README.md": true,
+    "base:reports/milestone/versions/M-W01-v1/resolved-source.md": true,
+    "base:reports/milestone/versions/M-W01-v1/sources.json": true,
+    "only_declared_identity_version_status_changes": true,
+    "saved_evidence": true,
+    "numeric_commit": true
+  },
+  "automated_checks_passed": true,
+  "visual_review": {
+    "passed": true,
+    "reviewer": "assistant visual inspection",
+    "reviewed_date": "2026-09-30",
+    "all_pages_inspected": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "scope": "Rendered full pages at 120 dpi; identity pairings, layout, complete text, tables/chart where present; no clipping, overlap or missing glyphs observed",
+    "regenerated_render_matches_import": true
+  },
+  "formal_identity_complete": true,
+  "all_identity_lines_and_pairings_found": true,
+  "technical_source_unchanged_except_declared_edits": true,
+  "formal_submission_ready": false,
+  "submission_authorized": false,
+  "submitted": false,
+  "human_review": "Accepted for this version and evidence scope",
+  "limits": "Document checks only; saved stage evidence is not a new experiment, S6 reproduction or human acceptance."
+}

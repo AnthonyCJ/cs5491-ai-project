@@ -1,0 +1,38 @@
+{
+  "artifact_version": "P-W01-v1",
+  "evidence_cutoff": "2026-09-29; preserved S3 results plus method-choice reasoning; no candidate experiment",
+  "evidence_sha256": {
+    "docs/rules-and-metrics.md": "3d201fc1f84a2f4d9078cf45123925115f30a595de5c7bf4c46e1dd1c3bd7c84",
+    "docs/s2-method.md": "fa63c044bac036757ae1b9ffbc3ad21e972aed398fee6626bf9dba69ddb212bc",
+    "docs/s3-validation.md": "ba76ee3f62bebebd0791c979f2c9bb1f1e3f318936e9f5b616503c466a40454f",
+    "docs/s3-checks.json": "e545802ead78d19eb071e04f3ddc7e49ff7ff7f41c26eb6144ae739f849c54f6",
+    "results/S1-BL-001/run.json": "eb521585ddc5e33c2b150bb2e4a99ceb594643509da684fc15151d543247d23c",
+    "results/S1-BL-001/artifacts.sha256.json": "e747ed2dcf387b84125f2458f33de3e02a057413539a8f862712d78f953bc883",
+    "results/S1-BL-001/summary.csv": "acd34f23fff81a7649257f8767a9d1d4e4d046dc2478ebe21448a41a8d52bbd9",
+    "results/S3-OPT-001/run.json": "c6098424b565f8d8c6a8dbfd38415024ff929d255bae29d1614c5608db539dfa",
+    "results/S3-OPT-001/artifacts.sha256.json": "355ea77875754bd75947ccd4cc2f295de8f1544e27071daadd9e1f8aaf2f85a9",
+    "results/S3-OPT-001/summary.csv": "f6bea94abbb7fa6910bf95c7eb70e9b082604b6f09380efd5ba75d4dbfd33d83",
+    "results/S3-OPT-001/tiny-examples.json": "88eb0c6215abe0f172d6ae64c964ae1b537ba7379acbe3e156f864c2328d51cf",
+    "configs/s3-all-instances.json": "0e57c5386bd41b00a6b22347171318acb597b22a66874a4fa997c74a47f190cf"
+  },
+  "claim_map": {
+    "problem_and_method": [
+      "docs/rules-and-metrics.md",
+      "docs/s2-method.md"
+    ],
+    "current_30_case_progress_and_reduction_ranges": [
+      "results/S3-OPT-001/run.json",
+      "results/S3-OPT-001/summary.csv"
+    ],
+    "validation_and_limits": [
+      "docs/s3-validation.md",
+      "docs/s3-checks.json",
+      "results/S3-OPT-001/tiny-examples.json"
+    ],
+    "baseline": [
+      "results/S1-BL-001/summary.csv"
+    ],
+    "candidate_plan": "Prospective direction only; no candidate design, performance or inclusion claim."
+  },
+  "numeric_precision": "Percentage ranges rounded to two decimal places for the proposal; detailed four-decimal records are preserved."
+}

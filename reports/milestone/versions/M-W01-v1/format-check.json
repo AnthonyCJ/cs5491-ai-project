@@ -1,0 +1,154 @@
+{
+  "artifact_version": "M-W01-v1",
+  "checked_at_utc": "2026-09-29T08:03:27.448769+00:00",
+  "checker_sha256": "47ae41e423cae2c386c32705a7b4445f01e82d162f6d8668a3d3b14765bbefd4",
+  "source_sha256": "535ba3d445bf134a8fdfd37479253cbee3f28bb541ea7b093cbb0ed9f7d974ad",
+  "pdf_sha256": "dde5d5ec12c0e6ad3c16311abbd2d57d2e069bd77beef245e7cea3d6536bdb4c",
+  "generator_sha256": "7859ead45418d0c1b3d623ed6d177fc17a1bfc847e91e4ae0c5eb55d7223cdad",
+  "build_info_sha256": "ed483b990707223b5d2920ab635734da841775ee7919cc06738b3e4281ec6fbb",
+  "page_count": 4,
+  "page_size": "A4",
+  "font_sizes_points": [
+    12.0
+  ],
+  "used_fonts_embedded": {
+    "AAAAAA+TimesNewRomanPSMT": true,
+    "AAAAAA+TimesNewRomanPS-BoldMT": true
+  },
+  "configured_margins_cm": [
+    2.5,
+    2.5,
+    2.5,
+    2.5
+  ],
+  "all_text_inside_margins": true,
+  "configured_body_leading_points": 12,
+  "observed_line_top_differences_points": {
+    "1.14": 1,
+    "4.54": 1,
+    "7.94": 1,
+    "12.0": 100,
+    "17.0": 1,
+    "18.0": 9,
+    "19.0": 20,
+    "22.0": 4,
+    "24.0": 2,
+    "27.0": 1,
+    "29.0": 1,
+    "30.06": 1,
+    "46.46": 1,
+    "49.86": 1,
+    "105.15": 1,
+    "152.15": 1,
+    "174.15": 1,
+    "218.15": 1
+  },
+  "page_checks": [
+    {
+      "page": 1,
+      "size_points": [
+        595.2756,
+        841.8898
+      ],
+      "text_bbox_points": [
+        70.86614,
+        73.45604360000004,
+        524.409454,
+        770.6135036000001
+      ]
+    },
+    {
+      "page": 2,
+      "size_points": [
+        595.2756,
+        841.8898
+      ],
+      "text_bbox_points": [
+        70.86614,
+        73.45604360000004,
+        522.8993443999998,
+        770.6135036000001
+      ]
+    },
+    {
+      "page": 3,
+      "size_points": [
+        595.2756,
+        841.8898
+      ],
+      "text_bbox_points": [
+        70.86614,
+        73.45604360000004,
+        524.4094567999999,
+        770.6135036000001
+      ]
+    },
+    {
+      "page": 4,
+      "size_points": [
+        595.2756,
+        841.8898
+      ],
+      "text_bbox_points": [
+        70.86614,
+        73.45604360000004,
+        524.4094587999999,
+        770.6135036000001
+      ]
+    }
+  ],
+  "all_source_prose_found": true,
+  "provenance_checks": {
+    "source": true,
+    "pdf": true,
+    "generator": true,
+    "support": true,
+    "source_index": true,
+    "reports/milestone/build_milestone.py": true,
+    "reports/proposal/build_proposal.py": true,
+    "docs/rules-and-metrics.md": true,
+    "docs/s2-method.md": true,
+    "docs/s3-validation.md": true,
+    "docs/s3-checks.json": true,
+    "results/S1-BL-001/run.json": true,
+    "results/S1-BL-001/artifacts.sha256.json": true,
+    "results/S1-BL-001/summary.csv": true,
+    "results/S3-OPT-001/run.json": true,
+    "results/S3-OPT-001/artifacts.sha256.json": true,
+    "results/S3-OPT-001/summary.csv": true,
+    "results/S3-OPT-001/tiny-examples.json": true,
+    "configs/s3-all-instances.json": true,
+    "results/S3-OPT-001/s2-comparison.json": true,
+    "results/S1-BL-001/cases/attention-L00.json": true,
+    "results/S3-OPT-001/cases/attention-L00.json": true,
+    "results/S3-OPT-001/cases/attention-L06.json": true,
+    "results/S3-OPT-001/cases/mlp-L00.json": true,
+    "results/S3-OPT-001/cases/mlp-L14.json": true,
+    "src/bootplacement/s2_model.py": true,
+    "src/bootplacement/s2_oracle.py": true,
+    "src/bootplacement/audit.py": true,
+    "figures/S3-OPT-001/provenance.json": true,
+    "figures/S3-OPT-001/artifacts.sha256.json": true
+  },
+  "automated_checks_passed": true,
+  "visual_review": {
+    "renderer": "Poppler pdftoppm",
+    "dpi": 150,
+    "pages_reviewed": 4,
+    "passed": true,
+    "preview_sha256": [
+      "460d6de315a240a9c997e94f5bf62748a5edb86026ab2df344c726b36207e3c2",
+      "7b150db0df3db26bc4fb72abc615c179d39b5eed5ae8b421b1b7a951ffa4f3b8",
+      "89cdb623f3da8700ea507a1ae90fc456b0b8d27783a075706e3a46e864dbf7a6",
+      "b0ce51ec0ac7c2d0e3864f0e103d1e2095b5e41762b986477f564613fdb506d2"
+    ],
+    "observations": "All four final pages inspected after the final wording change. Prose, table, chart labels, captions and page numbers are legible; no clipping, overlap or missing glyphs. All text retains Times New Roman 12 pt."
+  },
+  "formal_identity_complete": false,
+  "formal_submission_ready": false,
+  "submission_authorized": false,
+  "submitted": false,
+  "human_review": "pending",
+  "limits": "Document checks only; saved stage evidence is not a new experiment, S6 reproduction or human acceptance.",
+  "content_and_format_ready_for_review": true
+}

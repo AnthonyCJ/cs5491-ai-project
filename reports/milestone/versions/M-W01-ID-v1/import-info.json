@@ -1,0 +1,65 @@
+{
+  "artifact_version": "M-W01-ID-v1",
+  "record_kind": "byte-preserving import of human-reviewed report",
+  "packaging_version": "PUBLIC-PACKAGING-v1",
+  "recorded_date": "2026-09-30",
+  "approved_artifact_sha256": {
+    "milestone.md": "23fef47dad4a6bbba15e512fa5452a3fb3f1fcf6b19be5fa36157e47983922ea",
+    "milestone.pdf": "659d8ec7227e9847ae3a2e255079780d2764576eb966c73feb255172d854e7ca",
+    "resolved-source.md": "03cddbb4151177e49bac44d83f14d0806a0ed7f1b8a1fa5c3cce144692802046"
+  },
+  "source_path": "reports/milestone/versions/M-W01-ID-v1/milestone.md",
+  "source_sha256": "23fef47dad4a6bbba15e512fa5452a3fb3f1fcf6b19be5fa36157e47983922ea",
+  "pdf_file": "milestone.pdf",
+  "pdf_sha256": "659d8ec7227e9847ae3a2e255079780d2764576eb966c73feb255172d854e7ca",
+  "identity_path": "reports/milestone/versions/M-W01-ID-v1/identity.json",
+  "identity_sha256": "68471010d8a0b95a1ecd9bf9cef2fe8f6e8700c99bd072eebf54cc0a6cc1fc78",
+  "source_index_path": "reports/milestone/versions/M-W01-ID-v1/sources.json",
+  "source_index_sha256": "08166ed2725985ab98b19b315de0bbf8bb2e21d9625e62bda09be9a1ba2b8189",
+  "evidence_cutoff": "2026-09-29; preserved S3 results plus method-choice reasoning; no candidate experiment",
+  "page_count": 4,
+  "original_generation": {
+    "original_generator_sha256": "bd2146fdd26a2410356f6225515ed13a1b6d6940cce1a03a780e34195707492b",
+    "original_build_record_sha256": "e78877e2a42068c2e990602273db12677fafaa6479640aa5e92ec761e53a01f3",
+    "original_format_record_sha256": "45a81b5af786dfcca25cbe8a56c0537512396f67f19c68e21017856928f2ce50",
+    "reportlab_version": "4.4.9",
+    "note": "Historical generation fingerprints; the original workflow is retained separately. They are not fingerprints of the public companion generator and are not runtime dependencies."
+  },
+  "companion_generator_path": "reports/milestone/versions/M-W01-ID-v1/build_milestone.py",
+  "companion_generator_sha256": "5ddac0b517804a66184a173c1ab8ed4797060b0b1f5f781fcd7ab85b26f097c1",
+  "companion_support_sha256": "ca1e7bfd53b7c42870e1ea28e6cdcd52a53dbf40deb42acfdf82d0c0addd0a25",
+  "public_support_sha256": "a32c439959123f94946fc7ace84906366628919623e2b12f4b34a7fdaa3569f1",
+  "legacy_helper_sha256": {
+    "reports/milestone/build_milestone.py": "b9b1b48602be7bbe5a1d3ab7995792a84e4afdbdffa2b9eb0c16d5ba606cfce4",
+    "reports/proposal/build_proposal.py": "2e8af08a058eb3813eb8a5d03b8b11e9d83207565c8dc72c3f1f2c05544232c1"
+  },
+  "numeric_source_commit": "415f2a91462fb361782b84756a552ad85f44a7b5",
+  "numeric_source_sha256": "7a71e0079618ffd5acc911d5eb1b1629340f76f2494a0e3ffcc94efb3eefe146",
+  "source_run": "S3-OPT-001",
+  "source_run_sha256": "c6098424b565f8d8c6a8dbfd38415024ff929d255bae29d1614c5608db539dfa",
+  "source_manifest_sha256": "355ea77875754bd75947ccd4cc2f295de8f1544e27071daadd9e1f8aaf2f85a9",
+  "format": {
+    "paper": "A4",
+    "font": "Times New Roman",
+    "font_pt": 12,
+    "margins_cm": [
+      2.5,
+      2.5,
+      2.5,
+      2.5
+    ],
+    "body_leading_pt": 12
+  },
+  "identity_complete": true,
+  "human_review": "Accepted for this version and evidence scope",
+  "review_record": "reports/reviews/W01-review-20260930.md",
+  "local_repository_inclusion_authorized": true,
+  "remote_publication_authorized": false,
+  "formal_submission_ready": false,
+  "submission_authorized": false,
+  "submitted": false,
+  "milestone_finally_frozen": false,
+  "new_search_or_scoring": false,
+  "historical_wording": "The unchanged approved source and PDF may still describe their original restricted-copy workflow. Current repository use and regeneration are documented in README.md.",
+  "resolved_source_sha256": "03cddbb4151177e49bac44d83f14d0806a0ed7f1b8a1fa5c3cce144692802046"
+}

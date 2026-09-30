@@ -1,0 +1,94 @@
+{
+  "artifact_version": "M-W01-v1",
+  "purpose": "content-review draft",
+  "evidence_cutoff": "S3-OPT-001 and method-choice analysis, 2026-09-29; no candidate experiment",
+  "source_sha256": "535ba3d445bf134a8fdfd37479253cbee3f28bb541ea7b093cbb0ed9f7d974ad",
+  "pdf_sha256": "dde5d5ec12c0e6ad3c16311abbd2d57d2e069bd77beef245e7cea3d6536bdb4c",
+  "source_path": "reports/milestone/versions/M-W01-v1/milestone.md",
+  "generator_path": "reports/milestone/versions/M-W01-v1/build_milestone.py",
+  "source_index_path": "reports/milestone/versions/M-W01-v1/sources.json",
+  "generator_sha256": "7859ead45418d0c1b3d623ed6d177fc17a1bfc847e91e4ae0c5eb55d7223cdad",
+  "support_sha256": "a32c439959123f94946fc7ace84906366628919623e2b12f4b34a7fdaa3569f1",
+  "source_index_sha256": "157c4d2511b6d1fb6667e3c32ce58b1350023fca93cf89c0fc60c230c41b401e",
+  "legacy_helper_sha256": {
+    "reports/milestone/build_milestone.py": "b9b1b48602be7bbe5a1d3ab7995792a84e4afdbdffa2b9eb0c16d5ba606cfce4",
+    "reports/proposal/build_proposal.py": "2e8af08a058eb3813eb8a5d03b8b11e9d83207565c8dc72c3f1f2c05544232c1"
+  },
+  "source_run": "S3-OPT-001",
+  "source_run_sha256": "c6098424b565f8d8c6a8dbfd38415024ff929d255bae29d1614c5608db539dfa",
+  "source_manifest_sha256": "355ea77875754bd75947ccd4cc2f295de8f1544e27071daadd9e1f8aaf2f85a9",
+  "numeric_source_commit": "415f2a91462fb361782b84756a552ad85f44a7b5",
+  "numeric_source_sha256": "7a71e0079618ffd5acc911d5eb1b1629340f76f2494a0e3ffcc94efb3eefe146",
+  "reportlab_version": "4.4.9",
+  "saved_result_hashes_checked": 36,
+  "saved_case_records_checked": 30,
+  "new_search_or_scoring": false,
+  "historical_tests_rerun": false,
+  "identity_complete": false,
+  "formal_submission_ready": false,
+  "submission_authorized": false,
+  "submitted": false,
+  "human_review": "pending",
+  "format": {
+    "paper": "A4",
+    "font": "Times New Roman",
+    "font_pt": 12,
+    "margins_cm": [
+      2.5,
+      2.5,
+      2.5,
+      2.5
+    ],
+    "body_leading_pt": 12
+  },
+  "page_count": 4,
+  "source_file": "milestone.md",
+  "pdf_file": "milestone.pdf",
+  "resolved_source_sha256": "350dc0ce520dcbbd561ab8a1efa359480c6f4627a1aa2ff52296bdf69570a15f",
+  "result_rows": [
+    [
+      "Block, inputs",
+      "Latency (ms)",
+      "Reduction (%)",
+      "B1 / B2"
+    ],
+    [
+      "MLP, 0-13",
+      "26069.9524",
+      "7.3223-7.3291",
+      "4 / 4"
+    ],
+    [
+      "MLP, 14",
+      "21911.5924",
+      "22.1113",
+      "0 / 4"
+    ],
+    [
+      "Attention, 0-5",
+      "45698.2664",
+      "14.6755",
+      "10 / 8"
+    ],
+    [
+      "Attention, 6-14",
+      "41537.6664",
+      "22.4438",
+      "6 / 8"
+    ]
+  ],
+  "resolved_fields": {
+    "RUN_ID": "S3-OPT-001",
+    "SOURCE_COMMIT": "415f2a91462fb361782b84756a552ad85f44a7b5",
+    "SOLVE_SUM": "10.6445",
+    "RSS_MIB": "118.36",
+    "MLP_MIN": "0.0075",
+    "MLP_MAX": "0.0132",
+    "ATTN_MIN": "0.5166",
+    "ATTN_MAX": "0.9656"
+  },
+  "chart_font_pt": 12,
+  "figure_points": 30,
+  "predecessor": "M-S3-v1",
+  "candidate_status": "direction only; no design, implementation or inclusion decision"
+}
