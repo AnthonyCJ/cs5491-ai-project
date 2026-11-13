@@ -1,0 +1,98 @@
+{
+  "artifact_version": "M-MAINLINE-ID-v2",
+  "record_kind": "newly generated content-review draft",
+  "created_at_utc": "2026-10-04T11:07:00.465174+00:00",
+  "predecessor": "M-MAINLINE-ID-v1",
+  "evidence_cutoff": "Numerical execution 2026-09-28; preserved interpretation as of 2026-09-29; explanatory revision 2026-10-04.",
+  "method_scope": "CP-SAT main method and instructor fixed-placement baseline",
+  "path_root": "repository root",
+  "source_path": "reports/milestone/versions/M-MAINLINE-ID-v2/milestone.md",
+  "source_sha256": "0e3175b5bb837422f581232f4f836591eac6876a12fe0dc242cd68634a6d610e",
+  "pdf_file": "milestone.pdf",
+  "pdf_sha256": "655f255521ae87a0340bf1b6c1fb67d3cfb0c85628cf9d273daf7cf49a1bb34c",
+  "resolved_source_sha256": "e46b76dce88537e7497963e406c4295d88bdc6694a5922f45d6e013ec2aceec5",
+  "generator_path": "reports/milestone/versions/M-MAINLINE-ID-v2/build_milestone.py",
+  "generator_sha256": "0e900016d6e8732ecdf33a6d8db6b1b86c30f82086c13e255d6a3441005d904b",
+  "source_index_path": "reports/milestone/versions/M-MAINLINE-ID-v2/sources.json",
+  "source_index_sha256": "e1d87932a101ddaa953e498416168b16f8cddb1a90a9da4784b7c98170f3d332",
+  "identity_path": "reports/milestone/versions/M-MAINLINE-ID-v2/identity.json",
+  "identity_sha256": "68471010d8a0b95a1ecd9bf9cef2fe8f6e8700c99bd072eebf54cc0a6cc1fc78",
+  "generator_dependencies_sha256": {
+    "reports/w01_support.py": "a32c439959123f94946fc7ace84906366628919623e2b12f4b34a7fdaa3569f1",
+    "reports/identity_report_support.py": "ca1e7bfd53b7c42870e1ea28e6cdcd52a53dbf40deb42acfdf82d0c0addd0a25",
+    "reports/proposal/build_proposal.py": "2e8af08a058eb3813eb8a5d03b8b11e9d83207565c8dc72c3f1f2c05544232c1",
+    "reports/milestone/versions/M-W01-ID-v1/build_milestone.py": "5ddac0b517804a66184a173c1ab8ed4797060b0b1f5f781fcd7ab85b26f097c1"
+  },
+  "source_run": "S3-OPT-001",
+  "source_run_sha256": "c6098424b565f8d8c6a8dbfd38415024ff929d255bae29d1614c5608db539dfa",
+  "numeric_source_commit": "415f2a91462fb361782b84756a552ad85f44a7b5",
+  "numeric_source_sha256": "7a71e0079618ffd5acc911d5eb1b1629340f76f2494a0e3ffcc94efb3eefe146",
+  "saved_result_hashes_checked": 36,
+  "saved_case_records_checked": 30,
+  "new_search_or_scoring": false,
+  "historical_tests_rerun": false,
+  "identity_complete": true,
+  "formal_submission_ready": false,
+  "submission_authorized": false,
+  "submitted": false,
+  "human_review": "pending",
+  "document_runtime": {
+    "python": "3.12.14",
+    "reportlab": "4.4.9"
+  },
+  "page_count": 4,
+  "result_rows": [
+    [
+      "Block, inputs",
+      "Latency (ms)",
+      "Reduction (%)",
+      "B1 / B2"
+    ],
+    [
+      "MLP, 0-13",
+      "26069.9524",
+      "7.3223-7.3291",
+      "4 / 4"
+    ],
+    [
+      "MLP, 14",
+      "21911.5924",
+      "22.1113",
+      "0 / 4"
+    ],
+    [
+      "Attention, 0-5",
+      "45698.2664",
+      "14.6755",
+      "10 / 8"
+    ],
+    [
+      "Attention, 6-14",
+      "41537.6664",
+      "22.4438",
+      "6 / 8"
+    ]
+  ],
+  "resolved_fields": {
+    "SOLVE_SUM": "10.6445",
+    "RSS_MIB": "118.36",
+    "MLP_MIN": "0.0075",
+    "MLP_MAX": "0.0132",
+    "ATTN_MIN": "0.5166",
+    "ATTN_MAX": "0.9656"
+  },
+  "chart_font_pt": 12,
+  "figure_points": 30,
+  "format": {
+    "paper": "A4",
+    "font": "Times New Roman",
+    "font_pt": 12,
+    "margins_cm": [
+      2.5,
+      2.5,
+      2.5,
+      2.5
+    ],
+    "body_leading_pt": 12
+  }
+}

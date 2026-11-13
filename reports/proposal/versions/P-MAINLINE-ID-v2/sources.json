@@ -1,0 +1,107 @@
+{
+  "artifact_version": "P-MAINLINE-ID-v2",
+  "content_as_of": "2026-10-04",
+  "evidence_cutoff": "Preserved S1/S3 evidence and formulation documentation available by 2026-09-29; no new experiment",
+  "method_scope": "CP-SAT main method and instructor fixed-placement baseline",
+  "predecessor": "P-MAINLINE-ID-v1",
+  "source_sha256": "f315900449c0fca2c7bd7bd2ddf275d9a440075bf878768a4d8f5d45d468370c",
+  "identity_sha256": "68471010d8a0b95a1ecd9bf9cef2fe8f6e8700c99bd072eebf54cc0a6cc1fc78",
+  "evidence_sha256": {
+    "docs/rules-and-metrics.md": "3d201fc1f84a2f4d9078cf45123925115f30a595de5c7bf4c46e1dd1c3bd7c84",
+    "docs/s2-method.md": "fa63c044bac036757ae1b9ffbc3ad21e972aed398fee6626bf9dba69ddb212bc",
+    "docs/s3-validation.md": "ba76ee3f62bebebd0791c979f2c9bb1f1e3f318936e9f5b616503c466a40454f",
+    "docs/s3-checks.json": "e545802ead78d19eb071e04f3ddc7e49ff7ff7f41c26eb6144ae739f849c54f6",
+    "results/S1-BL-001/run.json": "eb521585ddc5e33c2b150bb2e4a99ceb594643509da684fc15151d543247d23c",
+    "results/S1-BL-001/artifacts.sha256.json": "e747ed2dcf387b84125f2458f33de3e02a057413539a8f862712d78f953bc883",
+    "results/S1-BL-001/summary.csv": "acd34f23fff81a7649257f8767a9d1d4e4d046dc2478ebe21448a41a8d52bbd9",
+    "results/S3-OPT-001/run.json": "c6098424b565f8d8c6a8dbfd38415024ff929d255bae29d1614c5608db539dfa",
+    "results/S3-OPT-001/artifacts.sha256.json": "355ea77875754bd75947ccd4cc2f295de8f1544e27071daadd9e1f8aaf2f85a9",
+    "results/S3-OPT-001/summary.csv": "f6bea94abbb7fa6910bf95c7eb70e9b082604b6f09380efd5ba75d4dbfd33d83",
+    "results/S3-OPT-001/tiny-examples.json": "88eb0c6215abe0f172d6ae64c964ae1b537ba7379acbe3e156f864c2328d51cf",
+    "configs/s3-all-instances.json": "0e57c5386bd41b00a6b22347171318acb597b22a66874a4fa997c74a47f190cf",
+    "src/bootplacement/s2_model.py": "c377e77096c8b6ad6e8e6651947633fd0aa8c2d176a85b9af1e6d22fb9bb460f",
+    "src/bootplacement/s2_runner.py": "f8b7cd0309db3f3f9febe6eca9e0c397c730a6b477072183dee134130ce04b0c"
+  },
+  "predecessor_files_sha256": {
+    "reports/proposal/versions/P-MAINLINE-ID-v1/build-info.json": "023203d7e5884a542d8829708d80d200deee6395d386196900a0995bd76a02e4",
+    "reports/proposal/versions/P-MAINLINE-ID-v1/build_proposal.py": "677739abcddabcefaaaedd7a665b9f69373585b35c66e95c10ba9dea13810c45",
+    "reports/proposal/versions/P-MAINLINE-ID-v1/check_proposal.py": "80b61e8b37d94c96b6c16a7d928630de63d0850c032fc93fe38a6aa1d79c7fac",
+    "reports/proposal/versions/P-MAINLINE-ID-v1/format-check.json": "4ea9936d4feb7b68997679350415eadeba5a13d89cd266f9f62fe30e68780ae0",
+    "reports/proposal/versions/P-MAINLINE-ID-v1/identity.json": "68471010d8a0b95a1ecd9bf9cef2fe8f6e8700c99bd072eebf54cc0a6cc1fc78",
+    "reports/proposal/versions/P-MAINLINE-ID-v1/proposal.md": "fff4516e47cbb73a724235946108509cf31fad3daf6c549aadb243db3b9d2892",
+    "reports/proposal/versions/P-MAINLINE-ID-v1/proposal.pdf": "b46761b75f7b0680f58a1b835ad3a4c52a1ce929c090fbb0f2e0eae5c683e20a",
+    "reports/proposal/versions/P-MAINLINE-ID-v1/README.md": "cc29216e61dfe3f7ebb85a2e8777cfaf1ea24b40e04cc75a950487a62544eb59",
+    "reports/proposal/versions/P-MAINLINE-ID-v1/regeneration-check.json": "fe9c809708a860123da219ab1af4589d3b6e6696ddb135e3ab99f56bff47803b",
+    "reports/proposal/versions/P-MAINLINE-ID-v1/sources.json": "bc4bacc319ef1015421efeaaf2f774543f5ef41c6b5915f9272bdbb371f9c82e"
+  },
+  "generator_dependencies_sha256": {
+    "reports/w01_support.py": "a32c439959123f94946fc7ace84906366628919623e2b12f4b34a7fdaa3569f1",
+    "reports/proposal/build_proposal.py": "2e8af08a058eb3813eb8a5d03b8b11e9d83207565c8dc72c3f1f2c05544232c1",
+    "reports/proposal/requirements.txt": "054e7483ed0899a13425d3ff89d0ae162290c88989825c77d22174ceb36f33f1",
+    "reports/verification-requirements.txt": "c1b80d3f0339f5c76751d365141b2bb250f095164712b54c0fe361f0a7ca97b9"
+  },
+  "claim_map": {
+    "coupled_levels_full_cost_and_shared_refresh": [
+      "docs/rules-and-metrics.md",
+      "docs/s2-method.md"
+    ],
+    "formulation_reconstruction_validation_and_roles": [
+      "docs/s2-method.md",
+      "src/bootplacement/s2_model.py",
+      "src/bootplacement/s2_runner.py"
+    ],
+    "baseline_search_hints_and_cost_upper_bound": [
+      "src/bootplacement/s2_model.py:solve_placement",
+      "src/bootplacement/s2_runner.py",
+      "docs/s2-method.md:Objective and numerical precision"
+    ],
+    "30_condition_baseline_calibration": [
+      "results/S1-BL-001/run.json",
+      "results/S1-BL-001/summary.csv"
+    ],
+    "30_preliminary_valid_improvements_and_model_optimality": [
+      "results/S3-OPT-001/run.json",
+      "results/S3-OPT-001/summary.csv",
+      "results/S3-OPT-001/cases/"
+    ],
+    "tiny_exhaustive_checks": [
+      "docs/s3-checks.json",
+      "results/S3-OPT-001/tiny-examples.json"
+    ],
+    "course_metrics_placement_and_evaluation_plan": [
+      "docs/rules-and-metrics.md",
+      "configs/s3-all-instances.json"
+    ],
+    "remaining_work": "Fixed final protocol, formal resource and placement reporting, independent reproduction. S4/S6 remain future work; current saved preliminary data are not erased by that distinction."
+  },
+  "evidence_context": "Use the S2 document for method definitions only; its historical progress section is superseded by S3-OPT-001. Saved-file checks preserve historical applicability; they do not revalidate the algorithm.",
+  "numeric_precision": "S3 reduction ranges displayed at two decimal places; original full-precision values retained",
+  "course_snapshot_requirements": {
+    "final_deadline_bjt": "2026-12-03 23:59",
+    "paper": "A4",
+    "body_leading_pt": 12,
+    "later_online_updates_checked": false,
+    "proposal_deadline_bjt": "2026-10-15 23:59",
+    "reference_list": false,
+    "abstract": false,
+    "font": "Times New Roman",
+    "milestone_deadline_bjt": "2026-11-19 23:59",
+    "font_pt": 12,
+    "margins_cm": [
+      2.5,
+      2.5,
+      2.5,
+      2.5
+    ],
+    "page_count": 1
+  },
+  "review_state": "P-MAINLINE-ID-v1 received human feedback requesting revision and was not accepted; this v2 requires its own human content/layout review.",
+  "implementation_detail_locations": {
+    "Bootstrap1_restores_14_per_ciphertext_and_Bootstrap2_restores_13_for_8_or_16_ciphertexts_per_pair": "docs/rules-and-metrics.md:Insertions, sharing and ciphertexts",
+    "integer_cost_scaling_10000": "docs/s2-method.md:Objective and numerical precision",
+    "full_metric_definitions": "docs/rules-and-metrics.md:Reported metrics",
+    "solver_optimality_and_generalisation_limits": "docs/s2-method.md:Equivalence to the six allowed chains",
+    "course_dates_and_format": "course_snapshot_requirements"
+  },
+  "readability_revision": "Explain the coupled decision problem before introducing CP-SAT; explain terms at use; keep internal stages, run IDs, version labels and administrative state in companions. Preserve evidence and limitations."
+}

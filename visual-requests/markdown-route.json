@@ -1,0 +1,12 @@
+{
+  "files": [
+    "README.md",
+    "docs/reproduction.md",
+    "docs/existing-environment.md",
+    "docs/grading.md",
+    "docs/public-scope.md",
+    "docs/version-map.md",
+    "docs/reader-acceptance.md",
+    "reports/README.md"
+  ]
+}

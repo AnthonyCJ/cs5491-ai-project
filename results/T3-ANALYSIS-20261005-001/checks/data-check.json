@@ -1,0 +1,76 @@
+{
+  "status": "passed",
+  "conditions": 30,
+  "generated_files_hashed": 31,
+  "numeric_and_csv_checks": "All rows, totals, components, counts, depth/budget/utilisation, savings, states and bounds match saved sources.",
+  "figure_groups": 7,
+  "placement_checks": [
+    {
+      "case_id": "mlp-L13",
+      "nodes": 27,
+      "edges": 29,
+      "svg_ids_and_labels_match": true
+    },
+    {
+      "case_id": "mlp-L14",
+      "nodes": 25,
+      "edges": 27,
+      "svg_ids_and_labels_match": true
+    },
+    {
+      "case_id": "attention-L05",
+      "nodes": 72,
+      "edges": 79,
+      "svg_ids_and_labels_match": true
+    },
+    {
+      "case_id": "attention-L06",
+      "nodes": 70,
+      "edges": 77,
+      "svg_ids_and_labels_match": true
+    }
+  ],
+  "pngs": [
+    {
+      "file": "comparison-attention.png",
+      "width": 1198,
+      "height": 998
+    },
+    {
+      "file": "comparison-mlp.png",
+      "width": 1194,
+      "height": 998
+    },
+    {
+      "file": "cost-components.png",
+      "width": 1761,
+      "height": 1160
+    },
+    {
+      "file": "placement-attention-L05.png",
+      "width": 1691,
+      "height": 7833
+    },
+    {
+      "file": "placement-attention-L06.png",
+      "width": 1691,
+      "height": 7597
+    },
+    {
+      "file": "placement-mlp-L13.png",
+      "width": 889,
+      "height": 3244
+    },
+    {
+      "file": "placement-mlp-L14.png",
+      "width": 889,
+      "height": 3008
+    }
+  ],
+  "resource_rows_match": 30,
+  "solver_calls": 0,
+  "scoring_calls": 0,
+  "scope": "Derived-file/visible-SVG-content checks. Separate visual review checks layout; T2 scientific validity is inherited.",
+  "checker_sha256": "8b41c26ee21da0691e4fcb45674b3da23f7293cf2eaf4cae076572d34d32e353",
+  "generator_sha256": "2e4222b0b32faf6a1c0e4fc1f6fd86596931b895fbb3b35e0a38485df1b1bd1a"
+}

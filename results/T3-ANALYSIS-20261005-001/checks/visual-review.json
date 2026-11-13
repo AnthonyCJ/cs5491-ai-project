@@ -1,0 +1,20 @@
+{
+  "review_date": "2026-10-05",
+  "reviewer": "assistant",
+  "scope": "Actual PNG visual review plus independent checks of the final SVG content; not a rendering test in every external viewer.",
+  "initial_coverage": "Two complete curves, cost-components figure, four-placement overview and all 18 overlapping full-width placement strips.",
+  "corrections": [
+    "Added the factor of 100 to the displayed percentage-reduction formula.",
+    "Increased bottom clearance between each placement's output node and footer."
+  ],
+  "final_visual_coverage": [
+    "figures/comparison-mlp.png",
+    "figures/comparison-attention.png",
+    "Four-placement overview generated from final PNGs",
+    "Final footer regions of all four placement PNGs"
+  ],
+  "unchanged_visuals": "The cost figure and placement internal data/coordinates are unchanged; their full visual review is retained and byte/data continuity is checked separately.",
+  "result": "Titles, axes, units, legends, source captions and labels are readable in the inspected views. Corrected footers do not overlap output boxes. Full Attention diagrams require SVG zoom for individual labels.",
+  "final_svg_content": "All saved nodes, edges, operation types and level/ciphertext labels matched independently after revision.",
+  "limitations": ["No external-viewer matrix", "No print-size assessment", "No independent-environment optimizer reproduction"]
+}

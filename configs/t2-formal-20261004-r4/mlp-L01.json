@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "stage": "S2",
+  "run_class": "T2 formal 30-condition experiment; raw S2 compatibility; T2-FORMAL-20261004-004/protocol.json",
+  "instances": {
+    "mlp": [
+      1
+    ]
+  },
+  "l_max": 14,
+  "solver": {
+    "time_limit_seconds": 60.0,
+    "workers": 1,
+    "seed": 5491
+  },
+  "tiny_examples": false
+}

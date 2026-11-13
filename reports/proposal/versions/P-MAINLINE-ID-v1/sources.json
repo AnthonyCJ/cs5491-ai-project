@@ -1,0 +1,84 @@
+{
+  "artifact_version": "P-MAINLINE-ID-v1",
+  "content_as_of": "2026-10-04",
+  "evidence_cutoff": "Preserved S1/S3 evidence and formulation documentation available by 2026-09-29; no new experiment",
+  "method_scope": "CP-SAT main method and instructor fixed-placement baseline",
+  "predecessor": "P-W01-ID-v1",
+  "source_sha256": "fff4516e47cbb73a724235946108509cf31fad3daf6c549aadb243db3b9d2892",
+  "identity_sha256": "68471010d8a0b95a1ecd9bf9cef2fe8f6e8700c99bd072eebf54cc0a6cc1fc78",
+  "evidence_sha256": {
+    "docs/rules-and-metrics.md": "3d201fc1f84a2f4d9078cf45123925115f30a595de5c7bf4c46e1dd1c3bd7c84",
+    "docs/s2-method.md": "fa63c044bac036757ae1b9ffbc3ad21e972aed398fee6626bf9dba69ddb212bc",
+    "docs/s3-validation.md": "ba76ee3f62bebebd0791c979f2c9bb1f1e3f318936e9f5b616503c466a40454f",
+    "docs/s3-checks.json": "e545802ead78d19eb071e04f3ddc7e49ff7ff7f41c26eb6144ae739f849c54f6",
+    "results/S1-BL-001/run.json": "eb521585ddc5e33c2b150bb2e4a99ceb594643509da684fc15151d543247d23c",
+    "results/S1-BL-001/artifacts.sha256.json": "e747ed2dcf387b84125f2458f33de3e02a057413539a8f862712d78f953bc883",
+    "results/S1-BL-001/summary.csv": "acd34f23fff81a7649257f8767a9d1d4e4d046dc2478ebe21448a41a8d52bbd9",
+    "results/S3-OPT-001/run.json": "c6098424b565f8d8c6a8dbfd38415024ff929d255bae29d1614c5608db539dfa",
+    "results/S3-OPT-001/artifacts.sha256.json": "355ea77875754bd75947ccd4cc2f295de8f1544e27071daadd9e1f8aaf2f85a9",
+    "results/S3-OPT-001/summary.csv": "f6bea94abbb7fa6910bf95c7eb70e9b082604b6f09380efd5ba75d4dbfd33d83",
+    "results/S3-OPT-001/tiny-examples.json": "88eb0c6215abe0f172d6ae64c964ae1b537ba7379acbe3e156f864c2328d51cf",
+    "configs/s3-all-instances.json": "0e57c5386bd41b00a6b22347171318acb597b22a66874a4fa997c74a47f190cf"
+  },
+  "predecessor_files_sha256": {
+    "reports/proposal/versions/P-W01-ID-v1/build_proposal.py": "280ab0894a577a5c84f2cf0c80ad9d5dfcf6518e7d68deb8a2f527630339c2e5",
+    "reports/proposal/versions/P-W01-ID-v1/format-check.json": "f99a39f60b921e25fb1478c3dd030a0376a8d4fd187781e7a9f09f2200af055f",
+    "reports/proposal/versions/P-W01-ID-v1/identity.json": "68471010d8a0b95a1ecd9bf9cef2fe8f6e8700c99bd072eebf54cc0a6cc1fc78",
+    "reports/proposal/versions/P-W01-ID-v1/import-info.json": "f5cde6cd12bffd30a32a4331b6748e176dc219da94f8ddfaaca11153ea3d64aa",
+    "reports/proposal/versions/P-W01-ID-v1/proposal.md": "ce88d10610b74a83a7f93a2f4ec76c45df9ee62555d202954aeaa87ea5bf284f",
+    "reports/proposal/versions/P-W01-ID-v1/proposal.pdf": "a384e26540a7d884bf09d3085e7184b5bdfe3e654d8ceac589b31bace3d76e8c",
+    "reports/proposal/versions/P-W01-ID-v1/README.md": "242da0f92a092e6577d21dd3b06f71f0b8c8b61bca2ae9981faa5b0b29930f89",
+    "reports/proposal/versions/P-W01-ID-v1/regeneration-check.json": "87eff97a7ef99d117b21d7a82a6dea2fb5bdb252c32a443c82609c1454fb7a6a",
+    "reports/proposal/versions/P-W01-ID-v1/sources.json": "6606b0a308c2c3e2d8decd4f2df10fe0f20e1f8e1eea888e613584a68aaa62f2"
+  },
+  "generator_dependencies_sha256": {
+    "reports/w01_support.py": "a32c439959123f94946fc7ace84906366628919623e2b12f4b34a7fdaa3569f1",
+    "reports/proposal/build_proposal.py": "2e8af08a058eb3813eb8a5d03b8b11e9d83207565c8dc72c3f1f2c05544232c1",
+    "reports/proposal/requirements.txt": "054e7483ed0899a13425d3ff89d0ae162290c88989825c77d22174ceb36f33f1",
+    "reports/verification-requirements.txt": "c1b80d3f0339f5c76751d365141b2bb250f095164712b54c0fe361f0a7ca97b9"
+  },
+  "claim_map": {
+    "problem_rules_and_metrics": [
+      "docs/rules-and-metrics.md"
+    ],
+    "formulation_reconstruction_contribution": [
+      "docs/s2-method.md"
+    ],
+    "baseline_calibration": [
+      "results/S1-BL-001/run.json",
+      "results/S1-BL-001/summary.csv"
+    ],
+    "stage_30_case_progress_and_reduction_ranges": [
+      "results/S3-OPT-001/run.json",
+      "results/S3-OPT-001/summary.csv"
+    ],
+    "historical_validation": [
+      "docs/s3-validation.md",
+      "docs/s3-checks.json",
+      "results/S3-OPT-001/tiny-examples.json"
+    ],
+    "future_work": "S4 frozen-protocol experiments and per-block placement diagrams; S6 independent reproduction remain planned, not completed"
+  },
+  "evidence_context": "Use the S2 document for method definitions only; its historical progress section is superseded by S3-OPT-001. Saved-file checks preserve historical applicability; they do not revalidate the algorithm.",
+  "numeric_precision": "S3 reduction ranges displayed at two decimal places; original full-precision values retained",
+  "course_snapshot_requirements": {
+    "final_deadline_bjt": "2026-12-03 23:59",
+    "paper": "A4",
+    "body_leading_pt": 12,
+    "later_online_updates_checked": false,
+    "proposal_deadline_bjt": "2026-10-15 23:59",
+    "reference_list": false,
+    "abstract": false,
+    "font": "Times New Roman",
+    "milestone_deadline_bjt": "2026-11-19 23:59",
+    "font_pt": 12,
+    "margins_cm": [
+      2.5,
+      2.5,
+      2.5,
+      2.5
+    ],
+    "page_count": 1
+  },
+  "review_state": "New content/layout review pending; predecessor acceptance does not transfer"
+}

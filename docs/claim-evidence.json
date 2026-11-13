@@ -1,0 +1,409 @@
+{
+  "schema_version": 1,
+  "release": "ENGINEERING-CANDIDATE-20261113-01",
+  "paths_relative_to": "repository root",
+  "purpose": "Frozen scientific evidence, historical validation scope and current public instructions; no candidate-wide or fresh-install execution is claimed",
+  "claims": [
+    {
+      "id": "method-and-team-contribution",
+      "claim": "Course graphs/scorer and cost conventions are supplied; the project provides a joint CP-SAT placement formulation, shared-operation reconstruction and independent graph/score audits. OR-Tools is the search engine.",
+      "readers": [
+        "README.md",
+        "docs/grading.md"
+      ],
+      "scope": "Model estimates on two supplied graphs, not measured encrypted execution",
+      "evidence": [
+        {
+          "path": "docs/rules-and-metrics.md",
+          "sha256": "3d201fc1f84a2f4d9078cf45123925115f30a595de5c7bf4c46e1dd1c3bd7c84"
+        },
+        {
+          "path": "docs/s2-method.md",
+          "sha256": "fa63c044bac036757ae1b9ffbc3ad21e972aed398fee6626bf9dba69ddb212bc"
+        },
+        {
+          "path": "src/bootplacement/s2_model.py",
+          "sha256": "c377e77096c8b6ad6e8e6651947633fd0aa8c2d176a85b9af1e6d22fb9bb460f"
+        },
+        {
+          "path": "src/bootplacement/s2_placement.py",
+          "sha256": "5039c773505bb5ce9678316be4e6fa9a44f4b51d5e8b5de7c7807f7a97884abf"
+        },
+        {
+          "path": "src/bootplacement/s2_validation.py",
+          "sha256": "7863107934febb247d6481cb914160e08dfd123241306a1c21471ca65a454989"
+        },
+        {
+          "path": "src/bootplacement/audit.py",
+          "sha256": "982ed6bcfebd8ff09c0622a55afde000cfe1bc791db8930e7099e546aaf9a166"
+        },
+        {
+          "path": "vendor/README.md",
+          "sha256": "4d85864f52b32f19053380aef3358b4d281e0577f1ab017fe098db269bdf7b81"
+        },
+        {
+          "path": "vendor/dag_builder.py",
+          "sha256": "47a63fd1698da64731f8b9e77067f3ef7e0889534c4e7659bb7fc113ce97acee"
+        }
+      ]
+    },
+    {
+      "id": "formal-thirty",
+      "claim": "MLP and Attention, input levels 0-14 at maximum level 14: 30 saved legal improvements with OPTIMAL status, matching objective/bound and zero gap.",
+      "readers": [
+        "README.md",
+        "docs/grading.md"
+      ],
+      "scope": "Frozen formal evidence; R6 fresh/saved checks inherited under exact source/output identity; no new R7 run",
+      "evidence": [
+        {
+          "path": "results/T2-FORMAL-20261004-004/summary.json",
+          "sha256": "43fd5c3f67c9daa08e9dccacbd80fe08cee8d02418598a84588e2ae12b2ec1d1"
+        },
+        {
+          "path": "results/T2-FORMAL-20261004-004/summary.csv",
+          "sha256": "409b270b0e8f6cc75ca776a8247011e4381165d84ae1e7e68bbedbfb044704f4"
+        },
+        {
+          "path": "results/T2-FORMAL-20261004-004/condition-status.json",
+          "sha256": "c5038899260327d73943b40acd94f602fb1950f3dd5e84fe9b34d256858e2132"
+        },
+        {
+          "path": "results/T2-FORMAL-20261004-004/validation-summary.json",
+          "sha256": "234b34c0392caaeebe03c7b5d2a5236d839faa3651947fdafd70ed5f08cfd399"
+        },
+        {
+          "path": "results/T2-FORMAL-20261004-004/artifacts.sha256.json",
+          "sha256": "0c465b0e11b76c417aa731da2863ad5739a24629e7246d9663559c154472e1f1"
+        }
+      ]
+    },
+    {
+      "id": "objective-groups",
+      "claim": "MLP L00-L13=26069.9524, L14=21911.5924; Attention L00-L05=45698.2664, L06-L14=41537.6664 estimated milliseconds.",
+      "readers": [
+        "README.md",
+        "docs/grading.md"
+      ],
+      "scope": "Exact saved decimal objectives, not a claim of identical tied graphs",
+      "evidence": [
+        {
+          "path": "results/T3-ANALYSIS-20261005-001/analysis-summary.json",
+          "sha256": "61b0377fb244d8d2cd03fb9f50abc641aeaa2e2ff7b7b79ccf8cba4381f1555b"
+        },
+        {
+          "path": "results/T2-FORMAL-20261004-004/summary.csv",
+          "sha256": "409b270b0e8f6cc75ca776a8247011e4381165d84ae1e7e68bbedbfb044704f4"
+        }
+      ]
+    },
+    {
+      "id": "grading-definitions",
+      "claim": "Validate full saved graphs, independent costs and teacher score within 1e-7 ms; compare the same-input fixed baseline and report full cost, refresh, level and optimality accounting.",
+      "readers": [
+        "docs/grading.md",
+        "docs/reader-acceptance.md"
+      ],
+      "scope": "Reproducibility/score checks; not teacher-awarded marks or a current rubric verification",
+      "evidence": [
+        {
+          "path": "experiments/t2_formal_check.py",
+          "sha256": "d38fac43e51ba94e02460a1f128a9b1e1fb1538c258c3aac8b7318130950b5fb"
+        },
+        {
+          "path": "src/bootplacement/s2_validation.py",
+          "sha256": "7863107934febb247d6481cb914160e08dfd123241306a1c21471ca65a454989"
+        },
+        {
+          "path": "src/bootplacement/audit.py",
+          "sha256": "982ed6bcfebd8ff09c0622a55afde000cfe1bc791db8930e7099e546aaf9a166"
+        },
+        {
+          "path": "src/bootplacement/s3_runner.py",
+          "sha256": "f43dd78e450e77a9ecf7f4844524e4a39410f852b2a5e6428d524799db5fa061"
+        },
+        {
+          "path": "docs/rules-and-metrics.md",
+          "sha256": "3d201fc1f84a2f4d9078cf45123925115f30a595de5c7bf4c46e1dd1c3bd7c84"
+        }
+      ]
+    },
+    {
+      "id": "report-sources-and-acceptance",
+      "claim": "Latest Proposal P-TERMS-ID-v1 and historical reader Proposal P-D1-ID-v1 use formal evidence; M-MAINLINE-ID-v2 uses S3. Reviewed original PDFs retain their own acceptance; only P-D1 and M-MAINLINE were rebuilt in R6.",
+      "readers": [
+        "README.md",
+        "reports/README.md",
+        "docs/version-map.md"
+      ],
+      "scope": "Original reviewed bytes only; new exports need format/page review; no final submission readiness",
+      "evidence": [
+        {
+          "path": "reports/proposal/versions/P-D1-ID-v1/sources.json",
+          "sha256": "c83d497c666f4c806ccb948c0b74fb076fa0b05ef3d0926774a407766f68b80e"
+        },
+        {
+          "path": "reports/proposal/versions/P-D1-ID-v1/format-check.json",
+          "sha256": "b7da5113f660e8e488a8e3576192ddd998cf582020a28c78ac8483a43f06074d"
+        },
+        {
+          "path": "reports/proposal/versions/P-D1-ID-v1/proposal.pdf",
+          "sha256": "d5931a879e8f5b0e0aa07ae034a90e73c676fb58c8aecc253e2d459c0c9735d0"
+        },
+        {
+          "path": "reports/reviews/P-D1-ID-v1-review-20261005.md",
+          "sha256": "7a53a1ea4ba157b6bb207ed9b000ee8d69dbd0896f9538e2d2d017cb2af06acc"
+        },
+        {
+          "path": "reports/milestone/versions/M-MAINLINE-ID-v2/sources.json",
+          "sha256": "e1d87932a101ddaa953e498416168b16f8cddb1a90a9da4784b7c98170f3d332"
+        },
+        {
+          "path": "reports/milestone/versions/M-MAINLINE-ID-v2/format-check.json",
+          "sha256": "970546b96bbf1704f073f55e1af75022568fd57f20d81949220e3ae255c7429f"
+        },
+        {
+          "path": "reports/milestone/versions/M-MAINLINE-ID-v2/milestone.pdf",
+          "sha256": "655f255521ae87a0340bf1b6c1fb67d3cfb0c85628cf9d273daf7cf49a1bb34c"
+        },
+        {
+          "path": "reports/reviews/M-MAINLINE-ID-v2-review-20261004.md",
+          "sha256": "f58c0756f541ca233767b76ee05769702004591aa9ea55d1f8473062315391fa"
+        },
+        {
+          "path": "reports/proposal/versions/P-TERMS-ID-v1/sources.json",
+          "sha256": "4fc84f387881b72c507369a03db2dedb018176b98609b7104a8d32e591d44753"
+        },
+        {
+          "path": "reports/proposal/versions/P-TERMS-ID-v1/format-check.json",
+          "sha256": "7873c37e345a9058abe886cef4620293443d0c48a23d09ee3a515b35ec7a7bc1"
+        },
+        {
+          "path": "reports/proposal/versions/P-TERMS-ID-v1/proposal.pdf",
+          "sha256": "1c6d1af4a40b8f9585ef02a95e5764fff490730e5ef1115590a11f3ec9d93f2f"
+        },
+        {
+          "path": "reports/reviews/P-TERMS-ID-v1-review-20261015.md",
+          "sha256": "b1d41832d3e9179af7e89ef743baff599edc95655d81b0f4c95d473eb82124b2"
+        }
+      ]
+    },
+    {
+      "id": "s3-coverage",
+      "claim": "The Milestone protocol has 30 numerical cases and six mandatory tiny examples, with saved-result verification and S2 history comparisons.",
+      "readers": [
+        "docs/reproduction.md",
+        "docs/version-map.md"
+      ],
+      "scope": "Frozen S3 evidence; separate R6 fresh/saved verification inherited, not rerun for R7",
+      "evidence": [
+        {
+          "path": "configs/s3-all-instances.json",
+          "sha256": "0e57c5386bd41b00a6b22347171318acb597b22a66874a4fa997c74a47f190cf"
+        },
+        {
+          "path": "src/bootplacement/s3_runner.py",
+          "sha256": "f43dd78e450e77a9ecf7f4844524e4a39410f852b2a5e6428d524799db5fa061"
+        },
+        {
+          "path": "results/S3-OPT-001/run.json",
+          "sha256": "c6098424b565f8d8c6a8dbfd38415024ff929d255bae29d1614c5608db539dfa"
+        },
+        {
+          "path": "results/S3-OPT-001/tiny-examples.json",
+          "sha256": "88eb0c6215abe0f172d6ae64c964ae1b537ba7379acbe3e156f864c2328d51cf"
+        },
+        {
+          "path": "results/S3-OPT-001/s2-comparison.json",
+          "sha256": "69ec2c194adb38b775da2522e311bbd56855a474fad92ed5b716df23dee47cbb"
+        },
+        {
+          "path": "results/S3-OPT-001/artifacts.sha256.json",
+          "sha256": "355ea77875754bd75947ccd4cc2f295de8f1544e27071daadd9e1f8aaf2f85a9"
+        }
+      ]
+    },
+    {
+      "id": "figure-lineage",
+      "claim": "Formal generator writes seven PNG/SVG/data groups, including four complete placements, from frozen formal inputs. S3 provides three groups from the selected saved run; the reader contract calls for both frozen and fresh S3 sets.",
+      "readers": [
+        "README.md",
+        "docs/reproduction.md",
+        "docs/reader-acceptance.md"
+      ],
+      "scope": "Original generators and frozen source evidence; R6 actual generation/viewing retained; no R7 figure rebuild",
+      "evidence": [
+        {
+          "path": "analysis/generate_t3.py",
+          "sha256": "2e4222b0b32faf6a1c0e4fc1f6fd86596931b895fbb3b35e0a38485df1b1bd1a"
+        },
+        {
+          "path": "analysis/check_t3.py",
+          "sha256": "8b41c26ee21da0691e4fcb45674b3da23f7293cf2eaf4cae076572d34d32e353"
+        },
+        {
+          "path": "results/T3-ANALYSIS-20261005-001/generated.sha256.json",
+          "sha256": "efbad0dd8c9a8fe279198ed7468bc14129af07fe1613ec873442379f13c0be17"
+        },
+        {
+          "path": "results/T3-ANALYSIS-20261005-001/provenance.json",
+          "sha256": "6eb1c69e81e7da1ca0517969fd56171091383c4306b671092e2459fe860f8aed"
+        },
+        {
+          "path": "results/T3-ANALYSIS-20261005-001/cases.md",
+          "sha256": "4d6346033126904988ad0c1e53e744b3e53684d630e3fa724e98e533bdbe6d1f"
+        },
+        {
+          "path": "src/bootplacement/s3_figures.py",
+          "sha256": "59d9e30fc0de74886ed1795cce961e1b0a1278aba78a01f847e655b4bcc48072"
+        },
+        {
+          "path": "figures/S3-OPT-001/provenance.json",
+          "sha256": "f017b413f4491b515d53b2629e562dc8bd2a503a2d650ad22a0a7d09021f8ef6"
+        },
+        {
+          "path": "figures/S3-OPT-001/artifacts.sha256.json",
+          "sha256": "4cd11535b3d3f12b17a3a68d8d5897ce859b21dab8d99cfbb51f4094c15c974a"
+        }
+      ]
+    },
+    {
+      "id": "reader-entry-local-checks",
+      "claim": "Historical entry checks and the later R6 full final pass are retained in the producer archive. Their results apply to the recorded helper/environment versions, not to a new installation.",
+      "readers": [
+        "README.md",
+        "docs/reproduction.md"
+      ],
+      "scope": "Public scope summary only; control receipts and original failures are private. Current reader helpers preserve R7 bytes.",
+      "evidence": [
+        {
+          "path": "scripts/reader-run.ps1",
+          "sha256": "78e916e0a45f7a8d0076ef57d4d159df7b80f5aa5c8365fcf97f2bd2c474f052"
+        },
+        {
+          "path": "scripts/reader_worker.py",
+          "sha256": "a4b3273df58a850a1b8913080d17a5ae29b069d0be858c4aad34a36a82acabaa"
+        },
+        {
+          "path": "scripts/reader_native.cs",
+          "sha256": "892f3664a3b0db0d881ce6a93f0259ecdcdaf179649657a3dd272e19d0deb325"
+        },
+        {
+          "path": "docs/validation-history.json",
+          "sha256": "624f28ec8468aa85dfde903d47cd985f7cf049f1e500ac1fdd1a18abc8297dc4"
+        }
+      ]
+    },
+    {
+      "id": "environments",
+      "claim": "Windows x64 numerical Python 3.13.9 and document Python 3.12.14 have separate locked dependencies. Public acquisition instructions and 29 target wheel metadata records are supplied; legally licensed Times New Roman remains external.",
+      "readers": [
+        "README.md",
+        "docs/reproduction.md",
+        "docs/public-scope.md"
+      ],
+      "scope": "Source/metadata and dependency-marker checks, not installed-package or fresh-install validation. Optional Node/browser setup remains untested.",
+      "evidence": [
+        {
+          "path": "requirements-s2.txt",
+          "sha256": "e1b254efcc3cb85a6f739ca84ded968bbad0d51702f0f2cf15005491083775c2"
+        },
+        {
+          "path": "requirements-docs-lock.txt",
+          "sha256": "850959de0c44757401309b7379fa60ac1cb0ff483079d72129b4504d92a11fd8"
+        },
+        {
+          "path": "docs/installation-unverified.md",
+          "sha256": "3e2113fdd56de2b86ae67badd1b34f3cb795682b07d7fcf30debac70a663f494"
+        },
+        {
+          "path": "docs/dependency-sources.json",
+          "sha256": "e6ce384ea8702c7980332bf2972a11a31c69d0b0f09c34e87111550234d1765a"
+        },
+        {
+          "path": "docs/existing-environment.md",
+          "sha256": "3f4c44a2543a4dad221e3146364df4f9a64dbca84cf08e195eb6c67b7880fa47"
+        },
+        {
+          "path": "docs/validation-history.json",
+          "sha256": "624f28ec8468aa85dfde903d47cd985f7cf049f1e500ac1fdd1a18abc8297dc4"
+        }
+      ],
+      "external_sources": [
+        "https://www.python.org/downloads/release/python-31214/",
+        "https://docs.astral.sh/uv/concepts/python-versions/",
+        "https://github.com/astral-sh/uv/releases/tag/0.12.23",
+        "https://releases.astral.sh/github/uv/releases/download/0.12.23/uv-x86_64-pc-windows-msvc.zip.sha256",
+        "https://docs.astral.sh/uv/reference/cli/#uv-python-install"
+      ]
+    },
+    {
+      "id": "historical-timing",
+      "claim": "The previous local formal driver took 39.9841531 seconds; earlier S3 solver calls totalled 10.64452149963472 seconds.",
+      "readers": [
+        "docs/reproduction.md"
+      ],
+      "scope": "Different scopes/protocols; nested measurements must not be added. Not a new-machine timing promise or full install duration.",
+      "evidence": [
+        {
+          "path": "results/S3-OPT-001/run.json",
+          "sha256": "c6098424b565f8d8c6a8dbfd38415024ff929d255bae29d1614c5608db539dfa"
+        },
+        {
+          "path": "docs/validation-history.json",
+          "sha256": "624f28ec8468aa85dfde903d47cd985f7cf049f1e500ac1fdd1a18abc8297dc4"
+        }
+      ]
+    },
+    {
+      "id": "permission-and-validation-boundaries",
+      "claim": "The owner reported instructor permission to publish code on 2026-11-12 and accepted T4 R7 with its expressly inherited R6 evidence. Publication still needs approval of the concrete engineering candidate; anonymous acquisition and new installation require separate actual checks.",
+      "readers": [
+        "README.md",
+        "docs/public-scope.md",
+        "docs/version-map.md"
+      ],
+      "scope": "Teacher-input permission and original report identity exceptions do not authorize arbitrary publication or course submission.",
+      "evidence": [
+        {
+          "path": "vendor/README.md",
+          "sha256": "4d85864f52b32f19053380aef3358b4d281e0577f1ab017fe098db269bdf7b81"
+        },
+        {
+          "path": "docs/reader-acceptance.md",
+          "sha256": "f3d3a7de40266dfd83fda7c3691acf7276739e56548794cfa21d760461617632"
+        },
+        {
+          "path": "docs/validation-history.json",
+          "sha256": "624f28ec8468aa85dfde903d47cd985f7cf049f1e500ac1fdd1a18abc8297dc4"
+        }
+      ]
+    },
+    {
+      "scope": "R6 business evidence inherited only through exact unchanged identity; owner accepted R7 on 2026-11-12. This candidate changes public packaging/instructions, not scientific execution.",
+      "readers": [
+        "README.md",
+        "docs/reproduction.md",
+        "docs/version-map.md",
+        "reports/README.md"
+      ],
+      "claim": "Reports are written directly in their task output directories. R7 corrects documentation/version references only and does not perform a complete business rerun.",
+      "id": "R7-documentation-correction",
+      "evidence": [
+        {
+          "path": "docs/reproduction.md",
+          "sha256": "9ed94f0aa7c2fc2b09f3daae180bec4b7f644222b52f470503cb0628bb8481a8"
+        },
+        {
+          "path": "docs/validation-history.json",
+          "sha256": "624f28ec8468aa85dfde903d47cd985f7cf049f1e500ac1fdd1a18abc8297dc4"
+        }
+      ]
+    }
+  ],
+  "report_claim_maps": [
+    "reports/proposal/versions/P-TERMS-ID-v1/sources.json#claim_map",
+    "reports/proposal/versions/P-D1-ID-v1/sources.json#claim_map",
+    "reports/milestone/versions/M-MAINLINE-ID-v2/sources.json#claim_map"
+  ]
+}

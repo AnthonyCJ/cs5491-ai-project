@@ -1,0 +1,91 @@
+{
+  "schema_version": 1,
+  "run_id": "attention-L11-R227",
+  "method": "shared-refresh-cp-sat-v1",
+  "status": "passed",
+  "created_at_utc": "2026-10-04T16:12:55.316235+00:00",
+  "config": {
+    "schema_version": 1,
+    "stage": "S2",
+    "run_class": "T2 formal 30-condition experiment; raw S2 compatibility; T2-FORMAL-20261004-004/protocol.json",
+    "instances": {
+      "attention": [
+        11
+      ]
+    },
+    "l_max": 14,
+    "solver": {
+      "time_limit_seconds": 60.0,
+      "workers": 1,
+      "seed": 5491
+    },
+    "tiny_examples": false
+  },
+  "config_path": "configs/t2-formal-20261004-r4/attention-L11.json",
+  "source_version": {
+    "sha256": "c5797af7a33405405f0a6f49121626e1015405c990637d4ebcb78d5697f36ab6",
+    "files": {
+      "configs/s1-baselines.json": "7f86e827a451fe3afa1ce24c6d8d6fb4f9e77322f6b48152fc6ee2df2b7d2425",
+      "configs/t2-formal-20261004-r4/attention-L11.json": "a30cf6949e01180fa45255f551991fcd0ad0dd80e87abb7500ae0b2184eb650c",
+      "requirements-s2.txt": "e1b254efcc3cb85a6f739ca84ded968bbad0d51702f0f2cf15005491083775c2",
+      "requirements.txt": "64aa2abc895e69ac2643b249bda742c9a2641e0985efd5721840def9b5c954d4",
+      "run_baselines.py": "16b37cb1cd0faea12a983383e3c93babe65cbd15901e1bbee42f8366be246c96",
+      "run_optimizer.py": "1e4b3359389e8a508f7925822af9aa1526eef03d05e6339f78578128d3efd4a9",
+      "src/bootplacement/__init__.py": "bc807cf71718f34c5b4b5d2e2891e27a39348612db3244439a71885401991c6e",
+      "src/bootplacement/audit.py": "982ed6bcfebd8ff09c0622a55afde000cfe1bc791db8930e7099e546aaf9a166",
+      "src/bootplacement/cli.py": "0088f4ed041d2b1960427a48462a2ce7f09888bc5492a1a4e59294c92fbc0428",
+      "src/bootplacement/reference.py": "df3dd35331216e2ef1f884d4a26ff76f92f36ebdaca6f52da98bd10e389d557b",
+      "src/bootplacement/s2_model.py": "c377e77096c8b6ad6e8e6651947633fd0aa8c2d176a85b9af1e6d22fb9bb460f",
+      "src/bootplacement/s2_oracle.py": "38fb9eaf92e878883fe36db8303fbf6fdffb7506d5a7281f8407b54ea667251d",
+      "src/bootplacement/s2_placement.py": "5039c773505bb5ce9678316be4e6fa9a44f4b51d5e8b5de7c7807f7a97884abf",
+      "src/bootplacement/s2_runner.py": "f8b7cd0309db3f3f9febe6eca9e0c397c730a6b477072183dee134130ce04b0c",
+      "src/bootplacement/s2_validation.py": "7863107934febb247d6481cb914160e08dfd123241306a1c21471ca65a454989",
+      "tests/test_baseline_audit.py": "aecfdd5eef52056334b88b80ba994682904600ba72d8886e7bd41124aa7d6aec",
+      "tests/test_s2_optimizer.py": "1f8538744326b466fc63949d49bd1c9d26a13d3f256b7ee7d50ab68e44073ae8",
+      "tests/test_s3_runner.py": "a7c0bbe31dea23daa9268c6e78238c9e7995ab009da2a425107c1585d2a73c88",
+      "vendor/dag_builder.py": "47a63fd1698da64731f8b9e77067f3ef7e0889534c4e7659bb7fc113ce97acee"
+    }
+  },
+  "git": {
+    "head_at_run": "aa89f7bb870b1f11d305946f007b1cbb76073b2f",
+    "worktree_dirty_at_run": true,
+    "note": "Source fingerprint identifies executed bytes, including any uncommitted files."
+  },
+  "baseline_run_id": "S1-BL-001",
+  "baseline_source_sha256": "928e03216e89e54ef03d6e8d34b4f4f89244b0c4169a1fb2492f97175b3c14f8",
+  "python": "3.13.9",
+  "platform": {
+    "system": "Windows",
+    "machine": "AMD64"
+  },
+  "dependencies": {
+    "absl-py": "2.5.0",
+    "contourpy": "1.4.0",
+    "cycler": "0.12.1",
+    "fonttools": "4.66.0",
+    "immutabledict": "4.3.1",
+    "kiwisolver": "1.5.1",
+    "matplotlib": "3.11.2",
+    "numpy": "2.5.3",
+    "ortools": "9.15.6755",
+    "packaging": "26.3",
+    "pandas": "3.0.6",
+    "pillow": "12.3.0",
+    "protobuf": "6.33.6",
+    "psutil": "7.2.2",
+    "pyparsing": "3.3.3",
+    "python-dateutil": "2.9.0.post0",
+    "six": "1.17.0",
+    "typing_extensions": "4.16.0",
+    "tzdata": "2026.4"
+  },
+  "actual_ortools_version": "9.15.6755",
+  "gpu_used": false,
+  "actual_encrypted_inference_performed": false,
+  "cases_completed": 1,
+  "cases_expected": 1,
+  "cases_with_valid_solutions": 1,
+  "cases_improved": 1,
+  "cases_optimal_for_formulation": 1,
+  "completed_at_utc": "2026-10-04T16:12:56.456097+00:00"
+}

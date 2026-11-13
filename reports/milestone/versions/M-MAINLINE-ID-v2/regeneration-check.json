@@ -1,0 +1,52 @@
+{
+  "artifact_version": "M-MAINLINE-ID-v2",
+  "checked_at_utc": "2026-10-04T11:09:54.013366+00:00",
+  "source_sha256": "0e3175b5bb837422f581232f4f836591eac6876a12fe0dc242cd68634a6d610e",
+  "source_index_sha256": "e1d87932a101ddaa953e498416168b16f8cddb1a90a9da4784b7c98170f3d332",
+  "generator_sha256": "0e900016d6e8732ecdf33a6d8db6b1b86c30f82086c13e255d6a3441005d904b",
+  "original_pdf_sha256": "655f255521ae87a0340bf1b6c1fb67d3cfb0c85628cf9d273daf7cf49a1bb34c",
+  "regenerated_pdf_sha256": "8ad52a2816568753442023707b21dcddf6f2865fe6ac35870bc7c269caf20907",
+  "pdf_bytes_identical": false,
+  "resolved_source_identical": true,
+  "all_four_page_renders_identical": true,
+  "page_renders": [
+    {
+      "page": 1,
+      "original_png_sha256": "9e84ffef717dee3247dd5e13f5f9b7c5dd94c512813159b6ed7b8b627b27cb9d",
+      "regenerated_png_sha256": "9e84ffef717dee3247dd5e13f5f9b7c5dd94c512813159b6ed7b8b627b27cb9d",
+      "identical": true
+    },
+    {
+      "page": 2,
+      "original_png_sha256": "356519807e7a1d810c65a8f674e7c7506e1c9047ec0199ae3ad910a8b3a86aff",
+      "regenerated_png_sha256": "356519807e7a1d810c65a8f674e7c7506e1c9047ec0199ae3ad910a8b3a86aff",
+      "identical": true
+    },
+    {
+      "page": 3,
+      "original_png_sha256": "c86cb70c5a097666e0144ebf043bab27e5da86dd3c7057cb7d1535635921f04b",
+      "regenerated_png_sha256": "c86cb70c5a097666e0144ebf043bab27e5da86dd3c7057cb7d1535635921f04b",
+      "identical": true
+    },
+    {
+      "page": 4,
+      "original_png_sha256": "74d636873bdf7dadd6fd42fdad8eb4760e8e8ec23cea702ebea7ed0178473270",
+      "regenerated_png_sha256": "74d636873bdf7dadd6fd42fdad8eb4760e8e8ec23cea702ebea7ed0178473270",
+      "identical": true
+    }
+  ],
+  "render_dpi": 150,
+  "original_format_check_sha256": "970546b96bbf1704f073f55e1af75022568fd57f20d81949220e3ae255c7429f",
+  "regenerated_format_check_sha256": "1e36810691152e0b4decb395c667872de788e6078a5fcd460fdd2d5f9c516d5d",
+  "document_runtime": {
+    "python": "3.12.14",
+    "reportlab": "4.4.9"
+  },
+  "same_machine_only": true,
+  "all_saved_result_rows_and_resource_fields_unchanged_from_v1": true,
+  "new_search_or_scoring": false,
+  "historical_tests_rerun": false,
+  "human_review": "pending",
+  "formal_submission_ready": false,
+  "limits": "Document regeneration only. PDF creation metadata may differ. No algorithm validation, runtime readiness or independent-machine reproduction."
+}

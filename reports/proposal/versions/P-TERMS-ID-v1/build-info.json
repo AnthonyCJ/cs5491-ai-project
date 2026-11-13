@@ -1,0 +1,61 @@
+{
+  "artifact_version": "P-TERMS-ID-v1",
+  "record_kind": "newly generated terminology revision",
+  "created_at_utc": "2026-10-15T01:43:37.669588+00:00",
+  "predecessor": "P-D1-ID-v1",
+  "evidence_cutoff": "Preserved formal comparison T2-FORMAL-20261004-004 and corrected T3-ANALYSIS-20261005-001; saved S1/S3 checks retained as historical support; no new experiment",
+  "method_scope": "CP-SAT main method and instructor fixed-placement baseline",
+  "path_root": "repository root",
+  "source_path": "reports/proposal/versions/P-TERMS-ID-v1/proposal.md",
+  "source_sha256": "ac986b52dcb32d9baf870a428920f5877d5bccc1511ed9f9932ba2b872708335",
+  "pdf_file": "proposal.pdf",
+  "pdf_sha256": "1c6d1af4a40b8f9585ef02a95e5764fff490730e5ef1115590a11f3ec9d93f2f",
+  "generator_path": "reports/proposal/versions/P-TERMS-ID-v1/build_proposal.py",
+  "generator_sha256": "c27fcc43329e2cba73982af83ea1ba71d48742d4fb9627e4ff0867dede385908",
+  "source_index_path": "reports/proposal/versions/P-TERMS-ID-v1/sources.json",
+  "source_index_sha256": "4fc84f387881b72c507369a03db2dedb018176b98609b7104a8d32e591d44753",
+  "identity_path": "reports/proposal/versions/P-TERMS-ID-v1/identity.json",
+  "identity_sha256": "68471010d8a0b95a1ecd9bf9cef2fe8f6e8700c99bd072eebf54cc0a6cc1fc78",
+  "generator_dependencies_sha256": {
+    "reports/w01_support.py": "a32c439959123f94946fc7ace84906366628919623e2b12f4b34a7fdaa3569f1",
+    "reports/proposal/build_proposal.py": "2e8af08a058eb3813eb8a5d03b8b11e9d83207565c8dc72c3f1f2c05544232c1",
+    "reports/proposal/requirements.txt": "054e7483ed0899a13425d3ff89d0ae162290c88989825c77d22174ceb36f33f1",
+    "reports/verification-requirements.txt": "c1b80d3f0339f5c76751d365141b2bb250f095164712b54c0fe361f0a7ca97b9"
+  },
+  "formal_experiment": "T2-FORMAL-20261004-004",
+  "formal_summary_sha256": "43fd5c3f67c9daa08e9dccacbd80fe08cee8d02418598a84588e2ae12b2ec1d1",
+  "formal_protocol_sha256": "eeb46ca479cf0c38ecb4d9ff11e94263ec0fc17c1d00000223774b4316458100",
+  "analysis_package": "T3-ANALYSIS-20261005-001",
+  "analysis_manifest_sha256": "55c02fba0a02614532b83f62e4399189d96ac45b3dd8662764eb27d3d12fa8da",
+  "saved_package_artifact_hashes_checked": {
+    "results/T2-FORMAL-20261004-004": 160,
+    "results/T3-ANALYSIS-20261005-001": 41
+  },
+  "saved_formal_rows_checked": 30,
+  "historical_checks_scope": "Pinned saved bytes and recorded flags only; no new algorithm validation",
+  "new_search_or_scoring": false,
+  "historical_tests_rerun": false,
+  "identity_complete": true,
+  "formal_submission_ready": false,
+  "latest_canvas_requirements_verified": false,
+  "submission_authorized": false,
+  "submitted": false,
+  "human_review": "pending",
+  "document_runtime": {
+    "python": "3.12.14",
+    "reportlab": "4.4.9"
+  },
+  "page_count": 1,
+  "format": {
+    "paper": "A4",
+    "font": "Times New Roman",
+    "font_pt": 12,
+    "margins_cm": [
+      2.5,
+      2.5,
+      2.5,
+      2.5
+    ],
+    "body_leading_pt": 12
+  }
+}

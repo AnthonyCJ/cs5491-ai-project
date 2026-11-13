@@ -1,0 +1,18 @@
+{
+  "artifact_version": "P-TERMS-ID-v1",
+  "files": {
+    "build-info.json": "7e666993d7feea621347ab2fbdb8f85ced8864694fbc08b404b1e430b923090e",
+    "build_proposal.py": "c27fcc43329e2cba73982af83ea1ba71d48742d4fb9627e4ff0867dede385908",
+    "check_proposal.py": "7b7171fb62fdf7fcfab4c5678f2bcd905037bd2429b28ef0ded6a0c86ee96b6c",
+    "format-check.json": "7873c37e345a9058abe886cef4620293443d0c48a23d09ee3a515b35ec7a7bc1",
+    "identity.json": "68471010d8a0b95a1ecd9bf9cef2fe8f6e8700c99bd072eebf54cc0a6cc1fc78",
+    "proposal.md": "ac986b52dcb32d9baf870a428920f5877d5bccc1511ed9f9932ba2b872708335",
+    "proposal.pdf": "1c6d1af4a40b8f9585ef02a95e5764fff490730e5ef1115590a11f3ec9d93f2f",
+    "README.md": "48b9aeb26d2c709088def053f57d601145f029d2c39a9b1cd0f0c102bb61aa4a",
+    "sources.json": "4fc84f387881b72c507369a03db2dedb018176b98609b7104a8d32e591d44753"
+  },
+  "excludes": [
+    "artifacts.sha256.json"
+  ],
+  "purpose": "Document files only; pending human acceptance"
+}

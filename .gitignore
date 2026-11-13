@@ -1,5 +1,7 @@
 .venv/
 .venv-s2/
+.venv-docs/
+.tools/
 __pycache__/
 *.py[cod]
 .cache/

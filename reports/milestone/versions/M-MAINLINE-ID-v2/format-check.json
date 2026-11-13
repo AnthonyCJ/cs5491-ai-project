@@ -1,0 +1,179 @@
+{
+  "artifact_version": "M-MAINLINE-ID-v2",
+  "checked_at_utc": "2026-10-04T11:07:42.167833+00:00",
+  "checker_sha256": "66d198487999bba5caaec67853e0e5f6391d2eacce8a83040a8b993e961dd58e",
+  "source_sha256": "0e3175b5bb837422f581232f4f836591eac6876a12fe0dc242cd68634a6d610e",
+  "pdf_sha256": "655f255521ae87a0340bf1b6c1fb67d3cfb0c85628cf9d273daf7cf49a1bb34c",
+  "build_info_sha256": "7c9e25727750a7f9995f7961ae0459d07a3775fce389e635f7256808196ae634",
+  "page_count": 4,
+  "page_size": "A4",
+  "font_sizes_points": [
+    12.0
+  ],
+  "used_fonts_embedded": {
+    "AAAAAA+TimesNewRomanPSMT": true,
+    "AAAAAA+TimesNewRomanPS-BoldMT": true
+  },
+  "configured_margins_cm": [
+    2.5,
+    2.5,
+    2.5,
+    2.5
+  ],
+  "all_text_inside_margins": true,
+  "configured_body_leading_points": 12,
+  "observed_line_top_differences_points": {
+    "1.14": 1,
+    "4.54": 1,
+    "7.94": 1,
+    "12.0": 97,
+    "17.0": 1,
+    "18.0": 8,
+    "19.0": 21,
+    "22.0": 4,
+    "24.0": 2,
+    "27.0": 1,
+    "29.0": 1,
+    "30.06": 1,
+    "46.46": 1,
+    "49.86": 1,
+    "62.15": 1,
+    "162.15": 1,
+    "225.15": 1,
+    "235.15": 1
+  },
+  "page_checks": [
+    {
+      "page": 1,
+      "size_points": [
+        595.2756,
+        841.8898
+      ],
+      "text_bbox_points": [
+        70.86614,
+        73.45604360000004,
+        524.4094539999999,
+        770.6135036000001
+      ]
+    },
+    {
+      "page": 2,
+      "size_points": [
+        595.2756,
+        841.8898
+      ],
+      "text_bbox_points": [
+        70.86614,
+        73.45604360000004,
+        524.4094543999998,
+        770.6135036000001
+      ]
+    },
+    {
+      "page": 3,
+      "size_points": [
+        595.2756,
+        841.8898
+      ],
+      "text_bbox_points": [
+        70.86614,
+        73.45604360000004,
+        524.4094575999999,
+        770.6135036000001
+      ]
+    },
+    {
+      "page": 4,
+      "size_points": [
+        595.2756,
+        841.8898
+      ],
+      "text_bbox_points": [
+        70.86614,
+        73.45604360000004,
+        524.4094586,
+        770.6135036000001
+      ]
+    }
+  ],
+  "all_source_prose_found": true,
+  "all_identity_lines_and_pairings_found": true,
+  "formal_identity_complete": true,
+  "provenance_checks": {
+    "source": true,
+    "pdf": true,
+    "generator": true,
+    "source_index": true,
+    "identity": true,
+    "source_run": true,
+    "version": true,
+    "new_document": true,
+    "source_path": true,
+    "numeric_commit": true,
+    "numeric_source": true,
+    "scope": true,
+    "saved_cases": true,
+    "dependency_hashes": true
+  },
+  "result_rows": [
+    [
+      "Block, inputs",
+      "Latency (ms)",
+      "Reduction (%)",
+      "B1 / B2"
+    ],
+    [
+      "MLP, 0-13",
+      "26069.9524",
+      "7.3223-7.3291",
+      "4 / 4"
+    ],
+    [
+      "MLP, 14",
+      "21911.5924",
+      "22.1113",
+      "0 / 4"
+    ],
+    [
+      "Attention, 0-5",
+      "45698.2664",
+      "14.6755",
+      "10 / 8"
+    ],
+    [
+      "Attention, 6-14",
+      "41537.6664",
+      "22.4438",
+      "6 / 8"
+    ]
+  ],
+  "resolved_fields": {
+    "SOLVE_SUM": "10.6445",
+    "RSS_MIB": "118.36",
+    "MLP_MIN": "0.0075",
+    "MLP_MAX": "0.0132",
+    "ATTN_MIN": "0.5166",
+    "ATTN_MAX": "0.9656"
+  },
+  "figure_points": 30,
+  "automated_checks_passed": true,
+  "visual_review": {
+    "passed": true,
+    "reviewer": "assistant",
+    "reviewed_date": "2026-10-04",
+    "all_pages_inspected": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "render_dpi": 150,
+    "pdf_sha256": "655f255521ae87a0340bf1b6c1fb67d3cfb0c85628cf9d273daf7cf49a1bb34c",
+    "scope": "Final four-page PDF visually inspected in full after the final source changes: identities, prose, formulas, table, chart, captions, headings and page numbers. No clipping, overlap, missing glyphs or orphaned headings observed."
+  },
+  "formal_submission_ready": false,
+  "submission_authorized": false,
+  "submitted": false,
+  "human_review": "pending",
+  "limits": "Document and saved-file checks; no new optimisation, scoring, S6 reproduction or human acceptance."
+}

@@ -1,0 +1,85 @@
+{
+  "artifact_version": "P-MAINLINE-ID-v1",
+  "checked_at_utc": "2026-10-04T06:24:47.85201+08:00",
+  "checker_sha256": "80b61e8b37d94c96b6c16a7d928630de63d0850c032fc93fe38a6aa1d79c7fac",
+  "source_sha256": "fff4516e47cbb73a724235946108509cf31fad3daf6c549aadb243db3b9d2892",
+  "pdf_sha256": "b46761b75f7b0680f58a1b835ad3a4c52a1ce929c090fbb0f2e0eae5c683e20a",
+  "build_info_sha256": "023203d7e5884a542d8829708d80d200deee6395d386196900a0995bd76a02e4",
+  "page_count": 1,
+  "page_size": "A4",
+  "font_sizes_points": [
+    12.0
+  ],
+  "used_fonts_embedded": {
+    "AAAAAA+TimesNewRomanPS-BoldMT": true,
+    "AAAAAA+TimesNewRomanPSMT": true
+  },
+  "configured_margins_cm": [
+    2.5,
+    2.5,
+    2.5,
+    2.5
+  ],
+  "all_text_inside_margins": true,
+  "configured_body_leading_points": 12,
+  "observed_line_top_differences_points": {
+    "12.0": 30,
+    "17.0": 5,
+    "19.0": 5
+  },
+  "page_checks": [
+    {
+      "page": 1,
+      "size_points": [
+        595.2756,
+        841.8898
+      ],
+      "text_bbox_points": [
+        70.86614,
+        73.45604360000004,
+        523.7606707999998,
+        625.4560436
+      ]
+    }
+  ],
+  "all_source_prose_found": true,
+  "all_identity_lines_and_pairings_found": true,
+  "formal_identity_complete": true,
+  "provenance_checks": {
+    "source": true,
+    "pdf": true,
+    "generator": true,
+    "source_index": true,
+    "identity": true,
+    "source_run": true,
+    "version": true,
+    "new_document": true,
+    "source_path": true,
+    "numeric_commit": true,
+    "numeric_source": true,
+    "scope": true,
+    "saved_cases": true,
+    "dependency_hashes": true
+  },
+  "displayed_reduction_ranges": {
+    "mlp": "7.32-22.11%",
+    "attention": "14.68-22.44%"
+  },
+  "automated_checks_passed": true,
+  "visual_review": {
+    "passed": true,
+    "reviewer": "assistant full-page visual inspection",
+    "reviewed_date": "2026-10-04",
+    "all_pages_inspected": [
+      1
+    ],
+    "render_dpi": 150,
+    "render_sha256": "ad83620840417aba134c18623c2a317e92ff7786925bb3ca3de6c308e6bc0a4f",
+    "scope": "All text, identity lines and section layout inspected; no clipping, overlap or missing glyphs observed; not human acceptance."
+  },
+  "formal_submission_ready": false,
+  "submission_authorized": false,
+  "submitted": false,
+  "human_review": "pending",
+  "limits": "Document and saved-file checks; no new optimisation, scoring, S6 reproduction or human acceptance."
+}

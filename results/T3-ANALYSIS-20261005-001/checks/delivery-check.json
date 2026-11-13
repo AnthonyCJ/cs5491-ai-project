@@ -1,0 +1,55 @@
+{
+  "at_utc": "2026-10-05T03:32:18.082404+00:00",
+  "status": "passed",
+  "conditions_traced_to_case_run_check_and_configuration": 30,
+  "selected_claim_arithmetic": [
+    {
+      "module": "mlp",
+      "levels": [
+        13,
+        14
+      ],
+      "optimized_cost_decrease_ms": "4158.36",
+      "bootstrap1_decrease_ms": "4160.60",
+      "ordinary_increase_ms": "2.24"
+    },
+    {
+      "module": "attention",
+      "levels": [
+        5,
+        6
+      ],
+      "optimized_cost_decrease_ms": "4160.60",
+      "bootstrap1_decrease_ms": "4160.60",
+      "ordinary_increase_ms": "0"
+    }
+  ],
+  "four_case_component_savings_checked": true,
+  "count_tradeoff_checked": {
+    "baseline": 17,
+    "optimized": 18
+  },
+  "placement_totals": {
+    "nodes": 194,
+    "edges": 212
+  },
+  "reviewed_content_unchanged_after_footer_revision": [
+    "figures/cost-components.png",
+    "figures/cost-components.svg",
+    "figures/cost-components.data.json",
+    "figures/placement-mlp-L13.data.json",
+    "figures/placement-mlp-L14.data.json",
+    "figures/placement-attention-L05.data.json",
+    "figures/placement-attention-L06.data.json"
+  ],
+  "markdown_files_checked": 8,
+  "resolved_public_links": 102,
+  "pending_receipt_or_manifest_links": [
+    "artifacts.sha256.json",
+    "checks/delivery-check.json"
+  ],
+  "text_files_checked_for_encoding_and_public_boundary": 34,
+  "solver_calls": 0,
+  "scoring_calls": 0,
+  "scope": "Saved-file consistency and arithmetic; final manifest links are checked again during preservation."
+}

@@ -1,0 +1,346 @@
+{
+  "experiment": "T2-FORMAL-20261004-004",
+  "dynamic_samples": [
+    {
+      "attempt_id": "G201",
+      "purpose": "fast_exit_regression",
+      "status": "passed",
+      "process_count": 4,
+      "whole_attempt_wall_seconds": 2.3966957,
+      "all_process_cpu_seconds": 1.921875,
+      "creation_universe_certified": true,
+      "required_evidence_complete": true
+    },
+    {
+      "attempt_id": "G202",
+      "purpose": "image_failure_regression",
+      "status": "passed",
+      "process_count": 4,
+      "whole_attempt_wall_seconds": 2.125191,
+      "all_process_cpu_seconds": 2.015625,
+      "creation_universe_certified": true,
+      "required_evidence_complete": true
+    },
+    {
+      "attempt_id": "G203",
+      "purpose": "interleaved_children_regression",
+      "status": "passed",
+      "process_count": 5,
+      "whole_attempt_wall_seconds": 2.3622045,
+      "all_process_cpu_seconds": 2.109375,
+      "creation_universe_certified": true,
+      "required_evidence_complete": true
+    },
+    {
+      "attempt_id": "Q201",
+      "purpose": "preflight",
+      "status": "passed",
+      "process_count": 5,
+      "whole_attempt_wall_seconds": 3.3679774,
+      "all_process_cpu_seconds": 3.609375,
+      "creation_universe_certified": true,
+      "required_evidence_complete": true
+    },
+    {
+      "attempt_id": "Q202",
+      "purpose": "early_failure_probe",
+      "status": "passed",
+      "process_count": 3,
+      "whole_attempt_wall_seconds": 2.1975571,
+      "all_process_cpu_seconds": 1.640625,
+      "creation_universe_certified": true,
+      "required_evidence_complete": true
+    },
+    {
+      "attempt_id": "Q203",
+      "purpose": "timeout_probe",
+      "status": "passed",
+      "process_count": 4,
+      "whole_attempt_wall_seconds": 4.260386,
+      "all_process_cpu_seconds": 3.71875,
+      "creation_universe_certified": true,
+      "required_evidence_complete": true
+    }
+  ],
+  "interleave": "Two real sequential Git metadata processes; second creation and identity published after the recorded first discovery snapshot. This does not recreate the historical Q101 schedule.",
+  "frozen_control_manifest_sha256": "91afa68823015b5baa173eba8f173512aa40bb0b84369d222f52ae1e893079f5",
+  "zero_launch_negative": {
+    "status": "passed",
+    "Q101_known_finals_complete": true,
+    "sample": "G204",
+    "Q101_failure": [
+      "creation_registry_unresolved"
+    ],
+    "Q101_overall_required_evidence_complete": false,
+    "new_process_launches": 0
+  },
+  "gate_passed": true,
+  "raw_receipts_sha256": [
+    {
+      "attempt_id": "G201",
+      "raw_receipt_sha256": "7ee67704cbd82866394bd60a3a0fe7b68d993b55ec338437ec0463f8323451ad"
+    },
+    {
+      "attempt_id": "G202",
+      "raw_receipt_sha256": "741f79311b4c5fef84eef324d4076dcec2c6a41801af5c83a3a0eef974dcca21"
+    },
+    {
+      "attempt_id": "G203",
+      "raw_receipt_sha256": "3c6f77449788a525e0068ee588ac79c4b5444f79966eb97b56f4bcf375424e44"
+    },
+    {
+      "attempt_id": "Q201",
+      "raw_receipt_sha256": "482f695d847e9aff2f5188f351cb0f26d1ff3a2f5ab87dffbaf9f082b8c93190"
+    },
+    {
+      "attempt_id": "Q202",
+      "raw_receipt_sha256": "259369087ee6fdbe282085b0257a26e657f7ad0f194f21c777eb1aa1bc3b594c"
+    },
+    {
+      "attempt_id": "Q203",
+      "raw_receipt_sha256": "f66f87a220ab174538765fffc7c7ff2a4528f2a540558b74970964d857b09206"
+    },
+    {
+      "attempt_id": "R201",
+      "raw_receipt_sha256": "157a7858d1397112dc5f783499dc2555ac1b29b5f54d5c51649e318a70599f98"
+    },
+    {
+      "attempt_id": "R202",
+      "raw_receipt_sha256": "b6174e1a2c0fee75b7ddf481043f183f219ea34520d08b3af4a570d0e132868e"
+    },
+    {
+      "attempt_id": "R203",
+      "raw_receipt_sha256": "d040251a2adc54b0317bf5780cf4fa86eb7d5387b1b92b4df6e9b7b6f793f4a0"
+    },
+    {
+      "attempt_id": "R204",
+      "raw_receipt_sha256": "667aea2bbfc6178b810c142357076c19bfb1c5761744847bfe9d1a091fa6760e"
+    },
+    {
+      "attempt_id": "R205",
+      "raw_receipt_sha256": "b3a80516bb7d8dd75eae6e3c8ee1f8309624cc4ab988e87a8380f82e6df3d48f"
+    },
+    {
+      "attempt_id": "R206",
+      "raw_receipt_sha256": "eb4279f8ba81ded4721f58bafa0336e842297f15e2f03b006e6adf58155a3997"
+    },
+    {
+      "attempt_id": "R207",
+      "raw_receipt_sha256": "3bffb6140e4a3f2667ae30226f4a823151f5cf2bafd78835a0131da3c5b8b7e6"
+    },
+    {
+      "attempt_id": "R208",
+      "raw_receipt_sha256": "49762e300c7d55c09862b6f1df8df0b8716b735897811a7aa3c0790bb2c3672a"
+    },
+    {
+      "attempt_id": "R209",
+      "raw_receipt_sha256": "da067399b04f6a274c6eeec4d5d94295b39cd03c4d4f62a460c68b86545f9f64"
+    },
+    {
+      "attempt_id": "R210",
+      "raw_receipt_sha256": "341f0fe0d5e164f16df2595cd647f2bbbfbaed4875754144847fcfa1cc4dd0b9"
+    },
+    {
+      "attempt_id": "R211",
+      "raw_receipt_sha256": "6bcab49223a89654cf0f6b2501e339544f3bf40be97b392fbdda7c20d3eb826f"
+    },
+    {
+      "attempt_id": "R212",
+      "raw_receipt_sha256": "840694d2fb1a790368eb71e2a9288a836a486845ced6fb6cd4308662b90ccc3f"
+    },
+    {
+      "attempt_id": "R213",
+      "raw_receipt_sha256": "c2ce40b160d918d68793819d5c589b711d770e6f16588edd37792c956347a7c8"
+    },
+    {
+      "attempt_id": "R214",
+      "raw_receipt_sha256": "ba49ffe24ebc9e5deb06414c7e0d309b7e8662b497409092be336ad0c4b02e97"
+    },
+    {
+      "attempt_id": "R215",
+      "raw_receipt_sha256": "cd0fe137ebbba63ff9edf52cb26543e39f6f1022e3401f0cadfc3241f22df045"
+    },
+    {
+      "attempt_id": "R216",
+      "raw_receipt_sha256": "a3de66863a87e1c9b3b7b0bf64dae5353bd0e0ae979deb2ed9ac0d1f17fb42cf"
+    },
+    {
+      "attempt_id": "R217",
+      "raw_receipt_sha256": "90360f17414d3f4ff23cf71042b552b55e0e39c2c3822bf7ca8ea217ad376559"
+    },
+    {
+      "attempt_id": "R218",
+      "raw_receipt_sha256": "7ae30c61abe79e26f6d3358bbd07900d1ede1656330a86cc9252b3351081e446"
+    },
+    {
+      "attempt_id": "R219",
+      "raw_receipt_sha256": "356270a5647916dcacb1799d42872702453de4ccd4f36cfd83f0762d5854e497"
+    },
+    {
+      "attempt_id": "R220",
+      "raw_receipt_sha256": "fc25b06a06db9a7348264e303d79f08fac33bfead0bb2cd2416a834eecef5af4"
+    },
+    {
+      "attempt_id": "R221",
+      "raw_receipt_sha256": "a8354edcb2859a49734d535fca37e57a440f60f42978da0ce78281763600fc3e"
+    },
+    {
+      "attempt_id": "R222",
+      "raw_receipt_sha256": "500c8c83bf42dd54c24906a3ddcc201aad1a041fa3707803a6ad6ca628c73a44"
+    },
+    {
+      "attempt_id": "R223",
+      "raw_receipt_sha256": "41f592f513f121b8e8b995639621dcb7565d68cdc0e9f06391d3f90311c51e7b"
+    },
+    {
+      "attempt_id": "R224",
+      "raw_receipt_sha256": "b7f2a8bc1aa54a4de3adcf7ad5fc2f28cf2ae2b429b2d25565c3b339e61c8195"
+    },
+    {
+      "attempt_id": "R225",
+      "raw_receipt_sha256": "6ec2327557125b221e4dc95291dab9102565e8f17342c801d37c421113404933"
+    },
+    {
+      "attempt_id": "R226",
+      "raw_receipt_sha256": "97aa92f7c16a50c98b69480a63a1585adafa186bcf803844575dedd14ccd04e0"
+    },
+    {
+      "attempt_id": "R227",
+      "raw_receipt_sha256": "7b25e94a87e5a18d885e034db515653a883367d509eb310c4b66add7d9591842"
+    },
+    {
+      "attempt_id": "R228",
+      "raw_receipt_sha256": "f1bdda047aaf5f01c38c9b519343fd9b78809da4a157bcd88a85bd0f13dd7ad5"
+    },
+    {
+      "attempt_id": "R229",
+      "raw_receipt_sha256": "13d4c1fe540ca641618b1714feb4087b8f9ac7355fc6caa15b35fb05b60f6fcf"
+    },
+    {
+      "attempt_id": "R230",
+      "raw_receipt_sha256": "966a50296ece300224132d5359c1dd4237e204a59e2059ddabd5672803e43682"
+    },
+    {
+      "attempt_id": "V201",
+      "raw_receipt_sha256": "ac688bbbdbbfb69b3c87dc046593d7339504a81313e8adeb8755a33ef18bc3b0"
+    },
+    {
+      "attempt_id": "V202",
+      "raw_receipt_sha256": "7b90600d70dab8778eddd0c7bf550c008824e8ccaa7dda14a29db4bdc7a81a25"
+    },
+    {
+      "attempt_id": "V203",
+      "raw_receipt_sha256": "5cc265e1124c357058e0cde0ef41964016d5517d72a905f4c6cb2286b8758897"
+    },
+    {
+      "attempt_id": "V204",
+      "raw_receipt_sha256": "bcab332daf8fa6f49ad8bcd8ae6b0207e13f6b606da16d4cd3c9fe6e93ab6d69"
+    },
+    {
+      "attempt_id": "V205",
+      "raw_receipt_sha256": "2b81fc6a34bbb742b73ec818512c5172547319ca593496f2d05d5226fc3d8265"
+    },
+    {
+      "attempt_id": "V206",
+      "raw_receipt_sha256": "d398b34000e26ef35094c0658465f6cd90fe1340c55c7cc6c298c6772695e827"
+    },
+    {
+      "attempt_id": "V207",
+      "raw_receipt_sha256": "436653156b6237aca4ce7c8487a50fe15eef1936e5f1c9f71c1b52c52f8477dd"
+    },
+    {
+      "attempt_id": "V208",
+      "raw_receipt_sha256": "d015b868c00cd11364459cf6a7cc9ee1f76521cb5390bc549cd09b49e0886f8d"
+    },
+    {
+      "attempt_id": "V209",
+      "raw_receipt_sha256": "dc10511762a8a49eac5e2d9f615f78d562b17165c256fee755538790c9cd6433"
+    },
+    {
+      "attempt_id": "V210",
+      "raw_receipt_sha256": "4f73c38a8290bf72337f575206a5eaf4c59b391ff18a10e8bd65d946b7899788"
+    },
+    {
+      "attempt_id": "V211",
+      "raw_receipt_sha256": "1f8bb9527198eb79a9a2bffaff1d42f8b2171c61173f4fd2b29c8a10b625b38c"
+    },
+    {
+      "attempt_id": "V212",
+      "raw_receipt_sha256": "f02c15984bfe155f30c484155b3c46826d72e3027a0e1746720694bb762687e4"
+    },
+    {
+      "attempt_id": "V213",
+      "raw_receipt_sha256": "0dab8a2816ee35970016d04c14345e6b7cf1a52302080e92d98c06af7fd229ec"
+    },
+    {
+      "attempt_id": "V214",
+      "raw_receipt_sha256": "0e7591149ade930bf39e2942d04accda3275403d0bde2817f965b173680f0b61"
+    },
+    {
+      "attempt_id": "V215",
+      "raw_receipt_sha256": "956fbe55a342a6f65da6bdd68e6c70de61099a885f3f96d5efa980f5f51351d0"
+    },
+    {
+      "attempt_id": "V216",
+      "raw_receipt_sha256": "8b0b31c374f347e7fcd69d261673984222d2a40c0e6bd471a243989e150e875b"
+    },
+    {
+      "attempt_id": "V217",
+      "raw_receipt_sha256": "78a4922231b8d98c9c4ae4bfd5dcd3325f91730d6ec9070fbf59866fe97d7975"
+    },
+    {
+      "attempt_id": "V218",
+      "raw_receipt_sha256": "6608d7181221b48d07951c9af10695efc25f9cf747fd46d3bff86c3c1af62a89"
+    },
+    {
+      "attempt_id": "V219",
+      "raw_receipt_sha256": "a936bf4b33d1072ed1b42484d60d62fc605ee1bf5b42f552fa7ea30b9a1ac068"
+    },
+    {
+      "attempt_id": "V220",
+      "raw_receipt_sha256": "e361f2ec7e5be5f08ca077b6cdb61e0909f040f8c0148670b91aa07eb70d7f56"
+    },
+    {
+      "attempt_id": "V221",
+      "raw_receipt_sha256": "c878ab488236c4bd5804930ad7512bc873d75d5d9cb56e4fb8031a1faff962f1"
+    },
+    {
+      "attempt_id": "V222",
+      "raw_receipt_sha256": "743ab837c26dd99c725a1153735a53f6cb87fb1242f100442cf388758a89b170"
+    },
+    {
+      "attempt_id": "V223",
+      "raw_receipt_sha256": "4a5e9966cd96cd029e46f42f02fd20b873b0f18c037ba643149a132409dfcf77"
+    },
+    {
+      "attempt_id": "V224",
+      "raw_receipt_sha256": "35792d50fd033b978780da26ae473048b4cdd5ed587a22d362b718350666d285"
+    },
+    {
+      "attempt_id": "V225",
+      "raw_receipt_sha256": "061c6030fd3bcd018830a635688af6a91e8e57f34661170a19e45820b70e93ba"
+    },
+    {
+      "attempt_id": "V226",
+      "raw_receipt_sha256": "c5056c5e3939e227fd5ae6c9913f240dbfe0822069340baf06d0c9ecf9f936fc"
+    },
+    {
+      "attempt_id": "V227",
+      "raw_receipt_sha256": "7a7faac8e85e6e3124cdc8828b4fd16ef89b6cb8ee1d1cd6cd035f2e6620467f"
+    },
+    {
+      "attempt_id": "V228",
+      "raw_receipt_sha256": "69142d731ceff70c1557a051ac449b8b2c0e31667c608f33120affa221302627"
+    },
+    {
+      "attempt_id": "V229",
+      "raw_receipt_sha256": "fcaabca961257e7b51f767a5c7074bdb195c7ba9e6b2036582cda4bb73223403"
+    },
+    {
+      "attempt_id": "V230",
+      "raw_receipt_sha256": "79d5e4739ec7b8c686eee0e729c511e75cefb439c8c383e40ecb67def9dace01"
+    }
+  ],
+  "schema_version": 4,
+  "timeout": "Worker creation registry sealed before entry; real process termination and post-exit final CPU were observed"
+}

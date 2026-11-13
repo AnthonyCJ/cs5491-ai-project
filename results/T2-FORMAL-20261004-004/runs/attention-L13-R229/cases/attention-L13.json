@@ -1,0 +1,2247 @@
+{
+  "case_id": "attention-L13",
+  "module": "attention",
+  "l_init": 13,
+  "l_max": 14,
+  "baseline_decimal_ms": "53558.1718",
+  "solution": {
+    "method": "shared-refresh-cp-sat-v1",
+    "status": "OPTIMAL",
+    "l_init": 13,
+    "l_max": 14,
+    "cost_scale_per_ms": 10000,
+    "model_build_wall_seconds": 0.006142400001408532,
+    "solve_wall_seconds": 0.6524279000004753,
+    "solver_reported_wall_seconds": 0.651252,
+    "solver_reported_user_seconds": 0.6512521,
+    "best_bound_scaled": 415376664.0,
+    "branches": 38046,
+    "conflicts": 20562,
+    "model_variables": 408,
+    "model_constraints": 380,
+    "objective_safe_absolute_bound": 6520413434,
+    "settings": {
+      "time_limit_seconds": 60.0,
+      "workers": 1,
+      "seed": 5491,
+      "relative_gap_limit": 0,
+      "absolute_gap_limit": 0,
+      "validated_baseline_hint_and_upper_bound": true
+    },
+    "response_stats": "CpSolverResponse summary:\nstatus: OPTIMAL\nobjective: 415376664\nbest_bound: 415376664\nintegers: 167\nbooleans: 318\nconflicts: 20562\nbranches: 38046\npropagations: 717294\ninteger_propagations: 1551365\nrestarts: 34\nlp_iterations: 0\nwalltime: 0.651252\nusertime: 0.651252\ndeterministic_time: 0.428064\ngap_integral: 0\nsolution_fingerprint: 0xde75a72de55269ba\n",
+    "has_solution": true,
+    "objective_scaled": 415376664,
+    "objective_decimal_ms": "41537.6664",
+    "relative_gap": 0.0,
+    "optimality_proven_for_formulation": true,
+    "original_input_levels": {
+      "X_in_attn": 13,
+      "Conj_back_X_attn": 6,
+      "X_div2_attn": 6,
+      "V_Wv_attn": 4,
+      "Conj_V_attn": 2,
+      "Q_Wq_attn": 6,
+      "K_Wk_attn": 6,
+      "QK_mul_attn": 4,
+      "qk_div2_attn": 7,
+      "qk_affine_attn": 6,
+      "exp_y_attn": 5,
+      "mask_y_attn": 12,
+      "iter1_y_sq_attn": 10,
+      "iter1_sum_s_attn": 9,
+      "iter1_affine_s_attn": 9,
+      "iter1_invsqrt_attn": 8,
+      "iter1_ylam_attn": 11,
+      "iter1_y_sq2_attn": 10,
+      "iter2_y_sq_attn": 7,
+      "iter2_sum_s_attn": 6,
+      "iter2_affine_s_attn": 6,
+      "iter2_invsqrt_attn": 5,
+      "iter2_ylam_attn": 9,
+      "iter2_y_sq2_attn": 8,
+      "iter3_y_sq_attn": 7,
+      "iter3_sum_s_attn": 6,
+      "iter3_affine_s_attn": 6,
+      "iter3_invsqrt_attn": 5,
+      "iter3_ylam_attn": 5,
+      "iter3_S_attn": 4,
+      "conj_S_attn": 3,
+      "S_mask_attn": 3,
+      "conj_back_S_attn": 2,
+      "SV_mul_attn": 2,
+      "rotate_SV_attn": 14,
+      "x_SV_Wo_attn": 8,
+      "x_mask_attn": 6,
+      "add_out_attn": 5,
+      "x_mask2_attn": 5,
+      "sum_mu_attn": 4,
+      "mask_mu_attn": 4,
+      "div_768_attn": 3,
+      "add_z_attn": 2,
+      "mul_z_sq_attn": 2,
+      "sum_y_attn": 1,
+      "mul_var_attn": 1,
+      "invsqrt_var_attn": 7,
+      "mask_lam_attn": 2,
+      "mul_z_gamma_attn": 2,
+      "mul_X_out_attn": 1,
+      "X_out_attn": 0
+    },
+    "original_output_levels": {
+      "X_in_attn": 13,
+      "Conj_back_X_attn": 6,
+      "X_div2_attn": 5,
+      "V_Wv_attn": 2,
+      "Conj_V_attn": 2,
+      "Q_Wq_attn": 4,
+      "K_Wk_attn": 4,
+      "QK_mul_attn": 0,
+      "qk_div2_attn": 6,
+      "qk_affine_attn": 5,
+      "exp_y_attn": 0,
+      "mask_y_attn": 11,
+      "iter1_y_sq_attn": 9,
+      "iter1_sum_s_attn": 9,
+      "iter1_affine_s_attn": 8,
+      "iter1_invsqrt_attn": 0,
+      "iter1_ylam_attn": 10,
+      "iter1_y_sq2_attn": 9,
+      "iter2_y_sq_attn": 6,
+      "iter2_sum_s_attn": 6,
+      "iter2_affine_s_attn": 5,
+      "iter2_invsqrt_attn": 0,
+      "iter2_ylam_attn": 8,
+      "iter2_y_sq2_attn": 7,
+      "iter3_y_sq_attn": 6,
+      "iter3_sum_s_attn": 6,
+      "iter3_affine_s_attn": 5,
+      "iter3_invsqrt_attn": 0,
+      "iter3_ylam_attn": 4,
+      "iter3_S_attn": 3,
+      "conj_S_attn": 3,
+      "S_mask_attn": 2,
+      "conj_back_S_attn": 2,
+      "SV_mul_attn": 0,
+      "rotate_SV_attn": 14,
+      "x_SV_Wo_attn": 6,
+      "x_mask_attn": 5,
+      "add_out_attn": 5,
+      "x_mask2_attn": 4,
+      "sum_mu_attn": 4,
+      "mask_mu_attn": 3,
+      "div_768_attn": 2,
+      "add_z_attn": 2,
+      "mul_z_sq_attn": 1,
+      "sum_y_attn": 1,
+      "mul_var_attn": 0,
+      "invsqrt_var_attn": 2,
+      "mask_lam_attn": 1,
+      "mul_z_gamma_attn": 1,
+      "mul_X_out_attn": 0,
+      "X_out_attn": 0
+    },
+    "edge_decisions": [
+      {
+        "from": "X_in_attn",
+        "to": "Conj_back_X_attn",
+        "ciphertexts": 4,
+        "refresh": 0,
+        "delivered_level": 6
+      },
+      {
+        "from": "X_in_attn",
+        "to": "V_Wv_attn",
+        "ciphertexts": 4,
+        "refresh": 0,
+        "delivered_level": 4
+      },
+      {
+        "from": "X_in_attn",
+        "to": "Q_Wq_attn",
+        "ciphertexts": 4,
+        "refresh": 0,
+        "delivered_level": 6
+      },
+      {
+        "from": "X_in_attn",
+        "to": "K_Wk_attn",
+        "ciphertexts": 4,
+        "refresh": 0,
+        "delivered_level": 6
+      },
+      {
+        "from": "Conj_back_X_attn",
+        "to": "X_div2_attn",
+        "ciphertexts": 8,
+        "refresh": 0,
+        "delivered_level": 6
+      },
+      {
+        "from": "V_Wv_attn",
+        "to": "Conj_V_attn",
+        "ciphertexts": 4,
+        "refresh": 0,
+        "delivered_level": 2
+      },
+      {
+        "from": "Q_Wq_attn",
+        "to": "QK_mul_attn",
+        "ciphertexts": 4,
+        "refresh": 0,
+        "delivered_level": 4
+      },
+      {
+        "from": "K_Wk_attn",
+        "to": "QK_mul_attn",
+        "ciphertexts": 4,
+        "refresh": 0,
+        "delivered_level": 4
+      },
+      {
+        "from": "Conj_V_attn",
+        "to": "SV_mul_attn",
+        "ciphertexts": 2,
+        "refresh": 0,
+        "delivered_level": 2
+      },
+      {
+        "from": "QK_mul_attn",
+        "to": "qk_div2_attn",
+        "ciphertexts": 8,
+        "refresh": 2,
+        "delivered_level": 7
+      },
+      {
+        "from": "qk_div2_attn",
+        "to": "qk_affine_attn",
+        "ciphertexts": 8,
+        "refresh": 0,
+        "delivered_level": 6
+      },
+      {
+        "from": "qk_affine_attn",
+        "to": "exp_y_attn",
+        "ciphertexts": 8,
+        "refresh": 0,
+        "delivered_level": 5
+      },
+      {
+        "from": "exp_y_attn",
+        "to": "mask_y_attn",
+        "ciphertexts": 8,
+        "refresh": 2,
+        "delivered_level": 12
+      },
+      {
+        "from": "mask_y_attn",
+        "to": "iter1_y_sq_attn",
+        "ciphertexts": 8,
+        "refresh": 0,
+        "delivered_level": 10
+      },
+      {
+        "from": "mask_y_attn",
+        "to": "iter1_ylam_attn",
+        "ciphertexts": 8,
+        "refresh": 0,
+        "delivered_level": 11
+      },
+      {
+        "from": "iter1_y_sq_attn",
+        "to": "iter1_sum_s_attn",
+        "ciphertexts": 8,
+        "refresh": 0,
+        "delivered_level": 9
+      },
+      {
+        "from": "iter1_sum_s_attn",
+        "to": "iter1_affine_s_attn",
+        "ciphertexts": 1,
+        "refresh": 0,
+        "delivered_level": 9
+      },
+      {
+        "from": "iter1_affine_s_attn",
+        "to": "iter1_invsqrt_attn",
+        "ciphertexts": 1,
+        "refresh": 0,
+        "delivered_level": 8
+      },
+      {
+        "from": "iter1_invsqrt_attn",
+        "to": "iter1_ylam_attn",
+        "ciphertexts": 1,
+        "refresh": 1,
+        "delivered_level": 11
+      },
+      {
+        "from": "iter1_ylam_attn",
+        "to": "iter1_y_sq2_attn",
+        "ciphertexts": 8,
+        "refresh": 0,
+        "delivered_level": 10
+      },
+      {
+        "from": "iter1_y_sq2_attn",
+        "to": "iter2_y_sq_attn",
+        "ciphertexts": 8,
+        "refresh": 0,
+        "delivered_level": 7
+      },
+      {
+        "from": "iter1_y_sq2_attn",
+        "to": "iter2_ylam_attn",
+        "ciphertexts": 8,
+        "refresh": 0,
+        "delivered_level": 9
+      },
+      {
+        "from": "iter2_y_sq_attn",
+        "to": "iter2_sum_s_attn",
+        "ciphertexts": 8,
+        "refresh": 0,
+        "delivered_level": 6
+      },
+      {
+        "from": "iter2_sum_s_attn",
+        "to": "iter2_affine_s_attn",
+        "ciphertexts": 1,
+        "refresh": 0,
+        "delivered_level": 6
+      },
+      {
+        "from": "iter2_affine_s_attn",
+        "to": "iter2_invsqrt_attn",
+        "ciphertexts": 1,
+        "refresh": 0,
+        "delivered_level": 5
+      },
+      {
+        "from": "iter2_invsqrt_attn",
+        "to": "iter2_ylam_attn",
+        "ciphertexts": 1,
+        "refresh": 1,
+        "delivered_level": 10
+      },
+      {
+        "from": "iter2_ylam_attn",
+        "to": "iter2_y_sq2_attn",
+        "ciphertexts": 8,
+        "refresh": 0,
+        "delivered_level": 8
+      },
+      {
+        "from": "iter2_y_sq2_attn",
+        "to": "iter3_y_sq_attn",
+        "ciphertexts": 8,
+        "refresh": 0,
+        "delivered_level": 7
+      },
+      {
+        "from": "iter2_y_sq2_attn",
+        "to": "iter3_ylam_attn",
+        "ciphertexts": 8,
+        "refresh": 0,
+        "delivered_level": 5
+      },
+      {
+        "from": "iter3_y_sq_attn",
+        "to": "iter3_sum_s_attn",
+        "ciphertexts": 8,
+        "refresh": 0,
+        "delivered_level": 6
+      },
+      {
+        "from": "iter3_sum_s_attn",
+        "to": "iter3_affine_s_attn",
+        "ciphertexts": 1,
+        "refresh": 0,
+        "delivered_level": 6
+      },
+      {
+        "from": "iter3_affine_s_attn",
+        "to": "iter3_invsqrt_attn",
+        "ciphertexts": 1,
+        "refresh": 0,
+        "delivered_level": 5
+      },
+      {
+        "from": "iter3_invsqrt_attn",
+        "to": "iter3_ylam_attn",
+        "ciphertexts": 1,
+        "refresh": 1,
+        "delivered_level": 5
+      },
+      {
+        "from": "iter3_ylam_attn",
+        "to": "iter3_S_attn",
+        "ciphertexts": 8,
+        "refresh": 0,
+        "delivered_level": 4
+      },
+      {
+        "from": "iter3_S_attn",
+        "to": "conj_S_attn",
+        "ciphertexts": 8,
+        "refresh": 0,
+        "delivered_level": 3
+      },
+      {
+        "from": "conj_S_attn",
+        "to": "S_mask_attn",
+        "ciphertexts": 4,
+        "refresh": 0,
+        "delivered_level": 3
+      },
+      {
+        "from": "S_mask_attn",
+        "to": "conj_back_S_attn",
+        "ciphertexts": 64,
+        "refresh": 0,
+        "delivered_level": 2
+      },
+      {
+        "from": "conj_back_S_attn",
+        "to": "SV_mul_attn",
+        "ciphertexts": 128,
+        "refresh": 0,
+        "delivered_level": 2
+      },
+      {
+        "from": "SV_mul_attn",
+        "to": "rotate_SV_attn",
+        "ciphertexts": 2,
+        "refresh": 1,
+        "delivered_level": 14
+      },
+      {
+        "from": "rotate_SV_attn",
+        "to": "x_SV_Wo_attn",
+        "ciphertexts": 32,
+        "refresh": 0,
+        "delivered_level": 8
+      },
+      {
+        "from": "x_SV_Wo_attn",
+        "to": "x_mask_attn",
+        "ciphertexts": 8,
+        "refresh": 0,
+        "delivered_level": 6
+      },
+      {
+        "from": "x_mask_attn",
+        "to": "add_out_attn",
+        "ciphertexts": 8,
+        "refresh": 0,
+        "delivered_level": 5
+      },
+      {
+        "from": "X_div2_attn",
+        "to": "add_out_attn",
+        "ciphertexts": 8,
+        "refresh": 0,
+        "delivered_level": 5
+      },
+      {
+        "from": "add_out_attn",
+        "to": "x_mask2_attn",
+        "ciphertexts": 8,
+        "refresh": 0,
+        "delivered_level": 5
+      },
+      {
+        "from": "x_mask2_attn",
+        "to": "sum_mu_attn",
+        "ciphertexts": 8,
+        "refresh": 0,
+        "delivered_level": 4
+      },
+      {
+        "from": "x_mask2_attn",
+        "to": "add_z_attn",
+        "ciphertexts": 8,
+        "refresh": 0,
+        "delivered_level": 3
+      },
+      {
+        "from": "sum_mu_attn",
+        "to": "mask_mu_attn",
+        "ciphertexts": 1,
+        "refresh": 0,
+        "delivered_level": 4
+      },
+      {
+        "from": "mask_mu_attn",
+        "to": "div_768_attn",
+        "ciphertexts": 1,
+        "refresh": 0,
+        "delivered_level": 3
+      },
+      {
+        "from": "div_768_attn",
+        "to": "add_z_attn",
+        "ciphertexts": 1,
+        "refresh": 0,
+        "delivered_level": 2
+      },
+      {
+        "from": "add_z_attn",
+        "to": "mul_z_sq_attn",
+        "ciphertexts": 8,
+        "refresh": 0,
+        "delivered_level": 2
+      },
+      {
+        "from": "add_z_attn",
+        "to": "mul_z_gamma_attn",
+        "ciphertexts": 8,
+        "refresh": 0,
+        "delivered_level": 2
+      },
+      {
+        "from": "mul_z_sq_attn",
+        "to": "sum_y_attn",
+        "ciphertexts": 8,
+        "refresh": 0,
+        "delivered_level": 1
+      },
+      {
+        "from": "sum_y_attn",
+        "to": "mul_var_attn",
+        "ciphertexts": 1,
+        "refresh": 0,
+        "delivered_level": 1
+      },
+      {
+        "from": "mul_var_attn",
+        "to": "invsqrt_var_attn",
+        "ciphertexts": 1,
+        "refresh": 1,
+        "delivered_level": 7
+      },
+      {
+        "from": "invsqrt_var_attn",
+        "to": "mask_lam_attn",
+        "ciphertexts": 1,
+        "refresh": 0,
+        "delivered_level": 2
+      },
+      {
+        "from": "mask_lam_attn",
+        "to": "mul_X_out_attn",
+        "ciphertexts": 1,
+        "refresh": 0,
+        "delivered_level": 1
+      },
+      {
+        "from": "mul_z_gamma_attn",
+        "to": "mul_X_out_attn",
+        "ciphertexts": 8,
+        "refresh": 0,
+        "delivered_level": 1
+      },
+      {
+        "from": "mul_X_out_attn",
+        "to": "X_out_attn",
+        "ciphertexts": 8,
+        "refresh": 0,
+        "delivered_level": 0
+      }
+    ],
+    "shared_refreshes": [
+      {
+        "after": "QK_mul_attn",
+        "type": 2
+      },
+      {
+        "after": "exp_y_attn",
+        "type": 2
+      },
+      {
+        "after": "iter1_invsqrt_attn",
+        "type": 1
+      },
+      {
+        "after": "iter2_invsqrt_attn",
+        "type": 1
+      },
+      {
+        "after": "iter3_invsqrt_attn",
+        "type": 1
+      },
+      {
+        "after": "SV_mul_attn",
+        "type": 1
+      },
+      {
+        "after": "mul_var_attn",
+        "type": 1
+      }
+    ]
+  },
+  "validated": {
+    "nodes": [
+      [
+        "X_in_attn",
+        "Identity",
+        0,
+        "X"
+      ],
+      [
+        "Conj_back_X_attn",
+        "Conjugate back",
+        0,
+        "Conjugate back X"
+      ],
+      [
+        "X_div2_attn",
+        "Mul",
+        1,
+        "X = X / 2"
+      ],
+      [
+        "V_Wv_attn",
+        "PCMM1",
+        2,
+        "V = X · Wv"
+      ],
+      [
+        "Conj_V_attn",
+        "Conjugate",
+        0,
+        "Conjugate V"
+      ],
+      [
+        "Q_Wq_attn",
+        "PCMM1",
+        2,
+        "Q = X · Wq"
+      ],
+      [
+        "K_Wk_attn",
+        "PCMM1",
+        2,
+        "K = X · Wk"
+      ],
+      [
+        "QK_mul_attn",
+        "CCMM1",
+        4,
+        "QK = Q · Kᵀ / √d"
+      ],
+      [
+        "qk_div2_attn",
+        "Mul",
+        1,
+        "qk = QK / 2"
+      ],
+      [
+        "qk_affine_attn",
+        "Mul",
+        1,
+        "y = qk/2ᵏ & affine y"
+      ],
+      [
+        "exp_y_attn",
+        "PolyEval1",
+        5,
+        "y = Exp(y), deg=15"
+      ],
+      [
+        "mask_y_attn",
+        "Mul",
+        1,
+        "y = mask · y"
+      ],
+      [
+        "iter1_y_sq_attn",
+        "Mul",
+        1,
+        "Iter1: y²"
+      ],
+      [
+        "iter1_sum_s_attn",
+        "Sum",
+        0,
+        "Iter1: s = Σ(y²)"
+      ],
+      [
+        "iter1_affine_s_attn",
+        "Mul",
+        1,
+        "Iter1: affine s"
+      ],
+      [
+        "iter1_invsqrt_attn",
+        "PolyEval3",
+        8,
+        "λ = Invsqrt(s), deg=127"
+      ],
+      [
+        "iter1_ylam_attn",
+        "Mul",
+        1,
+        "Iter1: y · λ"
+      ],
+      [
+        "iter1_y_sq2_attn",
+        "Mul",
+        1,
+        "Iter1: y = (yλ)²"
+      ],
+      [
+        "iter2_y_sq_attn",
+        "Mul",
+        1,
+        "Iter2: y²"
+      ],
+      [
+        "iter2_sum_s_attn",
+        "Sum",
+        0,
+        "Iter2: s = Σ(y²)"
+      ],
+      [
+        "iter2_affine_s_attn",
+        "Mul",
+        1,
+        "Iter2: affine s"
+      ],
+      [
+        "iter2_invsqrt_attn",
+        "PolyEval2",
+        5,
+        "λ = Invsqrt(s), deg=15"
+      ],
+      [
+        "iter2_ylam_attn",
+        "Mul",
+        1,
+        "Iter2: y · λ"
+      ],
+      [
+        "iter2_y_sq2_attn",
+        "Mul",
+        1,
+        "Iter2: y = (yλ)²"
+      ],
+      [
+        "iter3_y_sq_attn",
+        "Mul",
+        1,
+        "Iter3: y²"
+      ],
+      [
+        "iter3_sum_s_attn",
+        "Sum",
+        0,
+        "Iter3: s = Σ(y²)"
+      ],
+      [
+        "iter3_affine_s_attn",
+        "Mul",
+        1,
+        "Iter3: affine s"
+      ],
+      [
+        "iter3_invsqrt_attn",
+        "PolyEval2",
+        5,
+        "λ = Invsqrt(s), deg=15"
+      ],
+      [
+        "iter3_ylam_attn",
+        "Mul",
+        1,
+        "Iter3: y · λ"
+      ],
+      [
+        "iter3_S_attn",
+        "Mul",
+        1,
+        "Iter3: S = (yλ)²"
+      ],
+      [
+        "conj_S_attn",
+        "Conjugate",
+        0,
+        "Conjugate S"
+      ],
+      [
+        "S_mask_attn",
+        "Mul",
+        1,
+        "S = mask · S"
+      ],
+      [
+        "conj_back_S_attn",
+        "Conjugate back",
+        0,
+        "Conjugate back S"
+      ],
+      [
+        "SV_mul_attn",
+        "CCMM2",
+        2,
+        "SV = S · V"
+      ],
+      [
+        "rotate_SV_attn",
+        "Rotate",
+        0,
+        "Rotate SV"
+      ],
+      [
+        "x_SV_Wo_attn",
+        "PCMM2",
+        2,
+        "x = SV · Wo"
+      ],
+      [
+        "x_mask_attn",
+        "Mul",
+        1,
+        "x = mask · x"
+      ],
+      [
+        "add_out_attn",
+        "Add",
+        0,
+        "x = x + X"
+      ],
+      [
+        "x_mask2_attn",
+        "Mul",
+        1,
+        "x = mask · x"
+      ],
+      [
+        "sum_mu_attn",
+        "Sum",
+        0,
+        "μ = Σ(x)"
+      ],
+      [
+        "mask_mu_attn",
+        "Mul",
+        1,
+        "μ = mask · μ"
+      ],
+      [
+        "div_768_attn",
+        "Mul",
+        1,
+        "μ = μ / 768"
+      ],
+      [
+        "add_z_attn",
+        "Add",
+        0,
+        "z = x − μ"
+      ],
+      [
+        "mul_z_sq_attn",
+        "Mul",
+        1,
+        "y = z²"
+      ],
+      [
+        "sum_y_attn",
+        "Sum",
+        0,
+        "s_y = Σ(y)"
+      ],
+      [
+        "mul_var_attn",
+        "Mul",
+        1,
+        "var = mask·s_y & affine var"
+      ],
+      [
+        "invsqrt_var_attn",
+        "PolyEval2",
+        5,
+        "λ = Invsqrt(var), deg=15"
+      ],
+      [
+        "mask_lam_attn",
+        "Mul",
+        1,
+        "λ = Mask(λ)"
+      ],
+      [
+        "mul_z_gamma_attn",
+        "Mul",
+        1,
+        "z = z · γ"
+      ],
+      [
+        "mul_X_out_attn",
+        "Mul",
+        1,
+        "X = z · λ"
+      ],
+      [
+        "X_out_attn",
+        "Identity",
+        0,
+        "X"
+      ],
+      [
+        "s2_M0_6_X_in_attn",
+        "Modswitch",
+        7,
+        "Level 13 to 6"
+      ],
+      [
+        "s2_M0_4_X_in_attn",
+        "Modswitch",
+        9,
+        "Level 13 to 4"
+      ],
+      [
+        "s2_B2_QK_mul_attn",
+        "Bootstrap2",
+        0,
+        "Shared B2 after QK_mul_attn"
+      ],
+      [
+        "s2_M2_7_QK_mul_attn",
+        "Modswitch",
+        6,
+        "Level 13 to 7"
+      ],
+      [
+        "s2_B2_exp_y_attn",
+        "Bootstrap2",
+        0,
+        "Shared B2 after exp_y_attn"
+      ],
+      [
+        "s2_M2_12_exp_y_attn",
+        "Modswitch",
+        1,
+        "Level 13 to 12"
+      ],
+      [
+        "s2_M0_10_mask_y_attn",
+        "Modswitch",
+        1,
+        "Level 11 to 10"
+      ],
+      [
+        "s2_B1_iter1_invsqrt_attn",
+        "Bootstrap1",
+        0,
+        "Shared B1 after iter1_invsqrt_attn"
+      ],
+      [
+        "s2_M1_11_iter1_invsqrt_attn",
+        "Modswitch",
+        3,
+        "Level 14 to 11"
+      ],
+      [
+        "s2_M0_7_iter1_y_sq2_attn",
+        "Modswitch",
+        2,
+        "Level 9 to 7"
+      ],
+      [
+        "s2_B1_iter2_invsqrt_attn",
+        "Bootstrap1",
+        0,
+        "Shared B1 after iter2_invsqrt_attn"
+      ],
+      [
+        "s2_M1_10_iter2_invsqrt_attn",
+        "Modswitch",
+        4,
+        "Level 14 to 10"
+      ],
+      [
+        "s2_M0_5_iter2_y_sq2_attn",
+        "Modswitch",
+        2,
+        "Level 7 to 5"
+      ],
+      [
+        "s2_B1_iter3_invsqrt_attn",
+        "Bootstrap1",
+        0,
+        "Shared B1 after iter3_invsqrt_attn"
+      ],
+      [
+        "s2_M1_5_iter3_invsqrt_attn",
+        "Modswitch",
+        9,
+        "Level 14 to 5"
+      ],
+      [
+        "s2_B1_SV_mul_attn",
+        "Bootstrap1",
+        0,
+        "Shared B1 after SV_mul_attn"
+      ],
+      [
+        "s2_M0_8_rotate_SV_attn",
+        "Modswitch",
+        6,
+        "Level 14 to 8"
+      ],
+      [
+        "s2_M0_3_x_mask2_attn",
+        "Modswitch",
+        1,
+        "Level 4 to 3"
+      ],
+      [
+        "s2_B1_mul_var_attn",
+        "Bootstrap1",
+        0,
+        "Shared B1 after mul_var_attn"
+      ],
+      [
+        "s2_M1_7_mul_var_attn",
+        "Modswitch",
+        7,
+        "Level 14 to 7"
+      ]
+    ],
+    "edges": [
+      [
+        "X_in_attn",
+        "s2_M0_6_X_in_attn",
+        4
+      ],
+      [
+        "s2_M0_6_X_in_attn",
+        "Conj_back_X_attn",
+        4
+      ],
+      [
+        "X_in_attn",
+        "s2_M0_4_X_in_attn",
+        4
+      ],
+      [
+        "s2_M0_4_X_in_attn",
+        "V_Wv_attn",
+        4
+      ],
+      [
+        "s2_M0_6_X_in_attn",
+        "Q_Wq_attn",
+        4
+      ],
+      [
+        "s2_M0_6_X_in_attn",
+        "K_Wk_attn",
+        4
+      ],
+      [
+        "Conj_back_X_attn",
+        "X_div2_attn",
+        8
+      ],
+      [
+        "V_Wv_attn",
+        "Conj_V_attn",
+        4
+      ],
+      [
+        "Q_Wq_attn",
+        "QK_mul_attn",
+        4
+      ],
+      [
+        "K_Wk_attn",
+        "QK_mul_attn",
+        4
+      ],
+      [
+        "Conj_V_attn",
+        "SV_mul_attn",
+        2
+      ],
+      [
+        "QK_mul_attn",
+        "s2_B2_QK_mul_attn",
+        8
+      ],
+      [
+        "s2_B2_QK_mul_attn",
+        "s2_M2_7_QK_mul_attn",
+        8
+      ],
+      [
+        "s2_M2_7_QK_mul_attn",
+        "qk_div2_attn",
+        8
+      ],
+      [
+        "qk_div2_attn",
+        "qk_affine_attn",
+        8
+      ],
+      [
+        "qk_affine_attn",
+        "exp_y_attn",
+        8
+      ],
+      [
+        "exp_y_attn",
+        "s2_B2_exp_y_attn",
+        8
+      ],
+      [
+        "s2_B2_exp_y_attn",
+        "s2_M2_12_exp_y_attn",
+        8
+      ],
+      [
+        "s2_M2_12_exp_y_attn",
+        "mask_y_attn",
+        8
+      ],
+      [
+        "mask_y_attn",
+        "s2_M0_10_mask_y_attn",
+        8
+      ],
+      [
+        "s2_M0_10_mask_y_attn",
+        "iter1_y_sq_attn",
+        8
+      ],
+      [
+        "mask_y_attn",
+        "iter1_ylam_attn",
+        8
+      ],
+      [
+        "iter1_y_sq_attn",
+        "iter1_sum_s_attn",
+        8
+      ],
+      [
+        "iter1_sum_s_attn",
+        "iter1_affine_s_attn",
+        1
+      ],
+      [
+        "iter1_affine_s_attn",
+        "iter1_invsqrt_attn",
+        1
+      ],
+      [
+        "iter1_invsqrt_attn",
+        "s2_B1_iter1_invsqrt_attn",
+        1
+      ],
+      [
+        "s2_B1_iter1_invsqrt_attn",
+        "s2_M1_11_iter1_invsqrt_attn",
+        1
+      ],
+      [
+        "s2_M1_11_iter1_invsqrt_attn",
+        "iter1_ylam_attn",
+        1
+      ],
+      [
+        "iter1_ylam_attn",
+        "iter1_y_sq2_attn",
+        8
+      ],
+      [
+        "iter1_y_sq2_attn",
+        "s2_M0_7_iter1_y_sq2_attn",
+        8
+      ],
+      [
+        "s2_M0_7_iter1_y_sq2_attn",
+        "iter2_y_sq_attn",
+        8
+      ],
+      [
+        "iter1_y_sq2_attn",
+        "iter2_ylam_attn",
+        8
+      ],
+      [
+        "iter2_y_sq_attn",
+        "iter2_sum_s_attn",
+        8
+      ],
+      [
+        "iter2_sum_s_attn",
+        "iter2_affine_s_attn",
+        1
+      ],
+      [
+        "iter2_affine_s_attn",
+        "iter2_invsqrt_attn",
+        1
+      ],
+      [
+        "iter2_invsqrt_attn",
+        "s2_B1_iter2_invsqrt_attn",
+        1
+      ],
+      [
+        "s2_B1_iter2_invsqrt_attn",
+        "s2_M1_10_iter2_invsqrt_attn",
+        1
+      ],
+      [
+        "s2_M1_10_iter2_invsqrt_attn",
+        "iter2_ylam_attn",
+        1
+      ],
+      [
+        "iter2_ylam_attn",
+        "iter2_y_sq2_attn",
+        8
+      ],
+      [
+        "iter2_y_sq2_attn",
+        "iter3_y_sq_attn",
+        8
+      ],
+      [
+        "iter2_y_sq2_attn",
+        "s2_M0_5_iter2_y_sq2_attn",
+        8
+      ],
+      [
+        "s2_M0_5_iter2_y_sq2_attn",
+        "iter3_ylam_attn",
+        8
+      ],
+      [
+        "iter3_y_sq_attn",
+        "iter3_sum_s_attn",
+        8
+      ],
+      [
+        "iter3_sum_s_attn",
+        "iter3_affine_s_attn",
+        1
+      ],
+      [
+        "iter3_affine_s_attn",
+        "iter3_invsqrt_attn",
+        1
+      ],
+      [
+        "iter3_invsqrt_attn",
+        "s2_B1_iter3_invsqrt_attn",
+        1
+      ],
+      [
+        "s2_B1_iter3_invsqrt_attn",
+        "s2_M1_5_iter3_invsqrt_attn",
+        1
+      ],
+      [
+        "s2_M1_5_iter3_invsqrt_attn",
+        "iter3_ylam_attn",
+        1
+      ],
+      [
+        "iter3_ylam_attn",
+        "iter3_S_attn",
+        8
+      ],
+      [
+        "iter3_S_attn",
+        "conj_S_attn",
+        8
+      ],
+      [
+        "conj_S_attn",
+        "S_mask_attn",
+        4
+      ],
+      [
+        "S_mask_attn",
+        "conj_back_S_attn",
+        64
+      ],
+      [
+        "conj_back_S_attn",
+        "SV_mul_attn",
+        128
+      ],
+      [
+        "SV_mul_attn",
+        "s2_B1_SV_mul_attn",
+        2
+      ],
+      [
+        "s2_B1_SV_mul_attn",
+        "rotate_SV_attn",
+        2
+      ],
+      [
+        "rotate_SV_attn",
+        "s2_M0_8_rotate_SV_attn",
+        32
+      ],
+      [
+        "s2_M0_8_rotate_SV_attn",
+        "x_SV_Wo_attn",
+        32
+      ],
+      [
+        "x_SV_Wo_attn",
+        "x_mask_attn",
+        8
+      ],
+      [
+        "x_mask_attn",
+        "add_out_attn",
+        8
+      ],
+      [
+        "X_div2_attn",
+        "add_out_attn",
+        8
+      ],
+      [
+        "add_out_attn",
+        "x_mask2_attn",
+        8
+      ],
+      [
+        "x_mask2_attn",
+        "sum_mu_attn",
+        8
+      ],
+      [
+        "x_mask2_attn",
+        "s2_M0_3_x_mask2_attn",
+        8
+      ],
+      [
+        "s2_M0_3_x_mask2_attn",
+        "add_z_attn",
+        8
+      ],
+      [
+        "sum_mu_attn",
+        "mask_mu_attn",
+        1
+      ],
+      [
+        "mask_mu_attn",
+        "div_768_attn",
+        1
+      ],
+      [
+        "div_768_attn",
+        "add_z_attn",
+        1
+      ],
+      [
+        "add_z_attn",
+        "mul_z_sq_attn",
+        8
+      ],
+      [
+        "add_z_attn",
+        "mul_z_gamma_attn",
+        8
+      ],
+      [
+        "mul_z_sq_attn",
+        "sum_y_attn",
+        8
+      ],
+      [
+        "sum_y_attn",
+        "mul_var_attn",
+        1
+      ],
+      [
+        "mul_var_attn",
+        "s2_B1_mul_var_attn",
+        1
+      ],
+      [
+        "s2_B1_mul_var_attn",
+        "s2_M1_7_mul_var_attn",
+        1
+      ],
+      [
+        "s2_M1_7_mul_var_attn",
+        "invsqrt_var_attn",
+        1
+      ],
+      [
+        "invsqrt_var_attn",
+        "mask_lam_attn",
+        1
+      ],
+      [
+        "mask_lam_attn",
+        "mul_X_out_attn",
+        1
+      ],
+      [
+        "mul_z_gamma_attn",
+        "mul_X_out_attn",
+        8
+      ],
+      [
+        "mul_X_out_attn",
+        "X_out_attn",
+        8
+      ]
+    ],
+    "audit": {
+      "latency_decimal_ms": "41537.6664",
+      "n_b1": 6,
+      "n_b2": 8,
+      "n_bootstrap": 14,
+      "depth": 62,
+      "budget": 201,
+      "utilisation": 0.30845771144278605,
+      "l_in": {
+        "X_in_attn": 13,
+        "s2_M0_6_X_in_attn": 13,
+        "s2_M0_4_X_in_attn": 13,
+        "Conj_back_X_attn": 6,
+        "Q_Wq_attn": 6,
+        "K_Wk_attn": 6,
+        "V_Wv_attn": 4,
+        "X_div2_attn": 6,
+        "QK_mul_attn": 4,
+        "Conj_V_attn": 2,
+        "s2_B2_QK_mul_attn": 0,
+        "s2_M2_7_QK_mul_attn": 13,
+        "qk_div2_attn": 7,
+        "qk_affine_attn": 6,
+        "exp_y_attn": 5,
+        "s2_B2_exp_y_attn": 0,
+        "s2_M2_12_exp_y_attn": 13,
+        "mask_y_attn": 12,
+        "s2_M0_10_mask_y_attn": 11,
+        "iter1_y_sq_attn": 10,
+        "iter1_sum_s_attn": 9,
+        "iter1_affine_s_attn": 9,
+        "iter1_invsqrt_attn": 8,
+        "s2_B1_iter1_invsqrt_attn": 0,
+        "s2_M1_11_iter1_invsqrt_attn": 14,
+        "iter1_ylam_attn": 11,
+        "iter1_y_sq2_attn": 10,
+        "s2_M0_7_iter1_y_sq2_attn": 9,
+        "iter2_y_sq_attn": 7,
+        "iter2_sum_s_attn": 6,
+        "iter2_affine_s_attn": 6,
+        "iter2_invsqrt_attn": 5,
+        "s2_B1_iter2_invsqrt_attn": 0,
+        "s2_M1_10_iter2_invsqrt_attn": 14,
+        "iter2_ylam_attn": 9,
+        "iter2_y_sq2_attn": 8,
+        "iter3_y_sq_attn": 7,
+        "s2_M0_5_iter2_y_sq2_attn": 7,
+        "iter3_sum_s_attn": 6,
+        "iter3_affine_s_attn": 6,
+        "iter3_invsqrt_attn": 5,
+        "s2_B1_iter3_invsqrt_attn": 0,
+        "s2_M1_5_iter3_invsqrt_attn": 14,
+        "iter3_ylam_attn": 5,
+        "iter3_S_attn": 4,
+        "conj_S_attn": 3,
+        "S_mask_attn": 3,
+        "conj_back_S_attn": 2,
+        "SV_mul_attn": 2,
+        "s2_B1_SV_mul_attn": 0,
+        "rotate_SV_attn": 14,
+        "s2_M0_8_rotate_SV_attn": 14,
+        "x_SV_Wo_attn": 8,
+        "x_mask_attn": 6,
+        "add_out_attn": 5,
+        "x_mask2_attn": 5,
+        "sum_mu_attn": 4,
+        "s2_M0_3_x_mask2_attn": 4,
+        "mask_mu_attn": 4,
+        "div_768_attn": 3,
+        "add_z_attn": 2,
+        "mul_z_sq_attn": 2,
+        "mul_z_gamma_attn": 2,
+        "sum_y_attn": 1,
+        "mul_var_attn": 1,
+        "s2_B1_mul_var_attn": 0,
+        "s2_M1_7_mul_var_attn": 14,
+        "invsqrt_var_attn": 7,
+        "mask_lam_attn": 2,
+        "mul_X_out_attn": 1,
+        "X_out_attn": 0
+      },
+      "l_out": {
+        "X_in_attn": 13,
+        "s2_M0_6_X_in_attn": 6,
+        "s2_M0_4_X_in_attn": 4,
+        "Conj_back_X_attn": 6,
+        "Q_Wq_attn": 4,
+        "K_Wk_attn": 4,
+        "V_Wv_attn": 2,
+        "X_div2_attn": 5,
+        "QK_mul_attn": 0,
+        "Conj_V_attn": 2,
+        "s2_B2_QK_mul_attn": 13,
+        "s2_M2_7_QK_mul_attn": 7,
+        "qk_div2_attn": 6,
+        "qk_affine_attn": 5,
+        "exp_y_attn": 0,
+        "s2_B2_exp_y_attn": 13,
+        "s2_M2_12_exp_y_attn": 12,
+        "mask_y_attn": 11,
+        "s2_M0_10_mask_y_attn": 10,
+        "iter1_y_sq_attn": 9,
+        "iter1_sum_s_attn": 9,
+        "iter1_affine_s_attn": 8,
+        "iter1_invsqrt_attn": 0,
+        "s2_B1_iter1_invsqrt_attn": 14,
+        "s2_M1_11_iter1_invsqrt_attn": 11,
+        "iter1_ylam_attn": 10,
+        "iter1_y_sq2_attn": 9,
+        "s2_M0_7_iter1_y_sq2_attn": 7,
+        "iter2_y_sq_attn": 6,
+        "iter2_sum_s_attn": 6,
+        "iter2_affine_s_attn": 5,
+        "iter2_invsqrt_attn": 0,
+        "s2_B1_iter2_invsqrt_attn": 14,
+        "s2_M1_10_iter2_invsqrt_attn": 10,
+        "iter2_ylam_attn": 8,
+        "iter2_y_sq2_attn": 7,
+        "iter3_y_sq_attn": 6,
+        "s2_M0_5_iter2_y_sq2_attn": 5,
+        "iter3_sum_s_attn": 6,
+        "iter3_affine_s_attn": 5,
+        "iter3_invsqrt_attn": 0,
+        "s2_B1_iter3_invsqrt_attn": 14,
+        "s2_M1_5_iter3_invsqrt_attn": 5,
+        "iter3_ylam_attn": 4,
+        "iter3_S_attn": 3,
+        "conj_S_attn": 3,
+        "S_mask_attn": 2,
+        "conj_back_S_attn": 2,
+        "SV_mul_attn": 0,
+        "s2_B1_SV_mul_attn": 14,
+        "rotate_SV_attn": 14,
+        "s2_M0_8_rotate_SV_attn": 8,
+        "x_SV_Wo_attn": 6,
+        "x_mask_attn": 5,
+        "add_out_attn": 5,
+        "x_mask2_attn": 4,
+        "sum_mu_attn": 4,
+        "s2_M0_3_x_mask2_attn": 3,
+        "mask_mu_attn": 3,
+        "div_768_attn": 2,
+        "add_z_attn": 2,
+        "mul_z_sq_attn": 1,
+        "mul_z_gamma_attn": 1,
+        "sum_y_attn": 1,
+        "mul_var_attn": 0,
+        "s2_B1_mul_var_attn": 14,
+        "s2_M1_7_mul_var_attn": 7,
+        "invsqrt_var_attn": 2,
+        "mask_lam_attn": 1,
+        "mul_X_out_attn": 0,
+        "X_out_attn": 0
+      },
+      "edge_levels": [
+        {
+          "from": "X_in_attn",
+          "to": "s2_M0_6_X_in_attn",
+          "ciphertexts": 4,
+          "level": 13
+        },
+        {
+          "from": "s2_M0_6_X_in_attn",
+          "to": "Conj_back_X_attn",
+          "ciphertexts": 4,
+          "level": 6
+        },
+        {
+          "from": "X_in_attn",
+          "to": "s2_M0_4_X_in_attn",
+          "ciphertexts": 4,
+          "level": 13
+        },
+        {
+          "from": "s2_M0_4_X_in_attn",
+          "to": "V_Wv_attn",
+          "ciphertexts": 4,
+          "level": 4
+        },
+        {
+          "from": "s2_M0_6_X_in_attn",
+          "to": "Q_Wq_attn",
+          "ciphertexts": 4,
+          "level": 6
+        },
+        {
+          "from": "s2_M0_6_X_in_attn",
+          "to": "K_Wk_attn",
+          "ciphertexts": 4,
+          "level": 6
+        },
+        {
+          "from": "Conj_back_X_attn",
+          "to": "X_div2_attn",
+          "ciphertexts": 8,
+          "level": 6
+        },
+        {
+          "from": "V_Wv_attn",
+          "to": "Conj_V_attn",
+          "ciphertexts": 4,
+          "level": 2
+        },
+        {
+          "from": "Q_Wq_attn",
+          "to": "QK_mul_attn",
+          "ciphertexts": 4,
+          "level": 4
+        },
+        {
+          "from": "K_Wk_attn",
+          "to": "QK_mul_attn",
+          "ciphertexts": 4,
+          "level": 4
+        },
+        {
+          "from": "Conj_V_attn",
+          "to": "SV_mul_attn",
+          "ciphertexts": 2,
+          "level": 2
+        },
+        {
+          "from": "QK_mul_attn",
+          "to": "s2_B2_QK_mul_attn",
+          "ciphertexts": 8,
+          "level": 0
+        },
+        {
+          "from": "s2_B2_QK_mul_attn",
+          "to": "s2_M2_7_QK_mul_attn",
+          "ciphertexts": 8,
+          "level": 13
+        },
+        {
+          "from": "s2_M2_7_QK_mul_attn",
+          "to": "qk_div2_attn",
+          "ciphertexts": 8,
+          "level": 7
+        },
+        {
+          "from": "qk_div2_attn",
+          "to": "qk_affine_attn",
+          "ciphertexts": 8,
+          "level": 6
+        },
+        {
+          "from": "qk_affine_attn",
+          "to": "exp_y_attn",
+          "ciphertexts": 8,
+          "level": 5
+        },
+        {
+          "from": "exp_y_attn",
+          "to": "s2_B2_exp_y_attn",
+          "ciphertexts": 8,
+          "level": 0
+        },
+        {
+          "from": "s2_B2_exp_y_attn",
+          "to": "s2_M2_12_exp_y_attn",
+          "ciphertexts": 8,
+          "level": 13
+        },
+        {
+          "from": "s2_M2_12_exp_y_attn",
+          "to": "mask_y_attn",
+          "ciphertexts": 8,
+          "level": 12
+        },
+        {
+          "from": "mask_y_attn",
+          "to": "s2_M0_10_mask_y_attn",
+          "ciphertexts": 8,
+          "level": 11
+        },
+        {
+          "from": "s2_M0_10_mask_y_attn",
+          "to": "iter1_y_sq_attn",
+          "ciphertexts": 8,
+          "level": 10
+        },
+        {
+          "from": "mask_y_attn",
+          "to": "iter1_ylam_attn",
+          "ciphertexts": 8,
+          "level": 11
+        },
+        {
+          "from": "iter1_y_sq_attn",
+          "to": "iter1_sum_s_attn",
+          "ciphertexts": 8,
+          "level": 9
+        },
+        {
+          "from": "iter1_sum_s_attn",
+          "to": "iter1_affine_s_attn",
+          "ciphertexts": 1,
+          "level": 9
+        },
+        {
+          "from": "iter1_affine_s_attn",
+          "to": "iter1_invsqrt_attn",
+          "ciphertexts": 1,
+          "level": 8
+        },
+        {
+          "from": "iter1_invsqrt_attn",
+          "to": "s2_B1_iter1_invsqrt_attn",
+          "ciphertexts": 1,
+          "level": 0
+        },
+        {
+          "from": "s2_B1_iter1_invsqrt_attn",
+          "to": "s2_M1_11_iter1_invsqrt_attn",
+          "ciphertexts": 1,
+          "level": 14
+        },
+        {
+          "from": "s2_M1_11_iter1_invsqrt_attn",
+          "to": "iter1_ylam_attn",
+          "ciphertexts": 1,
+          "level": 11
+        },
+        {
+          "from": "iter1_ylam_attn",
+          "to": "iter1_y_sq2_attn",
+          "ciphertexts": 8,
+          "level": 10
+        },
+        {
+          "from": "iter1_y_sq2_attn",
+          "to": "s2_M0_7_iter1_y_sq2_attn",
+          "ciphertexts": 8,
+          "level": 9
+        },
+        {
+          "from": "s2_M0_7_iter1_y_sq2_attn",
+          "to": "iter2_y_sq_attn",
+          "ciphertexts": 8,
+          "level": 7
+        },
+        {
+          "from": "iter1_y_sq2_attn",
+          "to": "iter2_ylam_attn",
+          "ciphertexts": 8,
+          "level": 9
+        },
+        {
+          "from": "iter2_y_sq_attn",
+          "to": "iter2_sum_s_attn",
+          "ciphertexts": 8,
+          "level": 6
+        },
+        {
+          "from": "iter2_sum_s_attn",
+          "to": "iter2_affine_s_attn",
+          "ciphertexts": 1,
+          "level": 6
+        },
+        {
+          "from": "iter2_affine_s_attn",
+          "to": "iter2_invsqrt_attn",
+          "ciphertexts": 1,
+          "level": 5
+        },
+        {
+          "from": "iter2_invsqrt_attn",
+          "to": "s2_B1_iter2_invsqrt_attn",
+          "ciphertexts": 1,
+          "level": 0
+        },
+        {
+          "from": "s2_B1_iter2_invsqrt_attn",
+          "to": "s2_M1_10_iter2_invsqrt_attn",
+          "ciphertexts": 1,
+          "level": 14
+        },
+        {
+          "from": "s2_M1_10_iter2_invsqrt_attn",
+          "to": "iter2_ylam_attn",
+          "ciphertexts": 1,
+          "level": 10
+        },
+        {
+          "from": "iter2_ylam_attn",
+          "to": "iter2_y_sq2_attn",
+          "ciphertexts": 8,
+          "level": 8
+        },
+        {
+          "from": "iter2_y_sq2_attn",
+          "to": "iter3_y_sq_attn",
+          "ciphertexts": 8,
+          "level": 7
+        },
+        {
+          "from": "iter2_y_sq2_attn",
+          "to": "s2_M0_5_iter2_y_sq2_attn",
+          "ciphertexts": 8,
+          "level": 7
+        },
+        {
+          "from": "s2_M0_5_iter2_y_sq2_attn",
+          "to": "iter3_ylam_attn",
+          "ciphertexts": 8,
+          "level": 5
+        },
+        {
+          "from": "iter3_y_sq_attn",
+          "to": "iter3_sum_s_attn",
+          "ciphertexts": 8,
+          "level": 6
+        },
+        {
+          "from": "iter3_sum_s_attn",
+          "to": "iter3_affine_s_attn",
+          "ciphertexts": 1,
+          "level": 6
+        },
+        {
+          "from": "iter3_affine_s_attn",
+          "to": "iter3_invsqrt_attn",
+          "ciphertexts": 1,
+          "level": 5
+        },
+        {
+          "from": "iter3_invsqrt_attn",
+          "to": "s2_B1_iter3_invsqrt_attn",
+          "ciphertexts": 1,
+          "level": 0
+        },
+        {
+          "from": "s2_B1_iter3_invsqrt_attn",
+          "to": "s2_M1_5_iter3_invsqrt_attn",
+          "ciphertexts": 1,
+          "level": 14
+        },
+        {
+          "from": "s2_M1_5_iter3_invsqrt_attn",
+          "to": "iter3_ylam_attn",
+          "ciphertexts": 1,
+          "level": 5
+        },
+        {
+          "from": "iter3_ylam_attn",
+          "to": "iter3_S_attn",
+          "ciphertexts": 8,
+          "level": 4
+        },
+        {
+          "from": "iter3_S_attn",
+          "to": "conj_S_attn",
+          "ciphertexts": 8,
+          "level": 3
+        },
+        {
+          "from": "conj_S_attn",
+          "to": "S_mask_attn",
+          "ciphertexts": 4,
+          "level": 3
+        },
+        {
+          "from": "S_mask_attn",
+          "to": "conj_back_S_attn",
+          "ciphertexts": 64,
+          "level": 2
+        },
+        {
+          "from": "conj_back_S_attn",
+          "to": "SV_mul_attn",
+          "ciphertexts": 128,
+          "level": 2
+        },
+        {
+          "from": "SV_mul_attn",
+          "to": "s2_B1_SV_mul_attn",
+          "ciphertexts": 2,
+          "level": 0
+        },
+        {
+          "from": "s2_B1_SV_mul_attn",
+          "to": "rotate_SV_attn",
+          "ciphertexts": 2,
+          "level": 14
+        },
+        {
+          "from": "rotate_SV_attn",
+          "to": "s2_M0_8_rotate_SV_attn",
+          "ciphertexts": 32,
+          "level": 14
+        },
+        {
+          "from": "s2_M0_8_rotate_SV_attn",
+          "to": "x_SV_Wo_attn",
+          "ciphertexts": 32,
+          "level": 8
+        },
+        {
+          "from": "x_SV_Wo_attn",
+          "to": "x_mask_attn",
+          "ciphertexts": 8,
+          "level": 6
+        },
+        {
+          "from": "x_mask_attn",
+          "to": "add_out_attn",
+          "ciphertexts": 8,
+          "level": 5
+        },
+        {
+          "from": "X_div2_attn",
+          "to": "add_out_attn",
+          "ciphertexts": 8,
+          "level": 5
+        },
+        {
+          "from": "add_out_attn",
+          "to": "x_mask2_attn",
+          "ciphertexts": 8,
+          "level": 5
+        },
+        {
+          "from": "x_mask2_attn",
+          "to": "sum_mu_attn",
+          "ciphertexts": 8,
+          "level": 4
+        },
+        {
+          "from": "x_mask2_attn",
+          "to": "s2_M0_3_x_mask2_attn",
+          "ciphertexts": 8,
+          "level": 4
+        },
+        {
+          "from": "s2_M0_3_x_mask2_attn",
+          "to": "add_z_attn",
+          "ciphertexts": 8,
+          "level": 3
+        },
+        {
+          "from": "sum_mu_attn",
+          "to": "mask_mu_attn",
+          "ciphertexts": 1,
+          "level": 4
+        },
+        {
+          "from": "mask_mu_attn",
+          "to": "div_768_attn",
+          "ciphertexts": 1,
+          "level": 3
+        },
+        {
+          "from": "div_768_attn",
+          "to": "add_z_attn",
+          "ciphertexts": 1,
+          "level": 2
+        },
+        {
+          "from": "add_z_attn",
+          "to": "mul_z_sq_attn",
+          "ciphertexts": 8,
+          "level": 2
+        },
+        {
+          "from": "add_z_attn",
+          "to": "mul_z_gamma_attn",
+          "ciphertexts": 8,
+          "level": 2
+        },
+        {
+          "from": "mul_z_sq_attn",
+          "to": "sum_y_attn",
+          "ciphertexts": 8,
+          "level": 1
+        },
+        {
+          "from": "sum_y_attn",
+          "to": "mul_var_attn",
+          "ciphertexts": 1,
+          "level": 1
+        },
+        {
+          "from": "mul_var_attn",
+          "to": "s2_B1_mul_var_attn",
+          "ciphertexts": 1,
+          "level": 0
+        },
+        {
+          "from": "s2_B1_mul_var_attn",
+          "to": "s2_M1_7_mul_var_attn",
+          "ciphertexts": 1,
+          "level": 14
+        },
+        {
+          "from": "s2_M1_7_mul_var_attn",
+          "to": "invsqrt_var_attn",
+          "ciphertexts": 1,
+          "level": 7
+        },
+        {
+          "from": "invsqrt_var_attn",
+          "to": "mask_lam_attn",
+          "ciphertexts": 1,
+          "level": 2
+        },
+        {
+          "from": "mask_lam_attn",
+          "to": "mul_X_out_attn",
+          "ciphertexts": 1,
+          "level": 1
+        },
+        {
+          "from": "mul_z_gamma_attn",
+          "to": "mul_X_out_attn",
+          "ciphertexts": 8,
+          "level": 1
+        },
+        {
+          "from": "mul_X_out_attn",
+          "to": "X_out_attn",
+          "ciphertexts": 8,
+          "level": 0
+        }
+      ],
+      "node_latency_decimal_ms": {
+        "X_in_attn": "0",
+        "s2_M0_6_X_in_attn": "0",
+        "s2_M0_4_X_in_attn": "0",
+        "Conj_back_X_attn": "5.62",
+        "Q_Wq_attn": "3994.91",
+        "K_Wk_attn": "3994.91",
+        "V_Wv_attn": "3262.51",
+        "X_div2_attn": "0.8170",
+        "QK_mul_attn": "1958.82",
+        "Conj_V_attn": "1.99",
+        "s2_B2_QK_mul_attn": "5172.52",
+        "s2_M2_7_QK_mul_attn": "0",
+        "qk_div2_attn": "0.8833",
+        "qk_affine_attn": "0.8170",
+        "exp_y_attn": "257.48",
+        "s2_B2_exp_y_attn": "5172.52",
+        "s2_M2_12_exp_y_attn": "0",
+        "mask_y_attn": "1.2148",
+        "s2_M0_10_mask_y_attn": "0",
+        "iter1_y_sq_attn": "1.0822",
+        "iter1_sum_s_attn": "4.06",
+        "iter1_affine_s_attn": "1.0159",
+        "iter1_invsqrt_attn": "5317.53",
+        "s2_B1_iter1_invsqrt_attn": "1040.15",
+        "s2_M1_11_iter1_invsqrt_attn": "0",
+        "iter1_ylam_attn": "1.1485",
+        "iter1_y_sq2_attn": "1.0822",
+        "s2_M0_7_iter1_y_sq2_attn": "0",
+        "iter2_y_sq_attn": "0.8833",
+        "iter2_sum_s_attn": "4.06",
+        "iter2_affine_s_attn": "0.8170",
+        "iter2_invsqrt_attn": "318.87",
+        "s2_B1_iter2_invsqrt_attn": "1040.15",
+        "s2_M1_10_iter2_invsqrt_attn": "0",
+        "iter2_ylam_attn": "1.0159",
+        "iter2_y_sq2_attn": "0.9496",
+        "iter3_y_sq_attn": "0.8833",
+        "s2_M0_5_iter2_y_sq2_attn": "0",
+        "iter3_sum_s_attn": "4.06",
+        "iter3_affine_s_attn": "0.8170",
+        "iter3_invsqrt_attn": "318.87",
+        "s2_B1_iter3_invsqrt_attn": "1040.15",
+        "s2_M1_5_iter3_invsqrt_attn": "0",
+        "iter3_ylam_attn": "0.7507",
+        "iter3_S_attn": "0.6844",
+        "conj_S_attn": "2.15",
+        "S_mask_attn": "0.6181",
+        "conj_back_S_attn": "3.22",
+        "SV_mul_attn": "1764.18",
+        "s2_B1_SV_mul_attn": "2080.30",
+        "rotate_SV_attn": "0",
+        "s2_M0_8_rotate_SV_attn": "0",
+        "x_SV_Wo_attn": "3099.24",
+        "x_mask_attn": "0.8170",
+        "add_out_attn": "0.0549",
+        "x_mask2_attn": "0.7507",
+        "sum_mu_attn": "4.06",
+        "s2_M0_3_x_mask2_attn": "0",
+        "mask_mu_attn": "0.6844",
+        "div_768_attn": "0.6181",
+        "add_z_attn": "0.0447",
+        "mul_z_sq_attn": "0.5518",
+        "mul_z_gamma_attn": "0.5518",
+        "sum_y_attn": "4.06",
+        "mul_var_attn": "0.4855",
+        "s2_B1_mul_var_attn": "1040.15",
+        "s2_M1_7_mul_var_attn": "0",
+        "invsqrt_var_attn": "610.05",
+        "mask_lam_attn": "0.5518",
+        "mul_X_out_attn": "0.4855",
+        "X_out_attn": "0"
+      },
+      "placement_chains": [
+        {
+          "from": "X_in_attn",
+          "to": "Conj_back_X_attn",
+          "inserted_nodes": [
+            "s2_M0_6_X_in_attn"
+          ]
+        },
+        {
+          "from": "X_in_attn",
+          "to": "V_Wv_attn",
+          "inserted_nodes": [
+            "s2_M0_4_X_in_attn"
+          ]
+        },
+        {
+          "from": "X_in_attn",
+          "to": "Q_Wq_attn",
+          "inserted_nodes": [
+            "s2_M0_6_X_in_attn"
+          ]
+        },
+        {
+          "from": "X_in_attn",
+          "to": "K_Wk_attn",
+          "inserted_nodes": [
+            "s2_M0_6_X_in_attn"
+          ]
+        },
+        {
+          "from": "QK_mul_attn",
+          "to": "qk_div2_attn",
+          "inserted_nodes": [
+            "s2_B2_QK_mul_attn",
+            "s2_M2_7_QK_mul_attn"
+          ]
+        },
+        {
+          "from": "exp_y_attn",
+          "to": "mask_y_attn",
+          "inserted_nodes": [
+            "s2_B2_exp_y_attn",
+            "s2_M2_12_exp_y_attn"
+          ]
+        },
+        {
+          "from": "mask_y_attn",
+          "to": "iter1_y_sq_attn",
+          "inserted_nodes": [
+            "s2_M0_10_mask_y_attn"
+          ]
+        },
+        {
+          "from": "iter1_invsqrt_attn",
+          "to": "iter1_ylam_attn",
+          "inserted_nodes": [
+            "s2_B1_iter1_invsqrt_attn",
+            "s2_M1_11_iter1_invsqrt_attn"
+          ]
+        },
+        {
+          "from": "iter1_y_sq2_attn",
+          "to": "iter2_y_sq_attn",
+          "inserted_nodes": [
+            "s2_M0_7_iter1_y_sq2_attn"
+          ]
+        },
+        {
+          "from": "iter2_invsqrt_attn",
+          "to": "iter2_ylam_attn",
+          "inserted_nodes": [
+            "s2_B1_iter2_invsqrt_attn",
+            "s2_M1_10_iter2_invsqrt_attn"
+          ]
+        },
+        {
+          "from": "iter2_y_sq2_attn",
+          "to": "iter3_ylam_attn",
+          "inserted_nodes": [
+            "s2_M0_5_iter2_y_sq2_attn"
+          ]
+        },
+        {
+          "from": "iter3_invsqrt_attn",
+          "to": "iter3_ylam_attn",
+          "inserted_nodes": [
+            "s2_B1_iter3_invsqrt_attn",
+            "s2_M1_5_iter3_invsqrt_attn"
+          ]
+        },
+        {
+          "from": "SV_mul_attn",
+          "to": "rotate_SV_attn",
+          "inserted_nodes": [
+            "s2_B1_SV_mul_attn"
+          ]
+        },
+        {
+          "from": "rotate_SV_attn",
+          "to": "x_SV_Wo_attn",
+          "inserted_nodes": [
+            "s2_M0_8_rotate_SV_attn"
+          ]
+        },
+        {
+          "from": "x_mask2_attn",
+          "to": "add_z_attn",
+          "inserted_nodes": [
+            "s2_M0_3_x_mask2_attn"
+          ]
+        },
+        {
+          "from": "mul_var_attn",
+          "to": "invsqrt_var_attn",
+          "inserted_nodes": [
+            "s2_B1_mul_var_attn",
+            "s2_M1_7_mul_var_attn"
+          ]
+        }
+      ],
+      "structural_and_level_checks_passed": true
+    },
+    "reference_latency_ms": 41537.66640000001,
+    "reference_decimal_absolute_error_ms": "1E-11",
+    "checks": {
+      "original_graph_and_ciphertexts": true,
+      "canonical_chains_and_sharing": true,
+      "level_domains_and_merges": true,
+      "bootstrap_eligibility_and_counts": true,
+      "model_reconstruction_audit_agreement": true,
+      "reference_score_and_metrics_agreement": true
+    }
+  },
+  "resources": {
+    "pipeline_wall_seconds": 0.661002599998028,
+    "process_cpu_seconds": 0.671875,
+    "sampled_peak_rss_bytes": 122339328,
+    "windows_process_lifetime_peak_working_set_bytes": 122425344,
+    "rss_sampling_interval_seconds": 0.02,
+    "scope": "Current process; model construction, solve, reconstruction and validation. Excludes reference import, baseline preparation and result writing. RSS includes resident imported packages. Windows peak, if available, covers process lifetime."
+  },
+  "comparison": {
+    "improved": true,
+    "reduction_decimal_ms": "12020.5054",
+    "reduction_percent": "22.44383069102444605848177962",
+    "same_module_and_input": true
+  }
+}

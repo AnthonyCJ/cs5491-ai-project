@@ -1,0 +1,18 @@
+{
+  "members": [
+    {
+      "confirmed_english_name": "Xing Chunjie",
+      "student_id": "72655910"
+    },
+    {
+      "confirmed_english_name": "Yang Mianji",
+      "student_id": "72655251"
+    },
+    {
+      "confirmed_english_name": "Zhang Qi",
+      "student_id": "72655380"
+    }
+  ],
+  "contact_email": "72655910@cityu-dg.edu.cn",
+  "english_name_basis": "User-authorized pinyin; surname first, joined given name, no tone marks"
+}

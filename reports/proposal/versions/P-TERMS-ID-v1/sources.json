@@ -1,0 +1,139 @@
+{
+  "artifact_version": "P-TERMS-ID-v1",
+  "content_as_of": "2026-10-05",
+  "evidence_cutoff": "Preserved formal comparison T2-FORMAL-20261004-004 and corrected T3-ANALYSIS-20261005-001; saved S1/S3 checks retained as historical support; no new experiment",
+  "method_scope": "CP-SAT main method and instructor fixed-placement baseline",
+  "predecessor": "P-D1-ID-v1",
+  "source_sha256": "ac986b52dcb32d9baf870a428920f5877d5bccc1511ed9f9932ba2b872708335",
+  "identity_sha256": "68471010d8a0b95a1ecd9bf9cef2fe8f6e8700c99bd072eebf54cc0a6cc1fc78",
+  "evidence_sha256": {
+    "docs/rules-and-metrics.md": "3d201fc1f84a2f4d9078cf45123925115f30a595de5c7bf4c46e1dd1c3bd7c84",
+    "docs/s2-method.md": "fa63c044bac036757ae1b9ffbc3ad21e972aed398fee6626bf9dba69ddb212bc",
+    "docs/s3-validation.md": "ba76ee3f62bebebd0791c979f2c9bb1f1e3f318936e9f5b616503c466a40454f",
+    "docs/s3-checks.json": "e545802ead78d19eb071e04f3ddc7e49ff7ff7f41c26eb6144ae739f849c54f6",
+    "results/S1-BL-001/run.json": "eb521585ddc5e33c2b150bb2e4a99ceb594643509da684fc15151d543247d23c",
+    "results/S1-BL-001/artifacts.sha256.json": "e747ed2dcf387b84125f2458f33de3e02a057413539a8f862712d78f953bc883",
+    "results/S1-BL-001/summary.csv": "acd34f23fff81a7649257f8767a9d1d4e4d046dc2478ebe21448a41a8d52bbd9",
+    "results/S3-OPT-001/run.json": "c6098424b565f8d8c6a8dbfd38415024ff929d255bae29d1614c5608db539dfa",
+    "results/S3-OPT-001/artifacts.sha256.json": "355ea77875754bd75947ccd4cc2f295de8f1544e27071daadd9e1f8aaf2f85a9",
+    "results/S3-OPT-001/summary.csv": "f6bea94abbb7fa6910bf95c7eb70e9b082604b6f09380efd5ba75d4dbfd33d83",
+    "results/S3-OPT-001/tiny-examples.json": "88eb0c6215abe0f172d6ae64c964ae1b537ba7379acbe3e156f864c2328d51cf",
+    "configs/s3-all-instances.json": "0e57c5386bd41b00a6b22347171318acb597b22a66874a4fa997c74a47f190cf",
+    "src/bootplacement/s2_model.py": "c377e77096c8b6ad6e8e6651947633fd0aa8c2d176a85b9af1e6d22fb9bb460f",
+    "src/bootplacement/s2_runner.py": "f8b7cd0309db3f3f9febe6eca9e0c397c730a6b477072183dee134130ce04b0c",
+    "results/T2-FORMAL-20261004-004/README.md": "5402e6e0d58b84f37ec85c2ee305b2bb5419b364fe1c0b01ff7dd4ecb0bf2c09",
+    "results/T2-FORMAL-20261004-004/summary.json": "43fd5c3f67c9daa08e9dccacbd80fe08cee8d02418598a84588e2ae12b2ec1d1",
+    "results/T2-FORMAL-20261004-004/summary.csv": "409b270b0e8f6cc75ca776a8247011e4381165d84ae1e7e68bbedbfb044704f4",
+    "results/T2-FORMAL-20261004-004/protocol.json": "eeb46ca479cf0c38ecb4d9ff11e94263ec0fc17c1d00000223774b4316458100",
+    "results/T2-FORMAL-20261004-004/condition-status.json": "c5038899260327d73943b40acd94f602fb1950f3dd5e84fe9b34d256858e2132",
+    "results/T2-FORMAL-20261004-004/attempt-resources.json": "c8f2c0336eed61b2b79d8c2b9fc8baa0c64c900e3a634e3dde0465e62131d0ee",
+    "results/T2-FORMAL-20261004-004/artifacts.sha256.json": "0c465b0e11b76c417aa731da2863ad5739a24629e7246d9663559c154472e1f1",
+    "results/T2-FORMAL-20261004-004/inputs.sha256.json": "bb62c6e58bdd29a50fd1a32daa7d94ad6b87d9ef43803ad62bd59aeb2f1debec",
+    "results/T2-FORMAL-20261004-004/validation-summary.json": "234b34c0392caaeebe03c7b5d2a5236d839faa3651947fdafd70ed5f08cfd399",
+    "results/T3-ANALYSIS-20261005-001/README.md": "f0da700b85bbc55eb4b5e75b2f030df34f069ed3251e6f3c1b2727651e2a831a",
+    "results/T3-ANALYSIS-20261005-001/analysis-summary.json": "61b0377fb244d8d2cd03fb9f50abc641aeaa2e2ff7b7b79ccf8cba4381f1555b",
+    "results/T3-ANALYSIS-20261005-001/artifacts.sha256.json": "55c02fba0a02614532b83f62e4399189d96ac45b3dd8662764eb27d3d12fa8da",
+    "results/T3-ANALYSIS-20261005-001/cases.md": "4d6346033126904988ad0c1e53e744b3e53684d630e3fa724e98e533bdbe6d1f",
+    "results/T3-ANALYSIS-20261005-001/comparison.json": "59085b76447bb1dd41f24494e4c63a5bb0c0a5bcfcbfe9819635d741997ef965",
+    "results/T3-ANALYSIS-20261005-001/resource-observations.json": "28ae89c5a53e5bedb9a6d9981df11d9ab0ae50b27adfdc99d8ea51d3622e7300",
+    "results/T3-ANALYSIS-20261005-001/checks/caption-correction-20261005.json": "fe7c689ba3fa72138b4e7d74d736190a9757f5edad9fd8b01d73bc9034aae327"
+  },
+  "predecessor_files_sha256": {
+    "reports/proposal/versions/P-D1-ID-v1/artifacts.sha256.json": "df59e7118f8686804597ce303236e37587cf3451d119fa0c2b9909bf95a7b442",
+    "reports/proposal/versions/P-D1-ID-v1/build-info.json": "8747db578b36ab8391d653546fac0eda1aed3de9442b096c0f053f76d319cda3",
+    "reports/proposal/versions/P-D1-ID-v1/build_proposal.py": "648049822aabec9c73b1ba2973ace4f64b146035bffdec529710b3567478756d",
+    "reports/proposal/versions/P-D1-ID-v1/check_proposal.py": "956972fcc002ba97dd61ba64e20671a8396600240452ad18415bff6a9fcd4550",
+    "reports/proposal/versions/P-D1-ID-v1/format-check.json": "b7da5113f660e8e488a8e3576192ddd998cf582020a28c78ac8483a43f06074d",
+    "reports/proposal/versions/P-D1-ID-v1/identity.json": "68471010d8a0b95a1ecd9bf9cef2fe8f6e8700c99bd072eebf54cc0a6cc1fc78",
+    "reports/proposal/versions/P-D1-ID-v1/proposal.md": "8d666bd393f97ad2610c3ea5fefbc315a29f4647613ee5a0916d6cdf9a6a987f",
+    "reports/proposal/versions/P-D1-ID-v1/proposal.pdf": "d5931a879e8f5b0e0aa07ae034a90e73c676fb58c8aecc253e2d459c0c9735d0",
+    "reports/proposal/versions/P-D1-ID-v1/README.md": "ea80c2f24f16033d29560d60aeef9f23951d3e550d028498e0a998990727f550",
+    "reports/proposal/versions/P-D1-ID-v1/sources.json": "c83d497c666f4c806ccb948c0b74fb076fa0b05ef3d0926774a407766f68b80e"
+  },
+  "generator_dependencies_sha256": {
+    "reports/w01_support.py": "a32c439959123f94946fc7ace84906366628919623e2b12f4b34a7fdaa3569f1",
+    "reports/proposal/build_proposal.py": "2e8af08a058eb3813eb8a5d03b8b11e9d83207565c8dc72c3f1f2c05544232c1",
+    "reports/proposal/requirements.txt": "054e7483ed0899a13425d3ff89d0ae162290c88989825c77d22174ceb36f33f1",
+    "reports/verification-requirements.txt": "c1b80d3f0339f5c76751d365141b2bb250f095164712b54c0fe361f0a7ca97b9"
+  },
+  "claim_map": {
+    "problem_method_and_contribution": [
+      "docs/rules-and-metrics.md",
+      "docs/s2-method.md",
+      "src/bootplacement/s2_model.py",
+      "src/bootplacement/s2_runner.py"
+    ],
+    "baseline_calibration": [
+      "results/S1-BL-001/run.json",
+      "results/S1-BL-001/summary.csv"
+    ],
+    "30_formal_valid_improvements_bounds_and_reduction_ranges": [
+      "results/T2-FORMAL-20261004-004/summary.json",
+      "results/T2-FORMAL-20261004-004/condition-status.json",
+      "results/T2-FORMAL-20261004-004/artifacts.sha256.json"
+    ],
+    "fixed_protocol_one_run_per_condition_and_resource_records": [
+      "results/T2-FORMAL-20261004-004/protocol.json",
+      "results/T2-FORMAL-20261004-004/attempt-resources.json"
+    ],
+    "four_complete_placement_diagrams_two_levels_per_module": [
+      "results/T3-ANALYSIS-20261005-001/analysis-summary.json",
+      "results/T3-ANALYSIS-20261005-001/cases.md",
+      "results/T3-ANALYSIS-20261005-001/artifacts.sha256.json"
+    ],
+    "historical_tiny_exhaustive_checks": [
+      "results/S3-OPT-001/tiny-examples.json",
+      "docs/s3-checks.json"
+    ],
+    "remaining_work": "Independent-environment reproduction and final report preparation remain outstanding. No real FHE execution or cross-device performance is established."
+  },
+  "numeric_precision": "Ranges rounded to two decimals from the saved formal comparison; full precision preserved",
+  "course_snapshot_requirements": {
+    "final_deadline_bjt": "2026-12-03 23:59",
+    "paper": "A4",
+    "body_leading_pt": 12,
+    "later_online_updates_checked": false,
+    "proposal_deadline_bjt": "2026-10-15 23:59",
+    "reference_list": false,
+    "abstract": false,
+    "font": "Times New Roman",
+    "milestone_deadline_bjt": "2026-11-19 23:59",
+    "font_pt": 12,
+    "margins_cm": [
+      2.5,
+      2.5,
+      2.5,
+      2.5
+    ],
+    "page_count": 1
+  },
+  "review_state": "New Proposal candidate awaiting its own human content/layout review; predecessor acceptance does not transfer",
+  "analysis_review_boundary": "The corrected T3 package is technically delivered; its whole-package human acceptance is pending. The Proposal states only that the saved diagrams and resource records exist. This candidate does not register T3 acceptance.",
+  "formal_submission_ready": false,
+  "latest_canvas_requirements_verified": false,
+  "submission_authorized": false,
+  "submitted": false,
+  "evidence_context": "Method documents and S1/S3 support historical definitions/checks. Current comparison claims use T2 formal data and T3 saved diagrams. Source hashes preserve applicability of existing checks; reading saved flags is not new validation.",
+  "revision_date": "2026-10-15",
+  "change_scope": "Terminology, definitions and reader clarity only; all empirical claims retain the predecessor's evidence cutoff",
+  "external_terminology_sources": [
+    {
+      "title": "Google OR-Tools: Constraint Optimization",
+      "url": "https://developers.google.com/optimization/cp/",
+      "accessed": "2026-10-15",
+      "supports": "CP means Constraint Programming; SAT means satisfiability; CP-SAT combines CP with SAT methods."
+    },
+    {
+      "title": "Google OR-Tools: CP-SAT Solver",
+      "url": "https://developers.google.com/optimization/cp/cp_solver",
+      "accessed": "2026-10-15",
+      "supports": "Integer modelling and distinctions between feasible and optimal solver outcomes."
+    },
+    {
+      "title": "Google OR-Tools CP-SAT source overview",
+      "url": "https://github.com/google/or-tools/blob/stable/ortools/sat/README.md",
+      "accessed": "2026-10-15",
+      "supports": "Constraint programming solver built on SAT/max-SAT technology."
+    }
+  ]
+}

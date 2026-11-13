@@ -1,0 +1,713 @@
+{
+  "schema_version": 1,
+  "case_id": "attention-L11",
+  "status": "passed",
+  "started_at_utc": "2026-10-04T16:12:59.176070+00:00",
+  "solver_calls": 0,
+  "saved_solution_verified_once_without_search": true,
+  "baseline_freshly_audited_and_teacher_scored": true,
+  "baseline_run_id": "S1-BL-001",
+  "baseline_case_sha256": "9b7b3beafdf3fe495be2464a388002b1f10dd1bca6126ffbda39b93fabaadf50",
+  "historical_case_sha256": "992b2833e054464fdb8e371383dcb0b650961b706d95fe471d17bde77b3165de",
+  "run_json_sha256": "36d7ef424fd2cffd1ce70e48078bd0c7ae2f312692ddcd7e2fc01c1015b73c7a",
+  "case_sha256": "8ea3ba4a1b679c56abea2cc88cc6a0d1d55f7cb9bcde9329f6c4209a793659a8",
+  "checker_sha256": "d38fac43e51ba94e02460a1f128a9b1e1fb1538c258c3aac8b7318130950b5fb",
+  "source_fingerprint": "c5797af7a33405405f0a6f49121626e1015405c990637d4ebcb78d5697f36ab6",
+  "baseline_audit": {
+    "latency_decimal_ms": "53558.1718",
+    "n_b1": 9,
+    "n_b2": 8,
+    "n_bootstrap": 17,
+    "depth": 62,
+    "budget": 241,
+    "utilisation": 0.2572614107883817,
+    "l_in": {
+      "X_in_attn": 11,
+      "Boot1_X_attn": 11,
+      "ModSwitch_down8_attn": 14,
+      "Conj_back_X_attn": 14,
+      "V_Wv_attn": 6,
+      "Q_Wq_attn": 6,
+      "K_Wk_attn": 6,
+      "X_div2_attn": 14,
+      "Conj_V_attn": 4,
+      "QK_mul_attn": 4,
+      "Boot2_QK_attn": 0,
+      "qk_div2_attn": 13,
+      "qk_affine_attn": 12,
+      "exp_y_attn": 11,
+      "mask_y_attn": 6,
+      "iter1_y_sq_attn": 5,
+      "iter1_sum_s_attn": 4,
+      "iter1_affine_s_attn": 4,
+      "Boot1_s_iter1_attn": 3,
+      "iter1_invsqrt_attn": 14,
+      "iter1_ylam_attn": 5,
+      "iter1_y_sq2_attn": 4,
+      "iter2_y_sq_attn": 3,
+      "iter2_sum_s_attn": 2,
+      "iter2_affine_s_attn": 2,
+      "Boot1_s_iter2_attn": 1,
+      "iter2_invsqrt_attn": 14,
+      "iter2_ylam_attn": 3,
+      "iter2_y_sq2_attn": 2,
+      "Boot2_y_attn": 1,
+      "iter3_y_sq_attn": 13,
+      "iter3_sum_s_attn": 12,
+      "iter3_affine_s_attn": 12,
+      "iter3_invsqrt_attn": 11,
+      "iter3_ylam_attn": 6,
+      "iter3_S_attn": 5,
+      "conj_S_attn": 4,
+      "S_mask_attn": 4,
+      "conj_back_S_attn": 3,
+      "SV_mul_attn": 3,
+      "Boot1_SV_attn": 1,
+      "rotate_SV_attn": 14,
+      "x_SV_Wo_attn": 14,
+      "x_mask_attn": 12,
+      "add_out_attn": 11,
+      "x_mask2_attn": 11,
+      "sum_mu_attn": 10,
+      "mask_mu_attn": 10,
+      "div_768_attn": 9,
+      "add_z_attn": 8,
+      "mul_z_sq_attn": 8,
+      "mul_z_gamma_attn": 8,
+      "sum_y_attn": 7,
+      "mul_var_attn": 7,
+      "Boot1_var_attn": 6,
+      "invsqrt_var_attn": 14,
+      "mask_lam_attn": 9,
+      "mul_X_out_attn": 7,
+      "X_out_attn": 6
+    },
+    "l_out": {
+      "X_in_attn": 11,
+      "Boot1_X_attn": 14,
+      "ModSwitch_down8_attn": 6,
+      "Conj_back_X_attn": 14,
+      "V_Wv_attn": 4,
+      "Q_Wq_attn": 4,
+      "K_Wk_attn": 4,
+      "X_div2_attn": 13,
+      "Conj_V_attn": 4,
+      "QK_mul_attn": 0,
+      "Boot2_QK_attn": 13,
+      "qk_div2_attn": 12,
+      "qk_affine_attn": 11,
+      "exp_y_attn": 6,
+      "mask_y_attn": 5,
+      "iter1_y_sq_attn": 4,
+      "iter1_sum_s_attn": 4,
+      "iter1_affine_s_attn": 3,
+      "Boot1_s_iter1_attn": 14,
+      "iter1_invsqrt_attn": 6,
+      "iter1_ylam_attn": 4,
+      "iter1_y_sq2_attn": 3,
+      "iter2_y_sq_attn": 2,
+      "iter2_sum_s_attn": 2,
+      "iter2_affine_s_attn": 1,
+      "Boot1_s_iter2_attn": 14,
+      "iter2_invsqrt_attn": 9,
+      "iter2_ylam_attn": 2,
+      "iter2_y_sq2_attn": 1,
+      "Boot2_y_attn": 13,
+      "iter3_y_sq_attn": 12,
+      "iter3_sum_s_attn": 12,
+      "iter3_affine_s_attn": 11,
+      "iter3_invsqrt_attn": 6,
+      "iter3_ylam_attn": 5,
+      "iter3_S_attn": 4,
+      "conj_S_attn": 4,
+      "S_mask_attn": 3,
+      "conj_back_S_attn": 3,
+      "SV_mul_attn": 1,
+      "Boot1_SV_attn": 14,
+      "rotate_SV_attn": 14,
+      "x_SV_Wo_attn": 12,
+      "x_mask_attn": 11,
+      "add_out_attn": 11,
+      "x_mask2_attn": 10,
+      "sum_mu_attn": 10,
+      "mask_mu_attn": 9,
+      "div_768_attn": 8,
+      "add_z_attn": 8,
+      "mul_z_sq_attn": 7,
+      "mul_z_gamma_attn": 7,
+      "sum_y_attn": 7,
+      "mul_var_attn": 6,
+      "Boot1_var_attn": 14,
+      "invsqrt_var_attn": 9,
+      "mask_lam_attn": 8,
+      "mul_X_out_attn": 6,
+      "X_out_attn": 6
+    },
+    "edge_levels": [
+      {
+        "from": "X_in_attn",
+        "to": "Boot1_X_attn",
+        "ciphertexts": 4,
+        "level": 11
+      },
+      {
+        "from": "Boot1_X_attn",
+        "to": "ModSwitch_down8_attn",
+        "ciphertexts": 4,
+        "level": 14
+      },
+      {
+        "from": "Boot1_X_attn",
+        "to": "Conj_back_X_attn",
+        "ciphertexts": 4,
+        "level": 14
+      },
+      {
+        "from": "ModSwitch_down8_attn",
+        "to": "V_Wv_attn",
+        "ciphertexts": 4,
+        "level": 6
+      },
+      {
+        "from": "ModSwitch_down8_attn",
+        "to": "Q_Wq_attn",
+        "ciphertexts": 4,
+        "level": 6
+      },
+      {
+        "from": "ModSwitch_down8_attn",
+        "to": "K_Wk_attn",
+        "ciphertexts": 4,
+        "level": 6
+      },
+      {
+        "from": "Conj_back_X_attn",
+        "to": "X_div2_attn",
+        "ciphertexts": 8,
+        "level": 14
+      },
+      {
+        "from": "V_Wv_attn",
+        "to": "Conj_V_attn",
+        "ciphertexts": 4,
+        "level": 4
+      },
+      {
+        "from": "Q_Wq_attn",
+        "to": "QK_mul_attn",
+        "ciphertexts": 4,
+        "level": 4
+      },
+      {
+        "from": "K_Wk_attn",
+        "to": "QK_mul_attn",
+        "ciphertexts": 4,
+        "level": 4
+      },
+      {
+        "from": "QK_mul_attn",
+        "to": "Boot2_QK_attn",
+        "ciphertexts": 8,
+        "level": 0
+      },
+      {
+        "from": "Boot2_QK_attn",
+        "to": "qk_div2_attn",
+        "ciphertexts": 8,
+        "level": 13
+      },
+      {
+        "from": "qk_div2_attn",
+        "to": "qk_affine_attn",
+        "ciphertexts": 8,
+        "level": 12
+      },
+      {
+        "from": "qk_affine_attn",
+        "to": "exp_y_attn",
+        "ciphertexts": 8,
+        "level": 11
+      },
+      {
+        "from": "exp_y_attn",
+        "to": "mask_y_attn",
+        "ciphertexts": 8,
+        "level": 6
+      },
+      {
+        "from": "mask_y_attn",
+        "to": "iter1_y_sq_attn",
+        "ciphertexts": 8,
+        "level": 5
+      },
+      {
+        "from": "mask_y_attn",
+        "to": "iter1_ylam_attn",
+        "ciphertexts": 8,
+        "level": 5
+      },
+      {
+        "from": "iter1_y_sq_attn",
+        "to": "iter1_sum_s_attn",
+        "ciphertexts": 8,
+        "level": 4
+      },
+      {
+        "from": "iter1_sum_s_attn",
+        "to": "iter1_affine_s_attn",
+        "ciphertexts": 1,
+        "level": 4
+      },
+      {
+        "from": "iter1_affine_s_attn",
+        "to": "Boot1_s_iter1_attn",
+        "ciphertexts": 1,
+        "level": 3
+      },
+      {
+        "from": "Boot1_s_iter1_attn",
+        "to": "iter1_invsqrt_attn",
+        "ciphertexts": 1,
+        "level": 14
+      },
+      {
+        "from": "iter1_invsqrt_attn",
+        "to": "iter1_ylam_attn",
+        "ciphertexts": 1,
+        "level": 6
+      },
+      {
+        "from": "iter1_ylam_attn",
+        "to": "iter1_y_sq2_attn",
+        "ciphertexts": 8,
+        "level": 4
+      },
+      {
+        "from": "iter1_y_sq2_attn",
+        "to": "iter2_y_sq_attn",
+        "ciphertexts": 8,
+        "level": 3
+      },
+      {
+        "from": "iter1_y_sq2_attn",
+        "to": "iter2_ylam_attn",
+        "ciphertexts": 8,
+        "level": 3
+      },
+      {
+        "from": "iter2_y_sq_attn",
+        "to": "iter2_sum_s_attn",
+        "ciphertexts": 8,
+        "level": 2
+      },
+      {
+        "from": "iter2_sum_s_attn",
+        "to": "iter2_affine_s_attn",
+        "ciphertexts": 1,
+        "level": 2
+      },
+      {
+        "from": "iter2_affine_s_attn",
+        "to": "Boot1_s_iter2_attn",
+        "ciphertexts": 1,
+        "level": 1
+      },
+      {
+        "from": "Boot1_s_iter2_attn",
+        "to": "iter2_invsqrt_attn",
+        "ciphertexts": 1,
+        "level": 14
+      },
+      {
+        "from": "iter2_invsqrt_attn",
+        "to": "iter2_ylam_attn",
+        "ciphertexts": 1,
+        "level": 9
+      },
+      {
+        "from": "iter2_ylam_attn",
+        "to": "iter2_y_sq2_attn",
+        "ciphertexts": 8,
+        "level": 2
+      },
+      {
+        "from": "iter2_y_sq2_attn",
+        "to": "Boot2_y_attn",
+        "ciphertexts": 8,
+        "level": 1
+      },
+      {
+        "from": "Boot2_y_attn",
+        "to": "iter3_y_sq_attn",
+        "ciphertexts": 8,
+        "level": 13
+      },
+      {
+        "from": "Boot2_y_attn",
+        "to": "iter3_ylam_attn",
+        "ciphertexts": 8,
+        "level": 13
+      },
+      {
+        "from": "iter3_y_sq_attn",
+        "to": "iter3_sum_s_attn",
+        "ciphertexts": 8,
+        "level": 12
+      },
+      {
+        "from": "iter3_sum_s_attn",
+        "to": "iter3_affine_s_attn",
+        "ciphertexts": 1,
+        "level": 12
+      },
+      {
+        "from": "iter3_affine_s_attn",
+        "to": "iter3_invsqrt_attn",
+        "ciphertexts": 1,
+        "level": 11
+      },
+      {
+        "from": "iter3_invsqrt_attn",
+        "to": "iter3_ylam_attn",
+        "ciphertexts": 1,
+        "level": 6
+      },
+      {
+        "from": "iter3_ylam_attn",
+        "to": "iter3_S_attn",
+        "ciphertexts": 8,
+        "level": 5
+      },
+      {
+        "from": "iter3_S_attn",
+        "to": "conj_S_attn",
+        "ciphertexts": 8,
+        "level": 4
+      },
+      {
+        "from": "conj_S_attn",
+        "to": "S_mask_attn",
+        "ciphertexts": 4,
+        "level": 4
+      },
+      {
+        "from": "S_mask_attn",
+        "to": "conj_back_S_attn",
+        "ciphertexts": 64,
+        "level": 3
+      },
+      {
+        "from": "conj_back_S_attn",
+        "to": "SV_mul_attn",
+        "ciphertexts": 128,
+        "level": 3
+      },
+      {
+        "from": "Conj_V_attn",
+        "to": "SV_mul_attn",
+        "ciphertexts": 2,
+        "level": 4
+      },
+      {
+        "from": "SV_mul_attn",
+        "to": "Boot1_SV_attn",
+        "ciphertexts": 2,
+        "level": 1
+      },
+      {
+        "from": "Boot1_SV_attn",
+        "to": "rotate_SV_attn",
+        "ciphertexts": 2,
+        "level": 14
+      },
+      {
+        "from": "rotate_SV_attn",
+        "to": "x_SV_Wo_attn",
+        "ciphertexts": 32,
+        "level": 14
+      },
+      {
+        "from": "x_SV_Wo_attn",
+        "to": "x_mask_attn",
+        "ciphertexts": 8,
+        "level": 12
+      },
+      {
+        "from": "x_mask_attn",
+        "to": "add_out_attn",
+        "ciphertexts": 8,
+        "level": 11
+      },
+      {
+        "from": "X_div2_attn",
+        "to": "add_out_attn",
+        "ciphertexts": 8,
+        "level": 13
+      },
+      {
+        "from": "add_out_attn",
+        "to": "x_mask2_attn",
+        "ciphertexts": 8,
+        "level": 11
+      },
+      {
+        "from": "x_mask2_attn",
+        "to": "sum_mu_attn",
+        "ciphertexts": 8,
+        "level": 10
+      },
+      {
+        "from": "x_mask2_attn",
+        "to": "add_z_attn",
+        "ciphertexts": 8,
+        "level": 10
+      },
+      {
+        "from": "sum_mu_attn",
+        "to": "mask_mu_attn",
+        "ciphertexts": 1,
+        "level": 10
+      },
+      {
+        "from": "mask_mu_attn",
+        "to": "div_768_attn",
+        "ciphertexts": 1,
+        "level": 9
+      },
+      {
+        "from": "div_768_attn",
+        "to": "add_z_attn",
+        "ciphertexts": 1,
+        "level": 8
+      },
+      {
+        "from": "add_z_attn",
+        "to": "mul_z_sq_attn",
+        "ciphertexts": 8,
+        "level": 8
+      },
+      {
+        "from": "add_z_attn",
+        "to": "mul_z_gamma_attn",
+        "ciphertexts": 8,
+        "level": 8
+      },
+      {
+        "from": "mul_z_sq_attn",
+        "to": "sum_y_attn",
+        "ciphertexts": 8,
+        "level": 7
+      },
+      {
+        "from": "sum_y_attn",
+        "to": "mul_var_attn",
+        "ciphertexts": 1,
+        "level": 7
+      },
+      {
+        "from": "mul_var_attn",
+        "to": "Boot1_var_attn",
+        "ciphertexts": 1,
+        "level": 6
+      },
+      {
+        "from": "Boot1_var_attn",
+        "to": "invsqrt_var_attn",
+        "ciphertexts": 1,
+        "level": 14
+      },
+      {
+        "from": "invsqrt_var_attn",
+        "to": "mask_lam_attn",
+        "ciphertexts": 1,
+        "level": 9
+      },
+      {
+        "from": "mask_lam_attn",
+        "to": "mul_X_out_attn",
+        "ciphertexts": 1,
+        "level": 8
+      },
+      {
+        "from": "mul_z_gamma_attn",
+        "to": "mul_X_out_attn",
+        "ciphertexts": 8,
+        "level": 7
+      },
+      {
+        "from": "mul_X_out_attn",
+        "to": "X_out_attn",
+        "ciphertexts": 8,
+        "level": 6
+      }
+    ],
+    "node_latency_decimal_ms": {
+      "X_in_attn": "0",
+      "Boot1_X_attn": "4160.60",
+      "ModSwitch_down8_attn": "0",
+      "Conj_back_X_attn": "10.42",
+      "V_Wv_attn": "3994.91",
+      "Q_Wq_attn": "3994.91",
+      "K_Wk_attn": "3994.91",
+      "X_div2_attn": "1.3474",
+      "Conj_V_attn": "2.31",
+      "QK_mul_attn": "1958.82",
+      "Boot2_QK_attn": "5172.52",
+      "qk_div2_attn": "1.2811",
+      "qk_affine_attn": "1.2148",
+      "exp_y_attn": "1113.32",
+      "mask_y_attn": "0.8170",
+      "iter1_y_sq_attn": "0.7507",
+      "iter1_sum_s_attn": "4.06",
+      "iter1_affine_s_attn": "0.6844",
+      "Boot1_s_iter1_attn": "1040.15",
+      "iter1_invsqrt_attn": "8691.15",
+      "iter1_ylam_attn": "0.7507",
+      "iter1_y_sq2_attn": "0.6844",
+      "iter2_y_sq_attn": "0.6181",
+      "iter2_sum_s_attn": "4.06",
+      "iter2_affine_s_attn": "0.5518",
+      "Boot1_s_iter2_attn": "1040.15",
+      "iter2_invsqrt_attn": "1629.18",
+      "iter2_ylam_attn": "0.6181",
+      "iter2_y_sq2_attn": "0.5518",
+      "Boot2_y_attn": "5172.52",
+      "iter3_y_sq_attn": "1.2811",
+      "iter3_sum_s_attn": "4.06",
+      "iter3_affine_s_attn": "1.2148",
+      "iter3_invsqrt_attn": "1192.41",
+      "iter3_ylam_attn": "0.8170",
+      "iter3_S_attn": "0.7507",
+      "conj_S_attn": "2.31",
+      "S_mask_attn": "0.6844",
+      "conj_back_S_attn": "3.82",
+      "SV_mul_attn": "1862.85",
+      "Boot1_SV_attn": "2080.30",
+      "rotate_SV_attn": "0",
+      "x_SV_Wo_attn": "3727.08",
+      "x_mask_attn": "1.2148",
+      "add_out_attn": "0.0753",
+      "x_mask2_attn": "1.1485",
+      "sum_mu_attn": "4.06",
+      "mask_mu_attn": "1.0822",
+      "div_768_attn": "1.0159",
+      "add_z_attn": "0.0651",
+      "mul_z_sq_attn": "0.9496",
+      "mul_z_gamma_attn": "0.9496",
+      "sum_y_attn": "4.06",
+      "mul_var_attn": "0.8833",
+      "Boot1_var_attn": "1040.15",
+      "invsqrt_var_attn": "1629.18",
+      "mask_lam_attn": "1.0159",
+      "mul_X_out_attn": "0.8833",
+      "X_out_attn": "0"
+    },
+    "placement_chains": [
+      {
+        "from": "X_in_attn",
+        "to": "Conj_back_X_attn",
+        "inserted_nodes": [
+          "Boot1_X_attn"
+        ]
+      },
+      {
+        "from": "X_in_attn",
+        "to": "V_Wv_attn",
+        "inserted_nodes": [
+          "Boot1_X_attn",
+          "ModSwitch_down8_attn"
+        ]
+      },
+      {
+        "from": "X_in_attn",
+        "to": "Q_Wq_attn",
+        "inserted_nodes": [
+          "Boot1_X_attn",
+          "ModSwitch_down8_attn"
+        ]
+      },
+      {
+        "from": "X_in_attn",
+        "to": "K_Wk_attn",
+        "inserted_nodes": [
+          "Boot1_X_attn",
+          "ModSwitch_down8_attn"
+        ]
+      },
+      {
+        "from": "QK_mul_attn",
+        "to": "qk_div2_attn",
+        "inserted_nodes": [
+          "Boot2_QK_attn"
+        ]
+      },
+      {
+        "from": "iter1_affine_s_attn",
+        "to": "iter1_invsqrt_attn",
+        "inserted_nodes": [
+          "Boot1_s_iter1_attn"
+        ]
+      },
+      {
+        "from": "iter2_affine_s_attn",
+        "to": "iter2_invsqrt_attn",
+        "inserted_nodes": [
+          "Boot1_s_iter2_attn"
+        ]
+      },
+      {
+        "from": "iter2_y_sq2_attn",
+        "to": "iter3_y_sq_attn",
+        "inserted_nodes": [
+          "Boot2_y_attn"
+        ]
+      },
+      {
+        "from": "iter2_y_sq2_attn",
+        "to": "iter3_ylam_attn",
+        "inserted_nodes": [
+          "Boot2_y_attn"
+        ]
+      },
+      {
+        "from": "SV_mul_attn",
+        "to": "rotate_SV_attn",
+        "inserted_nodes": [
+          "Boot1_SV_attn"
+        ]
+      },
+      {
+        "from": "mul_var_attn",
+        "to": "invsqrt_var_attn",
+        "inserted_nodes": [
+          "Boot1_var_attn"
+        ]
+      }
+    ],
+    "structural_and_level_checks_passed": true
+  },
+  "baseline_teacher_latency_ms": 53558.1718,
+  "baseline_teacher_absolute_error_ms": "0.0000",
+  "current_costs": {
+    "ordinary_ms": "24951.7264",
+    "bootstrap1_ms": "6240.90",
+    "bootstrap2_ms": "10345.04",
+    "modswitch_ms": "0",
+    "total_ms": "41537.6664"
+  },
+  "baseline_costs": {
+    "ordinary_ms": "33851.7818",
+    "bootstrap1_ms": "9361.35",
+    "bootstrap2_ms": "10345.04",
+    "modswitch_ms": "0",
+    "total_ms": "53558.1718"
+  },
+  "historical_exact_objective_matched": true,
+  "optimised_teacher_absolute_error_ms": "1E-11",
+  "baseline_check_wall_seconds": 0.0006582999922102317,
+  "baseline_check_cpu_seconds": 0.0,
+  "verification_body_wall_seconds": 0.2896586999995634,
+  "verification_body_cpu_seconds": 0.28125,
+  "timing_scope": "No-search verification body; baseline check is nested; excludes imports, output writing and process exit. Outer receipts cover complete attempt.",
+  "completed_before_write_at_utc": "2026-10-04T16:12:59.465742+00:00"
+}

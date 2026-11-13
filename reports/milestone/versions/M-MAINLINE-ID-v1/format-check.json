@@ -1,0 +1,179 @@
+{
+  "artifact_version": "M-MAINLINE-ID-v1",
+  "checked_at_utc": "2026-10-04T09:26:46.927463+00:00",
+  "checker_sha256": "66d198487999bba5caaec67853e0e5f6391d2eacce8a83040a8b993e961dd58e",
+  "source_sha256": "5aeda83b020480d3587aa172ce033f6674f5d380bd5e4348833820f560f2b8c5",
+  "pdf_sha256": "08e035e83b8a7393dfcc44cfbf995aeb8f7ab2bf0b48bd4ba1b31c24b654a50d",
+  "build_info_sha256": "3dc79c6e678a26cb788bd1f55b86de388459ff7d2a5fc43f959fea8d7dd19920",
+  "page_count": 4,
+  "page_size": "A4",
+  "font_sizes_points": [
+    12.0
+  ],
+  "used_fonts_embedded": {
+    "AAAAAA+TimesNewRomanPSMT": true,
+    "AAAAAA+TimesNewRomanPS-BoldMT": true
+  },
+  "configured_margins_cm": [
+    2.5,
+    2.5,
+    2.5,
+    2.5
+  ],
+  "all_text_inside_margins": true,
+  "configured_body_leading_points": 12,
+  "observed_line_top_differences_points": {
+    "1.14": 1,
+    "4.54": 1,
+    "7.94": 1,
+    "12.0": 96,
+    "17.0": 1,
+    "18.0": 9,
+    "19.0": 19,
+    "22.0": 4,
+    "24.0": 2,
+    "27.0": 1,
+    "29.0": 1,
+    "30.06": 1,
+    "46.46": 1,
+    "49.86": 1,
+    "62.15": 1,
+    "193.15": 1,
+    "224.15": 1,
+    "237.15": 1
+  },
+  "page_checks": [
+    {
+      "page": 1,
+      "size_points": [
+        595.2756,
+        841.8898
+      ],
+      "text_bbox_points": [
+        70.86614,
+        73.45604360000004,
+        524.4094435999999,
+        770.6135036000001
+      ]
+    },
+    {
+      "page": 2,
+      "size_points": [
+        595.2756,
+        841.8898
+      ],
+      "text_bbox_points": [
+        70.86614,
+        73.45604360000004,
+        524.409457,
+        770.6135036000001
+      ]
+    },
+    {
+      "page": 3,
+      "size_points": [
+        595.2756,
+        841.8898
+      ],
+      "text_bbox_points": [
+        70.86614,
+        73.45604360000004,
+        524.3407568,
+        770.6135036000001
+      ]
+    },
+    {
+      "page": 4,
+      "size_points": [
+        595.2756,
+        841.8898
+      ],
+      "text_bbox_points": [
+        70.86614,
+        73.45604360000004,
+        522.3837236,
+        770.6135036000001
+      ]
+    }
+  ],
+  "all_source_prose_found": true,
+  "all_identity_lines_and_pairings_found": true,
+  "formal_identity_complete": true,
+  "provenance_checks": {
+    "source": true,
+    "pdf": true,
+    "generator": true,
+    "source_index": true,
+    "identity": true,
+    "source_run": true,
+    "version": true,
+    "new_document": true,
+    "source_path": true,
+    "numeric_commit": true,
+    "numeric_source": true,
+    "scope": true,
+    "saved_cases": true,
+    "dependency_hashes": true
+  },
+  "result_rows": [
+    [
+      "Block, inputs",
+      "Latency (ms)",
+      "Reduction (%)",
+      "B1 / B2"
+    ],
+    [
+      "MLP, 0-13",
+      "26069.9524",
+      "7.3223-7.3291",
+      "4 / 4"
+    ],
+    [
+      "MLP, 14",
+      "21911.5924",
+      "22.1113",
+      "0 / 4"
+    ],
+    [
+      "Attention, 0-5",
+      "45698.2664",
+      "14.6755",
+      "10 / 8"
+    ],
+    [
+      "Attention, 6-14",
+      "41537.6664",
+      "22.4438",
+      "6 / 8"
+    ]
+  ],
+  "resolved_fields": {
+    "SOLVE_SUM": "10.6445",
+    "RSS_MIB": "118.36",
+    "MLP_MIN": "0.0075",
+    "MLP_MAX": "0.0132",
+    "ATTN_MIN": "0.5166",
+    "ATTN_MAX": "0.9656"
+  },
+  "figure_points": 30,
+  "automated_checks_passed": true,
+  "visual_review": {
+    "passed": true,
+    "reviewer": "assistant full-page visual inspection",
+    "reviewed_date": "2026-10-04",
+    "all_pages_inspected": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "render_dpi": 150,
+    "scope": "Final PDF pages inspected in full: identities, complete prose, table, 30-condition chart, captions, headings and footers. No clipping, overlap or missing glyphs observed.",
+    "pdf_sha256": "08e035e83b8a7393dfcc44cfbf995aeb8f7ab2bf0b48bd4ba1b31c24b654a50d"
+  },
+  "formal_submission_ready": false,
+  "submission_authorized": false,
+  "submitted": false,
+  "human_review": "pending",
+  "limits": "Document and saved-file checks; no new optimisation, scoring, S6 reproduction or human acceptance."
+}

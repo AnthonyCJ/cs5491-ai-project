@@ -1,0 +1,276 @@
+{
+  "conditions": [
+    {
+      "case_id": "mlp-L00",
+      "state": "passed",
+      "run_attempt": "R201",
+      "verify_attempt": "V201",
+      "output": "results/T2-FORMAL-20261004-004/runs/mlp-L00-R201",
+      "check": "results/T2-FORMAL-20261004-004/checks/mlp-L00-V201.json",
+      "error": null
+    },
+    {
+      "case_id": "mlp-L01",
+      "state": "passed",
+      "run_attempt": "R202",
+      "verify_attempt": "V202",
+      "output": "results/T2-FORMAL-20261004-004/runs/mlp-L01-R202",
+      "check": "results/T2-FORMAL-20261004-004/checks/mlp-L01-V202.json",
+      "error": null
+    },
+    {
+      "case_id": "mlp-L02",
+      "state": "passed",
+      "run_attempt": "R203",
+      "verify_attempt": "V203",
+      "output": "results/T2-FORMAL-20261004-004/runs/mlp-L02-R203",
+      "check": "results/T2-FORMAL-20261004-004/checks/mlp-L02-V203.json",
+      "error": null
+    },
+    {
+      "case_id": "mlp-L03",
+      "state": "passed",
+      "run_attempt": "R204",
+      "verify_attempt": "V204",
+      "output": "results/T2-FORMAL-20261004-004/runs/mlp-L03-R204",
+      "check": "results/T2-FORMAL-20261004-004/checks/mlp-L03-V204.json",
+      "error": null
+    },
+    {
+      "case_id": "mlp-L04",
+      "state": "passed",
+      "run_attempt": "R205",
+      "verify_attempt": "V205",
+      "output": "results/T2-FORMAL-20261004-004/runs/mlp-L04-R205",
+      "check": "results/T2-FORMAL-20261004-004/checks/mlp-L04-V205.json",
+      "error": null
+    },
+    {
+      "case_id": "mlp-L05",
+      "state": "passed",
+      "run_attempt": "R206",
+      "verify_attempt": "V206",
+      "output": "results/T2-FORMAL-20261004-004/runs/mlp-L05-R206",
+      "check": "results/T2-FORMAL-20261004-004/checks/mlp-L05-V206.json",
+      "error": null
+    },
+    {
+      "case_id": "mlp-L06",
+      "state": "passed",
+      "run_attempt": "R207",
+      "verify_attempt": "V207",
+      "output": "results/T2-FORMAL-20261004-004/runs/mlp-L06-R207",
+      "check": "results/T2-FORMAL-20261004-004/checks/mlp-L06-V207.json",
+      "error": null
+    },
+    {
+      "case_id": "mlp-L07",
+      "state": "passed",
+      "run_attempt": "R208",
+      "verify_attempt": "V208",
+      "output": "results/T2-FORMAL-20261004-004/runs/mlp-L07-R208",
+      "check": "results/T2-FORMAL-20261004-004/checks/mlp-L07-V208.json",
+      "error": null
+    },
+    {
+      "case_id": "mlp-L08",
+      "state": "passed",
+      "run_attempt": "R209",
+      "verify_attempt": "V209",
+      "output": "results/T2-FORMAL-20261004-004/runs/mlp-L08-R209",
+      "check": "results/T2-FORMAL-20261004-004/checks/mlp-L08-V209.json",
+      "error": null
+    },
+    {
+      "case_id": "mlp-L09",
+      "state": "passed",
+      "run_attempt": "R210",
+      "verify_attempt": "V210",
+      "output": "results/T2-FORMAL-20261004-004/runs/mlp-L09-R210",
+      "check": "results/T2-FORMAL-20261004-004/checks/mlp-L09-V210.json",
+      "error": null
+    },
+    {
+      "case_id": "mlp-L10",
+      "state": "passed",
+      "run_attempt": "R211",
+      "verify_attempt": "V211",
+      "output": "results/T2-FORMAL-20261004-004/runs/mlp-L10-R211",
+      "check": "results/T2-FORMAL-20261004-004/checks/mlp-L10-V211.json",
+      "error": null
+    },
+    {
+      "case_id": "mlp-L11",
+      "state": "passed",
+      "run_attempt": "R212",
+      "verify_attempt": "V212",
+      "output": "results/T2-FORMAL-20261004-004/runs/mlp-L11-R212",
+      "check": "results/T2-FORMAL-20261004-004/checks/mlp-L11-V212.json",
+      "error": null
+    },
+    {
+      "case_id": "mlp-L12",
+      "state": "passed",
+      "run_attempt": "R213",
+      "verify_attempt": "V213",
+      "output": "results/T2-FORMAL-20261004-004/runs/mlp-L12-R213",
+      "check": "results/T2-FORMAL-20261004-004/checks/mlp-L12-V213.json",
+      "error": null
+    },
+    {
+      "case_id": "mlp-L13",
+      "state": "passed",
+      "run_attempt": "R214",
+      "verify_attempt": "V214",
+      "output": "results/T2-FORMAL-20261004-004/runs/mlp-L13-R214",
+      "check": "results/T2-FORMAL-20261004-004/checks/mlp-L13-V214.json",
+      "error": null
+    },
+    {
+      "case_id": "mlp-L14",
+      "state": "passed",
+      "run_attempt": "R215",
+      "verify_attempt": "V215",
+      "output": "results/T2-FORMAL-20261004-004/runs/mlp-L14-R215",
+      "check": "results/T2-FORMAL-20261004-004/checks/mlp-L14-V215.json",
+      "error": null
+    },
+    {
+      "case_id": "attention-L00",
+      "state": "passed",
+      "run_attempt": "R216",
+      "verify_attempt": "V216",
+      "output": "results/T2-FORMAL-20261004-004/runs/attention-L00-R216",
+      "check": "results/T2-FORMAL-20261004-004/checks/attention-L00-V216.json",
+      "error": null
+    },
+    {
+      "case_id": "attention-L01",
+      "state": "passed",
+      "run_attempt": "R217",
+      "verify_attempt": "V217",
+      "output": "results/T2-FORMAL-20261004-004/runs/attention-L01-R217",
+      "check": "results/T2-FORMAL-20261004-004/checks/attention-L01-V217.json",
+      "error": null
+    },
+    {
+      "case_id": "attention-L02",
+      "state": "passed",
+      "run_attempt": "R218",
+      "verify_attempt": "V218",
+      "output": "results/T2-FORMAL-20261004-004/runs/attention-L02-R218",
+      "check": "results/T2-FORMAL-20261004-004/checks/attention-L02-V218.json",
+      "error": null
+    },
+    {
+      "case_id": "attention-L03",
+      "state": "passed",
+      "run_attempt": "R219",
+      "verify_attempt": "V219",
+      "output": "results/T2-FORMAL-20261004-004/runs/attention-L03-R219",
+      "check": "results/T2-FORMAL-20261004-004/checks/attention-L03-V219.json",
+      "error": null
+    },
+    {
+      "case_id": "attention-L04",
+      "state": "passed",
+      "run_attempt": "R220",
+      "verify_attempt": "V220",
+      "output": "results/T2-FORMAL-20261004-004/runs/attention-L04-R220",
+      "check": "results/T2-FORMAL-20261004-004/checks/attention-L04-V220.json",
+      "error": null
+    },
+    {
+      "case_id": "attention-L05",
+      "state": "passed",
+      "run_attempt": "R221",
+      "verify_attempt": "V221",
+      "output": "results/T2-FORMAL-20261004-004/runs/attention-L05-R221",
+      "check": "results/T2-FORMAL-20261004-004/checks/attention-L05-V221.json",
+      "error": null
+    },
+    {
+      "case_id": "attention-L06",
+      "state": "passed",
+      "run_attempt": "R222",
+      "verify_attempt": "V222",
+      "output": "results/T2-FORMAL-20261004-004/runs/attention-L06-R222",
+      "check": "results/T2-FORMAL-20261004-004/checks/attention-L06-V222.json",
+      "error": null
+    },
+    {
+      "case_id": "attention-L07",
+      "state": "passed",
+      "run_attempt": "R223",
+      "verify_attempt": "V223",
+      "output": "results/T2-FORMAL-20261004-004/runs/attention-L07-R223",
+      "check": "results/T2-FORMAL-20261004-004/checks/attention-L07-V223.json",
+      "error": null
+    },
+    {
+      "case_id": "attention-L08",
+      "state": "passed",
+      "run_attempt": "R224",
+      "verify_attempt": "V224",
+      "output": "results/T2-FORMAL-20261004-004/runs/attention-L08-R224",
+      "check": "results/T2-FORMAL-20261004-004/checks/attention-L08-V224.json",
+      "error": null
+    },
+    {
+      "case_id": "attention-L09",
+      "state": "passed",
+      "run_attempt": "R225",
+      "verify_attempt": "V225",
+      "output": "results/T2-FORMAL-20261004-004/runs/attention-L09-R225",
+      "check": "results/T2-FORMAL-20261004-004/checks/attention-L09-V225.json",
+      "error": null
+    },
+    {
+      "case_id": "attention-L10",
+      "state": "passed",
+      "run_attempt": "R226",
+      "verify_attempt": "V226",
+      "output": "results/T2-FORMAL-20261004-004/runs/attention-L10-R226",
+      "check": "results/T2-FORMAL-20261004-004/checks/attention-L10-V226.json",
+      "error": null
+    },
+    {
+      "case_id": "attention-L11",
+      "state": "passed",
+      "run_attempt": "R227",
+      "verify_attempt": "V227",
+      "output": "results/T2-FORMAL-20261004-004/runs/attention-L11-R227",
+      "check": "results/T2-FORMAL-20261004-004/checks/attention-L11-V227.json",
+      "error": null
+    },
+    {
+      "case_id": "attention-L12",
+      "state": "passed",
+      "run_attempt": "R228",
+      "verify_attempt": "V228",
+      "output": "results/T2-FORMAL-20261004-004/runs/attention-L12-R228",
+      "check": "results/T2-FORMAL-20261004-004/checks/attention-L12-V228.json",
+      "error": null
+    },
+    {
+      "case_id": "attention-L13",
+      "state": "passed",
+      "run_attempt": "R229",
+      "verify_attempt": "V229",
+      "output": "results/T2-FORMAL-20261004-004/runs/attention-L13-R229",
+      "check": "results/T2-FORMAL-20261004-004/checks/attention-L13-V229.json",
+      "error": null
+    },
+    {
+      "case_id": "attention-L14",
+      "state": "passed",
+      "run_attempt": "R230",
+      "verify_attempt": "V230",
+      "output": "results/T2-FORMAL-20261004-004/runs/attention-L14-R230",
+      "check": "results/T2-FORMAL-20261004-004/checks/attention-L14-V230.json",
+      "error": null
+    }
+  ],
+  "experiment": "T2-FORMAL-20261004-004",
+  "updated_at": "2026-10-05T00:13:20.9943180+08:00"
+}

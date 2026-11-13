@@ -1,0 +1,89 @@
+{
+  "artifact_version": "P-TERMS-ID-v1",
+  "checked_at_utc": "2026-10-15T01:43:38.283797+00:00",
+  "checker_sha256": "7b7171fb62fdf7fcfab4c5678f2bcd905037bd2429b28ef0ded6a0c86ee96b6c",
+  "source_sha256": "ac986b52dcb32d9baf870a428920f5877d5bccc1511ed9f9932ba2b872708335",
+  "pdf_sha256": "1c6d1af4a40b8f9585ef02a95e5764fff490730e5ef1115590a11f3ec9d93f2f",
+  "build_info_sha256": "7e666993d7feea621347ab2fbdb8f85ced8864694fbc08b404b1e430b923090e",
+  "page_count": 1,
+  "page_size": "A4",
+  "font_sizes_points": [
+    12.0
+  ],
+  "used_fonts_embedded": {
+    "AAAAAA+TimesNewRomanPS-BoldMT": true,
+    "AAAAAA+TimesNewRomanPSMT": true
+  },
+  "configured_margins_cm": [
+    2.5,
+    2.5,
+    2.5,
+    2.5
+  ],
+  "all_text_inside_margins": true,
+  "configured_body_leading_points": 12,
+  "observed_line_top_differences_points": {
+    "12.0": 35,
+    "17.0": 5,
+    "19.0": 5
+  },
+  "page_checks": [
+    {
+      "page": 1,
+      "size_points": [
+        595.2756,
+        841.8898
+      ],
+      "text_bbox_points": [
+        70.86614,
+        73.45604360000004,
+        524.4094548,
+        685.4560436
+      ]
+    }
+  ],
+  "all_source_prose_found": true,
+  "all_identity_lines_and_pairings_found": true,
+  "formal_identity_complete": true,
+  "provenance_checks": {
+    "source": true,
+    "pdf": true,
+    "generator": true,
+    "source_index": true,
+    "identity": true,
+    "formal_summary": true,
+    "formal_protocol": true,
+    "analysis_manifest": true,
+    "version": true,
+    "new_document": true,
+    "source_path": true,
+    "formal_experiment": true,
+    "saved_packages": true,
+    "scope": true,
+    "saved_rows": true,
+    "dependency_hashes": true
+  },
+  "displayed_reduction_ranges": {
+    "mlp": "7.32-22.11%",
+    "attention": "14.68-22.44%"
+  },
+  "automated_checks_passed": true,
+  "no_embedded_attachments": true,
+  "metadata_has_no_private_paths": true,
+  "visual_review": {
+    "passed": true,
+    "reviewed_at_utc": "2026-10-15T01:46:47.515190+00:00",
+    "reviewer": "assistant full-page visual inspection via view_image",
+    "page_count": 1,
+    "render_dpi": 150,
+    "render_sha256": "cf11929a0c9b8db8c60381177fb971d7eaa36ba381a215c336d822a7abcce566",
+    "findings": "Actual final full-page rendering inspected: title, approved identities and four complete sections are legible; no clipping, overlap, missing glyphs or text outside the required margins. The inline count and budget definitions display correctly.",
+    "human_acceptance": false
+  },
+  "formal_submission_ready": false,
+  "latest_canvas_requirements_verified": false,
+  "submission_authorized": false,
+  "submitted": false,
+  "human_review": "pending",
+  "limits": "Document and saved-file checks; no new optimisation, scoring, S6 reproduction or human acceptance."
+}

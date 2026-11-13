@@ -1,9 +1,3 @@
-* text=auto
-*.py text eol=lf
-*.md text eol=lf
-*.json text eol=lf
-*.csv text eol=lf
-*.txt text eol=lf
-vendor/dag_builder.py -text
-results/** -text
-figures/** -text
+# Preserve exact reviewed bytes, including frozen source and report line endings.
+# Text files remain diffable; only Git line-ending conversion is disabled.
+* -text

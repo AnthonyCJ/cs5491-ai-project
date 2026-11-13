@@ -1,0 +1,44 @@
+{
+  "experiment": "T2-FORMAL-20261004-001",
+  "schema_version": 1,
+  "stage": "S4",
+  "task": "T2",
+  "method": "shared-refresh-cp-sat-v1",
+  "conditions": 30,
+  "order": "mlp 0..14, then attention 0..14",
+  "core_entry": "run_optimizer.py",
+  "compatibility_stage": "S2 only in unchanged raw interface",
+  "baseline": "S1-BL-001 fixed placements, re-audited and rescored during each new verification",
+  "history": "S3-OPT-001 exact objective continuity",
+  "solver": {
+    "seed": 5491,
+    "absolute_gap": 0,
+    "time_limit_seconds": 60.0,
+    "relative_gap": 0,
+    "workers": 1
+  },
+  "cost_scale": 10000,
+  "teacher_tolerance_ms": "0.0000001",
+  "formal_repeats": 1,
+  "baseline_hint_and_upper_bound": true,
+  "environment": "Existing CPython 3.13.9, requirements-s2.txt (19 pinned packages)",
+  "gpu_used": false,
+  "real_fhe": false,
+  "probe_plan": [
+    "P001 normal import/write/exit without solve or scoring",
+    "P002 deliberately timed-out worker, no numerical imports"
+  ],
+  "limits": {
+    "solver_seconds": 60,
+    "normal_run_seconds": 90,
+    "verification_seconds": 30,
+    "exit_confirmation_seconds": 15,
+    "attempt_wall_sum_seconds": 2400,
+    "sampled_python_rss_stop_bytes": 1073741824,
+    "solver_calls_max": 32,
+    "normal_conditions": 30,
+    "rss_sample_target_seconds": 0.02
+  },
+  "scope": "Formal numerical comparison and scoped local resource observations; analysis, placement figures and independent reproduction remain separate",
+  "human_acceptance": "pending"
+}

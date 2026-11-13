@@ -1,0 +1,27 @@
+{
+  "artifact_version": "P-MAINLINE-ID-v2",
+  "checked_at_utc": "2026-10-04T05:39:26.825329+00:00",
+  "same_document_environment": true,
+  "regeneration_output": "results/local-proposal-v2-regeneration/proposal.pdf",
+  "commands_from_repository_root": [
+    "python -B reports/proposal/versions/P-MAINLINE-ID-v2/build_proposal.py --output results/local-proposal-v2-regeneration/proposal.pdf",
+    "python -B reports/proposal/versions/P-MAINLINE-ID-v2/check_proposal.py --directory results/local-proposal-v2-regeneration",
+    "pdftoppm -r 150 -png results/local-proposal-v2-regeneration/proposal.pdf results/local-proposal-v2-regeneration/page"
+  ],
+  "source_sha256": "f315900449c0fca2c7bd7bd2ddf275d9a440075bf878768a4d8f5d45d468370c",
+  "canonical_pdf_sha256": "040df5e91485f2c1fc3cf5c8fe04899ef42491ec2c4b89a3d8cb6fc124f56fea",
+  "regenerated_pdf_sha256": "8ec403e9a7e87f8642b373a3bd8e010693ab574bcf26cea898640f659c6b2de1",
+  "canonical_render_sha256": "4e645740861e3fb8215da7798722ef845b5c538be3c25526fd5c58def39fa0af",
+  "regenerated_render_sha256": "4e645740861e3fb8215da7798722ef845b5c538be3c25526fd5c58def39fa0af",
+  "render_byte_identical": true,
+  "canonical_and_regenerated_format_checks_passed": true,
+  "source_and_identity_text_match": true,
+  "canonical_format_check_sha256": "1793df1fb09eb95d9f62e3bb26809823cbd9841d1bc974e3e670d7593cb215a0",
+  "regenerated_format_check_sha256": "fd88dfe1d4d902036ddb96a424bd8718ac045c2d6ee96bdbbf9f02f303c097ee",
+  "pdf_metadata_timestamps_may_differ": true,
+  "new_search_or_scoring": false,
+  "independent_environment_tested": false,
+  "relocated_repository_tested": false,
+  "human_acceptance": false,
+  "limits": "Local document regeneration only, not algorithm validation, current solver readiness or S6 reproduction."
+}

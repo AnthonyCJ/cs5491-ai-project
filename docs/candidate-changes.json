@@ -1,0 +1,202 @@
+{
+  "candidate": "ENGINEERING-CANDIDATE-20261113-01",
+  "R7_manifest_sha256": "0cac1ee87debe6ec71065536fa385dc94836d7329c23bf8fb392d90eb3ef5dd4",
+  "retained_history": {
+    "commit_count": 9,
+    "tip": "aa89f7bb870b1f11d305946f007b1cbb76073b2f",
+    "rewritten": false
+  },
+  "changed_from_R7": [
+    {
+      "path": ".gitattributes",
+      "R7_sha256": "5df93357fa5b3fb1d431f4a4d55bd064f278ea6beafe7cd4e3d7c0cc414ec619",
+      "candidate_sha256": "62483b184c54af3718af21929dc17c2c9d6524733b1baf69d6632d64b1f6c72c",
+      "reason": "Byte-preservation configuration"
+    },
+    {
+      "path": ".gitignore",
+      "R7_sha256": "bfe3eaaa96d140038d1dd9f63ecdbe158af7b0ed38809074402070591094d8d8",
+      "candidate_sha256": "c2410c75ef451d7d6cda1d0a57d44af5be31b55c2cf1131bad57705d76f600b6",
+      "reason": "Public preparation instructions, current evidence/permission/version navigation, or safe local-output exclusions"
+    },
+    {
+      "path": "README.md",
+      "R7_sha256": "1405ea565c8875f7f8d23fcbeb7859b90fe5ad023563a73c57ce9dc63767089d",
+      "candidate_sha256": "a52e2beb7f3f60832bd74707da925c1416437699538752da3f157272cc98d5eb",
+      "reason": "Public preparation instructions, current evidence/permission/version navigation, or safe local-output exclusions"
+    },
+    {
+      "path": "docs/claim-evidence.json",
+      "R7_sha256": "261bdc2d997d95dcfcf719ea827f70827adbe308fc8dafdd3423501ce0a812da",
+      "candidate_sha256": "2557c428bb5b21fa7665b02ade8073e8860f6bf62a3d5a88b3f3276a7168c627",
+      "reason": "Public preparation instructions, current evidence/permission/version navigation, or safe local-output exclusions"
+    },
+    {
+      "path": "docs/existing-environment.md",
+      "R7_sha256": "06f48cdf575b8ba9c7e37c9eb3b8e1c2e35dd076c70d251b95813c17931b2d16",
+      "candidate_sha256": "3f4c44a2543a4dad221e3146364df4f9a64dbca84cf08e195eb6c67b7880fa47",
+      "reason": "Public preparation instructions, current evidence/permission/version navigation, or safe local-output exclusions"
+    },
+    {
+      "path": "docs/grading.md",
+      "R7_sha256": "00ce936b8bf93708c536cb0be969d68cd6f644619f98f160039f6fe7a537795f",
+      "candidate_sha256": "4e089ac167382e2828c2bd1167336944fecc028c16a4e575335c27878666e941",
+      "reason": "Public preparation instructions, current evidence/permission/version navigation, or safe local-output exclusions"
+    },
+    {
+      "path": "docs/installation-unverified.md",
+      "R7_sha256": "7b1acedf930f99ab0d1a7b5fa7d5c0e71545b1b2c6e9bb0bef73f95a566a4af3",
+      "candidate_sha256": "3e2113fdd56de2b86ae67badd1b34f3cb795682b07d7fcf30debac70a663f494",
+      "reason": "Public preparation instructions, current evidence/permission/version navigation, or safe local-output exclusions"
+    },
+    {
+      "path": "docs/public-scope.md",
+      "R7_sha256": "a546151ed9721a60a2295b9478e33a77a2780d1b8b43dbb206c2c412f40efe48",
+      "candidate_sha256": "6c4a68b97db2c85157fa704b7e94b8c5c651d34f526ad08663be0f2d6ac5a336",
+      "reason": "Public preparation instructions, current evidence/permission/version navigation, or safe local-output exclusions"
+    },
+    {
+      "path": "docs/reader-acceptance.md",
+      "R7_sha256": "2f79098a82cf6e6697d99010f3b4f9b29f517b56ded3fccea19ff435d07d7a65",
+      "candidate_sha256": "f3d3a7de40266dfd83fda7c3691acf7276739e56548794cfa21d760461617632",
+      "reason": "Public preparation instructions, current evidence/permission/version navigation, or safe local-output exclusions"
+    },
+    {
+      "path": "docs/reader-visual.md",
+      "R7_sha256": "865b27a73b6c708c54c09e45c035d9365c89863004a19d8e25e69573f8398a0b",
+      "candidate_sha256": "12ff24f21773575689fc130093ab921a7c12be5fa209de39977a5e14ce0d1bdb",
+      "reason": "Public preparation instructions, current evidence/permission/version navigation, or safe local-output exclusions"
+    },
+    {
+      "path": "docs/reproduction.md",
+      "R7_sha256": "56b7d0fc8774470764670afea70ab83324edd6b82c3dd7e09505b9f9c1b844bc",
+      "candidate_sha256": "9ed94f0aa7c2fc2b09f3daae180bec4b7f644222b52f470503cb0628bb8481a8",
+      "reason": "Public preparation instructions, current evidence/permission/version navigation, or safe local-output exclusions"
+    },
+    {
+      "path": "docs/version-map.md",
+      "R7_sha256": "ce8808caa8ab6d47708ebd05d211b33747746c91ac6b047430723a804de113ac",
+      "candidate_sha256": "3541d2108befc9e703d21dcbba47e56bf9d9bf993ab044f5bf06bfc22403cb6d",
+      "reason": "Public preparation instructions, current evidence/permission/version navigation, or safe local-output exclusions"
+    },
+    {
+      "path": "reports/README.md",
+      "R7_sha256": "7e83449c768d2b5024af35a409e25f5a9a8629aa36e3af277edff9ab5fad0624",
+      "candidate_sha256": "e5ea2e59008ce6c9f6b349b9b0855fd762fec4211fe6d4c8ea7816f117e20b69",
+      "reason": "Public preparation instructions, current evidence/permission/version navigation, or safe local-output exclusions"
+    },
+    {
+      "path": "reports/proposal/README.md",
+      "R7_sha256": "d70b63029f71a8b028a3f66a35f2c1bd993620b49c6928a3c2f259404f4aff22",
+      "candidate_sha256": "51bc0a69ff7279b6b6a48b7d2287c56dd09e16b2080fde47ecf680fe23d1541b",
+      "reason": "Public preparation instructions, current evidence/permission/version navigation, or safe local-output exclusions"
+    },
+    {
+      "path": "vendor/README.md",
+      "R7_sha256": "cc99ee581bf52dfdb03a1262923739e81cce6f9717a3349854080a75b4ba0a22",
+      "candidate_sha256": "4d85864f52b32f19053380aef3358b4d281e0577f1ab017fe098db269bdf7b81",
+      "reason": "Public preparation instructions, current evidence/permission/version navigation, or safe local-output exclusions"
+    }
+  ],
+  "R7_files_not_published": [
+    "results/T4-DOC-CORRECTION-20261112-013/changes.json",
+    "results/T4-DOC-CORRECTION-20261112-013/changes.md",
+    "results/T4-DOC-CORRECTION-20261112-013/document-dependencies.json",
+    "results/T4-DOC-CORRECTION-20261112-013/evidence-basis.json",
+    "results/T4-DOC-CORRECTION-20261112-013/README.md",
+    "results/T4-DOC-CORRECTION-20261112-013/validation-status.json",
+    "results/T4-ENGINEERING-20261006-003/numerical-validation.json",
+    "results/T4-ENGINEERING-20261006-007/checks/static-content.json",
+    "results/T4-ENGINEERING-20261006-007/document-dependencies.json",
+    "results/T4-ENGINEERING-20261006-007/entry-checks/A701-R1/bootstrap.json",
+    "results/T4-ENGINEERING-20261006-007/entry-checks/A701-R1/cache-context.json",
+    "results/T4-ENGINEERING-20261006-007/entry-checks/A701-R1/cache-lifecycle.json",
+    "results/T4-ENGINEERING-20261006-007/entry-checks/A701-R1/environment.json",
+    "results/T4-ENGINEERING-20261006-007/entry-checks/A701-R1/receipt.json",
+    "results/T4-ENGINEERING-20261006-007/entry-checks/A701-R1/stderr.txt",
+    "results/T4-ENGINEERING-20261006-007/entry-checks/A701-R1/stdout.txt",
+    "results/T4-ENGINEERING-20261006-007/entry-checks/A701-R1/worker-result.json",
+    "results/T4-ENGINEERING-20261006-007/entry-checks/A702/bootstrap.json",
+    "results/T4-ENGINEERING-20261006-007/entry-checks/A702/environment.json",
+    "results/T4-ENGINEERING-20261006-007/entry-checks/A702/receipt.json",
+    "results/T4-ENGINEERING-20261006-007/entry-checks/A702/saved-check.json",
+    "results/T4-ENGINEERING-20261006-007/entry-checks/A702/stderr.txt",
+    "results/T4-ENGINEERING-20261006-007/entry-checks/A702/stdout.txt",
+    "results/T4-ENGINEERING-20261006-007/entry-checks/A702/worker-result.json",
+    "results/T4-ENGINEERING-20261006-007/entry-checks/A703/bootstrap.json",
+    "results/T4-ENGINEERING-20261006-007/entry-checks/A703/environment.json",
+    "results/T4-ENGINEERING-20261006-007/entry-checks/A703/expected-failure.json",
+    "results/T4-ENGINEERING-20261006-007/entry-checks/A703/receipt.json",
+    "results/T4-ENGINEERING-20261006-007/entry-checks/A703/stderr.txt",
+    "results/T4-ENGINEERING-20261006-007/entry-checks/A703/stdout.txt",
+    "results/T4-ENGINEERING-20261006-007/entry-checks/A703/worker-result.json",
+    "results/T4-ENGINEERING-20261006-007/entry-checks/A704/bootstrap.json",
+    "results/T4-ENGINEERING-20261006-007/entry-checks/A704/environment.json",
+    "results/T4-ENGINEERING-20261006-007/entry-checks/A704/expected-failure.json",
+    "results/T4-ENGINEERING-20261006-007/entry-checks/A704/receipt.json",
+    "results/T4-ENGINEERING-20261006-007/entry-checks/A704/stderr.txt",
+    "results/T4-ENGINEERING-20261006-007/entry-checks/A704/stdout.txt",
+    "results/T4-ENGINEERING-20261006-007/entry-checks/A704/worker-result.json",
+    "results/T4-ENGINEERING-20261006-007/entry-checks/A705/bootstrap.json",
+    "results/T4-ENGINEERING-20261006-007/entry-checks/A705/environment.json",
+    "results/T4-ENGINEERING-20261006-007/entry-checks/A705/receipt.json",
+    "results/T4-ENGINEERING-20261006-007/entry-checks/A705/stderr.txt",
+    "results/T4-ENGINEERING-20261006-007/entry-checks/A705/stdout.txt",
+    "results/T4-ENGINEERING-20261006-007/entry-checks/A705/stop.json",
+    "results/T4-ENGINEERING-20261006-007/entry-checks/A705/timeout-entered.json",
+    "results/T4-ENGINEERING-20261006-007/entry-checks/A705/worker-result.json",
+    "results/T4-ENGINEERING-20261006-007/entry-checks/index.json",
+    "results/T4-ENGINEERING-20261006-007/README.md",
+    "results/T4-ENGINEERING-20261006-007/validation-status.json",
+    "results/T4-ENGINEERING-20261006-008/changes.json",
+    "results/T4-ENGINEERING-20261006-008/changes.md",
+    "results/T4-ENGINEERING-20261006-008/checks/static-content.json",
+    "results/T4-ENGINEERING-20261006-008/README.md",
+    "results/T4-ENGINEERING-20261006-008/validation-status.json",
+    "results/T4-ENGINEERING-20261112-009/changes.json",
+    "results/T4-ENGINEERING-20261112-009/changes.md",
+    "results/T4-ENGINEERING-20261112-009/document-dependencies.json",
+    "results/T4-ENGINEERING-20261112-009/README.md",
+    "results/T4-ENGINEERING-20261112-009/validation-status.json",
+    "results/T4-ENGINEERING-20261112-010/changes.json",
+    "results/T4-ENGINEERING-20261112-010/changes.md",
+    "results/T4-ENGINEERING-20261112-010/document-dependencies.json",
+    "results/T4-ENGINEERING-20261112-010/README.md",
+    "results/T4-ENGINEERING-20261112-010/validation-status.json",
+    "results/T4-ENGINEERING-20261112-011/changes.json",
+    "results/T4-ENGINEERING-20261112-011/changes.md",
+    "results/T4-ENGINEERING-20261112-011/document-dependencies.json",
+    "results/T4-ENGINEERING-20261112-011/README.md",
+    "results/T4-ENGINEERING-20261112-011/validation-status.json",
+    "results/T4-ENGINEERING-20261112-012/changes.json",
+    "results/T4-ENGINEERING-20261112-012/changes.md",
+    "results/T4-ENGINEERING-20261112-012/document-dependencies.json",
+    "results/T4-ENGINEERING-20261112-012/README.md",
+    "results/T4-ENGINEERING-20261112-012/validation-status.json"
+  ],
+  "omission_reason": "Private control and forensic material; only a scope/fingerprint summary is published, with no private locator dependency.",
+  "added_relative_to_R7": [
+    "THIRD_PARTY_NOTICES.md",
+    "candidate-manifest.json",
+    "candidate-manifest.sha256",
+    "configs/s2-pilot.json",
+    "docs/candidate-changes.json",
+    "docs/dependency-sources.json",
+    "docs/validation-history.json",
+    "reports/proposal/versions/P-TERMS-ID-v1/README.md",
+    "reports/proposal/versions/P-TERMS-ID-v1/artifacts.sha256.json",
+    "reports/proposal/versions/P-TERMS-ID-v1/build-info.json",
+    "reports/proposal/versions/P-TERMS-ID-v1/build_proposal.py",
+    "reports/proposal/versions/P-TERMS-ID-v1/check_proposal.py",
+    "reports/proposal/versions/P-TERMS-ID-v1/format-check.json",
+    "reports/proposal/versions/P-TERMS-ID-v1/identity.json",
+    "reports/proposal/versions/P-TERMS-ID-v1/proposal.md",
+    "reports/proposal/versions/P-TERMS-ID-v1/proposal.pdf",
+    "reports/proposal/versions/P-TERMS-ID-v1/sources.json",
+    "reports/reviews/P-TERMS-ID-v1-review-20261015.md"
+  ],
+  "latest_proposal": "P-TERMS-ID-v1 original bytes are preserved; source acceptance does not prove rebuild under the R6 lock.",
+  "scientific_change": "No change to algorithms, teacher input, frozen numerical/analysis/figure/report originals or report builders/checkers.",
+  "current_check_scope": "Packaging, file/history privacy, references, exact byte identity, source metadata and affected documentation viewing. No new complete T4, solver, figure/report build, installation or course submission.",
+  "self_reference_rule": "candidate-manifest.json hashes this changes file and all payload; it excludes only its own JSON and SHA-256 sidecar. Commit/tag identity is recorded outside the payload to avoid self-reference."
+}

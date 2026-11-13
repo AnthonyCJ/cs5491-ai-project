@@ -1,0 +1,1147 @@
+{
+  "source": "T2-FORMAL-20261004-004",
+  "selected_cases": [
+    {
+      "case_id": "mlp-L13",
+      "baseline_costs": {
+        "ordinary_ms": "17758.4997",
+        "bootstrap1_ms": "5200.75",
+        "bootstrap2_ms": "5172.52",
+        "modswitch_ms": "0",
+        "total_ms": "28131.7697"
+      },
+      "optimized_costs": {
+        "ordinary_ms": "16736.8324",
+        "bootstrap1_ms": "4160.60",
+        "bootstrap2_ms": "5172.52",
+        "modswitch_ms": "0",
+        "total_ms": "26069.9524"
+      },
+      "shared_refreshes": [
+        {
+          "after": "Conj_X_mlp",
+          "type": 1
+        },
+        {
+          "after": "Add_res_mlp",
+          "type": 2
+        }
+      ],
+      "placement_chains": [
+        {
+          "from": "X_in_mlp",
+          "to": "Conj_X_mlp",
+          "inserted_nodes": [
+            "s2_M0_0_X_in_mlp"
+          ]
+        },
+        {
+          "from": "Conj_X_mlp",
+          "to": "Mul_mask_mlp",
+          "inserted_nodes": [
+            "s2_B1_Conj_X_mlp"
+          ]
+        },
+        {
+          "from": "Add_res_mlp",
+          "to": "x_mask2_mlp",
+          "inserted_nodes": [
+            "s2_B2_Add_res_mlp",
+            "s2_M2_12_Add_res_mlp"
+          ]
+        },
+        {
+          "from": "x_mask2_mlp",
+          "to": "add_z_mlp",
+          "inserted_nodes": [
+            "s2_M0_9_x_mask2_mlp"
+          ]
+        },
+        {
+          "from": "add_z_mlp",
+          "to": "mul_z_gamma_mlp",
+          "inserted_nodes": [
+            "s2_M0_2_add_z_mlp"
+          ]
+        }
+      ],
+      "ordinary_node_changes": [
+        {
+          "node": "Conj_X_mlp",
+          "op": "Conjugate",
+          "baseline_ms": "3.75",
+          "optimized_ms": "1.67",
+          "saving_ms": "2.08"
+        },
+        {
+          "node": "x_mask2_mlp",
+          "op": "Mul",
+          "baseline_ms": "1.0822",
+          "optimized_ms": "1.2148",
+          "saving_ms": "-0.1326"
+        },
+        {
+          "node": "mask_mu_mlp",
+          "op": "Mul",
+          "baseline_ms": "1.0159",
+          "optimized_ms": "1.1485",
+          "saving_ms": "-0.1326"
+        },
+        {
+          "node": "div_768_mlp",
+          "op": "Mul",
+          "baseline_ms": "0.9496",
+          "optimized_ms": "1.0822",
+          "saving_ms": "-0.1326"
+        },
+        {
+          "node": "add_z_mlp",
+          "op": "Add",
+          "baseline_ms": "0.0617",
+          "optimized_ms": "0.0685",
+          "saving_ms": "-0.0068"
+        },
+        {
+          "node": "mul_z_sq_mlp",
+          "op": "Mul",
+          "baseline_ms": "0.8833",
+          "optimized_ms": "1.0159",
+          "saving_ms": "-0.1326"
+        },
+        {
+          "node": "mul_var_mlp",
+          "op": "Mul",
+          "baseline_ms": "0.8170",
+          "optimized_ms": "0.9496",
+          "saving_ms": "-0.1326"
+        },
+        {
+          "node": "invsqrt_var_mlp",
+          "op": "PolyEval2",
+          "baseline_ms": "1629.18",
+          "optimized_ms": "610.05",
+          "saving_ms": "1019.13"
+        },
+        {
+          "node": "mask_lam_mlp",
+          "op": "Mul",
+          "baseline_ms": "1.0159",
+          "optimized_ms": "0.5518",
+          "saving_ms": "0.4641"
+        },
+        {
+          "node": "mul_z_gamma_mlp",
+          "op": "Mul",
+          "baseline_ms": "0.8833",
+          "optimized_ms": "0.5518",
+          "saving_ms": "0.3315"
+        },
+        {
+          "node": "mul_X_out_mlp",
+          "op": "Mul",
+          "baseline_ms": "0.8170",
+          "optimized_ms": "0.4855",
+          "saving_ms": "0.3315"
+        }
+      ]
+    },
+    {
+      "case_id": "mlp-L14",
+      "baseline_costs": {
+        "ordinary_ms": "17758.6597",
+        "bootstrap1_ms": "5200.75",
+        "bootstrap2_ms": "5172.52",
+        "modswitch_ms": "0",
+        "total_ms": "28131.9297"
+      },
+      "optimized_costs": {
+        "ordinary_ms": "16739.0724",
+        "bootstrap1_ms": "0",
+        "bootstrap2_ms": "5172.52",
+        "modswitch_ms": "0",
+        "total_ms": "21911.5924"
+      },
+      "shared_refreshes": [
+        {
+          "after": "Add_res_mlp",
+          "type": 2
+        }
+      ],
+      "placement_chains": [
+        {
+          "from": "Add_res_mlp",
+          "to": "x_mask2_mlp",
+          "inserted_nodes": [
+            "s2_B2_Add_res_mlp",
+            "s2_M2_12_Add_res_mlp"
+          ]
+        },
+        {
+          "from": "x_mask2_mlp",
+          "to": "add_z_mlp",
+          "inserted_nodes": [
+            "s2_M0_9_x_mask2_mlp"
+          ]
+        },
+        {
+          "from": "add_z_mlp",
+          "to": "mul_z_gamma_mlp",
+          "inserted_nodes": [
+            "s2_M0_2_add_z_mlp"
+          ]
+        }
+      ],
+      "ordinary_node_changes": [
+        {
+          "node": "x_mask2_mlp",
+          "op": "Mul",
+          "baseline_ms": "1.0822",
+          "optimized_ms": "1.2148",
+          "saving_ms": "-0.1326"
+        },
+        {
+          "node": "mask_mu_mlp",
+          "op": "Mul",
+          "baseline_ms": "1.0159",
+          "optimized_ms": "1.1485",
+          "saving_ms": "-0.1326"
+        },
+        {
+          "node": "div_768_mlp",
+          "op": "Mul",
+          "baseline_ms": "0.9496",
+          "optimized_ms": "1.0822",
+          "saving_ms": "-0.1326"
+        },
+        {
+          "node": "add_z_mlp",
+          "op": "Add",
+          "baseline_ms": "0.0617",
+          "optimized_ms": "0.0685",
+          "saving_ms": "-0.0068"
+        },
+        {
+          "node": "mul_z_sq_mlp",
+          "op": "Mul",
+          "baseline_ms": "0.8833",
+          "optimized_ms": "1.0159",
+          "saving_ms": "-0.1326"
+        },
+        {
+          "node": "mul_var_mlp",
+          "op": "Mul",
+          "baseline_ms": "0.8170",
+          "optimized_ms": "0.9496",
+          "saving_ms": "-0.1326"
+        },
+        {
+          "node": "invsqrt_var_mlp",
+          "op": "PolyEval2",
+          "baseline_ms": "1629.18",
+          "optimized_ms": "610.05",
+          "saving_ms": "1019.13"
+        },
+        {
+          "node": "mask_lam_mlp",
+          "op": "Mul",
+          "baseline_ms": "1.0159",
+          "optimized_ms": "0.5518",
+          "saving_ms": "0.4641"
+        },
+        {
+          "node": "mul_z_gamma_mlp",
+          "op": "Mul",
+          "baseline_ms": "0.8833",
+          "optimized_ms": "0.5518",
+          "saving_ms": "0.3315"
+        },
+        {
+          "node": "mul_X_out_mlp",
+          "op": "Mul",
+          "baseline_ms": "0.8170",
+          "optimized_ms": "0.4855",
+          "saving_ms": "0.3315"
+        }
+      ]
+    },
+    {
+      "case_id": "attention-L05",
+      "baseline_costs": {
+        "ordinary_ms": "33851.7818",
+        "bootstrap1_ms": "9361.35",
+        "bootstrap2_ms": "10345.04",
+        "modswitch_ms": "0",
+        "total_ms": "53558.1718"
+      },
+      "optimized_costs": {
+        "ordinary_ms": "24951.7264",
+        "bootstrap1_ms": "10401.50",
+        "bootstrap2_ms": "10345.04",
+        "modswitch_ms": "0",
+        "total_ms": "45698.2664"
+      },
+      "shared_refreshes": [
+        {
+          "after": "X_in_attn",
+          "type": 1
+        },
+        {
+          "after": "QK_mul_attn",
+          "type": 2
+        },
+        {
+          "after": "exp_y_attn",
+          "type": 2
+        },
+        {
+          "after": "iter1_invsqrt_attn",
+          "type": 1
+        },
+        {
+          "after": "iter2_invsqrt_attn",
+          "type": 1
+        },
+        {
+          "after": "iter3_invsqrt_attn",
+          "type": 1
+        },
+        {
+          "after": "SV_mul_attn",
+          "type": 1
+        },
+        {
+          "after": "mul_var_attn",
+          "type": 1
+        }
+      ],
+      "placement_chains": [
+        {
+          "from": "X_in_attn",
+          "to": "Conj_back_X_attn",
+          "inserted_nodes": [
+            "s2_B1_X_in_attn",
+            "s2_M1_6_X_in_attn"
+          ]
+        },
+        {
+          "from": "X_in_attn",
+          "to": "V_Wv_attn",
+          "inserted_nodes": [
+            "s2_B1_X_in_attn",
+            "s2_M1_4_X_in_attn"
+          ]
+        },
+        {
+          "from": "X_in_attn",
+          "to": "Q_Wq_attn",
+          "inserted_nodes": [
+            "s2_B1_X_in_attn",
+            "s2_M1_6_X_in_attn"
+          ]
+        },
+        {
+          "from": "X_in_attn",
+          "to": "K_Wk_attn",
+          "inserted_nodes": [
+            "s2_B1_X_in_attn",
+            "s2_M1_6_X_in_attn"
+          ]
+        },
+        {
+          "from": "QK_mul_attn",
+          "to": "qk_div2_attn",
+          "inserted_nodes": [
+            "s2_B2_QK_mul_attn",
+            "s2_M2_7_QK_mul_attn"
+          ]
+        },
+        {
+          "from": "exp_y_attn",
+          "to": "mask_y_attn",
+          "inserted_nodes": [
+            "s2_B2_exp_y_attn",
+            "s2_M2_12_exp_y_attn"
+          ]
+        },
+        {
+          "from": "mask_y_attn",
+          "to": "iter1_y_sq_attn",
+          "inserted_nodes": [
+            "s2_M0_10_mask_y_attn"
+          ]
+        },
+        {
+          "from": "iter1_invsqrt_attn",
+          "to": "iter1_ylam_attn",
+          "inserted_nodes": [
+            "s2_B1_iter1_invsqrt_attn",
+            "s2_M1_11_iter1_invsqrt_attn"
+          ]
+        },
+        {
+          "from": "iter1_y_sq2_attn",
+          "to": "iter2_y_sq_attn",
+          "inserted_nodes": [
+            "s2_M0_7_iter1_y_sq2_attn"
+          ]
+        },
+        {
+          "from": "iter2_invsqrt_attn",
+          "to": "iter2_ylam_attn",
+          "inserted_nodes": [
+            "s2_B1_iter2_invsqrt_attn",
+            "s2_M1_9_iter2_invsqrt_attn"
+          ]
+        },
+        {
+          "from": "iter2_y_sq2_attn",
+          "to": "iter3_ylam_attn",
+          "inserted_nodes": [
+            "s2_M0_5_iter2_y_sq2_attn"
+          ]
+        },
+        {
+          "from": "iter3_invsqrt_attn",
+          "to": "iter3_ylam_attn",
+          "inserted_nodes": [
+            "s2_B1_iter3_invsqrt_attn",
+            "s2_M1_5_iter3_invsqrt_attn"
+          ]
+        },
+        {
+          "from": "SV_mul_attn",
+          "to": "rotate_SV_attn",
+          "inserted_nodes": [
+            "s2_B1_SV_mul_attn"
+          ]
+        },
+        {
+          "from": "rotate_SV_attn",
+          "to": "x_SV_Wo_attn",
+          "inserted_nodes": [
+            "s2_M0_8_rotate_SV_attn"
+          ]
+        },
+        {
+          "from": "x_mask2_attn",
+          "to": "add_z_attn",
+          "inserted_nodes": [
+            "s2_M0_2_x_mask2_attn"
+          ]
+        },
+        {
+          "from": "mul_var_attn",
+          "to": "invsqrt_var_attn",
+          "inserted_nodes": [
+            "s2_B1_mul_var_attn",
+            "s2_M1_7_mul_var_attn"
+          ]
+        }
+      ],
+      "ordinary_node_changes": [
+        {
+          "node": "Conj_back_X_attn",
+          "op": "Conjugate back",
+          "baseline_ms": "10.42",
+          "optimized_ms": "5.62",
+          "saving_ms": "4.80"
+        },
+        {
+          "node": "X_div2_attn",
+          "op": "Mul",
+          "baseline_ms": "1.3474",
+          "optimized_ms": "0.8170",
+          "saving_ms": "0.5304"
+        },
+        {
+          "node": "V_Wv_attn",
+          "op": "PCMM1",
+          "baseline_ms": "3994.91",
+          "optimized_ms": "3262.51",
+          "saving_ms": "732.40"
+        },
+        {
+          "node": "Conj_V_attn",
+          "op": "Conjugate",
+          "baseline_ms": "2.31",
+          "optimized_ms": "1.99",
+          "saving_ms": "0.32"
+        },
+        {
+          "node": "qk_div2_attn",
+          "op": "Mul",
+          "baseline_ms": "1.2811",
+          "optimized_ms": "0.8833",
+          "saving_ms": "0.3978"
+        },
+        {
+          "node": "qk_affine_attn",
+          "op": "Mul",
+          "baseline_ms": "1.2148",
+          "optimized_ms": "0.8170",
+          "saving_ms": "0.3978"
+        },
+        {
+          "node": "exp_y_attn",
+          "op": "PolyEval1",
+          "baseline_ms": "1113.32",
+          "optimized_ms": "257.48",
+          "saving_ms": "855.84"
+        },
+        {
+          "node": "mask_y_attn",
+          "op": "Mul",
+          "baseline_ms": "0.8170",
+          "optimized_ms": "1.2148",
+          "saving_ms": "-0.3978"
+        },
+        {
+          "node": "iter1_y_sq_attn",
+          "op": "Mul",
+          "baseline_ms": "0.7507",
+          "optimized_ms": "1.0822",
+          "saving_ms": "-0.3315"
+        },
+        {
+          "node": "iter1_affine_s_attn",
+          "op": "Mul",
+          "baseline_ms": "0.6844",
+          "optimized_ms": "1.0159",
+          "saving_ms": "-0.3315"
+        },
+        {
+          "node": "iter1_invsqrt_attn",
+          "op": "PolyEval3",
+          "baseline_ms": "8691.15",
+          "optimized_ms": "5317.53",
+          "saving_ms": "3373.62"
+        },
+        {
+          "node": "iter1_ylam_attn",
+          "op": "Mul",
+          "baseline_ms": "0.7507",
+          "optimized_ms": "1.1485",
+          "saving_ms": "-0.3978"
+        },
+        {
+          "node": "iter1_y_sq2_attn",
+          "op": "Mul",
+          "baseline_ms": "0.6844",
+          "optimized_ms": "1.0822",
+          "saving_ms": "-0.3978"
+        },
+        {
+          "node": "iter2_y_sq_attn",
+          "op": "Mul",
+          "baseline_ms": "0.6181",
+          "optimized_ms": "0.8833",
+          "saving_ms": "-0.2652"
+        },
+        {
+          "node": "iter2_affine_s_attn",
+          "op": "Mul",
+          "baseline_ms": "0.5518",
+          "optimized_ms": "0.8170",
+          "saving_ms": "-0.2652"
+        },
+        {
+          "node": "iter2_invsqrt_attn",
+          "op": "PolyEval2",
+          "baseline_ms": "1629.18",
+          "optimized_ms": "318.87",
+          "saving_ms": "1310.31"
+        },
+        {
+          "node": "iter2_ylam_attn",
+          "op": "Mul",
+          "baseline_ms": "0.6181",
+          "optimized_ms": "1.0159",
+          "saving_ms": "-0.3978"
+        },
+        {
+          "node": "iter2_y_sq2_attn",
+          "op": "Mul",
+          "baseline_ms": "0.5518",
+          "optimized_ms": "0.9496",
+          "saving_ms": "-0.3978"
+        },
+        {
+          "node": "iter3_y_sq_attn",
+          "op": "Mul",
+          "baseline_ms": "1.2811",
+          "optimized_ms": "0.8833",
+          "saving_ms": "0.3978"
+        },
+        {
+          "node": "iter3_affine_s_attn",
+          "op": "Mul",
+          "baseline_ms": "1.2148",
+          "optimized_ms": "0.8170",
+          "saving_ms": "0.3978"
+        },
+        {
+          "node": "iter3_invsqrt_attn",
+          "op": "PolyEval2",
+          "baseline_ms": "1192.41",
+          "optimized_ms": "318.87",
+          "saving_ms": "873.54"
+        },
+        {
+          "node": "iter3_ylam_attn",
+          "op": "Mul",
+          "baseline_ms": "0.8170",
+          "optimized_ms": "0.7507",
+          "saving_ms": "0.0663"
+        },
+        {
+          "node": "iter3_S_attn",
+          "op": "Mul",
+          "baseline_ms": "0.7507",
+          "optimized_ms": "0.6844",
+          "saving_ms": "0.0663"
+        },
+        {
+          "node": "conj_S_attn",
+          "op": "Conjugate",
+          "baseline_ms": "2.31",
+          "optimized_ms": "2.15",
+          "saving_ms": "0.16"
+        },
+        {
+          "node": "S_mask_attn",
+          "op": "Mul",
+          "baseline_ms": "0.6844",
+          "optimized_ms": "0.6181",
+          "saving_ms": "0.0663"
+        },
+        {
+          "node": "conj_back_S_attn",
+          "op": "Conjugate back",
+          "baseline_ms": "3.82",
+          "optimized_ms": "3.22",
+          "saving_ms": "0.60"
+        },
+        {
+          "node": "SV_mul_attn",
+          "op": "CCMM2",
+          "baseline_ms": "1862.85",
+          "optimized_ms": "1764.18",
+          "saving_ms": "98.67"
+        },
+        {
+          "node": "x_SV_Wo_attn",
+          "op": "PCMM2",
+          "baseline_ms": "3727.08",
+          "optimized_ms": "3099.24",
+          "saving_ms": "627.84"
+        },
+        {
+          "node": "x_mask_attn",
+          "op": "Mul",
+          "baseline_ms": "1.2148",
+          "optimized_ms": "0.8170",
+          "saving_ms": "0.3978"
+        },
+        {
+          "node": "add_out_attn",
+          "op": "Add",
+          "baseline_ms": "0.0753",
+          "optimized_ms": "0.0549",
+          "saving_ms": "0.0204"
+        },
+        {
+          "node": "x_mask2_attn",
+          "op": "Mul",
+          "baseline_ms": "1.1485",
+          "optimized_ms": "0.7507",
+          "saving_ms": "0.3978"
+        },
+        {
+          "node": "mask_mu_attn",
+          "op": "Mul",
+          "baseline_ms": "1.0822",
+          "optimized_ms": "0.6844",
+          "saving_ms": "0.3978"
+        },
+        {
+          "node": "div_768_attn",
+          "op": "Mul",
+          "baseline_ms": "1.0159",
+          "optimized_ms": "0.6181",
+          "saving_ms": "0.3978"
+        },
+        {
+          "node": "add_z_attn",
+          "op": "Add",
+          "baseline_ms": "0.0651",
+          "optimized_ms": "0.0447",
+          "saving_ms": "0.0204"
+        },
+        {
+          "node": "mul_z_sq_attn",
+          "op": "Mul",
+          "baseline_ms": "0.9496",
+          "optimized_ms": "0.5518",
+          "saving_ms": "0.3978"
+        },
+        {
+          "node": "mul_var_attn",
+          "op": "Mul",
+          "baseline_ms": "0.8833",
+          "optimized_ms": "0.4855",
+          "saving_ms": "0.3978"
+        },
+        {
+          "node": "invsqrt_var_attn",
+          "op": "PolyEval2",
+          "baseline_ms": "1629.18",
+          "optimized_ms": "610.05",
+          "saving_ms": "1019.13"
+        },
+        {
+          "node": "mask_lam_attn",
+          "op": "Mul",
+          "baseline_ms": "1.0159",
+          "optimized_ms": "0.5518",
+          "saving_ms": "0.4641"
+        },
+        {
+          "node": "mul_z_gamma_attn",
+          "op": "Mul",
+          "baseline_ms": "0.9496",
+          "optimized_ms": "0.5518",
+          "saving_ms": "0.3978"
+        },
+        {
+          "node": "mul_X_out_attn",
+          "op": "Mul",
+          "baseline_ms": "0.8833",
+          "optimized_ms": "0.4855",
+          "saving_ms": "0.3978"
+        }
+      ]
+    },
+    {
+      "case_id": "attention-L06",
+      "baseline_costs": {
+        "ordinary_ms": "33851.7818",
+        "bootstrap1_ms": "9361.35",
+        "bootstrap2_ms": "10345.04",
+        "modswitch_ms": "0",
+        "total_ms": "53558.1718"
+      },
+      "optimized_costs": {
+        "ordinary_ms": "24951.7264",
+        "bootstrap1_ms": "6240.90",
+        "bootstrap2_ms": "10345.04",
+        "modswitch_ms": "0",
+        "total_ms": "41537.6664"
+      },
+      "shared_refreshes": [
+        {
+          "after": "QK_mul_attn",
+          "type": 2
+        },
+        {
+          "after": "exp_y_attn",
+          "type": 2
+        },
+        {
+          "after": "iter1_invsqrt_attn",
+          "type": 1
+        },
+        {
+          "after": "iter2_invsqrt_attn",
+          "type": 1
+        },
+        {
+          "after": "iter3_invsqrt_attn",
+          "type": 1
+        },
+        {
+          "after": "SV_mul_attn",
+          "type": 1
+        },
+        {
+          "after": "mul_var_attn",
+          "type": 1
+        }
+      ],
+      "placement_chains": [
+        {
+          "from": "X_in_attn",
+          "to": "V_Wv_attn",
+          "inserted_nodes": [
+            "s2_M0_4_X_in_attn"
+          ]
+        },
+        {
+          "from": "QK_mul_attn",
+          "to": "qk_div2_attn",
+          "inserted_nodes": [
+            "s2_B2_QK_mul_attn",
+            "s2_M2_7_QK_mul_attn"
+          ]
+        },
+        {
+          "from": "exp_y_attn",
+          "to": "mask_y_attn",
+          "inserted_nodes": [
+            "s2_B2_exp_y_attn",
+            "s2_M2_12_exp_y_attn"
+          ]
+        },
+        {
+          "from": "mask_y_attn",
+          "to": "iter1_y_sq_attn",
+          "inserted_nodes": [
+            "s2_M0_10_mask_y_attn"
+          ]
+        },
+        {
+          "from": "iter1_invsqrt_attn",
+          "to": "iter1_ylam_attn",
+          "inserted_nodes": [
+            "s2_B1_iter1_invsqrt_attn",
+            "s2_M1_12_iter1_invsqrt_attn"
+          ]
+        },
+        {
+          "from": "iter1_y_sq2_attn",
+          "to": "iter2_y_sq_attn",
+          "inserted_nodes": [
+            "s2_M0_7_iter1_y_sq2_attn"
+          ]
+        },
+        {
+          "from": "iter2_invsqrt_attn",
+          "to": "iter2_ylam_attn",
+          "inserted_nodes": [
+            "s2_B1_iter2_invsqrt_attn",
+            "s2_M1_10_iter2_invsqrt_attn"
+          ]
+        },
+        {
+          "from": "iter2_y_sq2_attn",
+          "to": "iter3_ylam_attn",
+          "inserted_nodes": [
+            "s2_M0_5_iter2_y_sq2_attn"
+          ]
+        },
+        {
+          "from": "iter3_invsqrt_attn",
+          "to": "iter3_ylam_attn",
+          "inserted_nodes": [
+            "s2_B1_iter3_invsqrt_attn",
+            "s2_M1_5_iter3_invsqrt_attn"
+          ]
+        },
+        {
+          "from": "SV_mul_attn",
+          "to": "rotate_SV_attn",
+          "inserted_nodes": [
+            "s2_B1_SV_mul_attn",
+            "s2_M1_8_SV_mul_attn"
+          ]
+        },
+        {
+          "from": "x_mask2_attn",
+          "to": "add_z_attn",
+          "inserted_nodes": [
+            "s2_M0_2_x_mask2_attn"
+          ]
+        },
+        {
+          "from": "mul_var_attn",
+          "to": "invsqrt_var_attn",
+          "inserted_nodes": [
+            "s2_B1_mul_var_attn",
+            "s2_M1_7_mul_var_attn"
+          ]
+        }
+      ],
+      "ordinary_node_changes": [
+        {
+          "node": "Conj_back_X_attn",
+          "op": "Conjugate back",
+          "baseline_ms": "10.42",
+          "optimized_ms": "5.62",
+          "saving_ms": "4.80"
+        },
+        {
+          "node": "X_div2_attn",
+          "op": "Mul",
+          "baseline_ms": "1.3474",
+          "optimized_ms": "0.8170",
+          "saving_ms": "0.5304"
+        },
+        {
+          "node": "V_Wv_attn",
+          "op": "PCMM1",
+          "baseline_ms": "3994.91",
+          "optimized_ms": "3262.51",
+          "saving_ms": "732.40"
+        },
+        {
+          "node": "Conj_V_attn",
+          "op": "Conjugate",
+          "baseline_ms": "2.31",
+          "optimized_ms": "1.99",
+          "saving_ms": "0.32"
+        },
+        {
+          "node": "qk_div2_attn",
+          "op": "Mul",
+          "baseline_ms": "1.2811",
+          "optimized_ms": "0.8833",
+          "saving_ms": "0.3978"
+        },
+        {
+          "node": "qk_affine_attn",
+          "op": "Mul",
+          "baseline_ms": "1.2148",
+          "optimized_ms": "0.8170",
+          "saving_ms": "0.3978"
+        },
+        {
+          "node": "exp_y_attn",
+          "op": "PolyEval1",
+          "baseline_ms": "1113.32",
+          "optimized_ms": "257.48",
+          "saving_ms": "855.84"
+        },
+        {
+          "node": "mask_y_attn",
+          "op": "Mul",
+          "baseline_ms": "0.8170",
+          "optimized_ms": "1.2148",
+          "saving_ms": "-0.3978"
+        },
+        {
+          "node": "iter1_y_sq_attn",
+          "op": "Mul",
+          "baseline_ms": "0.7507",
+          "optimized_ms": "1.0822",
+          "saving_ms": "-0.3315"
+        },
+        {
+          "node": "iter1_affine_s_attn",
+          "op": "Mul",
+          "baseline_ms": "0.6844",
+          "optimized_ms": "1.0159",
+          "saving_ms": "-0.3315"
+        },
+        {
+          "node": "iter1_invsqrt_attn",
+          "op": "PolyEval3",
+          "baseline_ms": "8691.15",
+          "optimized_ms": "5317.53",
+          "saving_ms": "3373.62"
+        },
+        {
+          "node": "iter1_ylam_attn",
+          "op": "Mul",
+          "baseline_ms": "0.7507",
+          "optimized_ms": "1.1485",
+          "saving_ms": "-0.3978"
+        },
+        {
+          "node": "iter1_y_sq2_attn",
+          "op": "Mul",
+          "baseline_ms": "0.6844",
+          "optimized_ms": "1.0822",
+          "saving_ms": "-0.3978"
+        },
+        {
+          "node": "iter2_y_sq_attn",
+          "op": "Mul",
+          "baseline_ms": "0.6181",
+          "optimized_ms": "0.8833",
+          "saving_ms": "-0.2652"
+        },
+        {
+          "node": "iter2_affine_s_attn",
+          "op": "Mul",
+          "baseline_ms": "0.5518",
+          "optimized_ms": "0.8170",
+          "saving_ms": "-0.2652"
+        },
+        {
+          "node": "iter2_invsqrt_attn",
+          "op": "PolyEval2",
+          "baseline_ms": "1629.18",
+          "optimized_ms": "318.87",
+          "saving_ms": "1310.31"
+        },
+        {
+          "node": "iter2_ylam_attn",
+          "op": "Mul",
+          "baseline_ms": "0.6181",
+          "optimized_ms": "1.0159",
+          "saving_ms": "-0.3978"
+        },
+        {
+          "node": "iter2_y_sq2_attn",
+          "op": "Mul",
+          "baseline_ms": "0.5518",
+          "optimized_ms": "0.9496",
+          "saving_ms": "-0.3978"
+        },
+        {
+          "node": "iter3_y_sq_attn",
+          "op": "Mul",
+          "baseline_ms": "1.2811",
+          "optimized_ms": "0.8833",
+          "saving_ms": "0.3978"
+        },
+        {
+          "node": "iter3_affine_s_attn",
+          "op": "Mul",
+          "baseline_ms": "1.2148",
+          "optimized_ms": "0.8170",
+          "saving_ms": "0.3978"
+        },
+        {
+          "node": "iter3_invsqrt_attn",
+          "op": "PolyEval2",
+          "baseline_ms": "1192.41",
+          "optimized_ms": "318.87",
+          "saving_ms": "873.54"
+        },
+        {
+          "node": "iter3_ylam_attn",
+          "op": "Mul",
+          "baseline_ms": "0.8170",
+          "optimized_ms": "0.7507",
+          "saving_ms": "0.0663"
+        },
+        {
+          "node": "iter3_S_attn",
+          "op": "Mul",
+          "baseline_ms": "0.7507",
+          "optimized_ms": "0.6844",
+          "saving_ms": "0.0663"
+        },
+        {
+          "node": "conj_S_attn",
+          "op": "Conjugate",
+          "baseline_ms": "2.31",
+          "optimized_ms": "2.15",
+          "saving_ms": "0.16"
+        },
+        {
+          "node": "S_mask_attn",
+          "op": "Mul",
+          "baseline_ms": "0.6844",
+          "optimized_ms": "0.6181",
+          "saving_ms": "0.0663"
+        },
+        {
+          "node": "conj_back_S_attn",
+          "op": "Conjugate back",
+          "baseline_ms": "3.82",
+          "optimized_ms": "3.22",
+          "saving_ms": "0.60"
+        },
+        {
+          "node": "SV_mul_attn",
+          "op": "CCMM2",
+          "baseline_ms": "1862.85",
+          "optimized_ms": "1764.18",
+          "saving_ms": "98.67"
+        },
+        {
+          "node": "x_SV_Wo_attn",
+          "op": "PCMM2",
+          "baseline_ms": "3727.08",
+          "optimized_ms": "3099.24",
+          "saving_ms": "627.84"
+        },
+        {
+          "node": "x_mask_attn",
+          "op": "Mul",
+          "baseline_ms": "1.2148",
+          "optimized_ms": "0.8170",
+          "saving_ms": "0.3978"
+        },
+        {
+          "node": "add_out_attn",
+          "op": "Add",
+          "baseline_ms": "0.0753",
+          "optimized_ms": "0.0549",
+          "saving_ms": "0.0204"
+        },
+        {
+          "node": "x_mask2_attn",
+          "op": "Mul",
+          "baseline_ms": "1.1485",
+          "optimized_ms": "0.7507",
+          "saving_ms": "0.3978"
+        },
+        {
+          "node": "mask_mu_attn",
+          "op": "Mul",
+          "baseline_ms": "1.0822",
+          "optimized_ms": "0.6844",
+          "saving_ms": "0.3978"
+        },
+        {
+          "node": "div_768_attn",
+          "op": "Mul",
+          "baseline_ms": "1.0159",
+          "optimized_ms": "0.6181",
+          "saving_ms": "0.3978"
+        },
+        {
+          "node": "add_z_attn",
+          "op": "Add",
+          "baseline_ms": "0.0651",
+          "optimized_ms": "0.0447",
+          "saving_ms": "0.0204"
+        },
+        {
+          "node": "mul_z_sq_attn",
+          "op": "Mul",
+          "baseline_ms": "0.9496",
+          "optimized_ms": "0.5518",
+          "saving_ms": "0.3978"
+        },
+        {
+          "node": "mul_var_attn",
+          "op": "Mul",
+          "baseline_ms": "0.8833",
+          "optimized_ms": "0.4855",
+          "saving_ms": "0.3978"
+        },
+        {
+          "node": "invsqrt_var_attn",
+          "op": "PolyEval2",
+          "baseline_ms": "1629.18",
+          "optimized_ms": "610.05",
+          "saving_ms": "1019.13"
+        },
+        {
+          "node": "mask_lam_attn",
+          "op": "Mul",
+          "baseline_ms": "1.0159",
+          "optimized_ms": "0.5518",
+          "saving_ms": "0.4641"
+        },
+        {
+          "node": "mul_z_gamma_attn",
+          "op": "Mul",
+          "baseline_ms": "0.9496",
+          "optimized_ms": "0.5518",
+          "saving_ms": "0.3978"
+        },
+        {
+          "node": "mul_X_out_attn",
+          "op": "Mul",
+          "baseline_ms": "0.8833",
+          "optimized_ms": "0.4855",
+          "saving_ms": "0.3978"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "artifact_version": "P-MAINLINE-ID-v1",
+  "checked_at_utc": "2026-10-03T22:26:51.4855504+00:00",
+  "scope": "Local document regeneration using repository inputs and existing document dependencies; no independent algorithm reproduction",
+  "original_pdf_sha256": "b46761b75f7b0680f58a1b835ad3a4c52a1ce929c090fbb0f2e0eae5c683e20a",
+  "regenerated_pdf_sha256": "a752247f4fdcbcb799547a9d90419099be88a1fb57fd8bdf21d3cd0d907b4fb9",
+  "source_sha256": "fff4516e47cbb73a724235946108509cf31fad3daf6c549aadb243db3b9d2892",
+  "render_dpi": 150,
+  "original_png_sha256": "ad83620840417aba134c18623c2a317e92ff7786925bb3ca3de6c308e6bc0a4f",
+  "regenerated_png_sha256": "ad83620840417aba134c18623c2a317e92ff7786925bb3ca3de6c308e6bc0a4f",
+  "all_rendered_pages_identical": true,
+  "automated_format_check_passed": true,
+  "repository_only_generation_inputs": true,
+  "private_generation_dependencies": false,
+  "relocated_repository_tested": false,
+  "saved_evidence_checks": [
+    {
+      "run_id": "S1-BL-001",
+      "verified_artifact_count": 34,
+      "scope": "Saved bytes only; no algorithm or scorer execution"
+    },
+    {
+      "run_id": "S3-OPT-001",
+      "verified_artifact_count": 36,
+      "scope": "Saved bytes only; no algorithm or scorer execution"
+    }
+  ],
+  "new_search_or_scoring": false,
+  "human_review": "pending",
+  "limits": "Same document environment; not S6, CP-SAT readiness, publication or submission."
+}

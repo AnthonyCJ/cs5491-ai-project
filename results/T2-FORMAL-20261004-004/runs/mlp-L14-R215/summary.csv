@@ -1,0 +1,2 @@
+case_id,module,l_init,solver_status,latency_decimal_ms,baseline_decimal_ms,reduction_percent,improved,n_b1,n_b2,depth,budget,utilisation,solve_wall_seconds,best_bound_scaled,relative_gap,sampled_peak_rss_bytes
+mlp-L14,mlp,14,OPTIMAL,21911.5924,28131.9297,22.111306854289488,True,0,4,26,66,0.3939393939393939,0.012199800010421313,219115924.0,0.0,119853056

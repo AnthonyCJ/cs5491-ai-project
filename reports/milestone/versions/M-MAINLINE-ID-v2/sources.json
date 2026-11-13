@@ -1,0 +1,118 @@
+{
+  "artifact_version": "M-MAINLINE-ID-v2",
+  "content_as_of": "2026-10-04",
+  "evidence_cutoff": "Numerical execution 2026-09-28; preserved interpretation as of 2026-09-29; explanatory revision 2026-10-04.",
+  "method_scope": "CP-SAT main method and instructor fixed-placement baseline",
+  "predecessor": "M-MAINLINE-ID-v1",
+  "source_sha256": "0e3175b5bb837422f581232f4f836591eac6876a12fe0dc242cd68634a6d610e",
+  "identity_sha256": "68471010d8a0b95a1ecd9bf9cef2fe8f6e8700c99bd072eebf54cc0a6cc1fc78",
+  "evidence_sha256": {
+    "docs/rules-and-metrics.md": "3d201fc1f84a2f4d9078cf45123925115f30a595de5c7bf4c46e1dd1c3bd7c84",
+    "docs/s2-method.md": "fa63c044bac036757ae1b9ffbc3ad21e972aed398fee6626bf9dba69ddb212bc",
+    "docs/s3-validation.md": "ba76ee3f62bebebd0791c979f2c9bb1f1e3f318936e9f5b616503c466a40454f",
+    "docs/s3-checks.json": "e545802ead78d19eb071e04f3ddc7e49ff7ff7f41c26eb6144ae739f849c54f6",
+    "results/S1-BL-001/run.json": "eb521585ddc5e33c2b150bb2e4a99ceb594643509da684fc15151d543247d23c",
+    "results/S1-BL-001/artifacts.sha256.json": "e747ed2dcf387b84125f2458f33de3e02a057413539a8f862712d78f953bc883",
+    "results/S1-BL-001/summary.csv": "acd34f23fff81a7649257f8767a9d1d4e4d046dc2478ebe21448a41a8d52bbd9",
+    "results/S3-OPT-001/run.json": "c6098424b565f8d8c6a8dbfd38415024ff929d255bae29d1614c5608db539dfa",
+    "results/S3-OPT-001/artifacts.sha256.json": "355ea77875754bd75947ccd4cc2f295de8f1544e27071daadd9e1f8aaf2f85a9",
+    "results/S3-OPT-001/summary.csv": "f6bea94abbb7fa6910bf95c7eb70e9b082604b6f09380efd5ba75d4dbfd33d83",
+    "results/S3-OPT-001/tiny-examples.json": "88eb0c6215abe0f172d6ae64c964ae1b537ba7379acbe3e156f864c2328d51cf",
+    "configs/s3-all-instances.json": "0e57c5386bd41b00a6b22347171318acb597b22a66874a4fa997c74a47f190cf",
+    "results/S3-OPT-001/s2-comparison.json": "69ec2c194adb38b775da2522e311bbd56855a474fad92ed5b716df23dee47cbb",
+    "results/S1-BL-001/cases/attention-L00.json": "25a89fdc5f80f22306cbffd42c2d96e3f4cc81e527b7b98fed2bd2c758cebd61",
+    "results/S3-OPT-001/cases/attention-L00.json": "19dcc7300aeeb688c6e4282564674d18c3ee62fada707187f478424f988e17b8",
+    "results/S3-OPT-001/cases/attention-L06.json": "c9418c0e013c1bd0d63620adcfcafe8a435647430e7f38fc844093911e8b3134",
+    "results/S3-OPT-001/cases/mlp-L00.json": "9cbfc876e395aecc4ea02fb5d6f4a609ef4eae6ca2e086a3653887226000c3be",
+    "results/S3-OPT-001/cases/mlp-L14.json": "9c814b8de3c334c38a907e5f4274f4268cd6f34a7739393af8ce349daf2ca2bf",
+    "src/bootplacement/s2_model.py": "c377e77096c8b6ad6e8e6651947633fd0aa8c2d176a85b9af1e6d22fb9bb460f",
+    "src/bootplacement/s2_oracle.py": "38fb9eaf92e878883fe36db8303fbf6fdffb7506d5a7281f8407b54ea667251d",
+    "src/bootplacement/audit.py": "982ed6bcfebd8ff09c0622a55afde000cfe1bc791db8930e7099e546aaf9a166",
+    "figures/S3-OPT-001/provenance.json": "f017b413f4491b515d53b2629e562dc8bd2a503a2d650ad22a0a7d09021f8ef6",
+    "figures/S3-OPT-001/artifacts.sha256.json": "4cd11535b3d3f12b17a3a68d8d5897ce859b21dab8d99cfbb51f4094c15c974a",
+    "results/S1-BL-001/calibration.json": "75929c83bd69507ffb0acc82507fa271add7495f431ab91dfc2be9962e6e3d62",
+    "src/bootplacement/s2_runner.py": "f8b7cd0309db3f3f9febe6eca9e0c397c730a6b477072183dee134130ce04b0c",
+    "run_s3.py": "6f6781166b4cc4ca0f97f15d22acf3edb0dd6c82ab94ea28c6c9f0306e195277"
+  },
+  "predecessor_files_sha256": {
+    "reports/milestone/versions/M-W01-ID-v1/build_milestone.py": "5ddac0b517804a66184a173c1ab8ed4797060b0b1f5f781fcd7ab85b26f097c1",
+    "reports/milestone/versions/M-W01-ID-v1/format-check.json": "dbbeedab5dbda1b3efbb971dc02f962ab28ecea3a57d73d7ed0b132317cd33bb",
+    "reports/milestone/versions/M-W01-ID-v1/identity.json": "68471010d8a0b95a1ecd9bf9cef2fe8f6e8700c99bd072eebf54cc0a6cc1fc78",
+    "reports/milestone/versions/M-W01-ID-v1/import-info.json": "d5d2d807664c9451d5badc256040e174d01167fc3b339fc021c48859aa81bf15",
+    "reports/milestone/versions/M-W01-ID-v1/milestone.md": "23fef47dad4a6bbba15e512fa5452a3fb3f1fcf6b19be5fa36157e47983922ea",
+    "reports/milestone/versions/M-W01-ID-v1/milestone.pdf": "659d8ec7227e9847ae3a2e255079780d2764576eb966c73feb255172d854e7ca",
+    "reports/milestone/versions/M-W01-ID-v1/README.md": "2591ca480944aaac671632402c4aadd7a5084210ca4b36849bc7ad1938503453",
+    "reports/milestone/versions/M-W01-ID-v1/regeneration-check.json": "a6b5f9ad53b8882bfd4517c194506364d0f9ad31554e046679472615a01b7cb5",
+    "reports/milestone/versions/M-W01-ID-v1/resolved-source.md": "03cddbb4151177e49bac44d83f14d0806a0ed7f1b8a1fa5c3cce144692802046",
+    "reports/milestone/versions/M-W01-ID-v1/sources.json": "08166ed2725985ab98b19b315de0bbf8bb2e21d9625e62bda09be9a1ba2b8189",
+    "reports/milestone/versions/M-MAINLINE-ID-v1/build-info.json": "3dc79c6e678a26cb788bd1f55b86de388459ff7d2a5fc43f959fea8d7dd19920",
+    "reports/milestone/versions/M-MAINLINE-ID-v1/build_milestone.py": "95e2a6030e96cf05146fe340543ebb17a54f1b71243539eae101c44b19ddaaae",
+    "reports/milestone/versions/M-MAINLINE-ID-v1/check_milestone.py": "66d198487999bba5caaec67853e0e5f6391d2eacce8a83040a8b993e961dd58e",
+    "reports/milestone/versions/M-MAINLINE-ID-v1/format-check.json": "a51af298ba0f5614839ee9a9f763bc7e7184c3dda322c3014542dc344c2f0ac1",
+    "reports/milestone/versions/M-MAINLINE-ID-v1/identity.json": "68471010d8a0b95a1ecd9bf9cef2fe8f6e8700c99bd072eebf54cc0a6cc1fc78",
+    "reports/milestone/versions/M-MAINLINE-ID-v1/milestone.md": "5aeda83b020480d3587aa172ce033f6674f5d380bd5e4348833820f560f2b8c5",
+    "reports/milestone/versions/M-MAINLINE-ID-v1/milestone.pdf": "08e035e83b8a7393dfcc44cfbf995aeb8f7ab2bf0b48bd4ba1b31c24b654a50d",
+    "reports/milestone/versions/M-MAINLINE-ID-v1/README.md": "1cec5b35293b7ff8a614bdb251b20230051194a462361b17ed29f37215491264",
+    "reports/milestone/versions/M-MAINLINE-ID-v1/regeneration-check.json": "d3ef262f19d3fe2708c0fe0f8461e7c006a58421d15e990a8e4c327e3bfdcd6c",
+    "reports/milestone/versions/M-MAINLINE-ID-v1/resolved-source.md": "15b6d4413924b9389871b0e1e9140016cdc31e2d4c6752355ac27b91ce70cf1e",
+    "reports/milestone/versions/M-MAINLINE-ID-v1/sources.json": "c09b60bb3f237033240811d9d28884a50b45cc2bf04e6cfcab9d083c519559d0"
+  },
+  "generator_dependencies_sha256": {
+    "reports/w01_support.py": "a32c439959123f94946fc7ace84906366628919623e2b12f4b34a7fdaa3569f1",
+    "reports/identity_report_support.py": "ca1e7bfd53b7c42870e1ea28e6cdcd52a53dbf40deb42acfdf82d0c0addd0a25",
+    "reports/proposal/build_proposal.py": "2e8af08a058eb3813eb8a5d03b8b11e9d83207565c8dc72c3f1f2c05544232c1",
+    "reports/milestone/versions/M-W01-ID-v1/build_milestone.py": "5ddac0b517804a66184a173c1ab8ed4797060b0b1f5f781fcd7ab85b26f097c1"
+  },
+  "claim_map": {
+    "problem_and_joint_model": [
+      "docs/rules-and-metrics.md",
+      "docs/s2-method.md",
+      "src/bootplacement/s2_model.py"
+    ],
+    "baseline_guidance_and_contributions": [
+      "src/bootplacement/s2_model.py",
+      "src/bootplacement/s2_runner.py"
+    ],
+    "reconstruction_and_correctness": [
+      "docs/s3-checks.json",
+      "docs/s3-validation.md",
+      "results/S3-OPT-001/tiny-examples.json",
+      "src/bootplacement/audit.py",
+      "src/bootplacement/s2_oracle.py"
+    ],
+    "protocol_table_figure_resources": [
+      "results/S1-BL-001/run.json",
+      "results/S1-BL-001/summary.csv",
+      "results/S3-OPT-001/run.json",
+      "results/S3-OPT-001/summary.csv",
+      "results/S3-OPT-001/s2-comparison.json"
+    ],
+    "placement_interpretation": [
+      "results/S1-BL-001/cases/attention-L00.json",
+      "results/S3-OPT-001/cases/attention-L00.json",
+      "results/S3-OPT-001/cases/attention-L06.json",
+      "results/S3-OPT-001/cases/mlp-L00.json",
+      "results/S3-OPT-001/cases/mlp-L14.json",
+      "figures/S3-OPT-001/provenance.json"
+    ],
+    "remaining_work": "Prospective final protocol, formal resource/placement reporting and independent reproduction; not completed by this editorial update."
+  },
+  "numeric_precision": "Four-decimal latency/reductions; solve times four decimals; sampled RSS two decimals. Raw values preserved.",
+  "evidence_context": "Old progress statements in method/validation documents describe their creation date. Use their technical content and the saved run for numerical coverage; use this version entry for report scope and state.",
+  "course_snapshot_requirements": {
+    "milestone_content": [
+      "problem and method motivation",
+      "method design",
+      "preliminary results",
+      "online code and evaluation repository"
+    ],
+    "page_limit": 4,
+    "font": "Times New Roman 12 pt",
+    "paper": "A4",
+    "margins_cm": 2.5,
+    "spacing": "single",
+    "online_requirement_fulfilled": false
+  },
+  "review_state": "M-MAINLINE-ID-v1 received revision feedback. This v2 needs its own human review; not final submission-ready.",
+  "editorial_revision": "Explanation before detail, paragraph continuity, integrated limits, accurate team agency and explicit course refresh-count units; no new technical evidence."
+}

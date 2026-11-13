@@ -1,0 +1,272 @@
+[
+  {
+    "order": 1,
+    "case_id": "mlp-L00",
+    "module": "mlp",
+    "l_init": 0,
+    "l_max": 14,
+    "config": "configs/t2-formal-20261004/mlp-L00.json",
+    "output": "results/T2-FORMAL-20261004-001/runs/mlp-L00"
+  },
+  {
+    "order": 2,
+    "case_id": "mlp-L01",
+    "module": "mlp",
+    "l_init": 1,
+    "l_max": 14,
+    "config": "configs/t2-formal-20261004/mlp-L01.json",
+    "output": "results/T2-FORMAL-20261004-001/runs/mlp-L01"
+  },
+  {
+    "order": 3,
+    "case_id": "mlp-L02",
+    "module": "mlp",
+    "l_init": 2,
+    "l_max": 14,
+    "config": "configs/t2-formal-20261004/mlp-L02.json",
+    "output": "results/T2-FORMAL-20261004-001/runs/mlp-L02"
+  },
+  {
+    "order": 4,
+    "case_id": "mlp-L03",
+    "module": "mlp",
+    "l_init": 3,
+    "l_max": 14,
+    "config": "configs/t2-formal-20261004/mlp-L03.json",
+    "output": "results/T2-FORMAL-20261004-001/runs/mlp-L03"
+  },
+  {
+    "order": 5,
+    "case_id": "mlp-L04",
+    "module": "mlp",
+    "l_init": 4,
+    "l_max": 14,
+    "config": "configs/t2-formal-20261004/mlp-L04.json",
+    "output": "results/T2-FORMAL-20261004-001/runs/mlp-L04"
+  },
+  {
+    "order": 6,
+    "case_id": "mlp-L05",
+    "module": "mlp",
+    "l_init": 5,
+    "l_max": 14,
+    "config": "configs/t2-formal-20261004/mlp-L05.json",
+    "output": "results/T2-FORMAL-20261004-001/runs/mlp-L05"
+  },
+  {
+    "order": 7,
+    "case_id": "mlp-L06",
+    "module": "mlp",
+    "l_init": 6,
+    "l_max": 14,
+    "config": "configs/t2-formal-20261004/mlp-L06.json",
+    "output": "results/T2-FORMAL-20261004-001/runs/mlp-L06"
+  },
+  {
+    "order": 8,
+    "case_id": "mlp-L07",
+    "module": "mlp",
+    "l_init": 7,
+    "l_max": 14,
+    "config": "configs/t2-formal-20261004/mlp-L07.json",
+    "output": "results/T2-FORMAL-20261004-001/runs/mlp-L07"
+  },
+  {
+    "order": 9,
+    "case_id": "mlp-L08",
+    "module": "mlp",
+    "l_init": 8,
+    "l_max": 14,
+    "config": "configs/t2-formal-20261004/mlp-L08.json",
+    "output": "results/T2-FORMAL-20261004-001/runs/mlp-L08"
+  },
+  {
+    "order": 10,
+    "case_id": "mlp-L09",
+    "module": "mlp",
+    "l_init": 9,
+    "l_max": 14,
+    "config": "configs/t2-formal-20261004/mlp-L09.json",
+    "output": "results/T2-FORMAL-20261004-001/runs/mlp-L09"
+  },
+  {
+    "order": 11,
+    "case_id": "mlp-L10",
+    "module": "mlp",
+    "l_init": 10,
+    "l_max": 14,
+    "config": "configs/t2-formal-20261004/mlp-L10.json",
+    "output": "results/T2-FORMAL-20261004-001/runs/mlp-L10"
+  },
+  {
+    "order": 12,
+    "case_id": "mlp-L11",
+    "module": "mlp",
+    "l_init": 11,
+    "l_max": 14,
+    "config": "configs/t2-formal-20261004/mlp-L11.json",
+    "output": "results/T2-FORMAL-20261004-001/runs/mlp-L11"
+  },
+  {
+    "order": 13,
+    "case_id": "mlp-L12",
+    "module": "mlp",
+    "l_init": 12,
+    "l_max": 14,
+    "config": "configs/t2-formal-20261004/mlp-L12.json",
+    "output": "results/T2-FORMAL-20261004-001/runs/mlp-L12"
+  },
+  {
+    "order": 14,
+    "case_id": "mlp-L13",
+    "module": "mlp",
+    "l_init": 13,
+    "l_max": 14,
+    "config": "configs/t2-formal-20261004/mlp-L13.json",
+    "output": "results/T2-FORMAL-20261004-001/runs/mlp-L13"
+  },
+  {
+    "order": 15,
+    "case_id": "mlp-L14",
+    "module": "mlp",
+    "l_init": 14,
+    "l_max": 14,
+    "config": "configs/t2-formal-20261004/mlp-L14.json",
+    "output": "results/T2-FORMAL-20261004-001/runs/mlp-L14"
+  },
+  {
+    "order": 16,
+    "case_id": "attention-L00",
+    "module": "attention",
+    "l_init": 0,
+    "l_max": 14,
+    "config": "configs/t2-formal-20261004/attention-L00.json",
+    "output": "results/T2-FORMAL-20261004-001/runs/attention-L00"
+  },
+  {
+    "order": 17,
+    "case_id": "attention-L01",
+    "module": "attention",
+    "l_init": 1,
+    "l_max": 14,
+    "config": "configs/t2-formal-20261004/attention-L01.json",
+    "output": "results/T2-FORMAL-20261004-001/runs/attention-L01"
+  },
+  {
+    "order": 18,
+    "case_id": "attention-L02",
+    "module": "attention",
+    "l_init": 2,
+    "l_max": 14,
+    "config": "configs/t2-formal-20261004/attention-L02.json",
+    "output": "results/T2-FORMAL-20261004-001/runs/attention-L02"
+  },
+  {
+    "order": 19,
+    "case_id": "attention-L03",
+    "module": "attention",
+    "l_init": 3,
+    "l_max": 14,
+    "config": "configs/t2-formal-20261004/attention-L03.json",
+    "output": "results/T2-FORMAL-20261004-001/runs/attention-L03"
+  },
+  {
+    "order": 20,
+    "case_id": "attention-L04",
+    "module": "attention",
+    "l_init": 4,
+    "l_max": 14,
+    "config": "configs/t2-formal-20261004/attention-L04.json",
+    "output": "results/T2-FORMAL-20261004-001/runs/attention-L04"
+  },
+  {
+    "order": 21,
+    "case_id": "attention-L05",
+    "module": "attention",
+    "l_init": 5,
+    "l_max": 14,
+    "config": "configs/t2-formal-20261004/attention-L05.json",
+    "output": "results/T2-FORMAL-20261004-001/runs/attention-L05"
+  },
+  {
+    "order": 22,
+    "case_id": "attention-L06",
+    "module": "attention",
+    "l_init": 6,
+    "l_max": 14,
+    "config": "configs/t2-formal-20261004/attention-L06.json",
+    "output": "results/T2-FORMAL-20261004-001/runs/attention-L06"
+  },
+  {
+    "order": 23,
+    "case_id": "attention-L07",
+    "module": "attention",
+    "l_init": 7,
+    "l_max": 14,
+    "config": "configs/t2-formal-20261004/attention-L07.json",
+    "output": "results/T2-FORMAL-20261004-001/runs/attention-L07"
+  },
+  {
+    "order": 24,
+    "case_id": "attention-L08",
+    "module": "attention",
+    "l_init": 8,
+    "l_max": 14,
+    "config": "configs/t2-formal-20261004/attention-L08.json",
+    "output": "results/T2-FORMAL-20261004-001/runs/attention-L08"
+  },
+  {
+    "order": 25,
+    "case_id": "attention-L09",
+    "module": "attention",
+    "l_init": 9,
+    "l_max": 14,
+    "config": "configs/t2-formal-20261004/attention-L09.json",
+    "output": "results/T2-FORMAL-20261004-001/runs/attention-L09"
+  },
+  {
+    "order": 26,
+    "case_id": "attention-L10",
+    "module": "attention",
+    "l_init": 10,
+    "l_max": 14,
+    "config": "configs/t2-formal-20261004/attention-L10.json",
+    "output": "results/T2-FORMAL-20261004-001/runs/attention-L10"
+  },
+  {
+    "order": 27,
+    "case_id": "attention-L11",
+    "module": "attention",
+    "l_init": 11,
+    "l_max": 14,
+    "config": "configs/t2-formal-20261004/attention-L11.json",
+    "output": "results/T2-FORMAL-20261004-001/runs/attention-L11"
+  },
+  {
+    "order": 28,
+    "case_id": "attention-L12",
+    "module": "attention",
+    "l_init": 12,
+    "l_max": 14,
+    "config": "configs/t2-formal-20261004/attention-L12.json",
+    "output": "results/T2-FORMAL-20261004-001/runs/attention-L12"
+  },
+  {
+    "order": 29,
+    "case_id": "attention-L13",
+    "module": "attention",
+    "l_init": 13,
+    "l_max": 14,
+    "config": "configs/t2-formal-20261004/attention-L13.json",
+    "output": "results/T2-FORMAL-20261004-001/runs/attention-L13"
+  },
+  {
+    "order": 30,
+    "case_id": "attention-L14",
+    "module": "attention",
+    "l_init": 14,
+    "l_max": 14,
+    "config": "configs/t2-formal-20261004/attention-L14.json",
+    "output": "results/T2-FORMAL-20261004-001/runs/attention-L14"
+  }
+]

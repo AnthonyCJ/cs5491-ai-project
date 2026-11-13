@@ -1,0 +1,107 @@
+{
+  "source": "T2-FORMAL-20261004-004",
+  "condition_count": 30,
+  "all_strictly_improved": true,
+  "plateaus": [
+    {
+      "module": "mlp",
+      "input_levels": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "optimized_ms": "26069.9524",
+      "min_reduction_percent": "7.322289445659971144295985604",
+      "max_reduction_percent": "7.329141827860193239105039311",
+      "optimized_n_b1": [
+        4
+      ],
+      "optimized_n_b2": [
+        4
+      ]
+    },
+    {
+      "module": "mlp",
+      "input_levels": [
+        14
+      ],
+      "optimized_ms": "21911.5924",
+      "min_reduction_percent": "22.11130685428948729386310104",
+      "max_reduction_percent": "22.11130685428948729386310104",
+      "optimized_n_b1": [
+        0
+      ],
+      "optimized_n_b2": [
+        4
+      ]
+    },
+    {
+      "module": "attention",
+      "input_levels": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "optimized_ms": "45698.2664",
+      "min_reduction_percent": "14.67545499751356337372217772",
+      "max_reduction_percent": "14.67545499751356337372217772",
+      "optimized_n_b1": [
+        10
+      ],
+      "optimized_n_b2": [
+        8
+      ]
+    },
+    {
+      "module": "attention",
+      "input_levels": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "optimized_ms": "41537.6664",
+      "min_reduction_percent": "22.44383069102444605848177962",
+      "max_reduction_percent": "22.44383069102444605848177962",
+      "optimized_n_b1": [
+        6
+      ],
+      "optimized_n_b2": [
+        8
+      ]
+    }
+  ],
+  "counts_can_increase": [
+    "attention-L00",
+    "attention-L01",
+    "attention-L02",
+    "attention-L03",
+    "attention-L04",
+    "attention-L05"
+  ],
+  "selected": [
+    "mlp-L13",
+    "mlp-L14",
+    "attention-L05",
+    "attention-L06"
+  ]
+}

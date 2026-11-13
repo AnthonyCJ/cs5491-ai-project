@@ -1,0 +1,89 @@
+{
+  "artifact_version": "P-D1-ID-v1",
+  "checked_at_utc": "2026-10-05T09:36:36.044187+00:00",
+  "checker_sha256": "956972fcc002ba97dd61ba64e20671a8396600240452ad18415bff6a9fcd4550",
+  "source_sha256": "8d666bd393f97ad2610c3ea5fefbc315a29f4647613ee5a0916d6cdf9a6a987f",
+  "pdf_sha256": "d5931a879e8f5b0e0aa07ae034a90e73c676fb58c8aecc253e2d459c0c9735d0",
+  "build_info_sha256": "8747db578b36ab8391d653546fac0eda1aed3de9442b096c0f053f76d319cda3",
+  "page_count": 1,
+  "page_size": "A4",
+  "font_sizes_points": [
+    12.0
+  ],
+  "used_fonts_embedded": {
+    "AAAAAA+TimesNewRomanPS-BoldMT": true,
+    "AAAAAA+TimesNewRomanPSMT": true
+  },
+  "configured_margins_cm": [
+    2.5,
+    2.5,
+    2.5,
+    2.5
+  ],
+  "all_text_inside_margins": true,
+  "configured_body_leading_points": 12,
+  "observed_line_top_differences_points": {
+    "12.0": 34,
+    "17.0": 5,
+    "19.0": 5
+  },
+  "page_checks": [
+    {
+      "page": 1,
+      "size_points": [
+        595.2756,
+        841.8898
+      ],
+      "text_bbox_points": [
+        70.86614,
+        73.45604360000004,
+        522.4364564,
+        673.4560436
+      ]
+    }
+  ],
+  "all_source_prose_found": true,
+  "all_identity_lines_and_pairings_found": true,
+  "formal_identity_complete": true,
+  "provenance_checks": {
+    "source": true,
+    "pdf": true,
+    "generator": true,
+    "source_index": true,
+    "identity": true,
+    "formal_summary": true,
+    "formal_protocol": true,
+    "analysis_manifest": true,
+    "version": true,
+    "new_document": true,
+    "source_path": true,
+    "formal_experiment": true,
+    "saved_packages": true,
+    "scope": true,
+    "saved_rows": true,
+    "dependency_hashes": true
+  },
+  "displayed_reduction_ranges": {
+    "mlp": "7.32-22.11%",
+    "attention": "14.68-22.44%"
+  },
+  "automated_checks_passed": true,
+  "no_embedded_attachments": true,
+  "metadata_has_no_private_paths": true,
+  "visual_review": {
+    "passed": true,
+    "reviewed_at_utc": "2026-10-05T09:38:35.924646+00:00",
+    "reviewer": "assistant full-page visual inspection",
+    "page_count": 1,
+    "render_dpi": 150,
+    "render_sha256": "4ff43a2e3cc91395b05011387806d0862c8af8cdfbdb6bb2f31b4fcab3c9aa18",
+    "findings": "Complete page viewed: title, all three identity pairings/contact and four sections are readable; no clipping, overlap or missing glyphs; consistent 12-point typography and spacing; text remains within required margins.",
+    "human_acceptance": false
+  },
+  "formal_submission_ready": false,
+  "latest_canvas_requirements_verified": false,
+  "submission_authorized": false,
+  "submitted": false,
+  "human_review": "pending",
+  "limits": "Document and saved-file checks; no new optimisation, scoring, S6 reproduction or human acceptance."
+}

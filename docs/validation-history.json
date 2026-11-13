@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "as_of": "2026-11-13",
+  "kind": "Producer's historical evidence summary, not a new execution receipt",
+  "private_records": "Original failures, process/control receipts, machine locators and full acceptance records are retained privately. These records are not runtime inputs.",
+  "R6": {
+    "release": "T4-READER-R6",
+    "manifest_sha256": "7657dba6606d03102f6edb630e4e7f8c73075bb6894cd97a29e4f7fd1e5bdd34",
+    "zip_sha256": "9fd0efe982cd792fc68f897e58d5c30ee171aad1dca3f5c69211ee3a243417ea",
+    "review_sha256": "9f8b9f9f8a5c4cfbdead44ec8e3317f90d1db0fb9668b255ababa79dfebcf2f3",
+    "visual_ledger_sha256": "5d1929e2b77cb57a5fe005e1c53833e7ecb4cbf3a689a1f8111787a145d89637",
+    "coverage": "One complete final existing-machine pass after one retained failed pass and one repair: formal 30/30 plus saved checks; S3 30 plus six tiny examples and verification; saved scoring, seven formal and two three-group S3 figure sets; P-D1-ID-v1 and M-MAINLINE-ID-v2 rebuild and actual viewing.",
+    "fresh_installation": false
+  },
+  "R7": {
+    "release": "T4-READER-R7",
+    "manifest_sha256": "0cac1ee87debe6ec71065536fa385dc94836d7329c23bf8fb392d90eb3ef5dd4",
+    "zip_sha256": "e3d7993f255f42b890a72bd4429332337c8124bd7511eab863b7a2b0c475aff5",
+    "inheritance_basis_sha256": "244a4cfea95015569710aa20ed5064c4d4fccb59e132f83c3219b304876fd232",
+    "unchanged_predecessor_files": 613,
+    "unchanged_business_outputs": 690,
+    "scope": "Report output-path documentation correction; exact R6 identity inheritance plus documentation/package/viewing checks, not another complete business pass.",
+    "owner_acceptance": "Owner accepted R7 with its expressly inherited R6 evidence on 2026-11-12 and closed the documentation issue."
+  },
+  "engineering_candidate": {
+    "candidate": "ENGINEERING-CANDIDATE-20261113-01",
+    "relation": "Selected R7 public engineering inputs plus latest reviewed Proposal and new public instructions; candidate-changes.json identifies omissions and exact differences.",
+    "new_business_execution": false,
+    "fresh_installation_verified": false,
+    "public_access_verified_by_this_file": false,
+    "latest_Proposal_rebuild_verified": false
+  },
+  "historical_timing": {
+    "formal_driver_wall_seconds": 39.9841531,
+    "formal_driver_record_sha256": "6a92360910ed0e3f580c1f75659ed3cc50e9da26f96378da10a6bd2d6b9b15dd",
+    "s3_solver_seconds": 10.64452149963472,
+    "s3_record": "results/S3-OPT-001/run.json",
+    "limit": "Different measurement scopes; not a fresh-install estimate or a promise of runtime. Do not sum nested timings."
+  }
+}

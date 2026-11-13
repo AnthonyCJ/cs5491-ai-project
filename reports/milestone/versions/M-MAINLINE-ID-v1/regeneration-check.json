@@ -1,0 +1,45 @@
+{
+  "artifact_version": "M-MAINLINE-ID-v1",
+  "checked_at_utc": "2026-10-04T09:28:31.529929+00:00",
+  "scope": "Same-machine document regeneration with existing bundled CPython 3.12.14, ReportLab 4.4.9, pdfplumber 0.11.9 and pypdf 6.10.0. No relocated-repository or independent-machine check.",
+  "output_directory": "results/local-milestone-mainline-regeneration",
+  "source_sha256": "5aeda83b020480d3587aa172ce033f6674f5d380bd5e4348833820f560f2b8c5",
+  "generator_sha256": "95e2a6030e96cf05146fe340543ebb17a54f1b71243539eae101c44b19ddaaae",
+  "original_pdf_sha256": "08e035e83b8a7393dfcc44cfbf995aeb8f7ab2bf0b48bd4ba1b31c24b654a50d",
+  "regenerated_pdf_sha256": "22fbd6f7b8e93d8caa267d66d991128258d8bedac8edac3f3a185d18aefaaf81",
+  "original_format_check_sha256": "a51af298ba0f5614839ee9a9f763bc7e7184c3dda322c3014542dc344c2f0ac1",
+  "regenerated_format_check_sha256": "109a901c4e85cf71d63ca598294b7f8f2da6c7fcd4eb28cfa35d95b7ba3a51ce",
+  "resolved_source_identical": true,
+  "all_automated_checks_passed": true,
+  "all_rendered_pages_identical": true,
+  "page_renders": [
+    {
+      "page": 1,
+      "original_png_sha256": "ef5922ad70e9c92cbe3917b952ccf36769edeb93d51b8bdf629f8fb9f0867f08",
+      "regenerated_png_sha256": "ef5922ad70e9c92cbe3917b952ccf36769edeb93d51b8bdf629f8fb9f0867f08",
+      "identical": true
+    },
+    {
+      "page": 2,
+      "original_png_sha256": "9ceb6eb4e5f9acf51cd81fac0a00addb71acc171136616eed67d54cfc69e4b06",
+      "regenerated_png_sha256": "9ceb6eb4e5f9acf51cd81fac0a00addb71acc171136616eed67d54cfc69e4b06",
+      "identical": true
+    },
+    {
+      "page": 3,
+      "original_png_sha256": "ca552a49a95a023310022c37150f6c7291916496486f22dff7bab0f00a485f2b",
+      "regenerated_png_sha256": "ca552a49a95a023310022c37150f6c7291916496486f22dff7bab0f00a485f2b",
+      "identical": true
+    },
+    {
+      "page": 4,
+      "original_png_sha256": "120e2322441887c1cbf351231af460c8491fb8dcb527811f53d7ae027e8960a3",
+      "regenerated_png_sha256": "120e2322441887c1cbf351231af460c8491fb8dcb527811f53d7ae027e8960a3",
+      "identical": true
+    }
+  ],
+  "new_optimisation_scoring_or_project_tests": false,
+  "current_solver_readiness_verified": false,
+  "S6_independent_reproduction": false,
+  "human_acceptance": "pending"
+}

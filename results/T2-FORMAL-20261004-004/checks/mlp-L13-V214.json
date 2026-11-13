@@ -1,0 +1,319 @@
+{
+  "schema_version": 1,
+  "case_id": "mlp-L13",
+  "status": "passed",
+  "started_at_utc": "2026-10-04T16:11:30.682488+00:00",
+  "solver_calls": 0,
+  "saved_solution_verified_once_without_search": true,
+  "baseline_freshly_audited_and_teacher_scored": true,
+  "baseline_run_id": "S1-BL-001",
+  "baseline_case_sha256": "db35b1aa5538f75c7d1ead11df28db6dc541228c5a2406ce5255d10540bf1597",
+  "historical_case_sha256": "2d765a5bc391dae47dfaeccc634b351164f49ece17c487b40a43694b0834cfac",
+  "run_json_sha256": "8a7a5deceaa5d62d0b73d5197e0ddf626bd1b69b88ef8abee557c3cc62766a1a",
+  "case_sha256": "6689e7f70aa20cbf3485b01dfc1745b11457c0c418d58ca65f18f4aa15b5e881",
+  "checker_sha256": "d38fac43e51ba94e02460a1f128a9b1e1fb1538c258c3aac8b7318130950b5fb",
+  "source_fingerprint": "955afbf4b497ad3eaee464ce3f8942ad42dc87a2f19e21b1d3868b305173d612",
+  "baseline_audit": {
+    "latency_decimal_ms": "28131.7697",
+    "n_b1": 5,
+    "n_b2": 4,
+    "n_bootstrap": 9,
+    "depth": 26,
+    "budget": 135,
+    "utilisation": 0.1925925925925926,
+    "l_in": {
+      "X_in_mlp": 13,
+      "Conj_X_mlp": 13,
+      "Boot1_X_mlp": 13,
+      "Mul_mask_mlp": 14,
+      "PCMM3_mlp": 13,
+      "Mul_affine_mlp": 11,
+      "GELU_mlp": 10,
+      "PCMM4_mlp": 2,
+      "Add_res_mlp": 0,
+      "Boot2_X_mlp": 0,
+      "ModSwitch_down3_mlp": 13,
+      "x_mask2_mlp": 10,
+      "sum_mu_mlp": 9,
+      "mask_mu_mlp": 9,
+      "div_768_mlp": 8,
+      "add_z_mlp": 7,
+      "mul_z_sq_mlp": 7,
+      "mul_z_gamma_mlp": 7,
+      "sum_y_mlp": 6,
+      "mul_var_mlp": 6,
+      "Boot1_var_mlp": 5,
+      "invsqrt_var_mlp": 14,
+      "mask_lam_mlp": 9,
+      "mul_X_out_mlp": 6,
+      "X_out_mlp": 5
+    },
+    "l_out": {
+      "X_in_mlp": 13,
+      "Conj_X_mlp": 13,
+      "Boot1_X_mlp": 14,
+      "Mul_mask_mlp": 13,
+      "PCMM3_mlp": 11,
+      "Mul_affine_mlp": 10,
+      "GELU_mlp": 2,
+      "PCMM4_mlp": 0,
+      "Add_res_mlp": 0,
+      "Boot2_X_mlp": 13,
+      "ModSwitch_down3_mlp": 10,
+      "x_mask2_mlp": 9,
+      "sum_mu_mlp": 9,
+      "mask_mu_mlp": 8,
+      "div_768_mlp": 7,
+      "add_z_mlp": 7,
+      "mul_z_sq_mlp": 6,
+      "mul_z_gamma_mlp": 6,
+      "sum_y_mlp": 6,
+      "mul_var_mlp": 5,
+      "Boot1_var_mlp": 14,
+      "invsqrt_var_mlp": 9,
+      "mask_lam_mlp": 8,
+      "mul_X_out_mlp": 5,
+      "X_out_mlp": 5
+    },
+    "edge_levels": [
+      {
+        "from": "Conj_X_mlp",
+        "to": "Boot1_X_mlp",
+        "ciphertexts": 4,
+        "level": 13
+      },
+      {
+        "from": "Boot1_X_mlp",
+        "to": "Mul_mask_mlp",
+        "ciphertexts": 4,
+        "level": 14
+      },
+      {
+        "from": "Mul_mask_mlp",
+        "to": "PCMM3_mlp",
+        "ciphertexts": 64,
+        "level": 13
+      },
+      {
+        "from": "PCMM3_mlp",
+        "to": "Mul_affine_mlp",
+        "ciphertexts": 16,
+        "level": 11
+      },
+      {
+        "from": "Mul_affine_mlp",
+        "to": "GELU_mlp",
+        "ciphertexts": 16,
+        "level": 10
+      },
+      {
+        "from": "GELU_mlp",
+        "to": "PCMM4_mlp",
+        "ciphertexts": 16,
+        "level": 2
+      },
+      {
+        "from": "PCMM4_mlp",
+        "to": "Add_res_mlp",
+        "ciphertexts": 8,
+        "level": 0
+      },
+      {
+        "from": "Add_res_mlp",
+        "to": "Boot2_X_mlp",
+        "ciphertexts": 8,
+        "level": 0
+      },
+      {
+        "from": "Boot2_X_mlp",
+        "to": "ModSwitch_down3_mlp",
+        "ciphertexts": 8,
+        "level": 13
+      },
+      {
+        "from": "ModSwitch_down3_mlp",
+        "to": "x_mask2_mlp",
+        "ciphertexts": 8,
+        "level": 10
+      },
+      {
+        "from": "x_mask2_mlp",
+        "to": "sum_mu_mlp",
+        "ciphertexts": 8,
+        "level": 9
+      },
+      {
+        "from": "x_mask2_mlp",
+        "to": "add_z_mlp",
+        "ciphertexts": 8,
+        "level": 9
+      },
+      {
+        "from": "sum_mu_mlp",
+        "to": "mask_mu_mlp",
+        "ciphertexts": 1,
+        "level": 9
+      },
+      {
+        "from": "mask_mu_mlp",
+        "to": "div_768_mlp",
+        "ciphertexts": 1,
+        "level": 8
+      },
+      {
+        "from": "div_768_mlp",
+        "to": "add_z_mlp",
+        "ciphertexts": 1,
+        "level": 7
+      },
+      {
+        "from": "add_z_mlp",
+        "to": "mul_z_sq_mlp",
+        "ciphertexts": 8,
+        "level": 7
+      },
+      {
+        "from": "add_z_mlp",
+        "to": "mul_z_gamma_mlp",
+        "ciphertexts": 8,
+        "level": 7
+      },
+      {
+        "from": "mul_z_sq_mlp",
+        "to": "sum_y_mlp",
+        "ciphertexts": 8,
+        "level": 6
+      },
+      {
+        "from": "sum_y_mlp",
+        "to": "mul_var_mlp",
+        "ciphertexts": 1,
+        "level": 6
+      },
+      {
+        "from": "mul_var_mlp",
+        "to": "Boot1_var_mlp",
+        "ciphertexts": 1,
+        "level": 5
+      },
+      {
+        "from": "Boot1_var_mlp",
+        "to": "invsqrt_var_mlp",
+        "ciphertexts": 1,
+        "level": 14
+      },
+      {
+        "from": "invsqrt_var_mlp",
+        "to": "mask_lam_mlp",
+        "ciphertexts": 1,
+        "level": 9
+      },
+      {
+        "from": "mask_lam_mlp",
+        "to": "mul_X_out_mlp",
+        "ciphertexts": 1,
+        "level": 8
+      },
+      {
+        "from": "mul_z_gamma_mlp",
+        "to": "mul_X_out_mlp",
+        "ciphertexts": 8,
+        "level": 6
+      },
+      {
+        "from": "mul_X_out_mlp",
+        "to": "X_out_mlp",
+        "ciphertexts": 8,
+        "level": 5
+      },
+      {
+        "from": "X_in_mlp",
+        "to": "Conj_X_mlp",
+        "ciphertexts": 8,
+        "level": 13
+      },
+      {
+        "from": "X_in_mlp",
+        "to": "Add_res_mlp",
+        "ciphertexts": 8,
+        "level": 13
+      }
+    ],
+    "node_latency_decimal_ms": {
+      "X_in_mlp": "0",
+      "Conj_X_mlp": "3.75",
+      "Boot1_X_mlp": "4160.60",
+      "Mul_mask_mlp": "1.3474",
+      "PCMM3_mlp": "7342.04",
+      "Mul_affine_mlp": "1.1485",
+      "GELU_mlp": "5914.76",
+      "PCMM4_mlp": "2850.59",
+      "Add_res_mlp": "0.0379",
+      "Boot2_X_mlp": "5172.52",
+      "ModSwitch_down3_mlp": "0",
+      "x_mask2_mlp": "1.0822",
+      "sum_mu_mlp": "4.06",
+      "mask_mu_mlp": "1.0159",
+      "div_768_mlp": "0.9496",
+      "add_z_mlp": "0.0617",
+      "mul_z_sq_mlp": "0.8833",
+      "mul_z_gamma_mlp": "0.8833",
+      "sum_y_mlp": "4.06",
+      "mul_var_mlp": "0.8170",
+      "Boot1_var_mlp": "1040.15",
+      "invsqrt_var_mlp": "1629.18",
+      "mask_lam_mlp": "1.0159",
+      "mul_X_out_mlp": "0.8170",
+      "X_out_mlp": "0"
+    },
+    "placement_chains": [
+      {
+        "from": "Conj_X_mlp",
+        "to": "Mul_mask_mlp",
+        "inserted_nodes": [
+          "Boot1_X_mlp"
+        ]
+      },
+      {
+        "from": "Add_res_mlp",
+        "to": "x_mask2_mlp",
+        "inserted_nodes": [
+          "Boot2_X_mlp",
+          "ModSwitch_down3_mlp"
+        ]
+      },
+      {
+        "from": "mul_var_mlp",
+        "to": "invsqrt_var_mlp",
+        "inserted_nodes": [
+          "Boot1_var_mlp"
+        ]
+      }
+    ],
+    "structural_and_level_checks_passed": true
+  },
+  "baseline_teacher_latency_ms": 28131.7697,
+  "baseline_teacher_absolute_error_ms": "0.0000",
+  "current_costs": {
+    "ordinary_ms": "16736.8324",
+    "bootstrap1_ms": "4160.60",
+    "bootstrap2_ms": "5172.52",
+    "modswitch_ms": "0",
+    "total_ms": "26069.9524"
+  },
+  "baseline_costs": {
+    "ordinary_ms": "17758.4997",
+    "bootstrap1_ms": "5200.75",
+    "bootstrap2_ms": "5172.52",
+    "modswitch_ms": "0",
+    "total_ms": "28131.7697"
+  },
+  "historical_exact_objective_matched": true,
+  "optimised_teacher_absolute_error_ms": "2E-12",
+  "baseline_check_wall_seconds": 0.0003571999986888841,
+  "baseline_check_cpu_seconds": 0.0,
+  "verification_body_wall_seconds": 0.2793233999982476,
+  "verification_body_cpu_seconds": 0.25,
+  "timing_scope": "No-search verification body; baseline check is nested; excludes imports, output writing and process exit. Outer receipts cover complete attempt.",
+  "completed_before_write_at_utc": "2026-10-04T16:11:30.961824+00:00"
+}
