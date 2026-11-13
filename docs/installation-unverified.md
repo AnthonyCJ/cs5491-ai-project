@@ -1,9 +1,14 @@
 # Acquire and install the engineering candidate
 
-**Validation status:** supplier metadata and non-extra Python dependency constraints
-were checked on 13 November 2026. The instructions below have not been executed as
-a fresh installation. The prior reader pass reused an existing machine environment.
-A new installation and subsequent reproduction must record their own results.
+**Validation status:** the original candidate 01 failed environment creation because
+`UV_PYTHON_PREFERENCE=only-managed` conflicts with the redundant `--managed-python`
+option in uv 0.12.23. This revision removes that option from the two `uv venv`
+commands while retaining managed-only selection and exact Python versions.
+The corrected route passed a local same-machine fresh installation and the
+required numerical, figure and three-report checks on 13 November 2026.
+Viewing tools, Windows and licensed fonts were shared. The revised public
+acquisition chain and owner acceptance remain pending; see the
+[revision record](installation-revision-20261113.json).
 
 ## 1. Obtain the fixed revision
 
@@ -12,7 +17,7 @@ After the candidate tag has been published, run from a parent directory in which
 `cs5491-reader` does not already exist:
 
 ```powershell
-git -c core.autocrlf=false clone --single-branch --branch engineering-candidate-20261113-01 https://github.com/AnthonyCJ/cs5491-ai-project.git cs5491-reader
+git -c core.autocrlf=false clone --single-branch --branch engineering-candidate-20261113-02 https://github.com/AnthonyCJ/cs5491-ai-project.git cs5491-reader
 if ($LASTEXITCODE -ne 0) { throw 'Candidate acquisition failed' }
 Set-Location -LiteralPath cs5491-reader
 git rev-parse HEAD
@@ -92,9 +97,9 @@ $env:UV_PYTHON_INSTALL_BIN = '0'
 $env:UV_PYTHON_INSTALL_REGISTRY = '0'
 & $ReaderUv python install --no-bin --no-registry 3.13.9 3.12.14
 if ($LASTEXITCODE -ne 0) { throw 'Exact interpreter acquisition failed' }
-& $ReaderUv venv --managed-python --python 3.13.9 .venv-s2
+& $ReaderUv venv --python 3.13.9 .venv-s2
 if ($LASTEXITCODE -ne 0) { throw 'Numerical environment creation failed' }
-& $ReaderUv venv --managed-python --python 3.12.14 .venv-docs
+& $ReaderUv venv --python 3.12.14 .venv-docs
 if ($LASTEXITCODE -ne 0) { throw 'Document environment creation failed' }
 $NumericalPython = Join-Path $readerRoot '.venv-s2/Scripts/python.exe'
 $DocumentPython = Join-Path $readerRoot '.venv-docs/Scripts/python.exe'

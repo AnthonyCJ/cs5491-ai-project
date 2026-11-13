@@ -12,7 +12,8 @@ Report originals are Portable Document Format (PDF) files; hashes identify exact
 | Earlier comparison | [S3-OPT-001](../results/S3-OPT-001/README.md) | The Milestone's earlier thirty-condition evidence plus six small examples |
 | Reader R6 | [Historical validation summary](validation-history.json) | Existing-machine complete final pass after a retained failed pass and a single repair |
 | Reader R7 | [Historical validation summary](validation-history.json) | Documentation correction and exact-file inheritance of R6 business evidence; no complete rerun |
-| Engineering candidate | [Candidate inventory](../candidate-manifest.json), tag `engineering-candidate-20261113-01` | Selected public packaging and instructions; fresh installation and full execution remain unverified |
+| Original engineering candidate | Tag `engineering-candidate-20261113-01`, commit `4c338cee72d1accb19231aae4e17d0aa3561dba1` | Public input retained; environment creation failed before the local correction |
+| Revised engineering candidate | [Candidate inventory](../candidate-manifest.json), intended tag `engineering-candidate-20261113-02` | Local correction checked; revised public acquisition and owner acceptance pending; [revision record](installation-revision-20261113.json) |
 | Final | Not designated | No Final report or final grading version here |
 
 The owner accepted R7 and its explicitly inherited R6 evidence on 12 November

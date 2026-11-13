@@ -1,0 +1,49 @@
+{
+  "revision": "ENGINEERING-CANDIDATE-20261113-02",
+  "intended_tag": "engineering-candidate-20261113-02",
+  "base_commit": "4c338cee72d1accb19231aae4e17d0aa3561dba1",
+  "base_tag": "engineering-candidate-20261113-01",
+  "original_candidate_status": "installation_failed",
+  "change": "Remove two redundant --managed-python options; retain UV_PYTHON_PREFERENCE=only-managed and exact interpreter versions. Update acquisition references and revision disclosure only.",
+  "local_test": {
+    "date": "2026-11-13",
+    "isolation": "Fresh public source, downloaded CPython 3.13.9/3.12.14, new numerical/document environments, initially empty task cache; existing Windows/Git/network/fonts/viewers shared",
+    "formal_conditions": 30,
+    "formal_saved_checks": 30,
+    "formal_exact_frozen_matches": 30,
+    "s3_conditions": 30,
+    "tiny_examples": 6,
+    "figure_sets": {
+      "frozen_T2": 7,
+      "saved_S3": 3,
+      "fresh_S3": 3
+    },
+    "actual_viewing": {
+      "png": 13,
+      "svg": 13,
+      "historical_pdf_pages_150_dpi": 5,
+      "current_proposal_pages": 1,
+      "markdown_documents": 9
+    },
+    "reports": [
+      "P-D1-ID-v1",
+      "M-MAINLINE-ID-v2",
+      "P-TERMS-ID-v1"
+    ],
+    "report_content": "Original sources/builders/checkers used unchanged; extracted PDF text equals the corresponding original. Metadata may differ.",
+    "process_checks": "Creation, identities, exit and cleanup confirmed",
+    "local_checks_passed": true,
+    "evidence_summary_sha256": "b04cefbcd0e89d769c84d90d0cb419a981f770277a6b6e9218462eca62669691"
+  },
+  "preserved": "All original executable, scientific, report, dependency-lock and historical evidence bytes are unchanged. The original tag is not moved.",
+  "scope_of_older_indexes": "candidate-changes.json, claim-evidence.json and validation-history.json retain their explicit original candidate 01 scope; they are not rewritten as new run evidence.",
+  "revised_public_acquisition_verified": false,
+  "owner_acceptance": "pending",
+  "course_submission": "not authorized by this revision",
+  "limitations": [
+    "Same-machine result only",
+    "Whole fresh optional viewing stack not tested",
+    "Raw machine/process logs remain private",
+    "No Final report, grading revision or course submission designated"
+  ]
+}

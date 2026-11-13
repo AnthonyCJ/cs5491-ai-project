@@ -16,17 +16,18 @@ reconstruction, audits and analysis. See the [method](docs/s2-method.md) and
 
 ## Read, install and reproduce
 
-This is engineering candidate **ENGINEERING-CANDIDATE-20261113-01**, prepared for
+This is engineering candidate **ENGINEERING-CANDIDATE-20261113-02**, prepared for
 public review. The intended repository is
 [AnthonyCJ/cs5491-ai-project](https://github.com/AnthonyCJ/cs5491-ai-project).
-Its candidate tag is `engineering-candidate-20261113-01`; before the tag is
+Its candidate tag is `engineering-candidate-20261113-02`; before the tag is
 published, remote acquisition is unavailable. The tag is a reproduction candidate,
 not a designated course grading or final-submission version.
 
 1. Read [source access and licences](docs/public-scope.md).
 2. Follow [acquisition and installation](docs/installation-unverified.md).
-   Supplier versions and download metadata have been checked; a fresh installation
-   has **not** been validated for this candidate.
+   The corrected commands passed a local fresh installation. The revised public
+   acquisition chain and owner acceptance remain pending; see the
+   [installation revision record](docs/installation-revision-20261113.json).
 3. Run the [reproduction commands](docs/reproduction.md), which specify inputs,
    outputs, checks and time limits without a private machine-locator file.
 4. Compare results using [scoring criteria](docs/grading.md), then inspect
@@ -35,7 +36,8 @@ not a designated course grading or final-submission version.
 The documented target is Windows x64, PowerShell 7.6.9, numerical CPython 3.13.9
 and document CPython 3.12.14, with separate locked Python dependencies. Report
 builds require legally available Times New Roman; no font files are distributed.
-Other platforms and a fresh environment remain untested.
+Other platforms and a fresh installation of the optional viewing tools remain
+untested. The local reproduction used existing viewers, Windows and system fonts.
 
 ## Results and reports
 
@@ -74,8 +76,10 @@ and scientific inputs by byte identity and supplies public acquisition instructi
 See [validation coverage](docs/reader-acceptance.md), [claims and evidence](docs/claim-evidence.json)
 and the [candidate inventory](candidate-manifest.json).
 
-Fresh installation, current-candidate full reproduction and cross-machine operation
-remain unverified. Public availability is established only after publication and
+The original candidate 01 failed installation. The corrected commands and unchanged
+business inputs passed local same-machine checks, including an independent rebuild
+of the current Proposal. Revised-public-chain verification, owner acceptance and
+cross-machine operation remain unverified. Public availability is established only after publication and
 anonymous acquisition of the named tag. Earlier creation-time `pending` statements
 remain in frozen evidence; later dated records supply the decisions without
 rewriting those originals. Private machine records are not required project inputs.

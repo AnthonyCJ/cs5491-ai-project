@@ -2,7 +2,7 @@
 
 This engineering candidate is intended for the public repository
 [AnthonyCJ/cs5491-ai-project](https://github.com/AnthonyCJ/cs5491-ai-project).
-The candidate tag is `engineering-candidate-20261113-01`. A local prepared tree is
+The candidate tag is `engineering-candidate-20261113-02`. A local prepared tree is
 not evidence that this tag has been published or anonymously downloaded.
 
 ## Instructor input and attribution
